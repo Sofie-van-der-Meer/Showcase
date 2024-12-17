@@ -1,0 +1,14 @@
+/*  
+* Basic resets: 
+    Normalize or reset styles to ensure consistency across browsers 
+    (e.g., margin, padding, box-sizing reset).
+* Typography settings: 
+    Base font size, font families, line heights, etc.
+* Global layout styles: 
+    Styles that affect the layout of the whole page, such as body margins, 
+    header and footer styles, general container widths, etc.
+* Global colors: 
+    Primary colors, background colors, text colors, etc.
+* Utility classes: 
+    Global helper classes 
+    (e.g., .hidden, .text-center, .container, .clearfix). */
