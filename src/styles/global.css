@@ -1,14 +1,70 @@
 /*  
 * Basic resets: 
-    Normalize or reset styles to ensure consistency across browsers 
-    (e.g., margin, padding, box-sizing reset).
+Normalize or reset styles to ensure consistency across browsers 
+(e.g., margin, padding, box-sizing reset).
 * Typography settings: 
-    Base font size, font families, line heights, etc.
+Base font size, font families, line heights, etc.
 * Global layout styles: 
-    Styles that affect the layout of the whole page, such as body margins, 
-    header and footer styles, general container widths, etc.
+Styles that affect the layout of the whole page, such as body margins, 
+header and footer styles, general container widths, etc.
 * Global colors: 
-    Primary colors, background colors, text colors, etc.
+Primary colors, background colors, text colors, etc.
 * Utility classes: 
-    Global helper classes 
-    (e.g., .hidden, .text-center, .container, .clearfix). */
+Global helper classes 
+(e.g., .hidden, .text-center, .container, .clearfix). */
+
+/* TYPOGRAPHY SETTINGS  */
+:root {
+    --font-family__source-sans-3: "Source Sans 3", serif;
+    --font-family__source-serif-4:"Source Sans 4", serif;
+    --font-family__sofia: "Sofia Sans Extra Condensed", serif;
+}
+
+* {
+    font-family: var(--font-family__source-sans-3);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px; /* 1rem */
+}
+
+.font-family__source-sans-3 {
+    font-family: var(--font-family__source-sans-3);
+}
+
+.font-family__source-serif-4 {
+    font-family: var(--font-family__source-serif-4);
+}
+
+.font-family__sofia {
+    font-family: var(--font-family__sofia);
+}
+
+.font-weight__thin {
+    font-weight: 100;
+}
+.font-weight__extraLight {
+    font-weight: 200;
+}
+.font-weight__light {
+    font-weight: 300;
+}
+.font-weight__medium {
+    font-weight: 500;
+}
+.font-weight__semibold {
+    font-weight: 600;
+}
+.font-weight__bold {
+    font-weight: 700;
+}
+.font-weight__extraBold {
+    font-weight: 800;
+}
+.font-weight__black {
+    font-weight: 900;
+}
+
+.font-style__italic {
+    font-style: italic;
+}
