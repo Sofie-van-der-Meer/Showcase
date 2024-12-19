@@ -1,70 +1,106 @@
-/*  
-* Basic resets: 
+/* Basic resets: 
 Normalize or reset styles to ensure consistency across browsers 
-(e.g., margin, padding, box-sizing reset).
-* Typography settings: 
-Base font size, font families, line heights, etc.
-* Global layout styles: 
-Styles that affect the layout of the whole page, such as body margins, 
-header and footer styles, general container widths, etc.
-* Global colors: 
-Primary colors, background colors, text colors, etc.
-* Utility classes: 
-Global helper classes 
-(e.g., .hidden, .text-center, .container, .clearfix). */
-
-/* TYPOGRAPHY SETTINGS  */
-:root {
-    --font-family__source-sans-3: "Source Sans 3", serif;
-    --font-family__source-serif-4:"Source Sans 4", serif;
-    --font-family__sofia: "Sofia Sans Extra Condensed", serif;
-}
-
+(e.g., margin, padding, box-sizing reset). */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+/* Typography settings: 
+Base font size, font families, line heights, etc. */
+
     font-family: var(--font-family__source-sans-3);
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
+}
+
+*:not(h1, h2, h3, h4, h5, h6) {
+    font-weight: 400;
     font-size: 16px; /* 1rem */
+    /* size-chart rem-px
+    0.125rem = 2px
+    0.250rem = 4px
+    0.375rem = 6px
+    0.500rem = 8px
+    0.625rem = 10px
+    0.750rem = 12px
+    0.875rem = 14px
+
+    1.000rem = 16px
+
+    1.125rem = 18px
+    1.250rem = 20px
+    1.375rem = 22px
+    1.500rem = 24px
+    1.625rem = 26px
+    1.750rem = 28px
+    1.875rem = 30px
+    2.000rem = 32px */
 }
 
 .font-family__source-sans-3 {
     font-family: var(--font-family__source-sans-3);
 }
-
 .font-family__source-serif-4 {
     font-family: var(--font-family__source-serif-4);
 }
-
+h1, h2, h3, h4, h5, h6,
 .font-family__sofia {
     font-family: var(--font-family__sofia);
 }
 
-.font-weight__thin {
-    font-weight: 100;
-}
-.font-weight__extraLight {
-    font-weight: 200;
-}
-.font-weight__light {
-    font-weight: 300;
-}
-.font-weight__medium {
-    font-weight: 500;
-}
-.font-weight__semibold {
-    font-weight: 600;
-}
-.font-weight__bold {
-    font-weight: 700;
-}
-.font-weight__extraBold {
-    font-weight: 800;
-}
-.font-weight__black {
-    font-weight: 900;
+.font-weight__thin        { font-weight: 100; }
+.font-weight__extraLight  { font-weight: 200; }
+.font-weight__light       { font-weight: 300; }
+.font-weight__medium      { font-weight: 500; }
+.font-weight__semibold    { font-weight: 600; }
+.font-weight__bold        { font-weight: 700; }
+.font-weight__extraBold   { font-weight: 800; }
+.font-weight__black       { font-weight: 900; }
+
+.font-style__italic       { font-style: italic; }
+
+
+/* Global layout styles: 
+Styles that affect the layout of the whole page, such as body margins, 
+header and footer styles, general container widths, etc. */
+
+.container {
+    margin: 1rem auto 1rem auto;
+    width: clamp(calc(100vw - 4rem), 70vw, 87.5rem);
 }
 
-.font-style__italic {
-    font-style: italic;
+.nav {
+    width: min(600px, 100vw);
+    margin-left: auto;
 }
+
+/* Global colors: 
+Primary colors, background colors, text colors, etc. */
+
+body {
+    background-color: var(--color-primary-background);
+    color: var(--color-primary);
+}
+
+/* Utility classes: 
+Global helper classes 
+(e.g., .hidden, .text-center, .container, .clearfix). */
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--grey);
+    border-radius: 0.125rem;
+}
+
+::-webkit-scrollbar-button {
+    background: transparent;
+    height: 0.125rem;
+}
+

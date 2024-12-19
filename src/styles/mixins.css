@@ -1,11 +1,99 @@
-/* 
-* CSS variables: 
-    Defining reusable values for colors, margins, fonts, etc.
-* Flexbox or Grid helper classes: 
-    Predefined flexbox or grid patterns.
-* Typography mixins: 
-    Reusable font sizes, line heights, etc.
-* Shadows, borders, gradients, etc.: 
-    Reusable visual effects.
-* Responsive breakpoints: 
-    Media queries stored in a reusable format. */
+/*  CSS variables: 
+    Defining reusable values for colors, margins, fonts, etc. */
+:root {
+    /* fonts */
+    --font-family__source-sans-3: "Source Sans 3", serif;
+    --font-family__source-serif-4:"Source Sans 4", serif;
+    --font-family__sofia: "Sofia Sans Extra Condensed", serif;
+
+    /* colors - dont use in global */
+    --black:            #0d1321;
+    --very-dark:        #1d2d44;
+    --dark:             #012a36;
+    --grey:             #c2bacb;
+    --light:            #dad4de;
+    --very-light:       #e8e4eb;
+    --white:            #f1eef2;
+    --accent-very-dark: #4c061d;
+    --accent-dark:      #840b33;
+    --accent-bright:    #d91254;
+
+    /* colors - use in global */
+    --color-primary-background:     var(--very-light);
+    --color-secundary-background:   var(--white);
+    --color-tertairy-background:    var(--light);
+
+    --color-primary:    var(--very-dark);
+    --color-secundary:  var(--dark);
+    --color-tertairy:   var(--black);
+    --color-grey:       var(--grey);
+
+    --accent-primary:   var(--accent-bright);
+    --accent-secundary: var(--accent-dark);
+    --accent-tertairy:  var(--accent-very-dark);            
+    
+    & .dark {
+    --color-primary-background:     var(--black);
+    --color-secundary-background:   var(--very-dark);
+    --color-tertairy-background:    var(--dark);
+
+    --color-primary:    var(--light);
+    --color-secundary:  var(--very-light);
+    --color-tertairy:   var(--white);
+    --color-grey:       var(--grey);
+
+    --accent-primary:   var(--accent-dark);
+    --accent-secundary: var(--accent-very-dark);
+    --accent-tertairy:  var(--accent-bright);
+    }
+}
+
+/*  Flexbox or Grid helper classes: 
+    Predefined flexbox or grid patterns. */
+.flex, .grid {
+    gap: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-grow_1 {
+    flex-grow: 1;
+}
+.flex-grow_2 {
+    flex-grow: 2;
+}
+.fixed-width {
+    width: 40%;
+    height: 200px;
+}
+
+.grid {
+    display: grid;
+}
+.col_3 {
+    grid-template-columns: repeat(
+        auto-fill, minmax(min(250px, 100%), 1fr));
+}
+.col_2 {
+    grid-template-columns: repeat(
+        auto-fill, minmax(min(300px, 100%), 1fr));
+}
+
+
+/*  Typography mixins: 
+    Reusable font sizes, line heights, etc. */
+
+/*  Shadows, borders, gradients, etc.: 
+    Reusable visual effects. */
+
+.border-devider {
+    border-right: 1px solid var(--accent-primary);
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
+}

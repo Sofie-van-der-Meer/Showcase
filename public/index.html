@@ -8,12 +8,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" 
           rel="stylesheet">
-    <link rel="stylesheet" href="/src/styles/global.css">
     <link rel="stylesheet" href="/src/styles/mixins.css">
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/breakpoints.css">
 
     <title>Sofie van der Meer</title>
 </head>
 <body>
-
+    <header class="container flex">
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+    </header>
+    <main class="container">
+        <input type="checkbox" name="toggleDarkMode" id="mode-toggle">
+        <h1>Hey there! This is just a title</h1>
+        <p>I am just a boring text, existing here solely for the purpose of this demo</p>
+        <p>And I am just another one like the one above me, because two is better than having only one</p>       
+        <section class="grid col_3">
+            <article class="card">Lorem ipsum dolor sit amet.</article>
+            <article class="card">Lorem ipsum dolor sit amet.</article>
+            <article class="card">Lorem ipsum dolor sit amet.</article>
+        </section>
+        <section class="grid col_2">
+            <article class="card">Lorem ipsum dolor sit amet.</article>
+            <article class="card">Lorem ipsum dolor sit amet.</article>
+        </section>
+        <section class="flex flex-dir_column">
+            <article class="card fixed-width">Lorem ipsum dolor sit amet consectetur adipisicing elit.</article>
+            <article class="card flex-grow_1">Lorem ipsum, aperiam eius maiores. Ratione?</article>
+        </section>
+    </main>
+    <p class="nav">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde officiis nemo blanditiis magni voluptate itaque iusto eligendi nesciunt, consequatur nihil fugiat tenetur reiciendis. Itaque, officia ut. Repellendus, quam. Sed reprehenderit unde vel exercitationem non possimus! Eveniet molestiae iusto impedit quae, aperiam iste, repellat ut consequatur cumque magni architecto ex quam.
+    </p>
+    <footer class="container flex flex-dir_column">
+        <p class="flex-grow_1 border-devider">Lorem</p>
+        <p class="flex-grow_2">Lorem</p>
+        <p class="flex-grow_1">Lorem</p>
+    </footer>
+    <script src="/src/index.js"></script>
 </body>
 </html>

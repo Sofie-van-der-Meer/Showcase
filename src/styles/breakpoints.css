@@ -1,0 +1,21 @@
+/*  Responsive breakpoints: 
+    Media queries stored in a reusable format. */
+    @media screen and (max-width: 600px) {
+        .container {
+            text-align: center;
+            margin: 0 2rem;
+        }
+        .flex-dir_column {
+            flex-direction: column;
+        }
+        .fixed-width {
+            width: 100%;
+        }
+        .border-devider {
+            border-right: none;
+            border-bottom: 1px solid var(--accent-primary);
+        }
+        ::-webkit-scrollbar  {
+            width: 0;
+        }
+    }
