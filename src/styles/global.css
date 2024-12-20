@@ -67,7 +67,7 @@ header and footer styles, general container widths, etc. */
 
 .container {
     margin: 1rem auto 1rem auto;
-    width: clamp(calc(100vw - 4rem), 70vw, 87.5rem);
+    width: min(71.2rem, calc(100vw - 4rem));
 }
 
 .nav {
@@ -87,6 +87,11 @@ body {
 Global helper classes 
 (e.g., .hidden, .text-center, .container, .clearfix). */
 
+.hidden {
+    display: none;
+}
+
+/* scrollbar */
 ::-webkit-scrollbar {
     width: 0.5rem;
 }
