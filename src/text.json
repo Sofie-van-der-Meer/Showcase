@@ -1,0 +1,81 @@
+{
+    "home": {
+        "name": "Home",
+        "url":  "...",
+        "sections": [
+            {
+                "id":           "Home_Welkom",
+                "href-img":     "/src/assets/images/black-white.png",
+                "title":        "...",
+                "description":  "...",
+                "url-btn":      "/src/components/pages/letstalk.html"
+            },
+            {
+                "id":           "Home_Introduction",
+                "href-img":     "/src/assets/images/black-white.png",
+                "title":        "...",
+                "description":  "...",
+                "details":      "...",
+                "url-btn":      "/src/components/pages/about.html"
+            },
+            {
+                "id":           "Home_Projects",
+                "projects":     [
+                    {
+                        "href-img":     "/src/assets/images/project1.png",
+                        "title":        "projectTitle",
+                        "description":  "description",
+                        "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
+                        "url-btn":      "/src/components/pages/project1.html"
+                    },
+                    {
+                        "href-img":     "/src/assets/images/project2.png",
+                        "title":        "projectTitle",
+                        "description":  "description",
+                        "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
+                        "url-btn":      "/src/components/pages/project2.html"
+                    },
+                    {
+                        "href-img":     "/src/assets/images/project3.png",
+                        "title":        "projectTitle",
+                        "description":  "description",
+                        "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
+                        "url-btn":      "/src/components/pages/project3.html"
+                    }
+                ]
+            }
+        ]
+    },
+    "about": {
+        "name":     "About Me",
+        "url":      "/src/components/pages/about.html",
+        "sections": []
+    },
+    "let's talk": {
+        "name": "Let's Talk",
+        "url":  "/src/components/pages/letstalk.html"
+    },
+    "projects": [
+        {
+            "href-img":     "/src/assets/images/project1.png",
+            "title":        "projectTitle 1",
+            "description":  "description",
+            "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
+            "url-btn":      "/src/components/pages/project1.html"
+        },
+        {
+            "href-img":     "/src/assets/images/project2.png",
+            "title":        "projectTitle 2",
+            "description":  "description",
+            "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
+            "url-btn":      "/src/components/pages/project2.html"
+        },
+        {
+            "href-img":     "/src/assets/images/project3.png",
+            "title":        "projectTitle 3",
+            "description":  "description",
+            "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
+            "url-btn":      "/src/components/pages/project3.html"
+        }
+    ]
+}

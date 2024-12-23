@@ -35,3 +35,21 @@ const changeMode = function() {
 }
 
 modeToggleBtn.addEventListener('change', changeMode);
+
+
+// https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON
+
+async function populate() {
+    const requestURL = "/src/text.json";
+    const request = new Request(requestURL);
+    const response = await fetch(request);
+    const text = await response.json();
+    
+    const cardlist = document.getElementsByClassName('card-title');
+    for (let i = 0; i < cardlist.length; i++) {
+        const card = cardlist[i];
+        card.textContent = text.projects[i].title
+        
+    }
+}
+populate()
