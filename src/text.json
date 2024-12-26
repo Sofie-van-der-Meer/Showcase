@@ -6,41 +6,46 @@
             {
                 "id":           "Home_Welkom",
                 "href-img":     "/src/assets/images/black-white.png",
-                "title":        "...",
-                "description":  "...",
+                "title":        "Hello I'm Sofie van der Meer",
+                "description":  "Welcome to this platform, where you get a hint of my expertise and capabilities as a Junior Full-Stack Developer.",
                 "url-btn":      "/src/components/pages/letstalk.html"
             },
             {
                 "id":           "Home_Introduction",
                 "href-img":     "/src/assets/images/black-white.png",
-                "title":        "...",
-                "description":  "...",
-                "details":      "...",
+                "title":        "I'm Sofie",
+                "subtitle":     "Creative Full-Stack developer",
+                "description":  "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
                 "url-btn":      "/src/components/pages/about.html"
             },
             {
                 "id":           "Home_Projects",
                 "projects":     [
                     {
-                        "href-img":     "/src/assets/images/project1.png",
-                        "title":        "projectTitle",
-                        "description":  "description",
-                        "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
-                        "url-btn":      "/src/components/pages/project1.html"
+                        "href-img":     "/src/assets/images/Prularia_logo.png",
+                        "title":        "Prularia",
+                        "description":  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
+                        "languages":    ["JavaScript", "PHP", "CSS"],
+                        "lang-ratio":   [47, 39, 12],
+                        "library":      ["Bootstrap"],
+                        "url-btn":      "/src/components/pages/projects/prularia.html"
                     },
                     {
-                        "href-img":     "/src/assets/images/project2.png",
-                        "title":        "projectTitle",
-                        "description":  "description",
-                        "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
-                        "url-btn":      "/src/components/pages/project2.html"
+                        "href-img":     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
+                        "title":        "Pizzaria",
+                        "description":  "This project is an e-commerce web application designed for users to explore and purchase a variety of pizzas.",
+                        "languages":    ["PHP", "CSS"],
+                        "lang-ratio":   [97, 3],
+                        "url-btn":      "/src/components/pages/projects/pizzaria.html"
                     },
                     {
-                        "href-img":     "/src/assets/images/project3.png",
-                        "title":        "projectTitle",
-                        "description":  "description",
-                        "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
-                        "url-btn":      "/src/components/pages/project3.html"
+                        "href-img":     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+                        "title":        "Bubbles in Color",
+                        "description":  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
+                        "languages":    ["JavaScript", "HTML", "CSS"],
+                        "lang-ratio":   [0, 0, 0],
+                        "library":      ["Three.js"],
+                        "url-btn":      "/src/components/pages/projects/bubbles-in-color.html"
                     }
                 ]
             }
@@ -49,33 +54,151 @@
     "about": {
         "name":     "About Me",
         "url":      "/src/components/pages/about.html",
-        "sections": []
-    },
-    "let's talk": {
-        "name": "Let's Talk",
-        "url":  "/src/components/pages/letstalk.html"
+        "sections": {
+            "Contact": [            
+                "sofievandermeer@outlook.com",
+                "www.Sofie-van-der-Meer.be",
+                "linkedin.com/in/Sofie-van-der-Meer",
+                "github.com/Sofie-van-der-Meer"
+            ],
+            "Profile": "A curious and ambitious developer with a strong analytical mindset and a passion for creative solutions. Eager to learn and thrive in Full-Stack development, looking for a position where creative thinking and problem solving can be fully utilized. Ready to become your next Full-Stack Developer!",
+            "Hard Skills": {
+                "Programming Languages": ["PHP", "JavaScript (JS)", "HTML", "CSS"],
+                "Framework & Libraries": ["Bootstrap", "Three.js", "Laravel"],
+                "Development Methodologies": ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
+            },
+            "Soft Skills": {
+                "Creativity": ["Artistic", "Innovative", "Eye for Detail", "Perfectionist"],
+                "Problem Solving": ["Analytical", "Solution-Oriented", "Contextualizing"],
+                "Growth": ["Eager to Learn", "Curious", "Autodidactic"],
+                "Driven": ["Ambitious", "Perseverance" ]
+            },
+            "Education": [{
+                    "school": "VDAB",
+                    "study": "Full-Stack Developer",
+                    "year": "2024 - 2025"
+                },
+                {
+                    "school": "CleanTechPunt Houthalen",
+                    "study": "Cleantech Ambassador",
+                    "year": "2023"
+                },
+                {
+                    "school": "Erasmushogeschool Brussel",
+                    "study": "Bachelor in Landscape & Garden Architecture",
+                    "year": "2014 - 2018"
+                }
+            ],
+            "Professional Experiences": [{
+                    "company": "Agency Nature & Forests",
+                    "job":  "Expert Public Procurement & Landscape Architect",
+                    "year": "2020 - 2023"
+                },
+                {
+                    "company": "Flemish Land Agency",
+                    "job":  "Case Manager for Rural Areas",
+                    "year": "2019"
+                },
+                {
+                    "company": "Tielens Tuinen",
+                    "job":  "Garden Architect & Estimator",
+                    "year": "2018 - 2019"
+                },
+                {
+                    "company": "Regional Landscape Hesbaye & Voeren",
+                    "job":  "Internship",
+                    "year": "2017"
+                }
+            ],
+            "Other Details": {
+                "availability": "Available from 1st March 2025, open to internship/IBO.",
+                "Related Interests": ["Virtual Realty", "2D & 3D Visuals"]
+            }        
+        }
     },
     "projects": [
-        {
-            "href-img":     "/src/assets/images/project1.png",
-            "title":        "projectTitle 1",
-            "description":  "description",
-            "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
-            "url-btn":      "/src/components/pages/project1.html"
+        {        
+            "name":         "Project",
+            "url":          "/src/components/pages/projects/prularia.html",
+            "href-img":     "/src/assets/images/Prularia_logo.png",
+            "title":        "Prularia",
+            "description":  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
+            "languages":    ["JavaScript", "PHP", "CSS"],
+            "lang-ratio":   [47, 39, 12],
+            "library":      ["Bootstrap"],
+            "kind of site": "e-commerce",
+            "date":         "november 2024",
+            "url-btn":      {
+                "live":     "url go live",
+                "github":   "https://github.com/Sofie-van-der-Meer/Prularia"
+            },
+            "sections":     {
+                "intro":    "",
+                "build":    "",
+                "result":   ""
+            }
         },
         {
-            "href-img":     "/src/assets/images/project2.png",
-            "title":        "projectTitle 2",
-            "description":  "description",
-            "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
-            "url-btn":      "/src/components/pages/project2.html"
+            "name":         "Project",
+            "url":          "/src/components/pages/projects/pizzaria.html",
+            "href-img":     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
+            "title":        "Pizzaria",
+            "description":  "This project is an e-commerce web application designed for users to explore and purchase a variety of pizzas.",
+            "languages":    ["PHP", "CSS"],
+            "lang-ratio":   [97, 3],
+            "kind of site": "e-commerce",
+            "date":         "augustus 2024",
+            "url-btn":      {
+                "live":     "url go live",
+                "github":   "https://github.com/Sofie-van-der-Meer/Pizzaria"
+            },
+            "sections":     {
+                "intro":    "",
+                "build":    "",
+                "result":   ""
+            }
         },
         {
-            "href-img":     "/src/assets/images/project3.png",
-            "title":        "projectTitle 3",
-            "description":  "description",
-            "languages":    ["PHP", "HTML", "CSS", "JavaScript"],
-            "url-btn":      "/src/components/pages/project3.html"
+            "name":         "Project",
+            "url":          "/src/components/pages/projects/bubbles-in-color.html",
+            "href-img":     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+            "title":        "Bubbles in Color",
+            "description":  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
+            "languages":    ["JavaScript", "HTML", "CSS"],
+            "lang-ratio":   [0, 0, 0],
+            "library":      ["Three.js"],
+            "kind of site": "game",
+            "date":         "januari 2025",
+            "url-btn":      {
+                "live":     "url go live",
+                "github":   "https://github.com/Sofie-van-der-Meer/Bubbles-in-Color"
+            },
+            "sections":     {
+                "intro":    "",
+                "build":    "",
+                "result":   ""
+            }
         }
-    ]
+    ],
+    "html": {
+        "let's talk": {
+            "name": "Let's Talk",
+            "url":  "/src/components/pages/letstalk.html",
+            "title":        "Let's Talk",
+            "subtitle":     [
+                                "Fill in the form below, or reach out to me directly", 
+                                "email@email.com", 
+                                "(click to copy)", 
+                                "prefer contact form"
+                            ],
+            "form":         [
+                                "First Name",
+                                "Last Name",
+                                "Email",
+                                "Company",
+                                "Let's Talk"
+                            ]
+        }    
+    }
+
 }

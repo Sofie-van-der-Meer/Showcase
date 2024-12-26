@@ -16,6 +16,7 @@ As a Junior Full-Stack Developer, it's important to show what I have learned ove
 ### Extra Features:
 - [x] **Dark Mode and Toggle:** The website initially follows the browser's preferred color scheme, with a toggle button to switch between light and dark modes.
 - [ ] **Language Toggle (English/Dutch):** The website defaults to English, but users can switch to the Dutch version via a toggle button. Document downloads are also available in the corresponding language.
+- [ ] **Prjects Page:** The prjectspage displays an overview of all projects, including key details and a button linking to each project's individual page. The homepage displays the three most important prjects.
 
 ## Build With
 * HTML
