@@ -1,8 +1,8 @@
 {
     "home": {
-        "name": "Home",
-        "url":  "...",
-        "sections": [
+        "headername":   "Home",
+        "url":          "...",
+        "sections":     [
             {
                 "id":           "Home_Welkom",
                 "href-img":     "/src/assets/images/black-white.png",
@@ -52,73 +52,73 @@
         ]
     },
     "about": {
-        "name":     "About Me",
-        "url":      "/src/components/pages/about.html",
-        "sections": {
-            "Contact": [            
+        "headername":       "About Me",
+        "url":              "/src/components/pages/about.html",
+        "sections":         {
+            "Contact":      [            
                 "sofievandermeer@outlook.com",
                 "www.Sofie-van-der-Meer.be",
                 "linkedin.com/in/Sofie-van-der-Meer",
                 "github.com/Sofie-van-der-Meer"
             ],
-            "Profile": "A curious and ambitious developer with a strong analytical mindset and a passion for creative solutions. Eager to learn and thrive in Full-Stack development, looking for a position where creative thinking and problem solving can be fully utilized. Ready to become your next Full-Stack Developer!",
-            "Hard Skills": {
-                "Programming Languages": ["PHP", "JavaScript (JS)", "HTML", "CSS"],
-                "Framework & Libraries": ["Bootstrap", "Three.js", "Laravel"],
-                "Development Methodologies": ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
+            "Profile":      "A curious and ambitious developer with a strong analytical mindset and a passion for creative solutions. Eager to learn and thrive in Full-Stack development, looking for a position where creative thinking and problem solving can be fully utilized. Ready to become your next Full-Stack Developer!",
+            "Hard Skills":  {
+                "Programming Languages":        ["PHP", "JavaScript (JS)", "HTML", "CSS"],
+                "Framework & Libraries":        ["Bootstrap", "Three.js", "Laravel"],
+                "Development Methodologies":    ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
             },
             "Soft Skills": {
-                "Creativity": ["Artistic", "Innovative", "Eye for Detail", "Perfectionist"],
-                "Problem Solving": ["Analytical", "Solution-Oriented", "Contextualizing"],
-                "Growth": ["Eager to Learn", "Curious", "Autodidactic"],
-                "Driven": ["Ambitious", "Perseverance" ]
+                "Creativity":       ["Artistic", "Innovative", "Eye for Detail", "Perfectionist"],
+                "Problem Solving":  ["Analytical", "Solution-Oriented"],
+                "Growth":           ["Eager to Learn", "Curious", "Autodidactic"],
+                "Driven":           ["Ambitious", "Perseverance" ]
             },
             "Education": [{
-                    "school": "VDAB",
-                    "study": "Full-Stack Developer",
-                    "year": "2024 - 2025"
+                    "school":   "VDAB",
+                    "study":    "Full-Stack Developer",
+                    "year":     "2024 - 2025"
                 },
                 {
-                    "school": "CleanTechPunt Houthalen",
-                    "study": "Cleantech Ambassador",
-                    "year": "2023"
+                    "school":   "CleanTechPunt Houthalen",
+                    "study":    "Cleantech Ambassador",
+                    "year":     "2023"
                 },
                 {
-                    "school": "Erasmushogeschool Brussel",
-                    "study": "Bachelor in Landscape & Garden Architecture",
-                    "year": "2014 - 2018"
+                    "school":   "Erasmushogeschool Brussel",
+                    "study":    "Bachelor in Landscape & Garden Architecture",
+                    "year":     "2014 - 2018"
                 }
             ],
             "Professional Experiences": [{
-                    "company": "Agency Nature & Forests",
-                    "job":  "Expert Public Procurement & Landscape Architect",
-                    "year": "2020 - 2023"
+                    "company":  "Agency Nature & Forests",
+                    "job":      "Expert Public Procurement & Landscape Architect",
+                    "year":     "2020 - 2023"
                 },
                 {
-                    "company": "Flemish Land Agency",
-                    "job":  "Case Manager for Rural Areas",
-                    "year": "2019"
+                    "company":  "Flemish Land Agency",
+                    "job":      "Case Manager for Rural Areas",
+                    "year":     "2019"
                 },
                 {
-                    "company": "Tielens Tuinen",
-                    "job":  "Garden Architect & Estimator",
-                    "year": "2018 - 2019"
+                    "company":  "Tielens Tuinen",
+                    "job":      "Garden Architect & Estimator",
+                    "year":     "2018 - 2019"
                 },
                 {
-                    "company": "Regional Landscape Hesbaye & Voeren",
-                    "job":  "Internship",
-                    "year": "2017"
+                    "company":  "Regional Landscape Hesbaye & Voeren",
+                    "job":      "Internship",
+                    "year":     "2017"
                 }
             ],
-            "Other Details": {
-                "availability": "Available from 1st March 2025, open to internship/IBO.",
-                "Related Interests": ["Virtual Realty", "2D & 3D Visuals"]
+            "Other Details":    {
+                "availability":         "Available from 1st March 2025, open to internship/IBO.",
+                "Related Interests":    ["Virtual Realty", "2D & 3D Visuals"]
             }        
         }
     },
     "projects": [
         {        
-            "name":         "Project",
+            "headername":   "Project",
             "url":          "/src/components/pages/projects/prularia.html",
             "href-img":     "/src/assets/images/Prularia_logo.png",
             "title":        "Prularia",
@@ -133,13 +133,13 @@
                 "github":   "https://github.com/Sofie-van-der-Meer/Prularia"
             },
             "sections":     {
-                "intro":    "",
-                "build":    "",
-                "result":   ""
+                "intro":    "explain problems you are about to solve. outline all the user frustrations and why you will be solving this problem. It should describe the goals, vision and challenges that are going to be addressed.",
+                "build":    "explain the steps you have taken to arrive at the solution. highlight the activities you took. workshop, collaboration, wireframes that have been produced. the goal is to show your process and to explain your decision making",
+                "result":   "conculsion. show your outcomes to the original question. dont just show your final deliverables, demonstrate how your designs made an impact on the users. did your solution create a happy path for the usergroup? if so, show it with real data and results. you can also highlight the lessons you learned through the project and reflect on your experience"
             }
         },
         {
-            "name":         "Project",
+            "headername":   "Project",
             "url":          "/src/components/pages/projects/pizzaria.html",
             "href-img":     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
             "title":        "Pizzaria",
@@ -159,7 +159,7 @@
             }
         },
         {
-            "name":         "Project",
+            "headername":   "Project",
             "url":          "/src/components/pages/projects/bubbles-in-color.html",
             "href-img":     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
             "title":        "Bubbles in Color",
@@ -182,22 +182,22 @@
     ],
     "html": {
         "let's talk": {
-            "name": "Let's Talk",
-            "url":  "/src/components/pages/letstalk.html",
+            "headername":   "Let's Talk",
+            "url":          "/src/components/pages/letstalk.html",
             "title":        "Let's Talk",
             "subtitle":     [
-                                "Fill in the form below, or reach out to me directly", 
-                                "email@email.com", 
-                                "(click to copy)", 
-                                "prefer contact form"
-                            ],
-            "form":         [
-                                "First Name",
-                                "Last Name",
-                                "Email",
-                                "Company",
-                                "Let's Talk"
-                            ]
+                "Fill in the form below, or reach out to me directly", 
+                "email@email.com", 
+                "(click to copy)", 
+                "prefer contact form"
+            ],
+            "contactform":  [
+                "First Name",
+                "Last Name",
+                "Email",
+                "Company",
+                "Let's Talk"
+            ]
         }    
     }
 
