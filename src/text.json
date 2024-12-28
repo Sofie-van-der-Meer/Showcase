@@ -133,10 +133,11 @@
                 "github":   "https://github.com/Sofie-van-der-Meer/Prularia"
             },
             "sections":     {
-                "intro":    "explain problems you are about to solve. outline all the user frustrations and why you will be solving this problem. It should describe the goals, vision and challenges that are going to be addressed.",
-                "build":    "explain the steps you have taken to arrive at the solution. highlight the activities you took. workshop, collaboration, wireframes that have been produced. the goal is to show your process and to explain your decision making",
-                "result":   "conculsion. show your outcomes to the original question. dont just show your final deliverables, demonstrate how your designs made an impact on the users. did your solution create a happy path for the usergroup? if so, show it with real data and results. you can also highlight the lessons you learned through the project and reflect on your experience"
-            }
+                "introduction": "Developing a webshop for a client provided a unique opportunity to apply the Scrum Agile methodology in practice. Together with eight other student developers from across Flanders, we worked on this project, where we not only enhanced our technical skills but also learned how to collaborate effectively as a team. The challenge was not only about building the webshop, but also understanding and applying the Scrum approach.",
+                "challenges":   "We faced the challenge of developing a functional and user-friendly webshop within a limited timeframe. Visitors needed to easily browse products and add them to their shopping cart without the requirement to log in. We developed separate pages for customer registration, login, and order placement. Additionally, we ensured that the webshop complied with GDPR requirements, which meant implementing secure password encryption and obtaining explicit consent for cookie usage. Furthermore, we set priorities for each sprint, as the available time was limited.",
+                "result":       "The project resulted in a functional webshop. The first two sprints delivered a working webshop, where customers could browse products, add them to their cart, and place orders. We implemented the core functionalities, such as order placement, and refined both the visual and functional aspects of the webshop. With more time, we would have developed product pages with additional information, profile management, and order status tracking in the third sprint. /n Throughout the process, we actively utilized the Scrum methodology, with daily stand-up meetings and the Scrum board to track progress. We worked as a close-knit team, made joint decisions, and supported each other as needed.",
+                "what the scrum coach says":    "“Sofie was always actively engaged during meetings. She listened attentively and asked questions when things were unclear. The Scrum Master role was taken on by a different team member each day, and Sofie excelled in this role, always ready to support the team. During the stand-up meetings, she was good at setting priorities. For instance, she suggested not discussing a more complex issue in detail at that moment but instead addressing it in a separate meeting with the involved developers.”"
+                }
         },
         {
             "headername":   "Project",
@@ -174,9 +175,9 @@
                 "github":   "https://github.com/Sofie-van-der-Meer/Bubbles-in-Color"
             },
             "sections":     {
-                "intro":    "",
-                "build":    "",
-                "result":   ""
+                "intro":    "explain problems you are about to solve. outline all the user frustrations and why you will be solving this problem. It should describe the goals, vision and challenges that are going to be addressed.",
+                "build":    "explain the steps you have taken to arrive at the solution. highlight the activities you took. workshop, collaboration, wireframes that have been produced. the goal is to show your process and to explain your decision making",
+                "result":   "conculsion. show your outcomes to the original question. dont just show your final deliverables, demonstrate how your designs made an impact on the users. did your solution create a happy path for the usergroup? if so, show it with real data and results. you can also highlight the lessons you learned through the project and reflect on your experience"
             }
         }
     ],
