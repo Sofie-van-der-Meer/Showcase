@@ -1,0 +1,225 @@
+{
+    "home": {
+        "headername":   "Home",
+        "url":          "index.html",
+        "sections":     [
+            {
+                "id":           "Home_Welkom",
+                "href-img":     "/src/assets/images/black-white.png",
+                "title":        "Hey ik ben Sofie van der Meer",
+                "description":  "Welkom op dit platform, waar je een glimp krijgt van mijn skills en capaciteiten als Junior Full-Stack Developer.",
+                "url-btn":      "/src/components/pages/letstalk.html"
+            },
+            {
+                "id":           "Home_Introduction",
+                "href-img":     "/src/assets/images/black-white.png",
+                "title":        "Ik ben Sofie",
+                "subtitle":     "Creatieve Full-Stack developer",
+                "description":  "Ik word gedreven door nieuwsgierigheid en ambitie. Mijn analytische vaardigheden, gecombineerd met mijn creativiteit, stellen me in staat om oplossingen te creëren, zoals 2D- en 3D-visuals, die zowel innovatief als nauwkeurig zijn, en mijn aandacht voor detail en probleemoplossend vermogen weerspiegelen.",
+                "url-btn":      "/src/components/pages/about.html"
+            },
+            {
+                "id":           "Home_Projects",
+                "projects":     [
+                    {
+                        "href-img":     "/src/assets/images/prularia/prularia_logo.png",
+                        "title":        "Prularia",
+                        "description":  "Als een team van 9 ontwikkelaars hebben we een e-commerceplatform gebouwd om praktijkervaring op te doen met de principes van Scrum en Agile-methodologieën.",
+                        "languages":    ["JavaScript", "PHP", "CSS"],
+                        "lang-ratio":   [47, 39, 12],
+                        "library":      ["Bootstrap"],
+                        "url-btn":      "/src/components/pages/projects/prularia.html"
+                    },
+                    {
+                        "href-img":     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
+                        "title":        "Pizzaria",
+                        "description":  "Dit project is een e-commerce webapplicatie die gebruikers de mogelijkheid biedt om een verscheidenheid aan pizza's te verkennen en te bestellen.",
+                        "languages":    ["PHP", "CSS"],
+                        "lang-ratio":   [97, 3],
+                        "url-btn":      "/src/components/pages/projects/pizzaria.html"
+                    },
+                    {
+                        "href-img":     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+                        "title":        "Bubbles in Color",
+                        "description":  "In dit interactieve spel kunnen gebruikers een verscheidenheid aan bubbels kleuren, wat zorgt voor een leuke en creatieve ervaring.",
+                        "languages":    ["JavaScript", "HTML", "CSS"],
+                        "lang-ratio":   [0, 0, 0],
+                        "library":      ["Three.js"],
+                        "url-btn":      "/src/components/pages/projects/bubbles-in-color.html"
+                    }
+                ]
+            }
+        ]
+    },
+    "about": {
+        "headername":       "About Me",
+        "url":              "/src/components/pages/about.html",
+        "sections":         {
+            "Contact":          {
+                "email":        "sofievandermeer@outlook.com",
+                "website":      "www.Sofie-van-der-Meer.be",
+                "linkedin":     "linkedin.com/in/Sofie-van-der-Meer",
+                "github":       "github.com/Sofie-van-der-Meer"
+            },
+            "Profiel": "Een nieuwsgierige en ambitieuze developer met een sterk analytisch denkvermogen en een passie voor creatieve oplossingen. Leergierig en vastbesloten om te groeien in Full-Stack development, op zoek naar een positie waar creatief denken en probleemoplossend vermogen volledig benut kunnen worden. Klaar om jouw volgende Full-Stack Developer te worden!",
+            "Hard Skills":  {
+                "Programming Languages":        ["PHP", "JavaScript (JS)", "HTML", "CSS"],
+                "Framework & Libraries":        ["Bootstrap", "THREE.js"],
+                "Development Methodologies":    ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
+            },
+            "Soft Skills": {
+                "Creativiteit":         ["Artistiek", "Innovatief", "Oog voor Detail", "Perfectionist"],
+                "Probleemoplossend":    ["Analytisch", "Oplossingsgericht"],
+                "Groei":                ["Leergierig", "Nieuwsgierig", "Autodidactisch"],
+                "Gedreven":             ["Ambitieus", "Doorzettingsvermogen"]
+
+            },
+            "Opleiding": [
+                {
+                    "school":   "VDAB",
+                    "study":    "Full-Stack Developer",
+                    "year":     "2024 - 2025"
+                },
+                {
+                    "school":   "CleanTechPunt Houthalen",
+                    "study":    "Cleantech Ambassador",
+                    "year":     "2023"
+                },
+                {
+                    "school":   "Erasmushogeschool Brussel",
+                    "study":    "Bachelor in Landschap & Tuinarchitectuur",
+                    "year":     "2014 - 2018"
+                }
+            ],
+            "Werkervaring": [
+                {
+                    "company":  "Agentschap voor Natuur & Bos",
+                    "job":      "Deskundige overheidsopdrachten & landschapsarchitect",
+                    "year":     "2020 - 2023"
+                },
+                {
+                    "company":  "Vlaamse Landmaatschappij",
+                    "job":      " Dossierbeheerder Platteland",
+                    "year":     "2019"
+                },
+                {
+                    "company":  "Tielens Tuinen",
+                    "job":      "Tuinarchitect & calculator",
+                    "year":     "2018 - 2019"
+                },
+                {
+                    "company":  "Regionaal Landschap Haspengouw & Voeren",
+                    "job":      "Stage",
+                    "year":     "2017"
+                }
+            ],
+            "Overige gegevens":    {
+                "beschikbaarheid":          "Beschikbaar vanaf 1 maart ‘25, sta open voor stage/IBO.",
+                "gerelateerde intresses":   ["Virtual Realty", "2D & 3D Visuals"]
+            }        
+        }
+    },
+    "projects": [
+        {        
+            "headername":   "Project",
+            "url":          "/src/components/pages/projects/prularia.html",
+            "href-img":     "/src/assets/images/prularia/prularia_logo.png",
+            "title":        "Prularia",
+            "description":  "Als een team van 9 ontwikkelaars hebben we een e-commerceplatform gebouwd om praktijkervaring op te doen met de principes van Scrum en Agile-methodologieën.",
+            "languages":    ["JavaScript", "PHP", "CSS"],
+            "lang-ratio":   [47, 39, 12],
+            "library":      ["Bootstrap"],
+            "kind of site": "e-commerce",
+            "date":         "november 2024",
+            "url-btn":      {
+                "live":     "url go live",
+                "github":   "https://github.com/Sofie-van-der-Meer/Prularia"
+            },
+            "sections":     {
+                "introductie":  "Het ontwikkelen van een webshop voor een klant bood een unieke gelegenheid om de Scrum Agile-methodiek in de praktijk toe te passen. Samen met acht andere student-developers uit heel Vlaanderen werkten we aan dit project, waarbij we niet alleen onze technische vaardigheden verder ontwikkelden, maar ook leerden hoe we als team effectief konden samenwerken. De uitdaging bestond niet alleen uit het bouwen van de webshop, maar ook in het begrijpen en toepassen van de Scrum-werkwijze.",
+                "uitdagingen":  "We stonden voor de uitdaging om een functionele en gebruiksvriendelijke webshop te ontwikkelen binnen een beperkte tijd. Bezoekers moesten gemakkelijk producten kunnen bekijken en aan hun winkelmandje toevoegen, zonder dat inloggen vereist was. We ontwikkelden aparte pagina's voor klantregistratie, inloggen en het plaatsen van bestellingen. Daarnaast zorgden we ervoor dat de webshop voldeed aan de GDPR-vereisten, wat betekende dat we veilige encryptie voor wachtwoorden moesten implementeren en expliciete toestemming voor het gebruik van cookies moesten verkrijgen. Verder stelden we prioriteiten voor elke sprint, aangezien de beschikbare tijd beperkt was.",
+                "resultaat":    "Het project resulteerde in een functionele webshop. De eerste twee sprints leverden een werkende webshop op, waarin klanten producten konden bekijken, toevoegen aan hun winkelmandje en bestellingen konden plaatsen. We implementeerden de basisfunctionaliteiten, zoals het plaatsen van bestellingen, en verfijnden zowel de visuele als functionele aspecten van de webshop. Met meer tijd hadden we in de derde sprint productpagina's met extra informatie, profielbeheer en bestelstatus-tracking ontwikkeld. n/ Gedurende het proces maakten we actief gebruik van de Scrum-methodiek, met dagelijkse stand-up meetings en het Scrum-bord om de voortgang bij te houden. We werkten als een hecht team samen, namen gezamenlijk beslissingen en ondersteunden elkaar waar nodig.",
+                "wat de scrum coach zegt":  
+                                "“Sofie was altijd actief aanwezig tijdens de meetings. Ze luisterde aandachtig en stelde vragen wanneer zaken onduidelijk waren. De functie van Scrum Master werd elke dag door iemand anders vervuld. Sofie vervulde deze rol uitstekend en stond klaar om het team te ondersteunen. Tijdens de stand-up meetings kon ze goed prioriteiten stellen. Zo stelde ze voor om een complexer item op dat moment niet in detail te bespreken, maar dit in een aparte meeting verder uit te werken met de betrokken developers.”"
+            },
+            "colors":       ["#abd7a8", "#8ab987", "#63a15e", "#ffffff", "#f5f9f6", "#e8f5e9", "#111510"]
+        },
+        {
+            "headername":   "Project",
+            "url":          "/src/components/pages/projects/pizzaria.html",
+            "href-img":     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
+            "title":        "Pizzaria",
+            "description":  "Dit project is een e-commerce webapplicatie die gebruikers de mogelijkheid biedt om een verscheidenheid aan pizza's te verkennen en te bestellen.",
+            "languages":    ["PHP", "CSS"],
+            "lang-ratio":   [97, 3],
+            "kind of site": "e-commerce",
+            "date":         "augustus 2024",
+            "url-btn":      {
+                "live":     "url go live",
+                "github":   "https://github.com/Sofie-van-der-Meer/Pizzaria"
+            },
+            "sections":     {
+                "introductie":  "Dit project was het eindresultaat van de PHP-cursus en bestond uit het bouwen van een pizza-bestelwebapplicatie. Het doel was om een gebruiksvriendelijke website te creëren waar klanten eenvoudig pizza’s kunnen bekijken en bestellen. De webapplicatie maakte gebruik van verschillende technieken en concepten die ik tijdens de cursus heb geleerd.",
+                "aanpak":       "In de eerste fase van het project heb ik een uitgebreide normalisatie uitgevoerd, de databank in SQL opgezet en geïmplementeerd, zodat alle benodigde gegevens goed in de database werden opgeslagen. Na het uitwerken van de normalisatie kreeg ik feedback van mijn docent dat het te gedetailleerd was voor de beperkte tijd die ik had. Ik besloot me te concentreren op de belangrijkste tabellen, zoals bestellingen, klanten, locaties en bestellijnen, en de andere tabellen (zoals promoties en betaalmethoden) niet verder uit te werken. n/ Vervolgens heb ik de applicatie ontwikkeld volgens de MVC-structuur, waarbij de logica van de applicatie gescheiden werd van de gebruikersinterface. Daarnaast heb ik gewerkt aan foutafhandeling, zodat de app goed omging met eventuele ongeldige invoer van de gebruiker. Voorafgaand aan het schrijven van de code maakte ik een lijst van mogelijke uitzonderingen om een overzicht te krijgen van de te verwachten fouten.",
+                "resultaat":    "Het resultaat is een werkende pizza-bestelapplicatie die gebruikers in staat stelt om eenvoudig pizza’s te kiezen, aan hun winkelwagentje toe te voegen en hun bestellingen te plaatsen. De applicatie haalt de producten uit de databank en toont ze netjes op de website. Gebruikers kunnen zich registreren, inloggen, de hoeveelheid van producten aanpassen, hun contact- en leveringsadres wijzigen, en de bestelling afronden. De gebruikersinterface is eenvoudig maar functioneel, waardoor het voor klanten duidelijk is hoe ze hun bestelling kunnen plaatsen."
+            },
+            "colors":       ["wheat", "#fffff0", "red", "white", "black"]
+        },
+        {
+            "headername":   "Project",
+            "url":          "/src/components/pages/projects/bubbles-in-color.html",
+            "href-img":     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+            "title":        "Bubbles in Color",
+            "description":  "In dit interactieve spel kunnen gebruikers een verscheidenheid aan bubbels kleuren, wat zorgt voor een leuke en creatieve ervaring.",
+            "languages":    ["JavaScript", "HTML", "CSS"],
+            "lang-ratio":   [0, 0, 0],
+            "library":      ["THREE.js"],
+            "kind of site": "game",
+            "date":         "januari 2025",
+            "url-btn":      {
+                "live":     "url go live",
+                "github":   "https://github.com/Sofie-van-der-Meer/Bubbles-in-Color"
+            },
+            "sections":     {
+                "":         "Dit project is momenteel in ontwikkeling en wordt binnenkort gepubliceerd."
+            }
+        },
+        {
+            "headername":   "Project",
+            "url":          "/src/components/pages/projects/treasure-hunt.html",
+            "href-img":     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+            "title":        "Treasure Hunt",
+            "description":  "In dit spannende schattenjachtspel gaan spelers op een avontuurlijke zoektocht om verborgen schatten te ontdekken.",
+            "languages":    ["JavaScript", "HTML", "CSS"],
+            "lang-ratio":   [0, 0, 0],
+            "library":      ["THREE.js"],
+            "kind of site": "game",
+            "date":         "januari 2025",
+            "url-btn":      {
+                "live":     "url go live",
+                "github":   "https://github.com/Sofie-van-der-Meer/Treasure-Hunt"
+            },
+            "sections":     {
+                "":         "Dit project is momenteel in ontwikkeling en wordt binnenkort gepubliceerd."
+            }
+        }
+    ],
+    "contact": {
+            "headername":   "Let's Talk",
+            "url":          "/src/components/pages/letstalk.html",
+            "title":        "Neem contact op",
+            "subtitle":     [
+                "Vul het onderstaande formulier in, of neem direct contact met mij op", 
+                "sofievandermeer@outlook.com", 
+                "(klik om te kopiëren)",
+                "Verkiest u het contactformulier?"
+            ],
+            "contactform":  [
+                "Voornaam",
+                "Achternaam",
+                "E-mail",
+                "Bedrijf",
+                "Neem contact op"
+            ]
+    }    
+}
