@@ -1,42 +1,44 @@
 export default class DarkMode {
 
     modeToggleBtn   = document.getElementById('toggleDarkMode');
-    faviconTag     = document.getElementById("faviconTag")
-    pictLight       = document.getElementById('pict-light').classList;
-    pictDark        = document.getElementById('pict-dark').classList;
-    bodyClass       = document.body.classList;
+    faviconTag      = document.getElementById("faviconTag")
+    // pictLight       = document.getElementById('pict-light');
+    // pictDark        = document.getElementById('pict-dark');
+    // imgLogo         = document.getElementById('logo');
+    bodyTag         = document.body;
 
     constructor() {
         this.current =  localStorage.getItem('color-scheme') || 
                         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 
                         'dark' : 
                         'light');
-        this.setMode()
+
+        this.setMode();
         this.modeToggleBtn.addEventListener('change', () => this.changeMode() );
     }
 
     setMode() {
         this.faviconTag.href = `favicon_${this.current}.svg`;
-        this.bodyClass.add(this.current);
-        (this.current == 'dark') ? 
-        this.pictLight.add('hidden') : 
-        this.pictDark.add('hidden');
+        // this.imgLogo.src = `../src/assets/icons/logo_${this.current}-mode.png`;
+        this.bodyTag.className = this.current;
     }
 
     changeMode() {
-        if (this.bodyClass.contains('dark')) {
+        if (this.bodyTag.classList.contains('dark')) {
             this.faviconTag.href = "favicon_light.svg";
-            this.bodyClass.remove('dark');
-            this.bodyClass.add('light');
-            this.pictLight.remove('hidden');
-            this.pictDark.add('hidden');
+            this.bodyTag.classList.remove('dark');
+            this.bodyTag.classList.add('light');
+            // this.imgLogo.src = `../src/assets/icons/logo_light-mode.png`;
+            // this.pictLight.classList.remove('hidden');
+            // this.pictDark.classList.add('hidden');
             localStorage.setItem('color-scheme', 'light');
         } else {
             this.faviconTag.href = "favicon_dark.svg";
-            this.bodyClass.remove('light');
-            this.bodyClass.add('dark');
-            this.pictDark.remove('hidden');
-            this.pictLight.add('hidden');
+            this.bodyTag.classList.remove('light');
+            this.bodyTag.classList.add('dark');
+            // this.imgLogo.src = `../src/assets/icons/logo_dark-mode.png`;
+            // this.pictDark.classList.remove('hidden');
+            // this.pictLight.classList.add('hidden');
             localStorage.setItem('color-scheme', 'dark');
         }
     }

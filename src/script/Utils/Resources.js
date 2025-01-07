@@ -8,13 +8,23 @@ export default class Resources {
         this.sources = sources_NL  :
         this.sources = sources_ENG ;
 
-        // console.log(this.sources);
-        // console.log(this.sources[this.arg]);
         if (this.sources && this.sources[this.arg]) {
             this.transcript = this.sources[this.arg]
         }
+        console.log(this.transcript || "failed");
+    }
 
-            console.log(this.transcript || "failed");
+    setInnerHTML(idName) {
+        try {
+            const htmlElement = document.getElementById(idName);
+            const text = this.transcript[idName];
+
+            if (htmlElement && text) {
+                htmlElement.innerHTML = text;
+            }
+        } catch (err) {
+            console.error(err.message);
+        }
     }
 }
 

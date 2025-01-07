@@ -13,8 +13,7 @@ Base font size, font families, line heights, etc. */
     font-optical-sizing: auto;
     font-style: normal;
 }
-
-*:not(h1, h2, h3, h4, h5, h6) {
+body {
     font-weight: 400;
     font-size: 16px; /* 1rem */
     /* size-chart rem-px
@@ -35,7 +34,17 @@ Base font size, font families, line heights, etc. */
     1.625rem = 26px
     1.750rem = 28px
     1.875rem = 30px
-    2.000rem = 32px */
+    2.000rem = 32px */ 
+}
+ul, li {
+    list-style-type: none;
+}
+a {
+    font-size: inherit;
+    text-decoration: none;
+}
+label {
+    font: inherit;
 }
 
 .font-family__source-sans-3 {
@@ -47,18 +56,15 @@ Base font size, font families, line heights, etc. */
 h1, h2, h3, h4, h5, h6,
 .font-family__sofia {
     font-family: var(--font-family__sofia);
+    text-transform: uppercase;
 }
 
-.font-weight__thin        { font-weight: 100; }
-.font-weight__extraLight  { font-weight: 200; }
-.font-weight__light       { font-weight: 300; }
-.font-weight__medium      { font-weight: 500; }
-.font-weight__semibold    { font-weight: 600; }
-.font-weight__bold        { font-weight: 700; }
-.font-weight__extraBold   { font-weight: 800; }
-.font-weight__black       { font-weight: 900; }
-
-.font-style__italic       { font-style: italic; }
+h1 { font-size: 6rem; } 
+h2 { font-size: 5rem; } 
+h3 { font-size: 4rem; } 
+h4 { font-size: 3rem; } 
+h5 { font-size: 2rem; } 
+h6 { font-size: 1rem; }
 
 
 /* Global layout styles: 
@@ -71,16 +77,75 @@ header and footer styles, general container widths, etc. */
 }
 
 .nav {
-    width: min(600px, 100vw);
+    width: min(500px, 100vw);
     margin-left: auto;
+    padding-left: 2rem;
+    padding-right: 10rem;
+    border-left: 1px solid var(--accent-primary);
 }
+.margin-block__3 {
+    margin-block: 3rem;
+}
+.margin-inline__1 {
+    margin-inline: 1rem;
+}
+
+/* header */
+.header {
+    height: 6rem;
+}
+.header_item {
+    align-self: end;
+}
+.header_logo {
+    padding-bottom: 0.7rem;
+    height: 100%;
+}
+.header_btn {
+    padding-bottom: 0.6rem;
+}
+
+/* footer */
+/* .footer {
+    outline: 1px red solid;
+    margin-top: 5rem;
+} */
+/* .link__back-to-top {
+    height: 2rem;
+    width: 10rem;
+} */
+
 
 /* Global colors: 
 Primary colors, background colors, text colors, etc. */
 
 body {
     background-color: var(--color-primary-background);
+}
+body, a, i {
     color: var(--color-primary);
+}
+
+a:hover {
+    text-decoration: underline 2px;
+}
+a:not(.link__back-to-top):hover {
+    text-decoration: underline 2px;
+    color: var(--accent-primary);
+}
+button:has(i) {
+    background-color: transparent;
+    border: none;
+}
+.color__white {
+    color: var(--color-secundary);
+}
+.color__grey {
+    color: var(--color-grey);
+}
+.color__grey:hover, 
+.color__white:hover {
+    color: var(--accent-secundary);
 }
 
 /* Utility classes: 
@@ -89,6 +154,13 @@ Global helper classes
 
 .hidden {
     display: none;
+}
+input[type="checkbox"] {
+    appearance: none;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* scrollbar */

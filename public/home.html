@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" id="faviconTag" href="favicon_dark.svg" sizes="16x16" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" 
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d66c3d9c5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../src/styles/mixins.css">
+    <link rel="stylesheet" href="../src/styles/global.css">
+    <link rel="stylesheet" href="../src/styles/breakpoints.css">
+    
+    <title>Sofie van der Meer</title>
+</head>
+<body id="top">
+    <header class="container flex" id="header">
+        <picture id="pict-dark">
+            <source srcset="../src/assets/icons/logo_dark_medium.svg" media="(min-width: 600px)">
+            <img src="../src/assets/icons/logo_dark_small.svg" alt="Logo Sofie van der Meer">
+        </picture>
+        <picture id="pict-light">
+            <source srcset="../src/assets/icons/logo_light_medium.svg" media="(min-width: 600px)">
+            <img src="../src/assets/icons/logo_light_small.svg" alt="Logo Sofie van der Meer">
+        </picture>
+        <p id="headername">voorbeeld</p>
+        <button id="openNav">
+            <i class="fa-solid fa-bars fa-2xl" aria-hidden="true"></i>
+        </button>
+    </header>
+   <main class="container" id="main">
+      
+      <h1>Hey there! This is just a title</h1>
+      <p>I am just a boring text, existing here solely for the purpose of this demo</p>
+      <p>And I am just another one like the one above me, because two is better than having only one</p>       
+      <section class="grid col_3">
+         <article class="card card-title">Lorem ipsum dolor sit amet.</article>
+         <article class="card card-title">Lorem ipsum dolor sit amet.</article>
+         <article class="card card-title">Lorem ipsum dolor sit amet.</article>
+      </section>
+      <section class="grid col_2">
+         <article class="card">Lorem ipsum dolor sit amet.</article>
+         <article class="card">Lorem ipsum dolor sit amet.</article>
+      </section>
+      <section class="flex flex-dir_column">
+         <article class="card fixed-width">Lorem ipsum dolor sit amet consectetur adipisicing elit.</article>
+         <article class="card flex-grow_1">Lorem ipsum, aperiam eius maiores. Ratione?</article>
+      </section>
+      
+   </main>
+   <nav class="nav" id="nav">
+      <ul>
+         <li><a href="home.html">home</a></li>
+         <li><a href="about.html">about</a></li>
+         <li><a href="projects.html">projects</a></li>
+         <li><a href="contact.html">contact</a></li>
+         <input type="checkbox" name="toggleDarkMode" id="toggleDarkMode">
+         <input type="range" name="toggleDarkMode" id="toggleDarkMode" min="0" max="1" step="1"> 
+     </ul>
+   </nav>
+   <footer class="container flex flex-dir_column" id="footer"></footer>
+   <script type="module" src="../src/script/script.js"></script>
+</body>

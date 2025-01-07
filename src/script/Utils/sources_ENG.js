@@ -118,7 +118,9 @@ export default {
             }        
         }
     },
-    projects: [
+    projects: {
+        headername:     "Project",
+        projectList:    [
         {        
             headername:   "Project",
             url:          "/src/components/pages/projects/prularia.html",
@@ -202,7 +204,7 @@ export default {
                 error:         "This project is currently under development and is expected to be published soon."
             }
         }
-    ],
+    ]} ,
     contact: {
             headername:   "Let's Talk",
             url:          "/src/components/pages/letstalk.html",

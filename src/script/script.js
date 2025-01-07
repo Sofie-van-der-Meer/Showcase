@@ -1,19 +1,25 @@
 import DarkMode from "./Utils/Darkmode"
 import Fetch from "./Utils/Fetch"
+import Modal from "./Utils/Modal";
 import Resources from "./Utils/Resources"
 
 
 class Script {
     constructor() {
+        // new Fetch("nav"); 
+        new Fetch("footer"); 
+        this.modal = new Modal();
+
         this.href = window.location.href;
         this.getPage();
         this.resources = new Resources(this.page);
-        
-        //new Fetch('common', 'header');
-        new Fetch('pages', this.page);
-        //new Fetch('common', 'footer');  
-        //this.darkmode = new DarkMode()
-        // console.log(this.resources.transcript);
+        this.resources.setInnerHTML('headername');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const darkMode = new DarkMode();
+            // darkMode.setMode();
+        })
+
     }
     getPage() {
         this.href.includes("about") ?
