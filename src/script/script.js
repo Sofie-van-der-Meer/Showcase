@@ -7,13 +7,13 @@ import Resources from "./Utils/Resources"
 class Script {
     constructor() {
         // new Fetch("nav"); 
-        new Fetch("footer"); 
+        // new Fetch("footer"); 
         this.modal = new Modal();
 
         this.href = window.location.href;
         this.getPage();
         this.resources = new Resources(this.page);
-        this.resources.setInnerHTML('headername');
+        this.resources.setInnerHTML();
 
         document.addEventListener('DOMContentLoaded', () => {
             const darkMode = new DarkMode();

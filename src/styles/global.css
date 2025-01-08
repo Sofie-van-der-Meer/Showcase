@@ -53,7 +53,7 @@ label {
 .font-family__source-serif-4 {
     font-family: var(--font-family__source-serif-4);
 }
-h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, /* h6, */
 .font-family__sofia {
     font-family: var(--font-family__sofia);
     text-transform: uppercase;
@@ -62,8 +62,8 @@ h1, h2, h3, h4, h5, h6,
 h1 { font-size: 6rem; } 
 h2 { font-size: 5rem; } 
 h3 { font-size: 4rem; } 
-h4 { font-size: 3rem; } 
-h5 { font-size: 2rem; } 
+h4 { font-size: 2rem; } 
+h5 { font-size: 1.5rem; } 
 h6 { font-size: 1rem; }
 
 
@@ -71,28 +71,20 @@ h6 { font-size: 1rem; }
 Styles that affect the layout of the whole page, such as body margins, 
 header and footer styles, general container widths, etc. */
 
-.container {
-    margin: 1rem auto 1rem auto;
-    width: min(71.2rem, calc(100vw - 4rem));
-}
 
 .nav {
-    width: min(500px, 100vw);
+    box-sizing: content-box;
+    width: 500px;
     margin-left: auto;
     padding-left: 2rem;
     padding-right: 10rem;
     border-left: 1px solid var(--accent-primary);
 }
-.margin-block__3 {
-    margin-block: 3rem;
-}
-.margin-inline__1 {
-    margin-inline: 1rem;
-}
+
 
 /* header */
 .header {
-    height: 6rem;
+    height: var(--header-height);
 }
 .header_item {
     align-self: end;
@@ -103,6 +95,22 @@ header and footer styles, general container widths, etc. */
 }
 .header_btn {
     padding-bottom: 0.6rem;
+}
+
+/* main */
+.landing {
+    height: calc(100svh - var(--header-height) - (2 * 1rem)) ;
+}
+
+
+/* card */
+.card {
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
+}
+.card-img {
+    max-height: 50svh;
+    max-width: 75%;
 }
 
 /* footer */
@@ -137,7 +145,7 @@ button:has(i) {
     background-color: transparent;
     border: none;
 }
-.color__white {
+.color__secundary {
     color: var(--color-secundary);
 }
 .color__grey {

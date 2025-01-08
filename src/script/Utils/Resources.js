@@ -14,16 +14,47 @@ export default class Resources {
         console.log(this.transcript || "failed");
     }
 
-    setInnerHTML(idName) {
+    setInnerHTML() {
         try {
-            const htmlElement = document.getElementById(idName);
-            const text = this.transcript[idName];
+            const headerElem = document.getElementById('headername');
+            const headerText = this.transcript['headername'];
+            console.log(headerText);
 
-            if (htmlElement && text) {
-                htmlElement.innerHTML = text;
+            this.transcript.sections.forEach(section => {
+                const sectionId = document.getElementById(section.id);
+                console.log(sectionId);
+
+                if (sectionId.children.length) {
+                    this.getChilderen(section.id, sectionId);
+                    console.log('---------------------------------------');
+                }
+            });
+
+            if (headerElem && headerText) {
+                headerElem.innerHTML = headerText;
             }
         } catch (err) {
             console.error(err.message);
+        }
+    }
+    getChilderen(sectionName, parent) { // (home_welkom, <section ...>)
+        for (const child of parent.children) {
+            const childName = child.classList[0];
+            console.log(childName); // card-img
+            if (childName.startsWith('card-')) {
+                const parentElem = document.getElementById(sectionName)
+                console.log(parentElem);
+                const childElem = parentElem.getElementsByClassName(childName);
+                console.log(childElem[0]);
+                // console.log(document.getElementById(sectionName).getElementsByClassName(childName));
+                // console.log(this.transcript[this.arg][sectionName][childName.slice(5)]);
+                // console.log(childName.slice(5));
+            }
+            console.log(childName);
+            
+            if (child.children.length) {
+                this.getChilderen(sectionName, child);
+            }
         }
     }
 }

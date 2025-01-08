@@ -5,45 +5,47 @@ export default {
         sections:     [
             {
                 id:           "Home_Welkom",
-                hrefImg:     "/src/assets/images/black-white.png",
+                img:     "/src/assets/images/black-white.png",
                 title:        "Hello I'm Sofie van der Meer",
                 description:  "Welcome to this platform, where you get a hint of my expertise and capabilities as a Junior Full-Stack Developer.",
+                textBtn:        "Let's talk",
                 urlBtn:      "/src/components/pages/letstalk.html"
             },
             {
                 id:           "Home_Introduction",
-                hrefImg:     "/src/assets/images/black-white.png",
+                img:     "/src/assets/images/black-white.png",
                 title:        "I'm Sofie",
                 subtitle:     "Creative Full-Stack developer",
                 description:  "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
+                textBtn:        "Get to know me",
                 urlBtn:      "/src/components/pages/about.html"
             },
             {
                 id:           "Home_Projects",
                 projects:     [
                     {
-                        hrefImg:     "/src/assets/images/prularia/prularia_logo.png",
+                        img:     "/src/assets/images/prularia/prularia_logo.png",
                         title:        "Prularia",
                         description:  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
                         languages:    ["JavaScript", "PHP", "CSS"],
-                        langatio:   [47, 39, 12],
+                        langratio:   [47, 39, 12],
                         library:      ["Bootstrap"],
                         urlBtn:      "/src/components/pages/projects/prularia.html"
                     },
                     {
-                        hrefImg:     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
+                        img:     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
                         title:        "Pizzaria",
                         description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
                         languages:    ["PHP", "CSS"],
-                        langatio:   [97, 3],
+                        langratio:   [97, 3],
                         urlBtn:      "/src/components/pages/projects/pizzaria.html"
                     },
                     {
-                        hrefImg:     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+                        img:     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
                         title:        "Bubbles in Color",
                         description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
                         languages:    ["JavaScript", "HTML", "CSS"],
-                        langatio:   [0, 0, 0],
+                        langratio:   [0, 0, 0],
                         library:      ["Three.js"],
                         urlBtn:      "/src/components/pages/projects/bubbles-in-color.html"
                     }
@@ -119,16 +121,16 @@ export default {
         }
     },
     projects: {
-        headername:     "Project",
+        headername:     "Projects",
         projectList:    [
         {        
             headername:   "Project",
             url:          "/src/components/pages/projects/prularia.html",
-            hrefImg:     "/src/assets/images/prularia/prularia_logo.png",
+            img:     "/src/assets/images/prularia/prularia_logo.png",
             title:        "Prularia",
             description:  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
             languages:    ["JavaScript", "PHP", "CSS"],
-            langatio:   [47, 39, 12],
+            langratio:   [47, 39, 12],
             library:      ["Bootstrap"],
             websiteType: "e-commerce",
             date:         "november 2024",
@@ -148,11 +150,11 @@ export default {
         {
             headername:   "Project",
             url:          "/src/components/pages/projects/pizzaria.html",
-            hrefImg:     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
+            img:     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
             title:        "Pizzaria",
             description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
             languages:    ["PHP", "CSS"],
-            langatio:   [97, 3],
+            langratio:   [97, 3],
             websiteType: "e-commerce",
             date:         "augustus 2024",
             urlBtn:      {
@@ -169,11 +171,11 @@ export default {
         {
             headername:   "Project",
             url:          "/src/components/pages/projects/bubbles-in-color.html",
-            hrefImg:     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+            img:     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
             title:        "Bubbles in Color",
             description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
             languages:    ["JavaScript", "HTML", "CSS"],
-            langatio:   [0, 0, 0],
+            langratio:   [0, 0, 0],
             library:      ["THREE.js"],
             websiteType: "game",
             date:         "januari 2025",
@@ -188,11 +190,11 @@ export default {
         {
             headername:   "Project",
             url:          "/src/components/pages/projects/treasure-hunt.html",
-            hrefImg:     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+            img:     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
             title:        "Treasure Hunt",
             description:  "In this exciting treasure hunt game, players embark on an adventurous quest to uncover hidden treasures.",
             languages:    ["JavaScript", "HTML", "CSS"],
-            langatio:   [0, 0, 0],
+            langratio:   [0, 0, 0],
             library:      ["THREE.js"],
             websiteType: "game",
             date:         "januari 2025",

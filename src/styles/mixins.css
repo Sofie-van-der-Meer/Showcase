@@ -1,6 +1,13 @@
 /*  CSS variables: 
     Defining reusable values for colors, margins, fonts, etc. */
 :root {
+
+    /* border */
+    --border-weight:    2.5px;
+
+    /* heights */
+    --header-height:    6rem;
+
     /* fonts */
     --font-family__source-sans-3: "Source Sans 3", serif;
     --font-family__source-serif-4:"Source Sans 4", serif;
@@ -22,37 +29,41 @@
     /* colors - use in global */
     --color-primary-background:     var(--very-light);
     --color-secundary-background:   var(--white);
-    --color-tertairy-background:    var(--light);
+    --color-tertiairy-background:    var(--light);
 
     --color-primary:    var(--very-dark);
     --color-secundary:  var(--dark);
-    --color-tertairy:   var(--black);
+    --color-tertiairy:   var(--black);
     --color-grey:       var(--grey-dark);
 
-    --accent-primary:   var(--accent-bright);
-    --accent-secundary: var(--accent-dark);
-    --accent-tertairy:  var(--accent-very-dark);            
+    --accent-primary:   var(--accent-dark);
+    --accent-secundary: var(--accent-bright);
+    --accent-tertiairy:  var(--accent-very-dark);            
     
     & .dark {
     --color-primary-background:     var(--black);
     --color-secundary-background:   var(--very-dark);
-    --color-tertairy-background:    var(--dark);
+    --color-tertiairy-background:    var(--dark);
 
     --color-primary:    var(--light);
     --color-secundary:  var(--very-light);
-    --color-tertairy:   var(--white);
+    --color-tertiairy:   var(--white);
     --color-grey:       var(--grey-dark);
 
     --accent-primary:   var(--accent-dark);
     --accent-secundary: var(--accent-very-dark);
-    --accent-tertairy:  var(--accent-bright);
+    --accent-tertiairy:  var(--accent-bright);
     }
+
 }
 
 /*  Flexbox or Grid helper classes: 
     Predefined flexbox or grid patterns. */
 .flex, .grid {
     gap: 1rem;
+}
+.gap__3 {
+    gap: 3rem;
 }
 
 .flex {
@@ -62,7 +73,7 @@
 }
 .flex__small {
     justify-content: left;
-    gap: 3rem;
+    flex-wrap: wrap;
 }
 .flex-grow_1 {
     flex-grow: 1;
@@ -87,6 +98,13 @@
         auto-fill, minmax(min(300px, 100%), 1fr));
 }
 
+.container {
+    /* margin: 1rem auto 1rem auto; */
+    margin-block: 1rem;
+    margin-inline: auto;
+    width: min(71.2rem, calc(100vw - 4rem));
+}
+
 
 /*  Typography mixins: 
     Reusable font sizes, line heights, etc. */
@@ -102,17 +120,41 @@
 
 .font-style__italic       { font-style: italic; }
 
+.margin-block__1 {
+    margin-block: 1rem;
+}
+.margin-top__1 {
+    margin-top: 1rem;
+}
+.margin-block__2 {
+    margin-block: 2rem;
+}
+.margin-block__3 {
+    margin-block: 3rem;
+}
+.margin-inline__1 {
+    margin-inline: 1rem;
+}
+.padding-block__3 {
+    padding-block: 3rem;
+}
+
+.color__accent-primary {
+    color: var(--accent-primary);
+}
+.color__accent-secundary {
+    color: var(--accent-secundary);
+}
+.color__accent-tertiairy {
+    color: var(--accent-tertiairy);
+}
 /*  Shadows, borders, gradients, etc.: 
     Reusable visual effects. */
 
 .border-devider {
-    border-right: 1px solid var(--accent-primary);
+    border-right: var(--border-weight) solid var(--accent-primary);
 }
 
-.card {
-    padding: 1rem;
-    border: 1px solid var(--color-primary);
-}
 
 .dialog {
     max-width: 100vw;

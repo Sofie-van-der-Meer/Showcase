@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" 
     rel="stylesheet">
     <script src="https://kit.fontawesome.com/6d66c3d9c5.js" crossorigin="anonymous"></script>
-
+    
     <link rel="stylesheet" href="../src/styles/mixins.css">
     <link rel="stylesheet" href="../src/styles/global.css">
     <link rel="stylesheet" href="../src/styles/breakpoints.css">
@@ -19,50 +19,203 @@
     <title>Sofie van der Meer</title>
 </head>
 <body id="top">
-    <header class="container flex" id="header">
-        <picture id="pict-dark">
-            <source srcset="../src/assets/icons/logo_dark_medium.svg" media="(min-width: 600px)">
-            <img src="../src/assets/icons/logo_dark_small.svg" alt="Logo Sofie van der Meer">
-        </picture>
-        <picture id="pict-light">
-            <source srcset="../src/assets/icons/logo_light_medium.svg" media="(min-width: 600px)">
-            <img src="../src/assets/icons/logo_light_small.svg" alt="Logo Sofie van der Meer">
-        </picture>
-        <p id="headername">voorbeeld</p>
-        <button id="openNav">
-            <i class="fa-solid fa-bars fa-2xl" aria-hidden="true"></i>
+    
+    <header class="header container flex" id="header">
+        <img class="header_item header_logo" id="logo" src="../src/assets/icons/logo.png" alt="Logo Sofie van der Meer">
+        <h4 class="header_item font-size__double font-weight__regular" id="headername"></h4>
+        <button class="header_item header_btn" id="showDialogNav">
+            <i class="fa-solid fa-bars fa-3x" aria-hidden="true"></i>
         </button>
     </header>
-   <main class="container" id="main">
-      
-      <h1>Hey there! This is just a title</h1>
-      <p>I am just a boring text, existing here solely for the purpose of this demo</p>
-      <p>And I am just another one like the one above me, because two is better than having only one</p>       
-      <section class="grid col_3">
-         <article class="card card-title">Lorem ipsum dolor sit amet.</article>
-         <article class="card card-title">Lorem ipsum dolor sit amet.</article>
-         <article class="card card-title">Lorem ipsum dolor sit amet.</article>
-      </section>
-      <section class="grid col_2">
-         <article class="card">Lorem ipsum dolor sit amet.</article>
-         <article class="card">Lorem ipsum dolor sit amet.</article>
-      </section>
-      <section class="flex flex-dir_column">
-         <article class="card fixed-width">Lorem ipsum dolor sit amet consectetur adipisicing elit.</article>
-         <article class="card flex-grow_1">Lorem ipsum, aperiam eius maiores. Ratione?</article>
-      </section>
-      
-   </main>
-   <nav class="nav" id="nav">
-      <ul>
-         <li><a href="home.html">home</a></li>
-         <li><a href="about.html">about</a></li>
-         <li><a href="projects.html">projects</a></li>
-         <li><a href="contact.html">contact</a></li>
-         <input type="checkbox" name="toggleDarkMode" id="toggleDarkMode">
-         <input type="range" name="toggleDarkMode" id="toggleDarkMode" min="0" max="1" step="1"> 
-     </ul>
-   </nav>
-   <footer class="container flex flex-dir_column" id="footer"></footer>
-   <script type="module" src="../src/script/script.js"></script>
+    
+    <dialog class="dialog dialogNav" id="dialogNav">
+        <header class="header container flex">
+            <img class="header_item header_logo" id="logo" 
+            src="../src/assets/icons/logo.png" alt="Logo Sofie van der Meer">
+            <button class="header_item header_btn" id="hideDialogNav">
+                <i class="fa-solid fa-xmark fa-3x" aria-hidden="true"></i>
+            </button>
+        </header>   
+        <nav class="nav" id="nav">
+            <h3 class="font-weight__extraLight">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </h3>
+            <h4 class="font-weight__extraLight margin-block__3">
+                <label class="color__grey" id="labelToggleLanguage" for="toggleLanguage">dutch</label>
+                <input type="checkbox" name="toggleLanguage" id="toggleLanguage">
+                <br>
+                <label class="color__grey" id="labelToggleDarkMode" for="toggleDarkMode"></label>
+                <input type="checkbox" name="toggleDarkMode" id="toggleDarkMode">
+            </h4>
+            <footer class="flex flex__small gap__3">
+                <a href="mailto:sofievandermeer@outlook.com" >
+                    <i class="fa-regular fa-envelope fa-3x color__secundary"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/Sofie-van-der-Meer" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-3x color__secundary"></i>
+                </a>
+                <a href="https://www.github.com/Sofie-van-der-Meer" target="_blank">
+                    <i class="fa-brands fa-github fa-3x color__secundary"></i>
+                </a>
+            </footer> 
+        </nav>       
+    </dialog>
+    
+    <main class="container" id="main">
+
+        <section id="Home_Welkom" class="home-Welkom card flex flex-dir_column landing">
+            <img src="../src/assets/images/black-white.jpg" 
+            alt="black and white photo of Sofie van der Meer" class="card-img">
+            <section class="card-content">
+                <h2 class="card-title">Lorem ipsum dolor.</h2>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nesciunt.</p>
+                <button class="card-btn">
+                    <a class="card-urlBtn color__accent-tertiairy" href="contact.html">
+                        default
+                    </a>
+                </button>                
+            </section>
+        </section>
+
+        <section id="Home_Introduction" class="home-Introduction card">
+            <section class="card-content">
+                <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam.</p>
+                <button class="card-btn">
+                    <a class="card-urlBtn color__accent-tertiairy" href="about.html">
+                        default
+                    </a>
+                </button>
+            </section>
+        </section>
+
+        <section id="Home_Projects" class="home-Projects grid col_3">
+            <section class="card">
+                <img class="card-img" src="../src/assets/images/prularia/prularia_logo.png" alt="">
+                <section class="card-content">
+                    <h2 class="card-title">title</h2>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="card-languages">PHP JS HTML</p>
+                    <p class="card-langratio">90 4 6</p>
+                    <p class="card-library">Bootstrap</p>
+                    <button class="card-btn">
+                        <a class="card-urlBtn" href="">
+                            default
+                        </a>
+                    </button>                
+                </section>                
+            </section>
+
+            <section class="card">
+                <img class="card-img" src="../src/assets/images/Three.js_Icon.svg.png" alt="">
+                <section class="card-content">
+                    <h2 class="card-title">title</h2>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="card-languages">PHP JS HTML</p>
+                    <p class="card-langratio">90 4 6</p>
+                    <p class="card-library">Bootstrap</p>
+                    <button class="card-btn">
+                        <a class="card-urlBtn" href="">
+                            default
+                        </a>
+                    </button>                
+                </section>                
+            </section>
+
+            <section class="card">
+                <img class="card-img" src="" alt="">
+                <section class="card-content">
+                    <h2 class="card-title">title</h2>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="card-languages">PHP JS HTML</p>
+                    <p class="card-langratio">90 4 6</p>
+                    <p class="card-library">Bootstrap</p>
+                    <button class="card-btn">
+                        <a class="card-urlBtn" href="">
+                            default
+                        </a>
+                    </button>                
+                </section>                
+            </section>
+
+        </section>
+        
+        <section class="grid col_3">
+            <article class="card card-title">Lorem ipsum dolor sit amet.</article>
+            <article class="card card-title">Lorem ipsum dolor sit amet.</article>
+            <article class="card card-title">Lorem ipsum dolor sit amet.</article>
+        </section>
+        <section class="grid col_2">
+            <article class="card">Lorem ipsum dolor sit amet.</article>
+            <article class="card">Lorem ipsum dolor sit amet.</article>
+        </section>
+        <section class="flex flex-dir_column">
+            <article class="card fixed-width">Lorem ipsum dolor sit amet consectetur adipisicing elit.</article>
+            <article class="card flex-grow_1">Lorem ipsum, aperiam eius maiores. Ratione?</article>
+        </section>
+        
+    </main>
+    
+    
+    <aside class="container text-center padding-block__3">
+        <a href="#" target="_top" class="link__back-to-top margin-block__3">
+            <i class="fa-solid fa-arrow-up fa-lg margin-inline__1"></i>
+            back to top
+        </a>
+    </aside>
+    
+    <footer class="footer container flex flex-dir_column margin-block__3 gap__3 gap__mobile" id="footer">
+        <section class="flex-grow_1 border-devider">
+            <h2 class=" font-weight__regular color__accent-primary">
+                Sofie van  der Meer
+            </h2>
+        </section>
+        <section class="flex-grow_2">
+            <h5 class="font-weight__light">
+                <ul class="flex flex__small">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </h5>
+            <h6 class="font-weight__light margin-top__1">
+                Copyright &copy; 2025 Sofie-van-der-Meer
+            </h6>
+        </section>
+        <section class="flex-grow_1">
+            <ul class="flex">
+                <li>
+                    <a href="mailto:sofievandermeer@outlook.com" >
+                        <i class="fa-regular fa-envelope fa-xl color__secundary"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/Sofie-van-der-Meer" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-xl color__secundary"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/Sofie-van-der-Meer" target="_blank">
+                        <i class="fa-brands fa-github fa-xl color__secundary"></i>
+                    </a>
+                </li>
+            </ul> 
+            <h6 class="font-weight__light margin-top__1">  
+                <a class="color__accent-tertiairy" href="contact.html">
+                    Let's talk!
+                </a>
+            </h6>
+        </section>
+    </footer>
+    
+    <script type="module" src="../src/script/script.js"></script>
 </body>
+</html> 
+
