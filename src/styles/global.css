@@ -97,12 +97,6 @@ header and footer styles, general container widths, etc. */
     padding-bottom: 0.6rem;
 }
 
-/* main */
-.landing {
-    height: calc(100svh - var(--header-height) - (2 * 1rem)) ;
-}
-
-
 /* card */
 .card {
     padding: 1rem;
@@ -112,6 +106,32 @@ header and footer styles, general container widths, etc. */
     max-height: 50svh;
     max-width: 75%;
 }
+
+/* main */
+.landing {
+    position: relative;
+}
+
+.landing_section {
+    height: calc(100svh - var(--header-height) - (2 * 1rem)) ;
+    margin-left: 40%;
+}
+.landing__padding-top {
+    padding-top: 10svh;
+}
+
+.fixed {
+    position: fixed;
+    /* inset: 10px 20px 30px 40px; */
+    /* top: calc(var(--header-height) + (2 * 1rem)); */
+    z-index: -1;
+    /* margin-top: calc(var(--header-height) + (2 * 1rem)); ; */
+    margin-bottom: 50svh;
+    
+}
+
+
+
 
 /* footer */
 /* .footer {
@@ -127,7 +147,7 @@ header and footer styles, general container widths, etc. */
 /* Global colors: 
 Primary colors, background colors, text colors, etc. */
 
-body {
+body, .wrapper {
     background-color: var(--color-primary-background);
 }
 body, a, i {

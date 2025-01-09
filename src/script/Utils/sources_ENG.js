@@ -5,49 +5,49 @@ export default {
         sections:     [
             {
                 id:           "Home_Welkom",
-                img:     "/src/assets/images/black-white.png",
+                img:          "../src/assets/images/black-white.jpg",
                 title:        "Hello I'm Sofie van der Meer",
                 description:  "Welcome to this platform, where you get a hint of my expertise and capabilities as a Junior Full-Stack Developer.",
                 textBtn:        "Let's talk",
-                urlBtn:      "/src/components/pages/letstalk.html"
+                urlBtn:      "../src/components/pages/letstalk.html"
             },
             {
                 id:           "Home_Introduction",
-                img:     "/src/assets/images/black-white.png",
+                img:          "../src/assets/images/black-white.jpg",
                 title:        "I'm Sofie",
                 subtitle:     "Creative Full-Stack developer",
                 description:  "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
                 textBtn:        "Get to know me",
-                urlBtn:      "/src/components/pages/about.html"
+                urlBtn:      "../src/components/pages/about.html"
             },
             {
                 id:           "Home_Projects",
                 projects:     [
                     {
-                        img:     "/src/assets/images/prularia/prularia_logo.png",
+                        img:          "../src/assets/images/prularia/prularia_logo.png",
                         title:        "Prularia",
                         description:  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
                         languages:    ["JavaScript", "PHP", "CSS"],
-                        langratio:   [47, 39, 12],
+                        langratio:    [47, 39, 12],
                         library:      ["Bootstrap"],
-                        urlBtn:      "/src/components/pages/projects/prularia.html"
+                        urlBtn:      "../src/components/pages/projects/prularia.html"
                     },
                     {
-                        img:     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
+                        img:          "../src/assets/icons/pizza.svg",
                         title:        "Pizzaria",
                         description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
                         languages:    ["PHP", "CSS"],
-                        langratio:   [97, 3],
-                        urlBtn:      "/src/components/pages/projects/pizzaria.html"
+                        langratio:    [97, 3],
+                        urlBtn:       "../src/components/pages/projects/pizzaria.html"
                     },
                     {
-                        img:     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+                        img:          "../src/assets/icons/ellipsis.svg",
                         title:        "Bubbles in Color",
                         description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
                         languages:    ["JavaScript", "HTML", "CSS"],
-                        langratio:   [0, 0, 0],
+                        langratio:    [0, 0, 0],
                         library:      ["Three.js"],
-                        urlBtn:      "/src/components/pages/projects/bubbles-in-color.html"
+                        urlBtn:       "../src/components/pages/projects/bubbles-in-color.html"
                     }
                 ]
             }
@@ -55,7 +55,7 @@ export default {
     },
     about: {
         headername:       "About Me",
-        url:              "/src/components/pages/about.html",
+        url:              "../src/components/pages/about.html",
         sections:         {
             Contact:          {
                 email:        "sofievandermeer@outlook.com",
@@ -125,8 +125,8 @@ export default {
         projectList:    [
         {        
             headername:   "Project",
-            url:          "/src/components/pages/projects/prularia.html",
-            img:     "/src/assets/images/prularia/prularia_logo.png",
+            url:          "../src/components/pages/projects/prularia.html",
+            img:          "../src/assets/images/prularia/prularia_logo.png",
             title:        "Prularia",
             description:  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
             languages:    ["JavaScript", "PHP", "CSS"],
@@ -149,8 +149,8 @@ export default {
         },
         {
             headername:   "Project",
-            url:          "/src/components/pages/projects/pizzaria.html",
-            img:     "<i class='fa-solid fa-pizza-slice fa-lg'></i>",
+            url:          "../src/components/pages/projects/pizzaria.html",
+            img:          "../src/assets/icons/pizza.svg",
             title:        "Pizzaria",
             description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
             languages:    ["PHP", "CSS"],
@@ -170,8 +170,8 @@ export default {
         },
         {
             headername:   "Project",
-            url:          "/src/components/pages/projects/bubbles-in-color.html",
-            img:     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+            url:          "../src/components/pages/projects/bubbles-in-color.html",
+            img:          "../src/assets/icons/ellipsis.svg",
             title:        "Bubbles in Color",
             description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
             languages:    ["JavaScript", "HTML", "CSS"],
@@ -189,8 +189,8 @@ export default {
         },
         {
             headername:   "Project",
-            url:          "/src/components/pages/projects/treasure-hunt.html",
-            img:     "<i class='fa-solid fa-ellipsis-vertical fa-lg'></i>",
+            url:          "../src/components/pages/projects/treasure-hunt.html",
+            img:          "../src/assets/icons/ellipsis.svg",
             title:        "Treasure Hunt",
             description:  "In this exciting treasure hunt game, players embark on an adventurous quest to uncover hidden treasures.",
             languages:    ["JavaScript", "HTML", "CSS"],
@@ -209,7 +209,7 @@ export default {
     ]} ,
     contact: {
             headername:   "Let's Talk",
-            url:          "/src/components/pages/letstalk.html",
+            url:          "../src/components/pages/letstalk.html",
             title:        "Let's Talk",
             subtitle:     [
                 "Fill in the form below, or reach out to me directly", 

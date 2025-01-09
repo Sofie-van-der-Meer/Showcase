@@ -7,73 +7,101 @@ export default class Resources {
         (window.location.href.includes("#nl") ) ? 
         this.sources = sources_NL  :
         this.sources = sources_ENG ;
-
+        
         if (this.sources && this.sources[this.arg]) {
             this.transcript = this.sources[this.arg]
         }
-        console.log(this.transcript || "failed");
+        // console.log(this.transcript || "failed");
     }
-
+    
     setInnerHTML() {
         try {
             const headerElem = document.getElementById('headername');
             const headerText = this.transcript['headername'];
-            console.log(headerText);
-
-            this.transcript.sections.forEach(section => {
-                const sectionId = document.getElementById(section.id);
-                console.log(sectionId);
-
-                if (sectionId.children.length) {
-                    this.getChilderen(section.id, sectionId);
-                    console.log('---------------------------------------');
-                }
-            });
 
             if (headerElem && headerText) {
                 headerElem.innerHTML = headerText;
             }
+
+            const sections = this.transcript.sections;
+            
+            for (let i = 0; i < sections.length; i++) { 
+                const headSection = sections[i];
+                const sectionId = document.getElementById(headSection.id);
+                
+                if (sectionId.children.length) {
+                    const arrResources = Object.entries(headSection);
+                    
+                    this.loopChilderen(sectionId, arrResources);
+                }
+            }
+
         } catch (err) {
-            console.error(err.message);
+            console.error(err.stack);
         }
     }
-    getChilderen(sectionName, parent) { // (home_welkom, <section ...>)
+    loopChilderen(parent, arrResources) {
+        
         for (const child of parent.children) {
-            const childName = child.classList[0];
-            console.log(childName); // card-img
-            if (childName.startsWith('card-')) {
-                const parentElem = document.getElementById(sectionName)
-                console.log(parentElem);
-                const childElem = parentElem.getElementsByClassName(childName);
-                console.log(childElem[0]);
-                // console.log(document.getElementById(sectionName).getElementsByClassName(childName));
-                // console.log(this.transcript[this.arg][sectionName][childName.slice(5)]);
-                // console.log(childName.slice(5));
+            let childName;
+            const childClassName = child.classList[0];
+
+            if (childClassName == 'card-group') {
+                this.loopCardGroup(child, arrResources)  
             }
-            console.log(childName);
-            
-            if (child.children.length) {
-                this.getChilderen(sectionName, child);
+
+            if (   childClassName == 'card-content' 
+                || childClassName == 'card' 
+                || child.children.length ) {
+                this.loopChilderen(child, arrResources) 
             }
+
+            if (childClassName.startsWith('card-')) {
+                childName = childClassName.slice(5) 
+            }
+
+            if (childName) {
+                this.setInnerHTMLOfChild(parent, childClassName, arrResources, childName);
+            } 
+        }
+    }
+    loopCardGroup(parent, arrResources) {
+
+        const children = parent.getElementsByClassName('card');
+        const subArrResources = [];
+
+        arrResources.forEach(element => {
+
+            if (element[0] == 'projects') {
+                element[1].forEach(element => subArrResources.push(Object.entries(element)));
+            }
+        })
+
+        for (let i = 0; i < children.length; i++) {
+            this.loopChilderen(children[i], subArrResources[i]);
+        }
+    }
+    setInnerHTMLOfChild(parent, childClassName, arrResources, childName) {
+        let childHtml = parent.getElementsByClassName(childClassName)[0];
+        let arrResourcesHasTextBtn = false;
+
+        arrResources.forEach(element => {
+
+            if (element[0] == 'textBtn') arrResourcesHasTextBtn = true;
+
+            if ((childName == element[0]) && (childName == 'img')) 
+                { childHtml.src = element[1] };
+
+            if ((childName == element[0]) && (childName == 'urlBtn')) 
+                { childHtml.href = element[1] };
+
+            if ((childName == element[0] && element[0] !== 'urlBtn') 
+                || (childName == 'urlBtn' && element[0] == 'textBtn')) 
+                { childHtml.innerHTML = element[1] };
+
+        })
+        if (!arrResourcesHasTextBtn && (parent.classList[0] == 'card-btn' && childName == 'urlBtn') ) {
+            childHtml.innerHTML = 'Get more info'; 
         }
     }
 }
-
-// object key == idNaam => innertext = value
-
-// // https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON
-
-// async function populate() {
-//     const requestURL = "../src/script/Utils/text_ENG.json";
-//     const request = new Request(requestURL);
-//     const response = await fetch(request);
-//     const text = await response.json();
-    
-//     const cardlist = document.getElementsByClassName('card-title');
-//     for (let i = 0; i < cardlist.length; i++) {
-//         const card = cardlist[i];
-//         card.textContent = text.projects[i].title
-        
-//     }
-// }
-// populate()

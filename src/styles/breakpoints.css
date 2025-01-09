@@ -28,6 +28,14 @@
     .gap__mobile {
         gap: 5rem;
     }
+    .landing_section {
+        margin-left: 0;
+    }
+    .fixed {
+        left: 0;
+        width: 60%;
+    }
+
 }
 @media screen and (max-width: 1000px) {
     .nav {
