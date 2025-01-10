@@ -4,21 +4,21 @@ export default {
         url:          "index.html",
         sections:     [
             {
-                id:           "Home_Welkom",
-                img:          "../src/assets/images/black-white.jpg",
-                title:        "Hello I'm Sofie van der Meer",
-                description:  "Welcome to this platform, where you get a hint of my expertise and capabilities as a Junior Full-Stack Developer.",
-                textBtn:        "Let's talk",
-                urlBtn:      "../src/components/pages/letstalk.html"
+                id:             "Home_Welkom",
+                img:            "../src/assets/images/black-white.jpg",
+                title:          "Hello I'm Sofie van der Meer",
+                description:    "Welcome to this platform, where you get a hint of my expertise and capabilities as a Junior Full-Stack Developer.",
+                textBtn:        "Contact me",
+                urlBtn:         "/public/contact.html"
             },
             {
-                id:           "Home_Introduction",
-                img:          "../src/assets/images/black-white.jpg",
-                title:        "I'm Sofie",
-                subtitle:     "Creative Full-Stack developer",
-                description:  "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
+                id:             "Home_Introduction",
+                img:            "../src/assets/images/black-white.jpg",
+                title:          "I'm Sofie",
+                subtitle:       "Creative Full-Stack developer",
+                description:    "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
                 textBtn:        "Get to know me",
-                urlBtn:      "../src/components/pages/about.html"
+                urlBtn:         "/public/about.html"
             },
             {
                 id:           "Home_Projects",
@@ -38,7 +38,7 @@ export default {
                         description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
                         languages:    ["PHP", "CSS"],
                         langratio:    [97, 3],
-                        urlBtn:       "../src/components/pages/projects/pizzaria.html"
+                        urlBtn:       "/public/projects/pizzaria.html"
                     },
                     {
                         img:          "../src/assets/icons/ellipsis.svg",
@@ -47,7 +47,7 @@ export default {
                         languages:    ["JavaScript", "HTML", "CSS"],
                         langratio:    [0, 0, 0],
                         library:      ["Three.js"],
-                        urlBtn:       "../src/components/pages/projects/bubbles-in-color.html"
+                        urlBtn:       "/public/projects/bubbles-in-color.html"
                     }
                 ]
             }
@@ -55,7 +55,7 @@ export default {
     },
     about: {
         headername:       "About Me",
-        url:              "../src/components/pages/about.html",
+        url:              "/public/about.html",
         sections:         {
             Contact:          {
                 email:        "sofievandermeer@outlook.com",
@@ -117,6 +117,10 @@ export default {
             Other_Details:    {
                 availability:         "Available from 1st March 2025, open to internship/IBO.",
                 Related_Interests:    ["Virtual Realty", "2D & 3D Visuals"]
+            },
+            CV: {
+                urlBtn: "CV_Sofie-van-der-Meer_ENG.pdf",
+                urlText: "Download my CV"
             }        
         }
     },
@@ -125,7 +129,7 @@ export default {
         projectList:    [
         {        
             headername:   "Project",
-            url:          "../src/components/pages/projects/prularia.html",
+            url:          "/public/projects/project.html/#prularia",
             img:          "../src/assets/images/prularia/prularia_logo.png",
             title:        "Prularia",
             description:  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
@@ -149,7 +153,7 @@ export default {
         },
         {
             headername:   "Project",
-            url:          "../src/components/pages/projects/pizzaria.html",
+            url:          "/public/projects/project/#pizzaria",
             img:          "../src/assets/icons/pizza.svg",
             title:        "Pizzaria",
             description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
@@ -170,7 +174,7 @@ export default {
         },
         {
             headername:   "Project",
-            url:          "../src/components/pages/projects/bubbles-in-color.html",
+            url:          "/public/projects/project/#bubbles-in-color",
             img:          "../src/assets/icons/ellipsis.svg",
             title:        "Bubbles in Color",
             description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
@@ -188,28 +192,28 @@ export default {
             }
         },
         {
-            headername:   "Project",
-            url:          "../src/components/pages/projects/treasure-hunt.html",
-            img:          "../src/assets/icons/ellipsis.svg",
-            title:        "Treasure Hunt",
-            description:  "In this exciting treasure hunt game, players embark on an adventurous quest to uncover hidden treasures.",
-            languages:    ["JavaScript", "HTML", "CSS"],
-            langratio:   [0, 0, 0],
-            library:      ["THREE.js"],
-            websiteType: "game",
-            date:         "januari 2025",
-            urlBtn:      {
-                live:     "url go live",
-                github:   "https://github.com/Sofie-van-der-Meer/Treasure-Hunt"
+            headername:    "Project",
+            url:           "/public/projects/project/#treasure-hunt",
+            img:           "../src/assets/icons/ellipsis.svg",
+            title:         "Treasure Hunt",
+            description:   "In this exciting treasure hunt game, players embark on an adventurous quest to uncover hidden treasures.",
+            languages:     ["JavaScript", "HTML", "CSS"],
+            langratio:     [0, 0, 0],
+            library:       ["THREE.js"],
+            websiteType:   "game",
+            date:          "januari 2025",
+            urlBtn:        {
+                live:      "url go live",
+                github:    "https://github.com/Sofie-van-der-Meer/Treasure-Hunt"
             },
-            sections:     {
-                error:         "This project is currently under development and is expected to be published soon."
+            sections:      {
+                error:     "This project is currently under development and is expected to be published soon."
             }
         }
     ]} ,
     contact: {
-            headername:   "Let's Talk",
-            url:          "../src/components/pages/letstalk.html",
+            headername:   "Contact me",
+            url:          "/public/contact.html",
             title:        "Let's Talk",
             subtitle:     [
                 "Fill in the form below, or reach out to me directly", 
