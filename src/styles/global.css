@@ -46,6 +46,10 @@ a {
 label {
     font: inherit;
 }
+.font-size__double {
+    font-size: 1.5em;
+    font-weight: 300;
+}
 
 .font-family__source-sans-3 {
     font-family: var(--font-family__source-sans-3);
@@ -99,20 +103,66 @@ header and footer styles, general container widths, etc. */
 
 /* card */
 .card {
-    padding: 1rem;
-    border: 1px solid var(--color-primary);
-}
-.card-img {
-    max-height: 50svh;
-    max-width: 75%;
+    /* padding: 1rem; */
+    outline: 1px solid var(--color-primary);
 }
 
+.card-img {
+    width: 40%;
+}
+
+.card-title {
+    white-space-collapse: preserve-breaks;
+}
+.card-subtitle {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+.card-languages::first-letter,
+.card-library::first-letter {
+    text-transform: uppercase;
+}
+.card-btn:not(.card-group .card-btn) {
+    margin: 1rem 0 0 2rem;
+}
+.card-group {
+    width: 100%;
+    .card {
+        padding: 1rem;
+        outline: none;
+        text-align: center;
+        border-radius: 50px;
+        background: linear-gradient(145deg, 
+        var(--color-secundary-background), 
+        var(--color-primary-background));
+    }
+    .card-img {
+        height: 10rem;
+        width: auto;
+        display: block;
+        margin-inline: auto;
+    }
+}
+
+
+
 /* main */
+.full-height {
+    min-height: calc(100svh - var(--header-height) - (2 * 1rem));
+    /* outline: 1px white solid; */
+}
+.three-quarters-width {
+    width: 75%;
+}
+.half-width {
+    width: 50%;
+}
 .landing {
     position: relative;
 }
 
-.landing_section {
+.landing_section{
     height: calc(100svh - var(--header-height) - (2 * 1rem)) ;
     margin-left: 40%;
 }
@@ -127,8 +177,8 @@ header and footer styles, general container widths, etc. */
     z-index: -1;
     /* margin-top: calc(var(--header-height) + (2 * 1rem)); ; */
     margin-bottom: 50svh;
-    
 }
+
 
 
 
@@ -143,6 +193,13 @@ header and footer styles, general container widths, etc. */
     width: 10rem;
 } */
 
+button {
+    background-color: var(--color-secundary-background);
+    border: 0 solid transparent;
+    padding: 0.2rem 0.4rem;
+    border-radius: 1rem;
+    font-weight: 600;
+}
 
 /* Global colors: 
 Primary colors, background colors, text colors, etc. */
@@ -153,13 +210,11 @@ body, .wrapper {
 body, a, i {
     color: var(--color-primary);
 }
-
-a:hover {
-    text-decoration: underline 2px;
+button:has(a:hover) {
+    background-color: var(--color-tertiairy-background);
 }
-a:not(.link__back-to-top):hover {
-    text-decoration: underline 2px;
-    color: var(--accent-primary);
+a:hover {
+    text-decoration: underline 1px;
 }
 button:has(i) {
     background-color: transparent;

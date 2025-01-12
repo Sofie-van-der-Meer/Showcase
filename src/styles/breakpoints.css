@@ -35,6 +35,9 @@
         left: 0;
         width: 60%;
     }
+    .card-content {
+        width: 100%;
+    }
 
 }
 @media screen and (max-width: 1000px) {

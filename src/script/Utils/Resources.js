@@ -85,21 +85,41 @@ export default class Resources {
         let childHtml = parent.getElementsByClassName(childClassName)[0];
         let arrResourcesHasTextBtn = false;
 
-        arrResources.forEach(element => {
+        for (let i = 0; i < arrResources.length; i++) {
+            const resourceKey = arrResources[i][0];
+            const resourceValue = arrResources[i][1];
 
-            if (element[0] == 'textBtn') arrResourcesHasTextBtn = true;
+            if (resourceKey == 'textBtn') {
+                arrResourcesHasTextBtn = true;
+                if (childName == 'urlBtn') childHtml.innerHTML = resourceValue;
+            };
 
-            if ((childName == element[0]) && (childName == 'img')) 
-                { childHtml.src = element[1] };
+            if (childName !== resourceKey) continue;
 
-            if ((childName == element[0]) && (childName == 'urlBtn')) 
-                { childHtml.href = element[1] };
+            switch (childName) {
+                case 'img':
+                    childHtml.src = resourceValue;
+                    break;
+            
+                case 'urlBtn':
+                    childHtml.href = resourceValue;
+                    break;
+            
+                case 'languages':
+                case 'library':
+                    childHtml.innerHTML = `${resourceKey}: <br> ${resourceValue.join(', ')}`;
+                    break;
 
-            if ((childName == element[0] && element[0] !== 'urlBtn') 
-                || (childName == 'urlBtn' && element[0] == 'textBtn')) 
-                { childHtml.innerHTML = element[1] };
+                case 'langratio':
+                    childHtml.innerHTML =  resourceValue.join('% - ') + '%';
+                    break;
+            
+                default:
+                    childHtml.innerHTML = resourceValue;
+                    break;
+            }
+        }
 
-        })
         if (!arrResourcesHasTextBtn && (parent.classList[0] == 'card-btn' && childName == 'urlBtn') ) {
             childHtml.innerHTML = 'Get more info'; 
         }

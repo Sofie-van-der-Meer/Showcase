@@ -6,7 +6,7 @@ export default {
             {
                 id:             "Home_Welkom",
                 img:            "../src/assets/images/black-white.jpg",
-                title:          "Hello I'm Sofie van der Meer",
+                title:          "Hello I'm \n Sofie van der Meer",
                 description:    "Welcome to this platform, where you get a hint of my expertise and capabilities as a Junior Full-Stack Developer.",
                 textBtn:        "Contact me",
                 urlBtn:         "/public/contact.html"
@@ -15,7 +15,7 @@ export default {
                 id:             "Home_Introduction",
                 img:            "../src/assets/images/black-white.jpg",
                 title:          "I'm Sofie",
-                subtitle:       "Creative Full-Stack developer",
+                subtitle:       "- Creative Full-Stack developer -",
                 description:    "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
                 textBtn:        "Get to know me",
                 urlBtn:         "/public/about.html"
