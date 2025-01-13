@@ -10,9 +10,10 @@ class Script {
         // new Fetch("footer"); 
         this.modal = new Modal();
 
-        this.href = window.location.href;
+        this.location = window.location;
         this.getPage();
-        this.resources = new Resources(this.page);
+        this.getHash();
+        this.resources = new Resources(this.page, this.hash);
         this.resources.setInnerHTML();
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -22,13 +23,16 @@ class Script {
 
     }
     getPage() {
-        this.href.includes("about") ?
+        this.location.href.includes("about") ?
         this.page = "about" :
-        this.href.includes("projects") ?
+        this.location.href.includes("project") ?
         this.page = "projects" :
-        this.href.includes("contact") ?
+        this.location.href.includes("contact") ?
         this.page = "contact" :
         this.page = "home";
+    }
+    getHash() {
+        if (this.location.hash) this.hash = this.location.hash;
     }
 }
 

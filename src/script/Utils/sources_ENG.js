@@ -30,7 +30,7 @@ export default {
                         languages:    ["JavaScript", "PHP", "CSS"],
                         langratio:    [47, 39, 12],
                         library:      ["Bootstrap"],
-                        urlBtn:      "../src/components/pages/projects/prularia.html"
+                        urlBtn:      "/showcase/public/projects/project.html#prularia"
                     },
                     {
                         img:          "../src/assets/icons/pizza.svg",
@@ -38,7 +38,7 @@ export default {
                         description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
                         languages:    ["PHP", "CSS"],
                         langratio:    [97, 3],
-                        urlBtn:       "/public/projects/pizzaria.html"
+                        urlBtn:       "/showcase/public/projects/project.html#pizzaria"
                     },
                     {
                         img:          "../src/assets/icons/ellipsis.svg",
@@ -47,7 +47,7 @@ export default {
                         languages:    ["JavaScript", "HTML", "CSS"],
                         langratio:    [0, 0, 0],
                         library:      ["Three.js"],
-                        urlBtn:       "/public/projects/bubbles-in-color.html"
+                        urlBtn:       "/showcase/public/projects/project.html#bubbles-in-color"
                     }
                 ]
             }
@@ -126,91 +126,116 @@ export default {
     },
     projects: {
         headername:     "Projects",
-        projectList:    [
-        {        
-            headername:   "Project",
-            url:          "/public/projects/project.html/#prularia",
-            img:          "../src/assets/images/prularia/prularia_logo.png",
-            title:        "Prularia",
-            description:  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
-            languages:    ["JavaScript", "PHP", "CSS"],
-            langratio:   [47, 39, 12],
-            library:      ["Bootstrap"],
-            websiteType: "e-commerce",
-            date:         "november 2024",
-            urlBtn:      {
-                live:     "url go live",
-                github:   "https://github.com/Sofie-van-der-Meer/Prularia"
+        hashProjects:    {
+            'prularia':         {
+                headername:     "Project",
+                url:            "/showcase/public/projects/project.html#prularia",
+                sections:       [
+                    {
+                        id:             "Project_Top",
+                        websiteType:    "e-commerce",
+                        img:            "../../src/assets/images/prularia/prularia_logo.png",
+                        title:          "Prularia",
+                        languages:      ["JavaScript", "PHP", "CSS"],
+                        library:        ["Bootstrap"],
+                        date:           "november 2024",
+                    },
+                    {
+                        id:             "Project_Content",
+                        
+                        introduction:   "Developing a webshop for a client provided a unique opportunity to apply the Scrum Agile methodology in practice. Together with eight other student developers from across Flanders, we worked on this project, where we not only enhanced our technical skills but also learned how to collaborate effectively as a team. The challenge was not only about building the webshop, but also understanding and applying the Scrum approach.",
+                        challenges:     "We faced the challenge of developing a functional and user-friendly webshop within a limited timeframe. Visitors needed to easily browse products and add them to their shopping cart without the requirement to log in. We developed separate pages for customer registration, login, and order placement. Additionally, we ensured that the webshop complied with GDPR requirements, which meant implementing secure password encryption and obtaining explicit consent for cookie usage. Furthermore, we set priorities for each sprint, as the available time was limited.",
+                        result:         "The project resulted in a functional webshop. The first two sprints delivered a working webshop, where customers could browse products, add them to their cart, and place orders. We implemented the core functionalities, such as order placement, and refined both the visual and functional aspects of the webshop. With more time, we would have developed product pages with additional information, profile management, and order status tracking in the third sprint. /n Throughout the process, we actively utilized the Scrum methodology, with daily stand-up meetings and the Scrum board to track progress. We worked as a close-knit team, made joint decisions, and supported each other as needed.",
+                        what_the_scrum_coach_says:    
+                                        "“Sofie was always actively engaged during meetings. She listened attentively and asked questions when things were unclear. The Scrum Master role was taken on by a different team member each day, and Sofie excelled in this role, always ready to support the team. During the stand-up meetings, she was good at setting priorities. For instance, she suggested not discussing a more complex issue in detail at that moment but instead addressing it in a separate meeting with the involved developers.”",
+
+                        textBtn_1:      "Go live",
+                        textBtn_2:      "View code",
+                        urlBtn_1:       "urlgolive",
+                        urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Prularia",
+                        img_01:         "../../src/assets/images/prularia/page-down.png",
+                        img_02:         "../../src/assets/images/prularia/icons.png",
+                        imgList:        [
+                            "../../src/assets/images/prularia/desktop_login-page.png",
+                            "../../src/assets/images/prularia/desktop_shopping-bag.png",
+                            "../../src/assets/images/prularia/desktop_shopping-bag-remove.png",
+                            "../../src/assets/images/prularia/icons.png",
+                            "../../src/assets/images/prularia/shopping-bag.png"
+                        ],
+                        colors:         ["#abd7a8", "#8ab987", "#63a15e", "#ffffff", "#f5f9f6", "#e8f5e9", "#111510"]
+                    },
+                    {
+                        id:             "Project_Bottom",
+                        previous:       "/showcase/public/projects/project.html#treasure-hunt",
+                        next:           "/showcase/public/projects/project.html#pizzaria"
+                    }
+
+                ],
+
+
             },
-            sections:     {
-                introduction: "Developing a webshop for a client provided a unique opportunity to apply the Scrum Agile methodology in practice. Together with eight other student developers from across Flanders, we worked on this project, where we not only enhanced our technical skills but also learned how to collaborate effectively as a team. The challenge was not only about building the webshop, but also understanding and applying the Scrum approach.",
-                challenges:   "We faced the challenge of developing a functional and user-friendly webshop within a limited timeframe. Visitors needed to easily browse products and add them to their shopping cart without the requirement to log in. We developed separate pages for customer registration, login, and order placement. Additionally, we ensured that the webshop complied with GDPR requirements, which meant implementing secure password encryption and obtaining explicit consent for cookie usage. Furthermore, we set priorities for each sprint, as the available time was limited.",
-                result:       "The project resulted in a functional webshop. The first two sprints delivered a working webshop, where customers could browse products, add them to their cart, and place orders. We implemented the core functionalities, such as order placement, and refined both the visual and functional aspects of the webshop. With more time, we would have developed product pages with additional information, profile management, and order status tracking in the third sprint. /n Throughout the process, we actively utilized the Scrum methodology, with daily stand-up meetings and the Scrum board to track progress. We worked as a close-knit team, made joint decisions, and supported each other as needed.",
-                what_the_scrum_coach_says:    
-                                "“Sofie was always actively engaged during meetings. She listened attentively and asked questions when things were unclear. The Scrum Master role was taken on by a different team member each day, and Sofie excelled in this role, always ready to support the team. During the stand-up meetings, she was good at setting priorities. For instance, she suggested not discussing a more complex issue in detail at that moment but instead addressing it in a separate meeting with the involved developers.”"
+            'pizzaria':         {
+                headername:     "Project",
+                url:            "/showcase/public/projects/project.html#pizzaria",
+                img:            "../src/assets/icons/pizza.svg",
+                title:          "Pizzaria",
+                description:    "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
+                languages:      ["PHP", "CSS"],
+                langratio:      [97, 3],
+                websiteType:    "e-commerce",
+                date:           "augustus 2024",
+                urlBtn:         {
+                    live:       "url go live",
+                    github:     "https://github.com/Sofie-van-der-Meer/Pizzaria"
+                },
+                sections:       {
+                    introduction: "This project was the final assignment for the PHP course and involved building a pizza ordering web application. The goal was to create a user-friendly website where customers could easily view and order pizzas. The web application utilized various techniques and concepts that I learned throughout the course.",
+                    approach:     "In the first phase of the project, I performed an extensive normalization, set up the database in SQL, and implemented it to ensure that all necessary data was properly stored. After working on the normalization, I received feedback from my instructor that it was too detailed for the limited time I had. I decided to focus on the key tables, such as orders, customers, locations, and order lines, and not further develop the other tables (such as promotions and payment methods). n/ Next, I developed the application following the MVC structure, keeping the application logic separate from the user interface. I also worked on error handling to ensure the app managed invalid user input properly. Before writing any code, I created a list of possible exceptions to have an overview of expected errors.",
+                    result:       "The result is a functional pizza ordering application that allows users to easily select pizzas, add them to their cart, and place their orders. The application retrieves products from the database and displays them neatly on the website. Users can register, log in, adjust the quantity of items, change their contact and delivery address, and complete their order. The user interface is simple yet functional, making it clear for customers how to place their order."
+                },
+                colors:         ["wheat", "#fffff0", "red", "white", "black"]
             },
-            colors:       ["#abd7a8", "#8ab987", "#63a15e", "#ffffff", "#f5f9f6", "#e8f5e9", "#111510"]
-        },
-        {
-            headername:   "Project",
-            url:          "/public/projects/project/#pizzaria",
-            img:          "../src/assets/icons/pizza.svg",
-            title:        "Pizzaria",
-            description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
-            languages:    ["PHP", "CSS"],
-            langratio:   [97, 3],
-            websiteType: "e-commerce",
-            date:         "augustus 2024",
-            urlBtn:      {
-                live:     "url go live",
-                github:   "https://github.com/Sofie-van-der-Meer/Pizzaria"
-            },
-            sections:     {
-                introduction: "This project was the final assignment for the PHP course and involved building a pizza ordering web application. The goal was to create a user-friendly website where customers could easily view and order pizzas. The web application utilized various techniques and concepts that I learned throughout the course.",
-                approach:     "In the first phase of the project, I performed an extensive normalization, set up the database in SQL, and implemented it to ensure that all necessary data was properly stored. After working on the normalization, I received feedback from my instructor that it was too detailed for the limited time I had. I decided to focus on the key tables, such as orders, customers, locations, and order lines, and not further develop the other tables (such as promotions and payment methods). n/ Next, I developed the application following the MVC structure, keeping the application logic separate from the user interface. I also worked on error handling to ensure the app managed invalid user input properly. Before writing any code, I created a list of possible exceptions to have an overview of expected errors.",
-                result:       "The result is a functional pizza ordering application that allows users to easily select pizzas, add them to their cart, and place their orders. The application retrieves products from the database and displays them neatly on the website. Users can register, log in, adjust the quantity of items, change their contact and delivery address, and complete their order. The user interface is simple yet functional, making it clear for customers how to place their order."
-            },
-            colors:       ["wheat", "#fffff0", "red", "white", "black"]
-        },
-        {
-            headername:   "Project",
-            url:          "/public/projects/project/#bubbles-in-color",
-            img:          "../src/assets/icons/ellipsis.svg",
-            title:        "Bubbles in Color",
-            description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
-            languages:    ["JavaScript", "HTML", "CSS"],
-            langratio:   [0, 0, 0],
-            library:      ["THREE.js"],
-            websiteType: "game",
-            date:         "januari 2025",
-            urlBtn:      {
-                live:     "url go live",
-                github:   "https://github.com/Sofie-van-der-Meer/Bubbles-in-Color"
-            },
-            sections:     {
-                error:         "This project is currently under development and is expected to be published soon."
-            }
-        },
-        {
-            headername:    "Project",
-            url:           "/public/projects/project/#treasure-hunt",
-            img:           "../src/assets/icons/ellipsis.svg",
-            title:         "Treasure Hunt",
-            description:   "In this exciting treasure hunt game, players embark on an adventurous quest to uncover hidden treasures.",
-            languages:     ["JavaScript", "HTML", "CSS"],
-            langratio:     [0, 0, 0],
-            library:       ["THREE.js"],
-            websiteType:   "game",
-            date:          "januari 2025",
-            urlBtn:        {
-                live:      "url go live",
-                github:    "https://github.com/Sofie-van-der-Meer/Treasure-Hunt"
-            },
-            sections:      {
-                error:     "This project is currently under development and is expected to be published soon."
-            }
+            'bubbles-in-color': {
+                headername:     "Project",
+                url:            "/showcase/public/projects/project.html#bubbles-in-color",
+                img:            "../src/assets/icons/ellipsis.svg",
+                title:          "Bubbles in Color",
+                description:    "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
+                languages:      ["JavaScript", "HTML", "CSS"],
+                langratio:      [0, 0, 0],
+                library:        ["THREE.js"],
+                websiteType:    "game",
+                date:           "januari 2025",
+                urlBtn:         {
+                    live:       "url go live",
+                    github:     "https://github.com/Sofie-van-der-Meer/Bubbles-in-Color"
+                },
+                sections:       {
+                    error:      "This project is currently under development and is expected to be published soon."
+                }
+            }, 
+            'treasure-hunt':    {
+                headername:     "Project",
+                url:            "/showcase/public/projects/project.html#treasure-hunt",
+                img:            "../src/assets/icons/ellipsis.svg",
+                title:          "Treasure Hunt",
+                description:    "In this exciting treasure hunt game, players embark on an adventurous quest to uncover hidden treasures.",
+                languages:      ["JavaScript", "HTML", "CSS"],
+                langratio:      [0, 0, 0],
+                library:        ["THREE.js"],
+                websiteType:    "game",
+                date:           "januari 2025",
+                urlBtn:         {
+                    live:       "url go live",
+                    github:     "https://github.com/Sofie-van-der-Meer/Treasure-Hunt"
+                },
+                sections:       {
+                    error:      "This project is currently under development and is expected to be published soon."
+                }
+            }, 
+
         }
-    ]} ,
+    },
     contact: {
             headername:   "Contact me",
             url:          "/public/contact.html",

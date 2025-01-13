@@ -89,6 +89,18 @@ header and footer styles, general container widths, etc. */
 /* header */
 .header {
     height: var(--header-height);
+    && * {
+        width: 5rem;
+    }
+    && :nth-child(1) {
+        text-align: left;
+    }
+    && :nth-child(2) {
+        text-align: center;
+    }
+    && :nth-child(3) {
+        text-align: right;
+    }
 }
 .header_item {
     align-self: end;
@@ -107,7 +119,7 @@ header and footer styles, general container widths, etc. */
     outline: 1px solid var(--color-primary);
 }
 
-.card-img {
+.card-img, .sect-img_01, .sect-img_02 {
     width: 40%;
 }
 
@@ -152,11 +164,21 @@ header and footer styles, general container widths, etc. */
     min-height: calc(100svh - var(--header-height) - (2 * 1rem));
     /* outline: 1px white solid; */
 }
+.half-height {
+    min-height: calc(50svh - var(--header-height));
+    /* outline: 1px white dashed; */
+}
 .three-quarters-width {
     width: 75%;
 }
 .half-width {
     width: 50%;
+}
+.sect-imgList {
+    overflow-x: scroll;
+}
+.img-small {
+    height: 20rem;
 }
 .landing {
     position: relative;
@@ -179,6 +201,16 @@ header and footer styles, general container widths, etc. */
     margin-bottom: 50svh;
 }
 
+div:has(.card-img) {
+    background-color: var(--color-secundary-background);
+    width: 40%;
+    height: auto;
+    padding: 1rem;
+    margin-block: 2rem 3rem;
+    .card-img {
+        width: 100%;
+    }
+}
 
 
 

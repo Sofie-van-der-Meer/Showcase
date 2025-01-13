@@ -79,6 +79,7 @@
     justify-content: left;
     flex-wrap: wrap;
 }
+
 .flex-grow_1 {
     flex-grow: 1;
 }
