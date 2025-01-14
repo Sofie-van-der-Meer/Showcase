@@ -25,8 +25,10 @@ class Script {
     getPage() {
         this.location.href.includes("about") ?
         this.page = "about" :
-        this.location.href.includes("project") ?
+        this.location.href.includes("projects") ?
         this.page = "projects" :
+        this.location.href.includes("project") ?
+        this.page = "project" :
         this.location.href.includes("contact") ?
         this.page = "contact" :
         this.page = "home";

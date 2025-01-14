@@ -270,6 +270,18 @@ Global helper classes
 .hidden {
     display: none;
 }
+.addBefore::before {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: min(71.2rem, calc(100vw - 4rem));
+    /* width: bug nog oplossen */
+    height: calc(100svh - var(--header-height));
+    color: inherit;
+    background-color: rgba(255, 0, 0 , 20%);
+
+}
 input[type="checkbox"] {
     appearance: none;
 }

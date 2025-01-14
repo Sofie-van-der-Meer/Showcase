@@ -5,17 +5,13 @@ export default class Resources {
     constructor(pageName, hashName) {
         this.pageName = pageName;
         this.hashName = hashName;
+        this.isPublished = true;
         (this.hashName == 'nl' ) ? 
         this.sources = sources_NL  :
         this.sources = sources_ENG ;
         
         if (this.sources && this.sources[this.pageName]) {
             this.transcript = this.sources[this.pageName]
-        }
-        if (this.transcript['hashProjects']) {
-            const transcript = this.transcript['hashProjects'];
-            const project = this.hashName.slice(1);
-            this.transcript = transcript[project];
         }
 
         console.log(this.transcript || "failed");
@@ -29,11 +25,47 @@ export default class Resources {
                 headerElem.innerHTML = headerText;
             }
 
-            const sections = this.transcript.sections;
+            let sections;
+            if ( this.hashName && this.hashName !== 'nl' ) { 
+                try {
+                    const transcript = this.transcript.sections[1]['projects'];
+                    transcript.forEach(element => {
+                        if (element.id == this.hashName) {
+                            sections = element.sections;
+                        }
+                    });              
+                } catch {}
+            } else sections = this.transcript.sections;
+            console.log(sections);
             
             for (let i = 0; i < sections.length; i++) { 
+                // console.log(sections[i]);
                 const headSection = sections[i];
                 const sectionId = document.getElementById(headSection.id);
+
+                if (sectionId.children[0].classList[0] == 'card-group' && !sectionId.children[0].children.length ) {
+                    let count = sections[i].projects.length;
+                    for (let i = 0; i < count; i++) {  
+                        this.addCardHTML(sectionId.children[0]);  
+                    }
+                }
+                if (i == 1 && !this.isPublished) {
+                    console.log('maak hier een functie om een nieuw element te creëren');
+                    console.log(sections[0]['notPublished']);
+
+                    const setNotPublishedMessage = function(sections) {
+                        const sect1 = document.getElementById(sections[0].id);
+                        const sect2 = document.getElementById(sections[1].id);
+                        const text = sections[0]['notPublished'];
+                        console.log(sect1) ;  
+
+                        sect1.classList.add('addBefore');
+                        sect2.classList.add('hidden');
+                        sect1.setAttribute('data-text', text);
+                        }
+                    setNotPublishedMessage(sections);
+
+                }
                 // console.log(sectionId);
                 if (sectionId.children.length) {
                     const arrResources = Object.entries(headSection);
@@ -46,6 +78,52 @@ export default class Resources {
         //     console.error(err.stack);
         // }
     }
+    addCardHTML(parent) {
+
+        console.log(parent);
+        const card              = document.createElement("section")
+        const card_img          = document.createElement("img")
+        const card_content      = document.createElement("section")
+        const card_title        = document.createElement("h4")
+        const card_description  = document.createElement("p")
+        const card_languages    = document.createElement("p")
+        const card_langratio    = document.createElement("p")
+        const card_library      = document.createElement("p")
+        const card_btn          = document.createElement("button")
+        const card_urlBtn       = document.createElement("a")
+
+        //classlist[0]
+        card.classList.add('card');
+        card_img.classList.add('card-img');
+        card_content.classList.add('card-content');
+        card_title.classList.add('card-title');
+        card_description.classList.add('card-description');
+        card_languages.classList.add('card-languages');
+        card_langratio.classList.add('card-langratio');
+        card_library.classList.add('card-library');
+        card_btn.classList.add('card-btn');
+        card_urlBtn.classList.add('card-urlBtn');
+
+        //classlist[n+1] for css styles
+        card_img.classList.add('padding-block__3');
+        card_content.classList.add('flex');
+        card_content.classList.add('flex-column');
+        card_title.classList.add('font-weight__light');
+        card_title.classList.add('color__accent-primary');
+
+        
+        card_btn.appendChild(card_urlBtn);
+        card_content.appendChild(card_title)
+        card_content.appendChild(card_description)
+        card_content.appendChild(card_languages)
+        card_content.appendChild(card_langratio)
+        card_content.appendChild(card_library)
+        card_content.appendChild(card_btn)
+        card.appendChild(card_img)
+        card.appendChild(card_content)
+        parent.appendChild(card);
+
+    }
     loopChilderen(parent, arrResources) {
         
         for (const child of parent.children) {
@@ -56,7 +134,7 @@ export default class Resources {
                 continue;
             }
             if (parent == document.getElementById('Project_Content') ) {
-                console.log(arrResources);
+                // console.log(arrResources);
                 this.loopCardGroup(child, arrResources);
             }
 
@@ -88,14 +166,14 @@ export default class Resources {
 
         arrResources.forEach(element => {
 
-            if (element[0] == 'projects') {
+            if (element[0] == 'projects' || element[0] == 'projects2') {
                 element[1].forEach(element => subArrResources.push(Object.entries(element)));
-                // console.log(subArrResources);
+                console.log(element[0]);
             } else if (typeof element[1] == 'object') {
                 subArrResources.push(Object.entries(element[1]).map(entry => [entry[0], entry[1]]));
             }
         })
-        // console.log(subArrResources);
+        console.log(subArrResources);
 
         for (let i = 0; i < children.length; i++) {
             this.loopChilderen(children[i], subArrResources[i]);
@@ -107,6 +185,7 @@ export default class Resources {
         if (!arrResources) {
             return;
         }
+        // console.log(arrResources); zeer inefficient trouwens!!!
 
         for (let i = 0; i < arrResources.length; i++) {
             const resourceKey = arrResources[i][0];
@@ -132,6 +211,10 @@ export default class Resources {
             if (resourceKey.startsWith('textBtn')) {
                 arrResourcesHasTextBtn = true;
             };
+
+            if (resourceKey == 'notPublished') {
+                this.isPublished = false;
+            }
 
             if (childName !== resourceKey) continue;
 
@@ -160,28 +243,39 @@ export default class Resources {
                     childHtml.href = resourceValue;
                     break;
             
-                case 'languages':
-                case 'library':
-                case 'introduction':
-                case 'challenges':
-                case 'result':
-                    if (childHtml.children[0]){
-                        childHtml.children[0].innerHTML = resourceKey + ': ';
-                    }
-                    //    :
-                    //    childHtml.innerHTML = `${resourceKey}: <br> ${resourceValue.join(', ')}`; 
+                // case 'languages':
+                // case 'library':
+                // case 'introduction':
+                // case 'challenges':
+                // case 'result':
+                //     if (childHtml.children[0]){
+                //         childHtml.children[0].innerHTML = resourceKey + ': ';
+                //     }
+                //     //    :
+                //     //    childHtml.innerHTML = `${resourceKey}: <br> ${resourceValue.join(', ')}`; 
                     
-                    (typeof resourceValue == 'object') ?
-                        childHtml.innerHTML += resourceValue.join(', ') :
-                        childHtml.innerHTML += resourceValue;
-                    break;
+                //     (typeof resourceValue == 'object') ?
+                //         childHtml.innerHTML += resourceValue.join(', ') :
+                //         childHtml.innerHTML += resourceValue;
+                //     break;
 
                 case 'langratio':
                     childHtml.innerHTML =  resourceValue.join('% - ') + '%';
                     break;
             
                 default:
-                    childHtml.innerHTML = resourceValue;
+                    if (childHtml.children[0] && childHtml.children[0].tagName == 'SPAN'){
+
+                        childHtml.children[0].innerHTML = resourceKey.replaceAll('_', ' ') + ': ';
+
+                        (Array.isArray(resourceValue)) ?
+                            childHtml.innerHTML += resourceValue.join(' - ') :
+                            childHtml.innerHTML += resourceValue;
+
+                    }
+                    else {
+                        childHtml.innerHTML = resourceValue;
+                    }
                     break;
             }
         }
