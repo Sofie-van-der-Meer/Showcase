@@ -11,16 +11,17 @@ class Script {
         this.modal = new Modal();
 
         this.location = window.location;
+        this.loadPage();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new DarkMode();
+        })
+    }
+    loadPage() {
         this.getPage();
         this.getHash();
         this.resources = new Resources(this.page, this.hash);
         this.resources.setInnerHTML();
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const darkMode = new DarkMode();
-            // darkMode.setMode();
-        })
-
     }
     getPage() {
         this.location.href.includes("about") ?
@@ -38,4 +39,4 @@ class Script {
     }
 }
 
-const script = new Script()
+const script = new Script();

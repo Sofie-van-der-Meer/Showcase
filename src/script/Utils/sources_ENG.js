@@ -1,7 +1,7 @@
 export default {
-    'home': {
+    home: {
         headername:   "Home",
-        url:          "index.html",
+        // url:          "index.html",
         sections:     [
             {
                 id:             "Home_Welkom",
@@ -9,7 +9,7 @@ export default {
                 title:          "Hello I'm \n Sofie van der Meer",
                 description:    "Welcome to this platform, where you get a hint of my expertise and capabilities as a Junior Full-Stack Developer.",
                 textBtn:        "Contact me",
-                urlBtn:         "/public/contact.html"
+                urlBtn:         "contact.html"
             },
             {
                 id:             "Home_Introduction",
@@ -18,7 +18,7 @@ export default {
                 subtitle:       "- Creative Full-Stack developer -",
                 description:    "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
                 textBtn:        "Get to know me",
-                urlBtn:         "/public/about.html"
+                urlBtn:         "about.html"
             },
             {
                 id:           "Home_Projects",
@@ -46,7 +46,7 @@ export default {
                         description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
                         languages:    ["JavaScript", "HTML", "CSS"],
                         langratio:    [0, 0, 0],
-                        library:      ["Three.js"],
+                        library:      ["THREE.js"],
                         urlBtn:       "/showcase/public/projects/project.html#bubbles-in-color"
                     }
                 ]
@@ -55,7 +55,7 @@ export default {
     },
     about: {
         headername:       "About Me",
-        url:              "/public/about.html",
+        // url:              "/public/about.html",
         sections:         [
             {
                 id:                 "About_Top",
@@ -132,7 +132,7 @@ export default {
                 ]
             },
             {
-                id: "About_Bottum",
+                id:         "About_Bottum",
                 urlBtn:     "../src/assets/CV_Sofie-van-der-Meer_ENG.pdf",
                 textBtn:    "Download my CV"
             }
@@ -166,7 +166,7 @@ export default {
                                 title:          "Prularia",
                                 languages:      ["JavaScript", "PHP", "CSS"],
                                 library:        ["Bootstrap"],
-                                date:           "november 2024",
+                                date:           "November 2024",
                             },
                             {
                                 id:             "Project_Content",
@@ -214,7 +214,7 @@ export default {
                                 img:            "../../src/assets/icons/pizza.svg",
                                 title:          "Pizzaria",
                                 languages:      ["PHP", "CSS"],
-                                date:           "augustus 2024",
+                                date:           "August 2024",
                             },
                             {
                                 id:             "Project_Content",
@@ -255,7 +255,7 @@ export default {
                         description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
                         languages:    ["JavaScript", "HTML", "CSS"],
                         langratio:    [0, 0, 0],
-                        library:      ["Three.js"],
+                        library:      ["THREE.js"],
                         urlBtn:       "/showcase/public/projects/project.html#bubbles-in-color",
                         sections:     [
                             {
@@ -265,7 +265,7 @@ export default {
                                 title:          "Bubbles in Color",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
-                                date:           "januari 2025",
+                                date:           "January 2025",
                                 notPublished:          "This project is currently under development and is expected to be published soon."
                             },
                             {
@@ -308,7 +308,7 @@ export default {
                                 title:          "Treasure Hunt",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
-                                date:           "januari 2025",
+                                date:           "January 2025",
                                 notPublished:          "This project is currently under development and is expected to be published soon."
                             },
                             {
@@ -340,7 +340,7 @@ export default {
     },
     contact: {
         headername:   "Contact me",
-        url:          "/public/contact.html",
+        // url:          "/public/contact.html",
         sections:     [
             {
                 id:         "Contact_Top",

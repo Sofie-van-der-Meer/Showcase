@@ -1,3 +1,4 @@
+import DutchMode from "./Dutchmode";
 import sources_ENG from "./sources_ENG";
 import sources_NL from "./sources_NL";
 
@@ -6,7 +7,9 @@ export default class Resources {
         this.pageName = pageName;
         this.hashName = hashName;
         this.isPublished = true;
-        (this.hashName == 'nl' ) ? 
+        this.dutchMode = new DutchMode();
+        this.dutchMode.setLangAttr();
+        (sessionStorage.getItem('dutch-mode') == 'true' ) ? 
         this.sources = sources_NL  :
         this.sources = sources_ENG ;
         
@@ -36,7 +39,7 @@ export default class Resources {
                     });              
                 } catch {}
             } else sections = this.transcript.sections;
-            console.log(sections);
+            // console.log(sections);
             
             for (let i = 0; i < sections.length; i++) { 
                 // console.log(sections[i]);
@@ -73,6 +76,8 @@ export default class Resources {
                     this.loopChilderen(sectionId, arrResources);
                 }
             }
+            
+            this.dutchMode.setLangAttr();
 
         // } catch (err) {
         //     console.error(err.stack);
@@ -80,7 +85,6 @@ export default class Resources {
     }
     addCardHTML(parent) {
 
-        console.log(parent);
         const card              = document.createElement("section")
         const card_img          = document.createElement("img")
         const card_content      = document.createElement("section")
@@ -91,6 +95,8 @@ export default class Resources {
         const card_library      = document.createElement("p")
         const card_btn          = document.createElement("button")
         const card_urlBtn       = document.createElement("a")
+        const card_span1        = document.createElement("span")
+        const card_span2        = document.createElement("span")
 
         //classlist[0]
         card.classList.add('card');
@@ -110,9 +116,13 @@ export default class Resources {
         card_content.classList.add('flex-column');
         card_title.classList.add('font-weight__light');
         card_title.classList.add('color__accent-primary');
+        card_span1.classList.add('color__grey');
+        card_span2.classList.add('color__grey');
 
         
-        card_btn.appendChild(card_urlBtn);
+        card_btn.appendChild(card_urlBtn)
+        card_languages.appendChild(card_span1)
+        card_library.appendChild(card_span2)
         card_content.appendChild(card_title)
         card_content.appendChild(card_description)
         card_content.appendChild(card_languages)
@@ -159,7 +169,7 @@ export default class Resources {
         }
     }
     loopCardGroup(parent, arrResources) {
-        console.log(arrResources);
+        // console.log(arrResources);
 
         const children = parent.getElementsByClassName('card');
         const subArrResources = [];
@@ -168,12 +178,12 @@ export default class Resources {
 
             if (element[0] == 'projects' || element[0] == 'projects2') {
                 element[1].forEach(element => subArrResources.push(Object.entries(element)));
-                console.log(element[0]);
+                // console.log(element[0]);
             } else if (typeof element[1] == 'object') {
                 subArrResources.push(Object.entries(element[1]).map(entry => [entry[0], entry[1]]));
             }
         })
-        console.log(subArrResources);
+        // console.log(subArrResources);
 
         for (let i = 0; i < children.length; i++) {
             this.loopChilderen(children[i], subArrResources[i]);
@@ -236,28 +246,12 @@ export default class Resources {
 
                 case 'previous':
                 case 'next':
-                    childHtml.innerHTML = resourceKey;            
+                    childHtml.innerHTML = resourceKey;       
                 case 'urlBtn':
                 case 'urlBtn_1':
                 case 'urlBtn_2':
                     childHtml.href = resourceValue;
                     break;
-            
-                // case 'languages':
-                // case 'library':
-                // case 'introduction':
-                // case 'challenges':
-                // case 'result':
-                //     if (childHtml.children[0]){
-                //         childHtml.children[0].innerHTML = resourceKey + ': ';
-                //     }
-                //     //    :
-                //     //    childHtml.innerHTML = `${resourceKey}: <br> ${resourceValue.join(', ')}`; 
-                    
-                //     (typeof resourceValue == 'object') ?
-                //         childHtml.innerHTML += resourceValue.join(', ') :
-                //         childHtml.innerHTML += resourceValue;
-                //     break;
 
                 case 'langratio':
                     childHtml.innerHTML =  resourceValue.join('% - ') + '%';
@@ -266,22 +260,39 @@ export default class Resources {
                 default:
                     if (childHtml.children[0] && childHtml.children[0].tagName == 'SPAN'){
 
-                        childHtml.children[0].innerHTML = resourceKey.replaceAll('_', ' ') + ': ';
+                        switch (resourceKey) {
+                            case 'library':
+                                childHtml.children[0].innerHTML = '<span lang="en">library: </span><span lang="nl">bibliotheek: </span>';
+                                break;
+                            case 'languages':
+                                childHtml.children[0].innerHTML = '<span lang="en">languages: </span><span lang="nl">programeertalen: </span>';
+                                break;
+                        
+                            case 'availability':
+                                childHtml.children[0].innerHTML = '<span lang="en">availability: </span><span lang="nl">beschikbaarheid: </span>';
+                                break;
+                        
+                            case 'related_interests':
+                                childHtml.children[0].innerHTML = '<span lang="en">related_interests: </span><span lang="nl">gerelateerde interesse: </span>';
+                                break;
+                        
+                            default:
+                                childHtml.children[0].innerHTML = resourceKey.replaceAll('_', ' ') + ': ';
+                                break;
+                        }
 
                         (Array.isArray(resourceValue)) ?
                             childHtml.innerHTML += resourceValue.join(' - ') :
                             childHtml.innerHTML += resourceValue;
-
+                        break;
                     }
-                    else {
-                        childHtml.innerHTML = resourceValue;
-                    }
+                    childHtml.innerHTML = resourceValue;
                     break;
             }
         }
 
         if (!arrResourcesHasTextBtn && (parent.classList[0] == 'card-btn' && childName == 'urlBtn') ) {
-            childHtml.innerHTML = 'Get more info'; 
+            childHtml.innerHTML = '<span lang="en">Get more info</span><span lang="nl">Meer info</span>';
         }
     }
 }

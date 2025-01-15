@@ -1,28 +1,24 @@
 export default class DarkMode {
 
     modeToggleBtn   = document.getElementById('toggleDarkMode');
-    labelToggleBtn   = document.getElementById('labelToggleDarkMode');
+    spanDarkMode  = document.getElementById('spanDarkMode');
+    spanLightMode  = document.getElementById('spanLightMode');
     faviconTag      = document.getElementById("faviconTag");
-    // pictLight       = document.getElementById('pict-light');
-    // pictDark        = document.getElementById('pict-dark');
-    // imgLogo         = document.getElementById('logo');
     bodyTag         = document.body;
 
     constructor() {
-        this.current =  localStorage.getItem('color-scheme') || 
+        this.current =  sessionStorage.getItem('color-scheme') || 
                         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 
-                        'dark' : 
-                        'light');
-        this.notCurrent = (this.current = 'dark') ? 'light' : 'dark';
+                        'dark' : 'light');
+        this.notCurrent = (this.current == 'dark') ? 'light' : 'dark';
         this.setMode();
         this.modeToggleBtn.addEventListener('change', () => this.changeMode() );
     }
 
     setMode() {
         this.faviconTag.href = `http://localhost/showcase/public/favicon_${this.current}.svg`;
-        // this.imgLogo.src = `../src/assets/icons/logo_${this.current}-mode.png`;
         this.bodyTag.className = this.current;
-        this.labelToggleBtn.innerHTML = `Switch to ${this.notCurrent}-mode`;
+        this.setSpan();
     }
 
     changeMode() {
@@ -30,20 +26,23 @@ export default class DarkMode {
             this.faviconTag.href = "http://localhost/showcase/public/favicon_light.svg";
             this.bodyTag.classList.remove('dark');
             this.bodyTag.classList.add('light');
-            // this.labelToggleBtn.innerText = `Switch to dark-mode`;
-            // this.imgLogo.src = `../src/assets/icons/logo_light-mode.png`;
-            // this.pictLight.classList.remove('hidden');
-            // this.pictDark.classList.add('hidden');
-            localStorage.setItem('color-scheme', 'light');
+            sessionStorage.setItem('color-scheme', 'light');
         } else {
             this.faviconTag.href = "http://localhost/showcase/public/favicon_dark.svg";
             this.bodyTag.classList.remove('light');
             this.bodyTag.classList.add('dark');
-            // this.labelToggleBtn.innerText = `Switch to light-mode`;
-            // this.imgLogo.src = `../src/assets/icons/logo_dark-mode.png`;
-            // this.pictDark.classList.remove('hidden');
-            // this.pictLight.classList.add('hidden');
-            localStorage.setItem('color-scheme', 'dark');
+            sessionStorage.setItem('color-scheme', 'dark');
+        }
+        this.setSpan();
+        document.getElementById('dialogNav').close();
+    }
+    setSpan() {
+        if (this.bodyTag.classList.contains('dark')) {
+            this.spanDarkMode.style.display = 'none';
+            this.spanLightMode.style.display = 'block';
+        } else {
+            this.spanLightMode.style.display = 'none';
+            this.spanDarkMode.style.display = 'block';
         }
     }
 }

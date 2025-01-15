@@ -1,6 +1,7 @@
 /*  Responsive breakpoints: 
     Media queries stored in a reusable format. */
 @media screen and (max-width: 600px) {
+
     .container {
         text-align: center;
         /* margin-inline: max(2rem, 5vw); */
@@ -20,6 +21,9 @@
     }
     ::-webkit-scrollbar  {
         width: 0;
+    }
+    .dialog {
+        width: 100vw;
     }
 
     .flex__small {

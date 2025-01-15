@@ -89,29 +89,21 @@ header and footer styles, general container widths, etc. */
 /* header */
 .header {
     height: var(--header-height);
-    && * {
-        width: 5rem;
-    }
-    && :nth-child(1) {
-        text-align: left;
-    }
-    && :nth-child(2) {
-        text-align: center;
-    }
-    && :nth-child(3) {
-        text-align: right;
-    }
 }
 .header_item {
     align-self: end;
 }
 .header_logo {
-    padding-bottom: 0.7rem;
+    /* padding-bottom: 0.7rem; */
     height: 100%;
+    width: auto;
 }
 .header_btn {
-    padding-bottom: 0.6rem;
-}
+    /* padding-bottom: 0.6rem;
+    text-align: end; */
+    padding: 0;
+    padding-left: calc(var(--header-logo-width) - var(--header-bar-width));
+} 
 
 /* card */
 .card {
@@ -258,9 +250,10 @@ button:has(i) {
 .color__grey {
     color: var(--color-grey);
 }
-.color__grey:hover, 
-.color__white:hover {
-    color: var(--accent-secundary);
+.nav li a:hover, 
+.nav .color__grey:hover,
+.color__secundary:is(i):hover {
+    color: var(--accent-primary);
 }
 
 /* Utility classes: 

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" 
     rel="stylesheet">
     <script src="https://kit.fontawesome.com/6d66c3d9c5.js" crossorigin="anonymous"></script>
-
+    
     <link rel="stylesheet" href="../src/styles/mixins.css">
     <link rel="stylesheet" href="../src/styles/global.css">
     <link rel="stylesheet" href="../src/styles/breakpoints.css">
@@ -19,7 +19,7 @@
     <title>Sofie van der Meer</title>
 </head>
 <body id="top">
-
+    
     <header class="header container flex" id="header">
         <img class="header_item header_logo" id="logo" src="../src/assets/icons/logo.png" alt="Logo Sofie van der Meer">
         <h4 class="header_item font-size__double font-weight__regular" id="headername"></h4>
@@ -27,7 +27,7 @@
             <i class="fa-solid fa-bars fa-3x" aria-hidden="true"></i>
         </button>
     </header>
-
+    
     <dialog class="dialog dialogNav" id="dialogNav">
         <header class="header container flex">
             <img class="header_item header_logo" id="logo" 
@@ -38,18 +38,36 @@
         </header>   
         <nav class="nav" id="nav">
             <h3 class="font-weight__extraLight">
-                <ul>
+                <ul lang="en">
                     <li><a href="home.html">home</a></li>
                     <li><a href="about.html">about</a></li>
                     <li><a href="projects.html">projects</a></li>
                     <li><a href="contact.html">contact</a></li>
                 </ul>
+                <ul lang="nl">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">over mij</a></li>
+                    <li><a href="projects.html">projecten</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
             </h3>
             <h4 class="font-weight__extraLight margin-block__3">
-                <label class="color__grey" id="labelToggleLanguage" for="toggleLanguage">dutch</label>
+                <label class="color__grey" id="labelToggleLanguage" for="toggleLanguage">
+                    <span lang="en">switch to dutch</span>
+                    <span lang="nl">verander naar engels</span>
+                </label>
                 <input type="checkbox" name="toggleLanguage" id="toggleLanguage">
                 <br>
-                <label class="color__grey" id="labelToggleDarkMode" for="toggleDarkMode"></label>
+                <label class="color__grey" id="labelToggleDarkMode" for="toggleDarkMode">
+                    <span id="spanDarkMode">
+                        <span lang="en">switch to dark-mode</span>
+                        <span lang="nl">verander naar donkere modus</span>                        
+                    </span>
+                    <span id="spanLightMode">
+                        <span lang="en">switch to light-mode</span>
+                        <span lang="nl">verander naar lichte modus</span>                        
+                    </span>
+                </label>
                 <input type="checkbox" name="toggleDarkMode" id="toggleDarkMode">
             </h4>
             <footer class="flex flex__small gap__3">
@@ -84,59 +102,77 @@
         </section>
 
     </main>
+   
+    <div class="wrapper">
+        <aside class="container text-center padding-block__3">
+            <a href="#" target="_top" class="link__back-to-top margin-block__3">
+                <i class="fa-solid fa-arrow-up fa-lg margin-inline__1"></i>
+                <span lang="en">back to top</span><span lang="nl">terug naar boven</span>
+            </a>
+        </aside>
+        
+        <footer class="footer container flex flex-dir_column margin-block__3 gap__3 gap__mobile" id="footer">
+            <section class="flex-grow_1 border-devider">
+                <h2 class=" font-weight__regular color__accent-primary">
+                    Sofie van  der Meer
+                </h2>
+            </section>
+            <section class="flex-grow_2">
+                <h5 class="font-weight__light">
+                    <ul class="flex flex__small">
 
-    <aside class="container text-center padding-block__3">
-        <a href="#" target="_top" class="link__back-to-top margin-block__3">
-            <i class="fa-solid fa-arrow-up fa-lg margin-inline__1"></i>
-            back to top
-        </a>
-    </aside>
+                        <li><a href="home.html">
+                            <span lang="en">home</span> 
+                            <span lang="nl">home</span> 
+                        </a></li>
+                        <li><a href="about.html">
+                            <span lang="en">about me</span> 
+                            <span lang="nl">over mij</span> 
+                        </a></li>
+                        <li><a href="projects.html">
+                            <span lang="en">projects</span> 
+                            <span lang="nl">projecten</span> 
+                        </a></li>
+                        <li><a href="contact.html">
+                            <span lang="en">contact</span> 
+                            <span lang="nl">contact</span> 
+                        </a></li>
+                    </ul>
+                </h5>
+                <h6 class="font-weight__light margin-top__1">
+                    Copyright &copy; 2025 Sofie-van-der-Meer
+                </h6>
+            </section>
+            <section class="flex-grow_1">
+                <ul class="flex">
+                    <li>
+                        <a href="mailto:sofievandermeer@outlook.com" >
+                            <i class="fa-regular fa-envelope fa-xl color__secundary"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/Sofie-van-der-Meer" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-xl color__secundary"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/Sofie-van-der-Meer" target="_blank">
+                            <i class="fa-brands fa-github fa-xl color__secundary"></i>
+                        </a>
+                    </li>
+                </ul> 
+                <h6 class="font-weight__light margin-top__1">  
+                    <a class="color__accent-tertiairy" href="contact.html">
+                        <span lang="en">Let's talk!</span>
+                        <span lang="nl">Contacteer mij!</span>
+                    </a>
+                </h6>
+            </section>
+        </footer>        
+    </div>
 
-    <footer class="footer container flex flex-dir_column margin-block__3 gap__3 gap__mobile" id="footer">
-        <section class="flex-grow_1 border-devider">
-            <h2 class=" font-weight__regular color__accent-primary">
-                Sofie van  der Meer
-            </h2>
-        </section>
-        <section class="flex-grow_2">
-            <h5 class="font-weight__light">
-                <ul class="flex flex__small">
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="projects.html">projects</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </h5>
-            <h6 class="font-weight__light margin-top__1">
-                Copyright &copy; 2025 Sofie-van-der-Meer
-            </h6>
-        </section>
-        <section class="flex-grow_1">
-            <ul class="flex">
-                <li>
-                    <a href="mailto:sofievandermeer@outlook.com" >
-                        <i class="fa-regular fa-envelope fa-xl color__secundary"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/Sofie-van-der-Meer" target="_blank">
-                        <i class="fa-brands fa-linkedin fa-xl color__secundary"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/Sofie-van-der-Meer" target="_blank">
-                        <i class="fa-brands fa-github fa-xl color__secundary"></i>
-                    </a>
-                </li>
-            </ul> 
-            <h6 class="font-weight__light margin-top__1">  
-                <a class="color__accent-tertiairy" href="contact.html">
-                    Let's talk!
-                </a>
-            </h6>
-        </section>
-    </footer>
-
+    
     <script type="module" src="../src/script/script.js"></script>
 </body>
 </html> 
+
