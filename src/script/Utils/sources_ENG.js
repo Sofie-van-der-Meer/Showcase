@@ -9,13 +9,13 @@ export default {
                 title:          "Hello I'm \n Sofie van der Meer",
                 description:    "Welcome to this platform, where you get a hint of my expertise and capabilities as a Junior Full-Stack Developer.",
                 textBtn:        "Contact me",
-                urlBtn:         "contact.html"
+                urlBtn:         "mailto:sofievandermeer@outlook.com"
             },
             {
                 id:             "Home_Introduction",
                 img:            "../src/assets/images/black-white.jpg",
-                title:          "I'm Sofie",
-                subtitle:       "- Creative Full-Stack developer -",
+                title:          "Creative Full-Stack developer",
+                // subtitle:       "- Creative Full-Stack developer -",
                 description:    "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
                 textBtn:        "Get to know me",
                 urlBtn:         "about.html"
@@ -30,7 +30,7 @@ export default {
                         languages:    ["JavaScript", "PHP", "CSS"],
                         langratio:    [47, 39, 12],
                         library:      ["Bootstrap"],
-                        urlBtn:      "/showcase/public/projects/project.html#prularia"
+                        urlBtn:      "project.html#prularia"
                     },
                     {
                         img:          "../src/assets/icons/pizza.svg",
@@ -38,7 +38,7 @@ export default {
                         description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
                         languages:    ["PHP", "CSS"],
                         langratio:    [97, 3],
-                        urlBtn:       "/showcase/public/projects/project.html#pizzaria"
+                        urlBtn:       "project.html#pizzaria"
                     },
                     {
                         img:          "../src/assets/icons/ellipsis.svg",
@@ -47,7 +47,7 @@ export default {
                         languages:    ["JavaScript", "HTML", "CSS"],
                         langratio:    [0, 0, 0],
                         library:      ["THREE.js"],
-                        urlBtn:       "/showcase/public/projects/project.html#bubbles-in-color"
+                        urlBtn:       "project.html#bubbles-in-color"
                     }
                 ]
             }
@@ -60,6 +60,8 @@ export default {
             {
                 id:                 "About_Top",
                 img:                "../src/assets/images/black-white.jpg",
+                urlBtn:             "mailto:sofievandermeer@outlook.com", 
+                textBtn:            "sofievandermeer@outlook.com", 
                 title:              "Sofie van der Meer",
                 subtitle:           "Junior Full-Stack developer",
                 availability:       "Available from 1st March 2025, <br> open to internship/IBO.",
@@ -133,8 +135,10 @@ export default {
             },
             {
                 id:         "About_Bottum",
-                urlBtn:     "../src/assets/CV_Sofie-van-der-Meer_ENG.pdf",
-                textBtn:    "Download my CV"
+                urlBtn_1:   "../src/assets/CV_Sofie-van-der-Meer_ENG.pdf",
+                textBtn_1:  "Download my CV",
+                urlBtn_2:   "mailto:sofievandermeer@outlook.com", 
+                textBtn_2:  "send me an email", 
             }
         ]
     },
@@ -157,12 +161,12 @@ export default {
                         languages:    ["JavaScript", "PHP", "CSS"],
                         langratio:    [47, 39, 12],
                         library:      ["Bootstrap"],
-                        urlBtn:       "/showcase/public/projects/project.html#prularia",
+                        urlBtn:       "project.html#prularia",
                         sections:       [
                             {
                                 id:             "Project_Top",
                                 websiteType:    "e-commerce",
-                                img:            "../../src/assets/images/prularia/prularia_logo.png",
+                                img:            "../src/assets/images/prularia/prularia_logo.png",
                                 title:          "Prularia",
                                 languages:      ["JavaScript", "PHP", "CSS"],
                                 library:        ["Bootstrap"],
@@ -181,21 +185,21 @@ export default {
                                 textBtn_2:      "View code",
                                 urlBtn_1:       "urlgolive",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Prularia",
-                                img_01:         "../../src/assets/images/prularia/page-down.png",
-                                img_02:         "../../src/assets/images/prularia/icons.png",
+                                img_01:         "../src/assets/images/prularia/page-down.png",
+                                img_02:         "../src/assets/images/prularia/icons.png",
                                 imgList:        [
-                                    "../../src/assets/images/prularia/desktop_login-page.png",
-                                    "../../src/assets/images/prularia/desktop_shopping-bag.png",
-                                    "../../src/assets/images/prularia/desktop_shopping-bag-remove.png",
-                                    "../../src/assets/images/prularia/icons.png",
-                                    "../../src/assets/images/prularia/shopping-bag.png"
+                                    "../src/assets/images/prularia/desktop_login-page.png",
+                                    "../src/assets/images/prularia/desktop_shopping-bag.png",
+                                    "../src/assets/images/prularia/desktop_shopping-bag-remove.png",
+                                    "../src/assets/images/prularia/icons.png",
+                                    "../src/assets/images/prularia/shopping-bag.png"
                                 ],
                                 colors:         ["#abd7a8", "#8ab987", "#63a15e", "#ffffff", "#f5f9f6", "#e8f5e9", "#111510"]
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "/showcase/public/projects/project.html#treasure-hunt",
-                                next:           "/showcase/public/projects/project.html#pizzaria"
+                                previous:       "project.html#treasure-hunt",
+                                next:           "project.html#pizzaria"
                             }
                         ]
                     },
@@ -206,12 +210,12 @@ export default {
                         description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
                         languages:    ["PHP", "CSS"],
                         langratio:    [97, 3],
-                        urlBtn:       "/showcase/public/projects/project.html#pizzaria",
+                        urlBtn:       "project.html#pizzaria",
                         sections:     [
                             {
                                 id:             "Project_Top",
                                 websiteType:    "e-commerce",
-                                img:            "../../src/assets/icons/pizza.svg",
+                                img:            "../src/assets/icons/pizza.svg",
                                 title:          "Pizzaria",
                                 languages:      ["PHP", "CSS"],
                                 date:           "August 2024",
@@ -228,23 +232,23 @@ export default {
                                 textBtn_2:      "View code",
                                 urlBtn_1:       "urlgolive",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Pizzaria",
-                                img_01:         "../../src/assets/images/pizzaria/add-to-shoppingcart.png",
-                                img_02:         "../../src/assets/images/pizzaria/structure.png",
+                                img_01:         "../src/assets/images/pizzaria/add-to-shoppingcart.png",
+                                img_02:         "../src/assets/images/pizzaria/structure.png",
                                 imgList:        [
-                                    "../../src/assets/images/pizzaria/add-to-shoppingcart.png",
-                                    "../../src/assets/images/pizzaria/home-page.png",
-                                    "../../src/assets/images/pizzaria/order-page_change-contactdetails.png",
-                                    "../../src/assets/images/pizzaria/order-page.png",
-                                    "../../src/assets/images/pizzaria/register-page.png",
-                                    "../../src/assets/images/pizzaria/sql.svg",
-                                    "../../src/assets/images/pizzaria/structure.png"
+                                    "../src/assets/images/pizzaria/add-to-shoppingcart.png",
+                                    "../src/assets/images/pizzaria/home-page.png",
+                                    "../src/assets/images/pizzaria/order-page_change-contactdetails.png",
+                                    "../src/assets/images/pizzaria/order-page.png",
+                                    "../src/assets/images/pizzaria/register-page.png",
+                                    "../src/assets/images/pizzaria/sql.svg",
+                                    "../src/assets/images/pizzaria/structure.png"
                                 ],
                                 colors:         ["wheat", "#fffff0", "red", "white", "black"]
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "/showcase/public/projects/project.html#prularia",
-                                next:           "/showcase/public/projects/project.html#bubbles-in-color"
+                                previous:       "project.html#prularia",
+                                next:           "project.html#bubbles-in-color"
                             }
                         ]
                     },
@@ -256,12 +260,12 @@ export default {
                         languages:    ["JavaScript", "HTML", "CSS"],
                         langratio:    [0, 0, 0],
                         library:      ["THREE.js"],
-                        urlBtn:       "/showcase/public/projects/project.html#bubbles-in-color",
+                        urlBtn:       "project.html#bubbles-in-color",
                         sections:     [
                             {
                                 id:             "Project_Top",
                                 websiteType:    "game",
-                                img:            "../../src/assets/icons/ellipsis.svg",
+                                img:            "../src/assets/icons/ellipsis.svg",
                                 title:          "Bubbles in Color",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
@@ -279,15 +283,15 @@ export default {
                                 // textBtn_2:      "View code",
                                 // urlBtn_1:       "urlgolive",
                                 // urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Bubbles-In-Color",
-                                // img_01:         "../../src/assets/images/bubbles-in-color/img.png",
-                                // img_02:         "../../src/assets/images/bubbles-in-color/img.png",
+                                // img_01:         "../src/assets/images/bubbles-in-color/img.png",
+                                // img_02:         "../src/assets/images/bubbles-in-color/img.png",
                                 // imgList:        [],
                                 // colors:         []
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "/showcase/public/projects/project.html#pizzaria",
-                                next:           "/showcase/public/projects/project.html#treasure-hunt"
+                                previous:       "project.html#pizzaria",
+                                next:           "project.html#treasure-hunt"
                             }
                         ]
                     },
@@ -299,12 +303,12 @@ export default {
                         languages:    ["JavaScript", "HTML", "CSS"],
                         langratio:    [0, 0, 0],
                         library:      ["THREE.js"],
-                        urlBtn:       "/showcase/public/projects/project.html#treasure-hunt",
+                        urlBtn:       "project.html#treasure-hunt",
                         sections:       [
                             {
                                 id:             "Project_Top",
                                 websiteType:    "game",
-                                img:            "../../src/assets/icons/ellipsis.svg",
+                                img:            "../src/assets/icons/ellipsis.svg",
                                 title:          "Treasure Hunt",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
@@ -322,45 +326,45 @@ export default {
                                 // textBtn_2:      "View code",
                                 // urlBtn_1:       "urlgolive",
                                 // urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Treasure-Hunt",
-                                // img_01:         "../../src/assets/images/treasure-hunt/img.png",
-                                // img_02:         "../../src/assets/images/treasure-hunt/img.png",
+                                // img_01:         "../src/assets/images/treasure-hunt/img.png",
+                                // img_02:         "../src/assets/images/treasure-hunt/img.png",
                                 // imgList:        [],
                                 // colors:         []
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "/showcase/public/projects/project.html#bubbles-in-color",
-                                next:           "/showcase/public/projects/project.html#prularia"
+                                previous:       "project.html#bubbles-in-color",
+                                next:           "project.html#prularia"
                             }
                         ]
                     }
                 ]
             }
         ]
-    },
-    contact: {
-        headername:   "Contact me",
-        // url:          "/public/contact.html",
-        sections:     [
-            {
-                id:         "Contact_Top",
-                title:      "Let's Talk",
-                subtitle:   "Fill in the form below, or reach out to me directly", 
-                urlBtn_1:   "mailto:sofievandermeer@outlook.com", 
-                textBtn_1:  "sofievandermeer@outlook.com", 
-                urlBtn_2:   "sofievandermeer@outlook.com", 
-                textBtn_2:  "(click to copy)",  
-                subtitle_on_Mobile: "prefer contact form?"
-            },
-            {
-                id:         "Contact_Form",
-                label_1:    "First Name",
-                label_2:    "Last Name",
-                label_3:    "Email",
-                label_4:    "Company",
-                label_5:    "Let's Talk",
-                textBtn:    "Send"
-            }
-        ]
-    }    
+    } //,
+    // contact: {
+    //     headername:   "Contact me",
+    //     // url:          "/public/mailto:sofievandermeer@outlook.com",
+    //     sections:     [
+    //         {
+    //             id:         "Contact_Top",
+    //             title:      "Let's Talk",
+    //             subtitle:   "Fill in the form below, or reach out to me directly", 
+    //             urlBtn_1:   "mailto:sofievandermeer@outlook.com", 
+    //             textBtn_1:  "sofievandermeer@outlook.com", 
+    //             urlBtn_2:   "sofievandermeer@outlook.com", 
+    //             textBtn_2:  "(click to copy)",  
+    //             subtitle_on_Mobile: "prefer contact form?"
+    //         },
+    //         {
+    //             id:         "Contact_Form",
+    //             label_1:    "First Name",
+    //             label_2:    "Last Name",
+    //             label_3:    "Email",
+    //             label_4:    "Company",
+    //             label_5:    "Let's Talk",
+    //             textBtn:    "Send"
+    //         }
+    //     ]
+    // }    
 }

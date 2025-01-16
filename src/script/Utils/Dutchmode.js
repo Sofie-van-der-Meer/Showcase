@@ -7,7 +7,13 @@ export default class DutchMode {
         if (!sessionStorage.getItem('dutch-mode')) {
             sessionStorage.setItem('dutch-mode', false)
         }
-        this.toggleBtn.addEventListener('change', () => this.changeMode());
+        this.toggleBtn.addEventListener('change', () => {
+            
+            document.getElementById('dialogNav').close();
+            document.getElementById('exit').style.display = 'block';
+            this.changeMode();
+        });
+
     }
     changeMode() {
 
@@ -16,22 +22,21 @@ export default class DutchMode {
         sessionStorage.setItem('dutch-mode', true) ;
 
         this.setLangAttr();
-        document.getElementById('dialogNav').close();
-        location.reload();
+        setTimeout(() => location.reload(), 1000);
     }
 
     setLangAttr() {
         if (sessionStorage.getItem('dutch-mode') == 'true') 
         { 
             // switch to dutch
-            document.querySelectorAll('[lang="nl"]').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('[lang="nl"]').forEach(el => el.style.display = 'inline');
             document.querySelectorAll('[lang="en"]').forEach(el => { if (el.tagName !== 'HTML') el.style.display = 'none';});
 
         } else
         { 
             // switch to english
             document.querySelectorAll('[lang="nl"]').forEach(el => el.style.display = 'none');
-            document.querySelectorAll('[lang="en"]').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('[lang="en"]').forEach(el => el.style.display = 'inline');
         } 
     }
 }

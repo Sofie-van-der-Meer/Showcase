@@ -19,6 +19,13 @@
     <title>Sofie van der Meer</title>
 </head>
 <body id="top">
+
+    <div id="entry" class="entry">
+        <h1 class="entry-title">Sofie van der Meer</h1>
+    </div>
+    <div id="exit">
+        <h1 class="exit-title">Sofie van der Meer</h1>
+    </div>
     
     <header class="header container flex" id="header">
         <img class="header_item header_logo" id="logo" src="../src/assets/icons/logo.png" alt="Logo Sofie van der Meer">
@@ -36,77 +43,80 @@
                 <i class="fa-solid fa-xmark fa-3x" aria-hidden="true"></i>
             </button>
         </header>   
-        <nav class="nav" id="nav">
-            <h3 class="font-weight__extraLight">
-                <ul lang="en">
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="projects.html">projects</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-                <ul lang="nl">
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="about.html">over mij</a></li>
-                    <li><a href="projects.html">projecten</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </h3>
-            <h4 class="font-weight__extraLight margin-block__3">
-                <label class="color__grey" id="labelToggleLanguage" for="toggleLanguage">
-                    <span lang="en">switch to dutch</span>
-                    <span lang="nl">verander naar engels</span>
-                </label>
-                <input type="checkbox" name="toggleLanguage" id="toggleLanguage">
-                <br>
-                <label class="color__grey" id="labelToggleDarkMode" for="toggleDarkMode">
-                    <span id="spanDarkMode">
-                        <span lang="en">switch to dark-mode</span>
-                        <span lang="nl">verander naar donkere modus</span>                        
-                    </span>
-                    <span id="spanLightMode">
-                        <span lang="en">switch to light-mode</span>
-                        <span lang="nl">verander naar lichte modus</span>                        
-                    </span>
-                </label>
-                <input type="checkbox" name="toggleDarkMode" id="toggleDarkMode">
-            </h4>
-            <footer class="flex flex__small gap__3">
-                <a href="mailto:sofievandermeer@outlook.com" >
-                    <i class="fa-regular fa-envelope fa-3x color__secundary"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/Sofie-van-der-Meer" target="_blank">
-                    <i class="fa-brands fa-linkedin fa-3x color__secundary"></i>
-                </a>
-                <a href="https://www.github.com/Sofie-van-der-Meer" target="_blank">
-                    <i class="fa-brands fa-github fa-3x color__secundary"></i>
-                </a>
-            </footer> 
-        </nav>       
+        <div class="container">
+            <nav class="nav" id="nav">
+                <h3 class="font-weight__extraLight">
+                    <ul lang="en">
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="projects.html">projects</a></li>
+                    </ul>
+                    <ul lang="nl">
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="about.html">over mij</a></li>
+                        <li><a href="projects.html">projecten</a></li>
+                    </ul>
+                </h3>
+                <h4 class="font-weight__extraLight margin-block__3">
+                    <label class="color__grey" id="labelToggleLanguage" for="toggleLanguage">
+                        <span lang="en">switch to dutch</span>
+                        <span lang="nl">verander naar engels</span>
+                    </label>
+                    <input type="checkbox" name="toggleLanguage" id="toggleLanguage">
+                    <br>
+                    <label class="color__grey" id="labelToggleDarkMode" for="toggleDarkMode">
+                        <span id="spanDarkMode">
+                            <span lang="en">switch to dark-mode</span>
+                            <span lang="nl">verander naar donkere modus</span>                        
+                        </span>
+                        <span id="spanLightMode">
+                            <span lang="en">switch to light-mode</span>
+                            <span lang="nl">verander naar lichte modus</span>                        
+                        </span>
+                    </label>
+                    <input type="checkbox" name="toggleDarkMode" id="toggleDarkMode">
+                </h4>
+                <footer class="flex flex__small gap__3">
+                    <a href="mailto:sofievandermeer@outlook.com" >
+                        <i class="fa-regular fa-envelope fa-3x color__secundary"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/Sofie-van-der-Meer" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-3x color__secundary"></i>
+                    </a>
+                    <a href="https://www.github.com/Sofie-van-der-Meer" target="_blank">
+                        <i class="fa-brands fa-github fa-3x color__secundary"></i>
+                    </a>
+                </footer> 
+            </nav>              
+        </div>
+     
     </dialog>
     
     <main class="container" id="main">
         <section id="Home_Welkom" class="home-Welkom flex flex-dir_column full-height">
-            <img src="" alt="black and white photo of Sofie van der Meer" class="card-img">
+            <img src="" alt="black and white photo of Sofie van der Meer" 
+            class="card-img img__width img__transition">
             <section class="card-content half-width">
                 <h2 class="card-title font-weight__light color__accent-primary"></h2>
                 <p class="card-description font-size__double"></p>
-                <button class="card-btn">
-                    <a class="card-urlBtn" href="contact.html"></a>
+                <button class="card-btn btn__pos_absolute">
+                    <a class="card-urlBtn" href="mailto:sofievandermeer@outlook.com"></a>
                 </button>                
             </section>
         </section>
-
+        
         <section id="Home_Introduction" class="home-Introduction flex full-height">
-            <section class="card-content three-quarters-width">
+            <div class="img__width"></div>
+             <section class="card-content half-width"> <!-- three-quarters-width -->
                 <h2 class="card-title font-weight__light color__accent-primary"></h2>
                 <p class="card-subtitle font-weight__semibold color__accent-secundary"></p>
                 <p class="card-description font-size__double"></p>
-                <button class="card-btn">
+                <button class="card-btn btn__pos_absolute">
                     <a class="card-urlBtn" href="about.html"></a>
                 </button>
             </section>
         </section>
-
+        
         <section id="Home_Projects" class="home-Projects flex full-height">
             <section class="card-group grid col_3 gap__3">              
             </section>
@@ -131,23 +141,25 @@
             <section class="flex-grow_2">
                 <h5 class="font-weight__light">
                     <ul class="flex flex__small">
-
-                        <li><a href="home.html">
-                            <span lang="en">home</span> 
-                            <span lang="nl">home</span> 
-                        </a></li>
-                        <li><a href="about.html">
-                            <span lang="en">about me</span> 
-                            <span lang="nl">over mij</span> 
-                        </a></li>
-                        <li><a href="projects.html">
-                            <span lang="en">projects</span> 
-                            <span lang="nl">projecten</span> 
-                        </a></li>
-                        <li><a href="contact.html">
-                            <span lang="en">contact</span> 
-                            <span lang="nl">contact</span> 
-                        </a></li>
+                        <li>
+                            <a href="home.html">
+                                <span lang="en">home</span> 
+                                <span lang="nl">home</span> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <span lang="en">about me</span> 
+                                <span lang="nl">over mij</span> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="projects.html">
+                                <span lang="en">projects</span> 
+                                <span lang="nl">projecten</span> 
+                            </a>
+                        </li>
+                        
                     </ul>
                 </h5>
                 <h6 class="font-weight__light margin-top__1">
@@ -173,8 +185,8 @@
                     </li>
                 </ul> 
                 <h6 class="font-weight__light margin-top__1">  
-                    <a class="color__accent-tertiairy" href="contact.html">
-                        <span lang="en">Let's talk!</span>
+                    <a class="color__accent-tertiairy" href="mailto:sofievandermeer@outlook.com">
+                        <span lang="en">Contact me!</span>
                         <span lang="nl">Contacteer mij!</span>
                     </a>
                 </h6>

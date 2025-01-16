@@ -26,10 +26,10 @@ class Script {
     getPage() {
         this.location.href.includes("about") ?
         this.page = "about" :
-        this.location.href.includes("projects") ?
-        this.page = "projects" :
         this.location.href.includes("project") ?
-        this.page = "project" :
+        this.page = "projects" :
+        // this.location.href.includes("project") ?
+        // this.page = "project" :
         this.location.href.includes("contact") ?
         this.page = "contact" :
         this.page = "home";
@@ -40,3 +40,8 @@ class Script {
 }
 
 const script = new Script();
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(document.body.classList.add('loaded'), 20000);
+    // window.scrollTo(0, 0);
+})

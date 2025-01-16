@@ -21,7 +21,7 @@ export default class Resources {
     }
     
     setInnerHTML() {
-        // try {
+        try {
             const headerElem = document.getElementById('headername');
             const headerText = this.transcript['headername'];
             if (headerElem && headerText) {
@@ -79,9 +79,9 @@ export default class Resources {
             
             this.dutchMode.setLangAttr();
 
-        // } catch (err) {
-        //     console.error(err.stack);
-        // }
+        } catch (err) {
+            console.error(err.stack);
+        }
     }
     addCardHTML(parent) {
 
@@ -97,6 +97,7 @@ export default class Resources {
         const card_urlBtn       = document.createElement("a")
         const card_span1        = document.createElement("span")
         const card_span2        = document.createElement("span")
+        const card_div      = document.createElement("div")
 
         //classlist[0]
         card.classList.add('card');
@@ -109,6 +110,7 @@ export default class Resources {
         card_library.classList.add('card-library');
         card_btn.classList.add('card-btn');
         card_urlBtn.classList.add('card-urlBtn');
+        card_div.classList.add('card-content');
 
         //classlist[n+1] for css styles
         card_img.classList.add('padding-block__3');
@@ -123,11 +125,14 @@ export default class Resources {
         card_btn.appendChild(card_urlBtn)
         card_languages.appendChild(card_span1)
         card_library.appendChild(card_span2)
+        card_div.appendChild(card_languages)
+        card_div.appendChild(card_library)
         card_content.appendChild(card_title)
         card_content.appendChild(card_description)
-        card_content.appendChild(card_languages)
-        card_content.appendChild(card_langratio)
-        card_content.appendChild(card_library)
+        // card_content.appendChild(card_languages)
+        // card_content.appendChild(card_langratio)
+        // card_content.appendChild(card_library)
+        card_content.appendChild(card_div)
         card_content.appendChild(card_btn)
         card.appendChild(card_img)
         card.appendChild(card_content)
@@ -262,10 +267,10 @@ export default class Resources {
 
                         switch (resourceKey) {
                             case 'library':
-                                childHtml.children[0].innerHTML = '<span lang="en">library: </span><span lang="nl">bibliotheek: </span>';
+                                childHtml.children[0].innerHTML = '<span lang="en">And with:&numsp;&numsp;</span><span lang="nl">En met: &numsp;&numsp;&numsp;&numsp;&nbsp; </span>';
                                 break;
                             case 'languages':
-                                childHtml.children[0].innerHTML = '<span lang="en">languages: </span><span lang="nl">programeertalen: </span>';
+                                childHtml.children[0].innerHTML = '<span lang="en">Made in:&numsp;&numsp;&numsp;</span><span lang="nl">Gemaakt in:&numsp;</span>';
                                 break;
                         
                             case 'availability':
