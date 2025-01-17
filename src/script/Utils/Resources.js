@@ -291,7 +291,11 @@ export default class Resources {
                             childHtml.innerHTML += resourceValue;
                         break;
                     }
-                    childHtml.innerHTML = resourceValue;
+                    (Array.isArray(resourceValue)) ?
+                            (childName == 'library') ?
+                            childHtml.innerHTML = `- ${resourceValue.join(' - ')}` :
+                            childHtml.innerHTML = resourceValue.join(' - ') :
+                            childHtml.innerHTML = resourceValue;
                     break;
             }
         }

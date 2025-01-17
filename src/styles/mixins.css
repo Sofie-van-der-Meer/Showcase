@@ -78,9 +78,15 @@
     flex-direction: column;
     height: calc(100% - 10rem);
 }
+.flex-center {
+    justify-content: center;
+}
 .flex__small {
     justify-content: left;
     flex-wrap: wrap;
+}
+.flex-end {
+    justify-content: end;
 }
 
 .flex-grow_1 {

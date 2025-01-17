@@ -51,66 +51,73 @@
                 <i class="fa-solid fa-xmark fa-3x" aria-hidden="true"></i>
             </button>
         </header>   
-        <nav class="nav" id="nav">
-            <h3 class="font-weight__extraLight">
-                <ul lang="en">
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="projects.html">projects</a></li>
-                </ul>
-                <ul lang="nl">
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="about.html">over mij</a></li>
-                    <li><a href="projects.html">projecten</a></li>
-                </ul>
-            </h3>
-            <h4 class="font-weight__extraLight margin-block__3">
-                <label class="color__grey" id="labelToggleLanguage" for="toggleLanguage">
-                    <span lang="en">switch to dutch</span>
-                    <span lang="nl">verander naar engels</span>
-                </label>
-                <input type="checkbox" name="toggleLanguage" id="toggleLanguage">
-                <br>
-                <label class="color__grey" id="labelToggleDarkMode" for="toggleDarkMode">
-                    <span id="spanDarkMode">
-                        <span lang="en">switch to dark-mode</span>
-                        <span lang="nl">verander naar donkere modus</span>                        
-                    </span>
-                    <span id="spanLightMode">
-                        <span lang="en">switch to light-mode</span>
-                        <span lang="nl">verander naar lichte modus</span>                        
-                    </span>
-                </label>
-                <input type="checkbox" name="toggleDarkMode" id="toggleDarkMode">
-            </h4>
-            <footer class="flex flex__small gap__3">
-                <a href="mailto:sofievandermeer@outlook.com" >
-                    <i class="fa-regular fa-envelope fa-3x color__secundary"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/Sofie-van-der-Meer" target="_blank">
-                    <i class="fa-brands fa-linkedin fa-3x color__secundary"></i>
-                </a>
-                <a href="https://www.github.com/Sofie-van-der-Meer" target="_blank">
-                    <i class="fa-brands fa-github fa-3x color__secundary"></i>
-                </a>
-            </footer> 
-        </nav>       
+        <div class="container">
+            <nav class="nav" id="nav">
+                <h3 class="font-weight__extraLight">
+                    <ul lang="en">
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="projects.html">projects</a></li>
+                    </ul>
+                    <ul lang="nl">
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="about.html">over mij</a></li>
+                        <li><a href="projects.html">projecten</a></li>
+                    </ul>
+                </h3>
+                <h4 class="font-weight__extraLight margin-block__3">
+                    <label class="color__grey" id="labelToggleLanguage" for="toggleLanguage">
+                        <span lang="en">switch to dutch</span>
+                        <span lang="nl">verander naar engels</span>
+                    </label>
+                    <input type="checkbox" name="toggleLanguage" id="toggleLanguage">
+                    <br>
+                    <label class="color__grey" id="labelToggleDarkMode" for="toggleDarkMode">
+                        <span id="spanDarkMode">
+                            <span lang="en">switch to dark-mode</span>
+                            <span lang="nl">verander naar donkere modus</span>                        
+                        </span>
+                        <span id="spanLightMode">
+                            <span lang="en">switch to light-mode</span>
+                            <span lang="nl">verander naar lichte modus</span>                        
+                        </span>
+                    </label>
+                    <input type="checkbox" name="toggleDarkMode" id="toggleDarkMode">
+                </h4>
+                <footer class="flex flex__small gap__3">
+                    <a href="mailto:sofievandermeer@outlook.com" >
+                        <i class="fa-regular fa-envelope fa-3x color__secundary"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/Sofie-van-der-Meer" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-3x color__secundary"></i>
+                    </a>
+                    <a href="https://www.github.com/Sofie-van-der-Meer" target="_blank">
+                        <i class="fa-brands fa-github fa-3x color__secundary"></i>
+                    </a>
+                </footer> 
+            </nav>              
+        </div>
+     
     </dialog>
     
     <main class="main container" id="main">
-        <header id="Project_Top" class="full-height card">
-            <section class="card-content flex flex-column">
-                <p class="card-websiteType font-weight__semibold color__grey"></p>
+
+        <header id="Project_Top" class="full-height card flex flex-column flex-end gap__3">
+            <section class="card-content two-thirds-height flex flex-column">
+                <p class="card-websiteType color__grey font-family__sofia font-weight__bold"></p>
                 <h2 class="card-title font-weight__light color__accent-primary"></h2>
                 <div class="wrapper">
                     <img src="" alt="" class="card-img">
                 </div>
             </section>
-            <footer class="card-footer flex">
+            <footer class="card-footer full-width flex">
                 <p class="card-content">
-                    <span class="card-languages"><span class="color__grey"></span></span>
-                    <br>
-                    <span class="card-library"><span class="color__grey"></span></span>
+                    <span class="card-languages">
+                        <!-- <span class="color__grey hidden"></span> -->
+                    </span> 
+                    <span class="card-library">
+                        <!-- <span class="color__grey hidden"></span> -->
+                    </span>
                 </p>
                 <p class="card-date"></p>
             </footer>
@@ -118,56 +125,63 @@
 
         <section id="Project_Content">
             <section class="sect-group">
-                <section class="sect half-height">
-                    <section class="sect-content">
-                        <img src="" alt="" class="sect-img_01">
-                        <button class="sect-btn_1">
+                <section class="sect half-height flex">
+                    <section class="sect-content flex flex-dir_column gap__3">
+                        <img src="" alt="" class="sect-img_01 img__width">
+                        <button class="sect-btn_1 btn__pos_absolute">
                             <a class="sect-urlBtn_1" href=""></a>
                         </button>
-                        <button class="sect-btn_2">
+                        <button class="sect-btn_2 btn__pos_absolute">
                             <a class="sect-urlBtn_2" href=""></a>
                         </button>
                         <p lang="en" class="sect-introduction">
-                            <span class="color__grey"></span>
+                            <span class="color__grey font-family__sofia font-weight__bold"></span>
                         </p>
                         <p lang="nl" class="sect-introductie">
-                            <span class="color__grey"></span>
+                            <span class="color__grey font-family__sofia font-weight__bold"></span>
                         </p>
                     </section>
                 </section>
-                <section class="sect half-height">
-                    <section class="sect-content">
+                <section class="sect half-height flex">
+                    <section class="sect-content half-width">
                         <p lang="en" class="sect-challenges">
-                            <span class="color__grey"></span>
+                            <span class="color__grey font-family__sofia font-weight__bold"></span>
                         </p>
                         <p lang="en" class="sect-approach">
-                            <span class="color__grey"></span>
+                            <span class="color__grey font-family__sofia font-weight__bold"></span>
                         </p>
                         <p lang="nl" class="sect-uitdagingen">
-                            <span class="color__grey"></span>
+                            <span class="color__grey font-family__sofia font-weight__bold"></span>
                         </p>
                         <p lang="nl" class="sect-aanpak">
-                            <span class="color__grey"></span>
+                            <span class="color__grey font-family__sofia font-weight__bold"></span>
                         </p>
                     </section>
                 </section>
-                <section class="sect-imgList flex">
+
+                <section class="sect full-height inline-scroll_container">
+                    <section class="sect inline-scroll_sticky">
+                        <section class="sect-imgList flex gap__3">
+                        </section>                    
+                    </section>
                 </section>
-                <section class="sect half-height">
-                    <section class="sect-content">
-                        <img src="" alt="" class="sect-img_02">
+
+
+                <section class="sect half-height flex">
+                    <section class="sect-content flex flex-dir_column gap__3">
+                        <img src="" alt="" class="sect-img_02 img__width">
                         <p lang="en" class="sect-result">
-                            <span class="color__grey"></span>
+                            <span class="color__grey font-family__sofia font-weight__bold"></span>
                         </p>
                         <p lang="nl" class="sect-resultaat">
-                            <span class="color__grey"></span>
+                            <span class="color__grey font-family__sofia font-weight__bold"></span>
                         </p>
                     </section>
                 </section>                   
             </section>
         </section>
         
-        <footer id="Project_Bottom">
+        <footer id="Project_Bottom" class="flex margin-block__3">
             <h4 class="card-content">
                 <a href="" onclick="handleHashChange(event, href)" class="card-previous">default</a>
             </h4>
