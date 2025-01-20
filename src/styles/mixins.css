@@ -7,7 +7,7 @@
 
     /* heights en widths */
     --header-height:        calc(3rem + 2rem);
-    --header-logo-width:    calc(var(--header-height) * 1.1320312); /* ratio of logo */
+    --header-logo-width:    calc(3rem * 1.1320312); /* hoogte * ratio of logo */
     --header-bar-width:     35px;
     /* --scrollbar-witdh:      0.25rem; */
 

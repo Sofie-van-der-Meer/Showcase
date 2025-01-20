@@ -181,6 +181,7 @@ header and footer styles, general container widths, etc. */
     text-align: end; */
     padding: 0;
     padding-left: calc(var(--header-logo-width) - var(--header-bar-width));
+    /* padding-left: calc(55px - 35px); */
 } 
 
 /* dialog */
@@ -258,7 +259,8 @@ html {
     margin-top: var(--header-height);
     /* padding-top: var(--header-height); */
 }
-.main > section {
+.main > section
+ {
     scroll-snap-align: start;
     /* outline: 3px solid yellow; */
 }
@@ -268,6 +270,7 @@ html {
 
 .full-height {
     min-height: 100svh;
+    /* height: 100svh; */
     /* outline: 1px white solid; */
 }
 .two-thirds-height {
@@ -325,16 +328,16 @@ header:is(.half-height) {
 .btn__pos_absolute:has(.card-urlBtn) {
     top: calc(100% + 35px);
 }
-.btn__pos_absolute:has(.sect-urlBtn_1),
-.btn__pos_absolute:has(.sect-urlBtn_2) {
-    bottom: 0;
+.btn__pos_bottom {
+    bottom: 1rem;
+}
+.btn__pos_right {
+    right: -2rem;
 }
 .btn__pos_absolute:has(.sect-urlBtn_1) {
     left: calc(40% + 3rem);
 }
-.btn__pos_absolute:has(.sect-urlBtn_2) {
-    left: calc(40% + 3rem + 7rem + 1.5rem);
-}
+
 
 /* @keyframes scrollingX {
     100% {
@@ -357,7 +360,7 @@ header:is(.half-height) {
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: inline mandatory;
-    scrollbar-width: none;
+    scrollbar-width: thin;
 
     background-color: var(--color-secundary-background);
 }
@@ -385,11 +388,14 @@ header:is(.half-height) {
     background-color: var(--color-secundary-background);
     width: auto;
     height: 50svh;
-    padding: 5rem;
-    margin-block: 3.75rem;
+    /* margin-block: 3.75rem; */
     .card-img {
         height: 100%;
     }
+}
+.wrapper:has(.card-img):not(.padding-zero)
+ {
+    padding: 5rem;
 }
 
 
@@ -455,17 +461,20 @@ Global helper classes
 .visible {
     display: block;
 }
-/* .addBefore::before {
-    content: attr(data-text);
-    display: block;
-    position: absolute;
-    z-index: 1;
-    width: min(71.2rem, calc(100vw - 4rem));
-    /* width: bug nog oplossen */
-    /*height: calc(100svh - var(--header-height));
+
+.message_notPublished {
+    width: 100%;
+    max-width: 600px;
     color: inherit;
     background-color: rgba(255, 0, 0 , 20%);
-} */
+    
+    font-family: var(--font-family__source-serif-4);
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+    margin-inline: auto;
+}
 input[type="checkbox"] {
     appearance: none;
 }
@@ -478,15 +487,21 @@ input[type="checkbox"] {
 ::-webkit-scrollbar {
     width: 0.5rem;
 }
+::-webkit-scrollbar-track,
+.sect-imgList
 ::-webkit-scrollbar-track {
     background: transparent;
 }
 
+::-webkit-scrollbar-thumb,
+.sect-imgList
 ::-webkit-scrollbar-thumb {
     background: var(--grey);
     border-radius: 0.125rem;
 }
 
+::-webkit-scrollbar-button,
+.sect-imgList
 ::-webkit-scrollbar-button {
     background: transparent;
     height: 0.125rem;

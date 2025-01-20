@@ -57,14 +57,15 @@ export default class Resources {
                     console.log(sections[0]['notPublished']);
 
                     const setNotPublishedMessage = function(sections) {
-                        const sect1 = document.getElementById(sections[0].id);
                         const sect2 = document.getElementById(sections[1].id);
                         const text = sections[0]['notPublished'];
-                        console.log(sect1) ;  
-
-                        sect1.classList.add('addBefore');
-                        sect2.classList.add('hidden');
-                        sect1.setAttribute('data-text', text);
+                        // nieuwe versie
+                        sect2.getElementsByClassName('sect-group')[0].classList.add('hidden');
+                        const message = document.createElement('h5');
+                        message.classList.add('message_notPublished');
+                        sect2.classList.add('flex');
+                        message.innerHTML = text;
+                        sect2.appendChild(message);
                         }
                     setNotPublishedMessage(sections);
 
@@ -274,11 +275,11 @@ export default class Resources {
                                 break;
                         
                             case 'availability':
-                                childHtml.children[0].innerHTML = '<span lang="en">availability: </span><span lang="nl">beschikbaarheid: </span>';
+                                childHtml.children[0].innerHTML = '<span lang="en">Availability: </span><span lang="nl">Beschikbaarheid: </span>';
                                 break;
                         
                             case 'related_interests':
-                                childHtml.children[0].innerHTML = '<span lang="en">related_interests: </span><span lang="nl">gerelateerde interesse: </span>';
+                                childHtml.children[0].innerHTML = '<span lang="en">Related interests: </span><span lang="nl">Gerelateerde interesse: </span>';
                                 break;
                         
                             default:

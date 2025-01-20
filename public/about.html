@@ -94,25 +94,27 @@
     
     <main class="main container" id="main">
         
-        <header id="About_Top" class="full-height card">
-            <section class="card-content flex flex-column">
-                <p class="card-subtitle font-weight__semibold color__grey"></p>
+        <header id="About_Top" class="full-height card flex flex-column flex-end gap__3 padding-block__3">
+            <section class="card-content two-thirds-height flex flex-column">
+                <p class="card-subtitle color__grey font-family__sofia font-weight__bold"></p>
                 <h2 class="card-title font-weight__light color__accent-primary"></h2>
-                <div class="wrapper">
-                    <button class="sect-btn">
+
+                    <button class="sect-btn btn__pos_absolute btn__pos_bottom btn__pos_right">
                         <a class="sect-urlBtn" href="" target="_blank">default</a>
                     </button>
-                    <img src="" alt="" class="card-img">
-                </div>
+                    <div class="wrapper padding-zero">
+                        <img src="" alt="" class="card-img"> 
+                    </div>
+                
             </section>
-            <footer class="card-footer flex">
+            <footer class="card-footer full-width flex">
                 <p class="card-related_interests"><span class="color__grey"></span></p>
                 <p class="card-availability"><span class="color__grey"></span></p>
             </footer>
         </header>
         
         <section id="About_Skills">
-            <section class="card-group">
+            <section class="card-group grid col_3 gap__3">
                 <section class="card">
                     <h4 class="card-title"></h4>
                     <p lang="en" class="card-Programming_Languages"><span class="color__grey"></span></p>
@@ -140,7 +142,7 @@
         
         <section id="About_Education">
             <h4 class="card-title"></h4>
-            <ul class="card-group">
+            <ul class="card-group grid col_3 gap__3">
                 <li class="card">
                     <p class="card-school"><span class="color__grey"></span></p>
                     <p lang="en" class="card-study"><span class="color__grey"></span></p>
@@ -170,7 +172,7 @@
         
         <section id="About_Work">
             <h4 class="card-title"></h4>
-            <ul class="card-group">
+            <ul class="card-group grid col_3 gap__3">
                 <li class="card">
                     <p lang="en" class="card-company"><span class="color__grey"></span></p>
                     <p lang="nl" class="card-bedrijf"><span class="color__grey"></span></p>
@@ -202,7 +204,7 @@
             </ul>
         </section>
         
-        <footer id="About_Bottum">
+        <footer id="About_Bottum" class="flex margin-block__3">
             <h4 class="card-content">
                 <a class="sect-urlBtn_1" href="" target="_blank">default</a>
             </h4>

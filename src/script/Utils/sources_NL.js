@@ -62,7 +62,7 @@ export default {
                 textBtn:            "sofievandermeer@outlook.com", 
                 title:              "Sofie van der Meer",
                 subtitle:           "Junior Full-Stack developer",
-                availability:       "Beschikbaar vanaf 1 maart ‘25,<br> sta open voor stage/IBO.",
+                availability:       "Beschikbaar vanaf 1 maart ‘25, sta open voor stage/IBO.",
                 related_interests:  ["Virtual Realty", "2D & 3D Visuals"]
             },
             {
@@ -229,13 +229,13 @@ export default {
                                 textBtn_2:      "Ga naar de code",
                                 urlBtn_1:       "urlgolive",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Pizzaria",
-                                img_01:         "../src/assets/images/pizzaria/add-to-shoppingcart.png",
-                                img_02:         "../src/assets/images/pizzaria/structure.png",
+                                img_01:         "../src/assets/images/pizzaria/structure.png",
+                                img_02:         "../src/assets/images/pizzaria/add-to-shoppingcart.png",
                                 imgList:        [
-                                    "../src/assets/images/pizzaria/add-to-shoppingcart.png",
                                     "../src/assets/images/pizzaria/home-page.png",
-                                    "../src/assets/images/pizzaria/order-page_change-contactdetails.png",
+                                    "../src/assets/images/pizzaria/add-to-shoppingcart.png",
                                     "../src/assets/images/pizzaria/order-page.png",
+                                    "../src/assets/images/pizzaria/order-page_change-contactdetails.png",
                                     "../src/assets/images/pizzaria/register-page.png",
                                     "../src/assets/images/pizzaria/sql.svg",
                                     "../src/assets/images/pizzaria/structure.png"
@@ -251,7 +251,7 @@ export default {
                     },
                     {
                         id:           "#bubbles-in-color",
-                        img:          "../src/assets/icons/ellipsis.svg",
+                        img:          "../src/assets/icons/bullets.svg",
                         title:        "Bubbles in Color",
                         description:  "In dit interactieve spel kunnen gebruikers een verscheidenheid aan bubbels kleuren, wat zorgt voor een leuke en creatieve ervaring.",
                         languages:    ["JavaScript", "HTML", "CSS"],
@@ -262,7 +262,7 @@ export default {
                             {
                                 id:             "Project_Top",
                                 websiteType:    "game",
-                                img:            "../src/assets/icons/ellipsis.svg",
+                                img:            "../src/assets/icons/bullets.svg",
                                 title:          "Bubbles in Color",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
@@ -294,7 +294,7 @@ export default {
                     },
                     {
                         id:           "#treasure-hunt",
-                        img:          "../src/assets/icons/ellipsis.svg",
+                        img:          "../src/assets/icons/cat.svg",
                         title:        "Treasure Hunt",
                         description:  "In dit spannende schattenjachtspel gaan spelers op een avontuurlijke zoektocht om verborgen schatten te ontdekken.",
                         languages:    ["JavaScript", "HTML", "CSS"],
@@ -305,7 +305,7 @@ export default {
                             {
                                 id:             "Project_Top",
                                 websiteType:    "game",
-                                img:            "../src/assets/icons/ellipsis.svg",
+                                img:            "../src/assets/icons/cat.svg",
                                 title:          "Treasure Hunt",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
