@@ -109,7 +109,10 @@
 }
 .col_2 {
     grid-template-columns: repeat(
-        auto-fill, minmax(min(300px, 100%), 1fr));
+        auto-fill, minmax(min(350px, 100%), 1fr));
+}
+.col_full-width {
+    grid-column: 1/-1;
 }
 
 .container {

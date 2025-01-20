@@ -222,7 +222,7 @@ header and footer styles, general container widths, etc. */
 /* .card-btn:not(.card-group .card-btn) {
     margin: 1rem 0 0 2rem;
 } */
-.card-group {
+.projects-card .card-group {
     width: 100%;
     .card {
         padding: 1rem;
@@ -241,7 +241,7 @@ header and footer styles, general container widths, etc. */
     }
     .color__grey span {
         text-transform: uppercase;
-        /* font-size: .8rem; */
+        font-size: .8rem;
     }
     p, div {
         width: 100%;
@@ -250,6 +250,17 @@ header and footer styles, general container widths, etc. */
         padding-left: 1.5rem;
     }
 }
+.about-card .card {
+    background-color: var(--color-secundary-background);
+    border-radius: 20px;
+    padding: 1rem;
+}
+.about-card h5 {
+    padding: 1rem;
+    text-decoration: underline var(--accent-primary) 2px;
+}
+
+
 
 /* main */
 html {
@@ -411,15 +422,7 @@ button {
     margin-block: 1rem;
 }
 
-button:has(a:hover) {
-    background-color: var(--accent-primary);
-} 
-.card-group button:hover {
-    background-color: var(--accent-secundary);
-}
-.card-group .card:hover {
-    box-shadow: 2px -2px 15px var(--accent-secundary);
-}
+
 
 
 /* Global colors: 
@@ -432,9 +435,6 @@ body, a, i {
     color: var(--color-primary);
 }
 
-a:hover {
-    text-decoration: underline 1px;
-}
 button:has(i) {
     background-color: transparent;
     border: none;
@@ -444,6 +444,20 @@ button:has(i) {
 }
 .color__grey {
     color: var(--color-grey);
+}
+
+/* hover */
+a:hover {
+    text-decoration: underline var(--accent-primary) 0.1rem;
+}
+button:has(a:hover) {
+    background-color: var(--accent-primary);
+} 
+.card-group button:hover {
+    background-color: var(--accent-secundary);
+}
+.projects-card .card:hover {
+    box-shadow: 2px -2px 15px var(--accent-secundary);
 }
 .nav li a:hover, 
 .nav .color__grey:hover,
@@ -475,6 +489,7 @@ Global helper classes
     padding: 2rem;
     margin-inline: auto;
 }
+
 input[type="checkbox"] {
     appearance: none;
 }

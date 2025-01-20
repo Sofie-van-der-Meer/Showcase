@@ -283,7 +283,7 @@ export default class Resources {
                                 break;
                         
                             default:
-                                childHtml.children[0].innerHTML = resourceKey.replaceAll('_', ' ') + ': ';
+                                childHtml.children[0].innerHTML = resourceKey.replaceAll('_', ' ') + ': <br> ';
                                 break;
                         }
 

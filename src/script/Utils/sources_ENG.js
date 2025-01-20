@@ -60,25 +60,34 @@ export default {
             {
                 id:                 "About_Top",
                 img:                "../src/assets/images/black-white.jpg",
-                urlBtn:             "mailto:sofievandermeer@outlook.com", 
-                textBtn:            "sofievandermeer@outlook.com", 
                 title:              "Sofie van der Meer",
                 subtitle:           "Junior Full-Stack developer",
-                availability:       "Available from 1st March 2025, open to internship/IBO.",
-                related_interests:  ["Virtual Realty", "2D & 3D Visuals"]
+                availability_1:     "Available from 1st March 2025",
+                availability_2:     "Open to internship/IBO"
             },
             {
-                id:             "About_Skills",
-                profile:        "A curious and ambitious developer with a strong analytical mindset and a passion for creative solutions. Eager to learn and thrive in Full-Stack development, looking for a position where creative thinking and problem solving can be fully utilized. Ready to become your next Full-Stack Developer!",
-                projects:    [
+                id:                 "About_Me",
+                profile:            "A curious and ambitious developer with a strong analytical mindset and a passion for creative solutions. Eager to learn and thrive in Full-Stack development, looking for a position where creative thinking and problem solving can be fully utilized. Ready to become your next Full-Stack Developer!",
+                urlBtn:             "mailto:sofievandermeer@outlook.com", 
+                textBtn:            "sofievandermeer@outlook.com", 
+                availability:       "Available from 1st March 2025, open to internship/IBO.",
+                related_interests:  ["Virtual Realty", "2D & 3D Visuals"]            },
+            {
+                id:             "About_Hard-Skills",
+                title:          "hard skills",
+                projects:       [
                     {
-                        title:  "hard skills",
                         Programming_Languages:      ["PHP", "JS", "HTML", "CSS"],
                         Framework_And_Libraries:    ["Bootstrap", "THREE.js"],
                         Development_Methodologies:  ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
-                    },
+                    }
+                ] 
+            },
+            {
+                id:             "About_Soft-Skills",
+                title:          "soft skills",
+                projects:       [
                     {
-                        title:  "soft skills",
                         Creativity:       ["Artistic", "Innovative", "Eye for Detail", "Perfectionist"],
                         Problem_Solving:  ["Analytical", "Solution-Oriented"],
                         Growth:           ["Eager to Learn", "Curious", "Autodidactic"],
@@ -134,7 +143,7 @@ export default {
                 ]
             },
             {
-                id:         "About_Bottum",
+                id:         "About_Bottom",
                 urlBtn_1:   "../src/assets/CV_Sofie-van-der-Meer_ENG.pdf",
                 textBtn_1:  "Download my CV",
                 urlBtn_2:   "mailto:sofievandermeer@outlook.com", 

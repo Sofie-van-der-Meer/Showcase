@@ -29,14 +29,14 @@ export default class DutchMode {
         if (sessionStorage.getItem('dutch-mode') == 'true') 
         { 
             // switch to dutch
-            document.querySelectorAll('[lang="nl"]').forEach(el => el.style.display = 'inline');
+            document.querySelectorAll('[lang="nl"]').forEach(el => el.classList.remove('hidden'));
             document.querySelectorAll('[lang="en"]').forEach(el => { if (el.tagName !== 'HTML') el.style.display = 'none';});
 
         } else
         { 
             // switch to english
-            document.querySelectorAll('[lang="nl"]').forEach(el => el.style.display = 'none');
-            document.querySelectorAll('[lang="en"]').forEach(el => el.style.display = 'inline');
+            document.querySelectorAll('[lang="nl"]').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('[lang="en"]').forEach(el => el.classList.remove('hidden'));
         } 
     }
 }

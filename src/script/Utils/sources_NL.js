@@ -58,29 +58,37 @@ export default {
             {
                 id:                 "About_Top",
                 img:                "../src/assets/images/black-white.jpg",
-                urlBtn:             "mailto:sofievandermeer@outlook.com", 
-                textBtn:            "sofievandermeer@outlook.com", 
                 title:              "Sofie van der Meer",
                 subtitle:           "Junior Full-Stack developer",
-                availability:       "Beschikbaar vanaf 1 maart ‘25, sta open voor stage/IBO.",
-                related_interests:  ["Virtual Realty", "2D & 3D Visuals"]
+                availability_1:     "Beschikbaar vanaf 1 maart ‘25",
+                availability_2:     "sta open voor stage/IBO"
             },
             {
-                id:             "About_Skills",
-                profile:        "Een nieuwsgierige en ambitieuze developer met een sterk analytisch denkvermogen en een passie voor creatieve oplossingen. Leergierig en vastbesloten om te groeien in Full-Stack development, op zoek naar een positie waar creatief denken en probleemoplossend vermogen volledig benut kunnen worden. Klaar om jouw volgende Full-Stack Developer te worden!",
+                id:                 "About_Me",
+                profile:            "Een nieuwsgierige en ambitieuze developer met een sterk analytisch denkvermogen en een passie voor creatieve oplossingen. Leergierig en vastbesloten om te groeien in Full-Stack development, op zoek naar een positie waar creatief denken en probleemoplossend vermogen volledig benut kunnen worden. Klaar om jouw volgende Full-Stack Developer te worden!",
+                urlBtn:             "mailto:sofievandermeer@outlook.com", 
+                textBtn:            "sofievandermeer@outlook.com", 
+                availability:       "Beschikbaar vanaf 1 maart ‘25, sta open voor stage/IBO.",
+                related_interests:  ["Virtual Realty", "2D & 3D Visuals"] 
+            },            {
+                id:             "About_Hard-Skills",
+                title:          "hard skills",
                 projects:    [
                     {
-                        title:  "hard skills",
-                        Programmeertalen:      ["PHP", "JS", "HTML", "CSS"],
-                        Frameworks_en_bibliotheken:    ["Bootstrap", "THREE.js"],
-                        Development_Methodes:  ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
-                    },
+                        Programming_Languages:      ["PHP", "JS", "HTML", "CSS"],
+                        Framework_And_Libraries:    ["Bootstrap", "THREE.js"],
+                        Development_Methodologies:  ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
+                    }
+                ] 
+            },            {
+                id:             "About_Soft-Skills",
+                title:          "soft skills",
+                projects:    [
                     {
-                        title:  "soft skills",
-                        Creativiteit:         ["Artistiek", "Innovatief", "Oog voor Detail", "Perfectionist"],
-                        Probleemoplossend:    ["Analytisch", "Oplossingsgericht"],
-                        Groei:                ["Leergierig", "Nieuwsgierig", "Autodidactisch"],
-                        Gedreven:             ["Ambitieus", "Doorzettingsvermogen"]
+                        Creativity:         ["Artistiek", "Innovatief", "Oog voor Detail", "Perfectionist"],
+                        Problem_Solving:    ["Analytisch", "Oplossingsgericht"],
+                        Growth:             ["Leergierig", "Nieuwsgierig", "Autodidactisch"],
+                        Driven:             ["Ambitieus", "Doorzettingsvermogen"]
                     } 
                 ] 
             },
@@ -132,7 +140,7 @@ export default {
                 ]
             },
             {
-                id:         "About_Bottum",
+                id:         "About_Bottom",
                 urlBtn_1:   "../src/assets/CV_Sofie-van-der-Meer_NL.pdf",
                 textBtn_1:  "Download mijn CV",
                 urlBtn_2:   "mailto:sofievandermeer@outlook.com", 
