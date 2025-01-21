@@ -26,17 +26,22 @@ export default class DutchMode {
     }
 
     setLangAttr() {
+        let lang = {};
         if (sessionStorage.getItem('dutch-mode') == 'true') 
         { 
-            // switch to dutch
-            document.querySelectorAll('[lang="nl"]').forEach(el => el.classList.remove('hidden'));
-            document.querySelectorAll('[lang="en"]').forEach(el => { if (el.tagName !== 'HTML') el.style.display = 'none';});
+            lang.current = "nl";
+            lang.notCurrent = "en";
 
         } else
-        { 
+        {  
+            
+            lang.current = "en";
+            lang.notCurrent = "nl";
             // switch to english
-            document.querySelectorAll('[lang="nl"]').forEach(el => el.classList.add('hidden'));
-            document.querySelectorAll('[lang="en"]').forEach(el => el.classList.remove('hidden'));
+            // document.querySelectorAll('[lang="nl"]').forEach(el => el.classList.add('hidden'));
+            // document.querySelectorAll('[lang="en"]').forEach(el => el.classList.remove('hidden'));
         } 
+        document.querySelectorAll(`[lang="${lang.current}"]`).forEach(el => el.classList.remove('hidden'));
+        document.querySelectorAll(`[lang="${lang.notCurrent}"]`).forEach(el => { if (el.tagName !== 'HTML') {el.classList.add('hidden')} else {el.lang = lang.current};});
     }
 }

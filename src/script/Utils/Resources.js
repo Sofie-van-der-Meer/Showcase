@@ -87,6 +87,7 @@ export default class Resources {
     addCardHTML(parent) {
 
         const card              = document.createElement("section")
+        const card_url          = document.createElement("a")
         const card_img          = document.createElement("img")
         const card_content      = document.createElement("section")
         const card_title        = document.createElement("h4")
@@ -102,6 +103,7 @@ export default class Resources {
 
         //classlist[0]
         card.classList.add('card');
+        card_url.classList.add('card-url');
         card_img.classList.add('card-img');
         card_content.classList.add('card-content');
         card_title.classList.add('card-title');
@@ -135,8 +137,9 @@ export default class Resources {
         // card_content.appendChild(card_library)
         card_content.appendChild(card_div)
         card_content.appendChild(card_btn)
-        card.appendChild(card_img)
-        card.appendChild(card_content)
+        card_url.appendChild(card_img)
+        card_url.appendChild(card_content)
+        card.appendChild(card_url)
         parent.appendChild(card);
 
     }
@@ -219,7 +222,11 @@ export default class Resources {
                 case 'textBtn_2':
                     if (childName == 'urlBtn_2') childHtml.innerHTML = resourceValue;
                     break;
-            
+                case 'urlBtn':
+                    if (childName == 'url') childHtml.href = resourceValue;
+                    
+                case 'imgAlt':
+                    if (childName == 'img') childHtml.alt = resourceValue;
                 default:
                     break;
             }
@@ -235,6 +242,20 @@ export default class Resources {
             if (childName !== resourceKey) continue;
 
             switch (childName) {
+                case 'colors':
+                    resourceValue.forEach(element => {
+                        
+                        const div = document.createElement('div')
+                        div.style.background = element
+                        div.classList.add('bullet')
+                        div.innerHTML = element
+                        childHtml.appendChild(div)
+                        console.log(this.getBrightness(element) < 128);
+                        if (this.getBrightness(element) < 128) {
+                            div.classList.add('bullet-dark')
+                        }
+                    });
+                    break;
                 case 'img_01':
                 case 'img_02':
                 case 'img':
@@ -258,7 +279,6 @@ export default class Resources {
                 case 'urlBtn_2':
                     childHtml.href = resourceValue;
                     break;
-
                 case 'langratio':
                     childHtml.innerHTML =  resourceValue.join('% - ') + '%';
                     break;
@@ -304,5 +324,16 @@ export default class Resources {
         if (!arrResourcesHasTextBtn && (parent.classList[0] == 'card-btn' && childName == 'urlBtn') ) {
             childHtml.innerHTML = '<span lang="en">Get more info</span><span lang="nl">Meer info</span>';
         }
+    }
+    getBrightness(element) {
+        let hex = element.slice(1).match(/.{1,2}/g)
+        console.log(hex);
+        let rgb = {}
+        rgb.r = parseInt(hex[0], 16),
+        rgb.g = parseInt(hex[1], 16),
+        rgb.b = parseInt(hex[2], 16)
+        
+        console.log(rgb);
+        return ((rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000)
     }
 }

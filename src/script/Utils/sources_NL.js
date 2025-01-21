@@ -5,6 +5,7 @@ export default {
             {
                 id:           "Home_Welkom",
                 img:          "../src/assets/images/black-white.jpg",
+                imgAlt:       "zwart-wit foto van Sofie van der Meer",
                 title:        "Hey ik ben \n Sofie van der Meer",
                 description:  "Welkom op dit platform, waar je een glimp krijgt van mijn skills en capaciteiten als Junior Full-Stack Developer.",
                 textBtn:      "Contacteer mij",
@@ -13,6 +14,7 @@ export default {
             {
                 id:           "Home_Introduction",
                 img:          "../src/assets/images/black-white.jpg",
+                imgAlt:       "zwart-wit foto van Sofie van der Meer",
                 title:        "Creatieve Full-Stack developer",
                 // subtitle:     "- Creatieve Full-Stack developer -",
                 description:  "Ik word gedreven door nieuwsgierigheid en ambitie. Mijn analytische vaardigheden, gecombineerd met mijn creativiteit, stellen me in staat om oplossingen te creëren, zoals 2D- en 3D-visuals, die zowel innovatief als nauwkeurig zijn, en mijn aandacht voor detail en probleemoplossend vermogen weerspiegelen.",
@@ -24,6 +26,7 @@ export default {
                 projects:     [
                     {
                         img:          "../src/assets/images/prularia/prularia_logo.png",
+                        imgAlt:       "kroon, logo van project Prularia",
                         title:        "Prularia",
                         description:  "Als een team van 9 ontwikkelaars hebben we een e-commerceplatform gebouwd om praktijkervaring op te doen met de principes van Scrum en Agile-methodologieën.",
                         languages:    ["JavaScript", "PHP", "CSS"],
@@ -33,6 +36,7 @@ export default {
                     },
                     {
                         img:          "../src/assets/icons/pizza.svg",
+                        imgAlt:       "pizzastuk, logo van project Pizzaria",
                         title:        "Pizzaria",
                         description:  "Dit project is een e-commerce webapplicatie die gebruikers de mogelijkheid biedt om een verscheidenheid aan pizza's te verkennen en te bestellen.",
                         languages:    ["PHP", "CSS"],
@@ -40,7 +44,8 @@ export default {
                         urlBtn:       "project.html#pizzaria"
                     },
                     {
-                        img:          "../src/assets/icons/ellipsis.svg",
+                        img:          "../src/assets/icons/bullets.svg",
+                        imgAlt:       "9 cirkels die een vierkant vormen, logo van project Bubbles in Color",
                         title:        "Bubbles in Color",
                         description:  "In dit interactieve spel kunnen gebruikers een verscheidenheid aan bubbels kleuren, wat zorgt voor een leuke en creatieve ervaring.",
                         languages:    ["JavaScript", "HTML", "CSS"],
@@ -58,6 +63,7 @@ export default {
             {
                 id:                 "About_Top",
                 img:                "../src/assets/images/black-white.jpg",
+                imgAlt:             "zwart-wit foto van Sofie van der Meer",
                 title:              "Sofie van der Meer",
                 subtitle:           "Junior Full-Stack developer",
                 availability_1:     "Beschikbaar vanaf 1 maart ‘25",
@@ -65,7 +71,7 @@ export default {
             },
             {
                 id:                 "About_Me",
-                profile:            "Een nieuwsgierige en ambitieuze developer met een sterk analytisch denkvermogen en een passie voor creatieve oplossingen. Leergierig en vastbesloten om te groeien in Full-Stack development, op zoek naar een positie waar creatief denken en probleemoplossend vermogen volledig benut kunnen worden. Klaar om jouw volgende Full-Stack Developer te worden!",
+                profile:            "Een nieuwsgierige en ambitieuze developer met een sterk analytisch denkvermogen en een passie voor creatieve oplossingen. \n\n Leergierig en vastbesloten om te groeien in Full-Stack development, op zoek naar een positie waar creatief denken en probleemoplossend vermogen volledig benut kunnen worden. \n\n Klaar om jouw volgende Full-Stack Developer te worden!",
                 urlBtn:             "mailto:sofievandermeer@outlook.com", 
                 textBtn:            "sofievandermeer@outlook.com", 
                 availability:       "Beschikbaar vanaf 1 maart ‘25, sta open voor stage/IBO.",
@@ -75,9 +81,9 @@ export default {
                 title:          "hard skills",
                 projects:    [
                     {
-                        Programming_Languages:      ["PHP", "JS", "HTML", "CSS"],
-                        Framework_And_Libraries:    ["Bootstrap", "THREE.js"],
-                        Development_Methodologies:  ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
+                        Programmeertalen:           ["PHP", "JS", "HTML", "CSS"],
+                        Frameworks_en_bibliotheken: ["Bootstrap", "THREE.js"],
+                        Development_Methodes:       ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
                     }
                 ] 
             },            {
@@ -85,10 +91,10 @@ export default {
                 title:          "soft skills",
                 projects:    [
                     {
-                        Creativity:         ["Artistiek", "Innovatief", "Oog voor Detail", "Perfectionist"],
-                        Problem_Solving:    ["Analytisch", "Oplossingsgericht"],
-                        Growth:             ["Leergierig", "Nieuwsgierig", "Autodidactisch"],
-                        Driven:             ["Ambitieus", "Doorzettingsvermogen"]
+                        Creativiteit:       ["Artistiek", "Innovatief", "Oog voor Detail", "Perfectionist"],
+                        Probleemoplossend:  ["Analytisch", "Oplossingsgericht"],
+                        Groei:              ["Leergierig", "Nieuwsgierig", "Autodidactisch"],
+                        Gedreven:           ["Ambitieus", "Doorzettingsvermogen"]
                     } 
                 ] 
             },
@@ -98,18 +104,18 @@ export default {
                 projects:   [
                     {
                         school:     "VDAB",
-                        opleiding:  "Full-Stack Developer",
-                        jaar:       "2024 - 2025"
+                        study:  "Full-Stack Developer",
+                        year:       "2024 - 2025"
                     },
                     {
                         school:     "CleanTechPunt Houthalen",
-                        opleiding:  "Cleantech Ambassador",
-                        jaar:       "2023"
+                        study:  "Cleantech Ambassador",
+                        year:       "2023"
                     },
                     {
                         school:     "Erasmushogeschool Brussel",
-                        opleiding:  "Bachelor in Landschap & Tuinarchitectuur",
-                        jaar:       "2014 - 2018"
+                        study:  "Bachelor in Landschap & Tuinarchitectuur",
+                        year:       "2014 - 2018"
                     }
                 ]
             },
@@ -118,24 +124,24 @@ export default {
                 title:            "werkervaring",
                 projects:   [
                     {
-                        bedrijf:  "Agentschap voor Natuur & Bos",
+                        company:  "Agentschap voor Natuur & Bos",
                         job:      "Deskundige overheidsopdrachten & landschapsarchitect",
-                        jaar:     "2020 - 2023"
+                        year:     "2020 - 2023"
                     },
                     {
-                        bedrijf:  "Vlaamse Landmaatschappij",
+                        company:  "Vlaamse Landmaatschappij",
                         job:      "Dossierbeheerder Platteland",
-                        jaar:     "2019"
+                        year:     "2019"
                     },
                     {
-                        bedrijf:  "Tielens Tuinen",
+                        company:  "Tielens Tuinen",
                         job:      "Tuinarchitect & calculator",
-                        jaar:     "2018 - 2019"
+                        year:     "2018 - 2019"
                     },
                     {
-                        bedrijf:  "Regionaal Landschap Haspengouw & Voeren",
+                        company:  "Regionaal Landschap Haspengouw & Voeren",
                         job:      "Stage",
-                        jaar:     "2017"
+                        year:     "2017"
                     }
                 ]
             },
@@ -153,7 +159,7 @@ export default {
         sections:           [
             {   id:             "Projects_Top",
                 title:          "Projecten",
-                description:    "Here you can find all of my seleceted work (change text!)."
+                description:    "Dit is een verzameling van projecten waaraan ik heb gewerkt"
 
             },
             {
@@ -162,6 +168,7 @@ export default {
                     {
                         id:           "#prularia",
                         img:          "../src/assets/images/prularia/prularia_logo.png",
+                        imgAlt:       "kroon, logo van project Prularia",
                         title:        "Prularia",
                         description:  "Als een team van 9 ontwikkelaars hebben we een e-commerceplatform gebouwd om praktijkervaring op te doen met de principes van Scrum en Agile-methodologieën.",
                         languages:    ["JavaScript", "PHP", "CSS"],
@@ -173,6 +180,7 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "e-commerce",
                                 img:            "../src/assets/images/prularia/prularia_logo.png",
+                                imgAlt:         "kroon, logo van project Prularia",
                                 title:          "Prularia",
                                 languages:      ["JavaScript", "PHP", "CSS"],
                                 library:        ["Bootstrap"],
@@ -191,8 +199,8 @@ export default {
                                 textBtn_2:      "Ga naar de code",
                                 urlBtn_1:       "urlgolive",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Prularia",
-                                img_01:         "../src/assets/images/prularia/page-down.png",
-                                img_02:         "../src/assets/images/prularia/icons.png",
+                                img_01:         "../src/assets/images/prularia/icons.png",
+                                img_02:         "../src/assets/images/prularia/page-down.png",
                                 imgList:        [
                                     "../src/assets/images/prularia/desktop_login-page.png",
                                     "../src/assets/images/prularia/desktop_shopping-bag.png",
@@ -212,6 +220,7 @@ export default {
                     {
                         id:           "#pizzaria",
                         img:          "../src/assets/icons/pizza.svg",
+                        imgAlt:       "pizzastuk, logo van project Pizzaria",
                         title:        "Pizzaria",
                         description:  "Dit project is een e-commerce webapplicatie die gebruikers de mogelijkheid biedt om een verscheidenheid aan pizza's te verkennen en te bestellen.",
                         languages:    ["PHP", "CSS"],
@@ -222,6 +231,7 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "e-commerce",
                                 img:            "../src/assets/icons/pizza.svg",
+                                imgAlt:         "pizzastuk, logo van project Pizzaria",
                                 title:          "Pizzaria",
                                 languages:      ["PHP", "CSS"],
                                 date:           "augustus 2024",
@@ -248,7 +258,7 @@ export default {
                                     "../src/assets/images/pizzaria/sql.svg",
                                     "../src/assets/images/pizzaria/structure.png"
                                 ],
-                                colors:         ["wheat", "#fffff0", "red", "white", "black"]
+                                colors:         ["#f5deb3", "#fffff0", "#ff0000", "#ffffff", "#000000"]
                             },
                             {
                                 id:             "Project_Bottom",
@@ -260,6 +270,7 @@ export default {
                     {
                         id:           "#bubbles-in-color",
                         img:          "../src/assets/icons/bullets.svg",
+                        imgAlt:       "9 cirkels die een vierkant vormen, logo van project Bubbles in Color",
                         title:        "Bubbles in Color",
                         description:  "In dit interactieve spel kunnen gebruikers een verscheidenheid aan bubbels kleuren, wat zorgt voor een leuke en creatieve ervaring.",
                         languages:    ["JavaScript", "HTML", "CSS"],
@@ -271,6 +282,7 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "game",
                                 img:            "../src/assets/icons/bullets.svg",
+                                imgAlt:       "9 cirkels die een vierkant vormen, logo van project Bubbles in Color",
                                 title:          "Bubbles in Color",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
@@ -303,6 +315,7 @@ export default {
                     {
                         id:           "#treasure-hunt",
                         img:          "../src/assets/icons/cat.svg",
+                        imgAlt:       "zittende kat, logo van project Treasure Hunt",
                         title:        "Treasure Hunt",
                         description:  "In dit spannende schattenjachtspel gaan spelers op een avontuurlijke zoektocht om verborgen schatten te ontdekken.",
                         languages:    ["JavaScript", "HTML", "CSS"],
@@ -314,6 +327,7 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "game",
                                 img:            "../src/assets/icons/cat.svg",
+                                imgAlt:         "zittende kat, logo van project Treasure Hunt",
                                 title:          "Treasure Hunt",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
@@ -365,7 +379,7 @@ export default {
     //             label_1:    "Voornaam",
     //             label_2:    "Achternaam",
     //             label_3:    "E-mail",
-    //             label_4:    "Bedrijf",
+    //             label_4:    "company",
     //             label_5:    "Neem contact op",
     //             textBtn:    "Verzend"
     //         }

@@ -6,6 +6,7 @@ export default {
             {
                 id:             "Home_Welkom",
                 img:            "../src/assets/images/black-white.jpg",
+                imgAlt:         "black and white photo of Sofie van der Meer",
                 title:          "Hello I'm \n Sofie van der Meer",
                 description:    "Welcome to this platform, where you get a hint of my expertise and capabilities as a Junior Full-Stack Developer.",
                 textBtn:        "Contact me",
@@ -14,6 +15,7 @@ export default {
             {
                 id:             "Home_Introduction",
                 img:            "../src/assets/images/black-white.jpg",
+                imgAlt:         "black and white photo of Sofie van der Meer",
                 title:          "Creative Full-Stack developer",
                 // subtitle:       "- Creative Full-Stack developer -",
                 description:    "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
@@ -25,6 +27,7 @@ export default {
                 projects:     [
                     {
                         img:          "../src/assets/images/prularia/prularia_logo.png",
+                        imgAlt:       "crown, logo of project Prularia",
                         title:        "Prularia",
                         description:  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
                         languages:    ["JavaScript", "PHP", "CSS"],
@@ -34,6 +37,7 @@ export default {
                     },
                     {
                         img:          "../src/assets/icons/pizza.svg",
+                        imgAlt:       "pizzaslice, logo of project Pizzaria",
                         title:        "Pizzaria",
                         description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
                         languages:    ["PHP", "CSS"],
@@ -41,7 +45,8 @@ export default {
                         urlBtn:       "project.html#pizzaria"
                     },
                     {
-                        img:          "../src/assets/icons/ellipsis.svg",
+                        img:          "../src/assets/icons/bullets.svg",
+                        imgAlt:       "9 circles forming a box, logo of project Bubbles in Color",
                         title:        "Bubbles in Color",
                         description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
                         languages:    ["JavaScript", "HTML", "CSS"],
@@ -60,6 +65,7 @@ export default {
             {
                 id:                 "About_Top",
                 img:                "../src/assets/images/black-white.jpg",
+                imgAlt:             "black and white photo of Sofie van der Meer",
                 title:              "Sofie van der Meer",
                 subtitle:           "Junior Full-Stack developer",
                 availability_1:     "Available from 1st March 2025",
@@ -67,7 +73,7 @@ export default {
             },
             {
                 id:                 "About_Me",
-                profile:            "A curious and ambitious developer with a strong analytical mindset and a passion for creative solutions. Eager to learn and thrive in Full-Stack development, looking for a position where creative thinking and problem solving can be fully utilized. Ready to become your next Full-Stack Developer!",
+                profile:            "A curious and ambitious developer with a strong analytical mindset and a passion for creative solutions. \n \n Eager to learn and thrive in Full-Stack development, looking for a position where creative thinking and problem solving can be fully utilized. \n \n Ready to become your next Full-Stack Developer!",
                 urlBtn:             "mailto:sofievandermeer@outlook.com", 
                 textBtn:            "sofievandermeer@outlook.com", 
                 availability:       "Available from 1st March 2025, open to internship/IBO.",
@@ -156,7 +162,7 @@ export default {
         sections:           [
             {   id:             "Projects_Top",
                 title:          "Projects",
-                description:    "Here you can find all of my seleceted work (change text!)."
+                description:    "Below are some of the projects I have developed"
 
             },
             {
@@ -165,6 +171,7 @@ export default {
                     {
                         id:           "#prularia",
                         img:          "../src/assets/images/prularia/prularia_logo.png",
+                        imgAlt:       "crown, logo of project Prularia",
                         title:        "Prularia",
                         description:  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
                         languages:    ["JavaScript", "PHP", "CSS"],
@@ -176,6 +183,7 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "e-commerce",
                                 img:            "../src/assets/images/prularia/prularia_logo.png",
+                                imgAlt:         "crown, logo of project Prularia",
                                 title:          "Prularia",
                                 languages:      ["JavaScript", "PHP", "CSS"],
                                 library:        ["Bootstrap"],
@@ -215,6 +223,7 @@ export default {
                     {
                         id:           "#pizzaria",
                         img:          "../src/assets/icons/pizza.svg",
+                        imgAlt:       "pizzaslice, logo of project Pizzaria",
                         title:        "Pizzaria",
                         description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
                         languages:    ["PHP", "CSS"],
@@ -225,6 +234,7 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "e-commerce",
                                 img:            "../src/assets/icons/pizza.svg",
+                                imgAlt:       "pizzaslice, logo of project Pizzaria",
                                 title:          "Pizzaria",
                                 languages:      ["PHP", "CSS"],
                                 date:           "August 2024",
@@ -252,7 +262,7 @@ export default {
                                     "../src/assets/images/pizzaria/sql.svg",
                                     "../src/assets/images/pizzaria/structure.png"
                                 ],
-                                colors:         ["wheat", "#fffff0", "red", "white", "black"]
+                                colors:         ["#f5deb3", "#fffff0", "#ff0000", "#ffffff", "#000000"]
                             },
                             {
                                 id:             "Project_Bottom",
@@ -264,6 +274,7 @@ export default {
                     {
                         id:           "#bubbles-in-color",
                         img:          "../src/assets/icons/bullets.svg",
+                        imgAlt:       "9 circles forming a box, logo of project Bubbles in Color",
                         title:        "Bubbles in Color",
                         description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
                         languages:    ["JavaScript", "HTML", "CSS"],
@@ -275,6 +286,7 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "game",
                                 img:            "../src/assets/icons/bullets.svg",
+                                imgAlt:       "9 circles forming a box, logo of project Bubbles in Color",
                                 title:          "Bubbles in Color",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
@@ -307,6 +319,7 @@ export default {
                     {
                         id:           "#treasure-hunt",
                         img:          "../src/assets/icons/cat.svg",
+                        imgAlt:       "sitting cat, logo of project Treasure Hunt",
                         title:        "Treasure Hunt",
                         description:  "In this exciting treasure hunt game, players embark on an adventurous quest to uncover hidden treasures.",
                         languages:    ["JavaScript", "HTML", "CSS"],
@@ -318,6 +331,7 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "game",
                                 img:            "../src/assets/icons/cat.svg",
+                                imgAlt:       "sitting cat, logo of project Treasure Hunt",
                                 title:          "Treasure Hunt",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],

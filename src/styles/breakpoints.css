@@ -1,12 +1,51 @@
 /*  Responsive breakpoints: 
     Media queries stored in a reusable format. */
-@media screen and (max-width: 600px) {
 
-    .container {
-        text-align: center;
-        /* margin-inline: max(2rem, 5vw); */
-        /* margin-inline: 2rem; */
-        /* padding-inline: 0; */
+    
+@media screen and (min-width: 600px) {
+    .card-content:has(.btn__pos_absolute),
+    .sect-content:has(.btn__pos_absolute) {
+        position: relative;
+        /* outline: 1px yellow solid; */
+    }
+    .btn__pos_absolute {
+        position: absolute;
+        min-width: 7rem;
+    }
+    .btn__pos_absolute:has(.card-urlBtn) {
+        top: calc(100% + 35px);
+    }
+    .btn__pos_bottom {
+        bottom: 1rem;
+    }
+    .btn__pos_right {
+        right: -2rem;
+    }
+    .btn__pos_absolute:has(.sect-urlBtn_1) {
+        left: calc(40% + 3rem);
+    }
+}
+@media screen and (max-width: 600px) {
+    /* body {
+    } */
+
+    .three-quarters-width,
+    .half-width,
+    .img__width,
+    .sect-colors {
+        width: 100%;
+    }
+    .two-thirds-height,
+    .half-heigth {
+        min-height: calc(100svh - var(--header-height));
+        justify-content: center;
+        gap: 2rem;
+    }
+    header .two-thirds-height {
+        justify-content: flex-start;
+        gap: 2rem;
+        height: auto;
+        min-height: auto;
     }
     .flex-dir_column {
         flex-direction: column;
@@ -21,6 +60,9 @@
     }
     ::-webkit-scrollbar  {
         width: 0;
+    }
+    #header  {
+        box-shadow: 0 0 30px 30px var(--color-primary-background);
     }
     .dialog {
         width: 100vw;
@@ -39,11 +81,35 @@
         left: 0;
         width: 60%;
     }
-    .card-content {
+    /* .card-content {
         width: 100%;
-    }
+    } */
     .nav {
         margin-top: 0;
+    }
+    .wrapper:has(.card-img) {
+        height: auto;
+         width: 100%;
+        .card-img {
+            width: 100%;
+        }
+
+    }
+    .wrapper:has(.card-img):not(.padding-zero)
+    {
+        padding: 2rem 1rem;
+    }
+    .bullet {
+        color: var(--black);
+    }
+    .bullet-dark {
+        color: var(--white);
+    }
+    .sect-imgList {
+        gap: 1rem;
+    }
+    .text-center__onMobile {
+        text-align: center;
     }
 
 }
