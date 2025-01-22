@@ -2,11 +2,10 @@
     Media queries stored in a reusable format. */
 
     
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
     .card-content:has(.btn__pos_absolute),
     .sect-content:has(.btn__pos_absolute) {
         position: relative;
-        /* outline: 1px yellow solid; */
     }
     .btn__pos_absolute {
         position: absolute;
@@ -26,14 +25,46 @@
     }
 }
 @media screen and (max-width: 600px) {
-    /* body {
-    } */
-
     .three-quarters-width,
     .half-width,
     .img__width,
     .sect-colors {
         width: 100%;
+    }
+    .home-Welkom {
+        /* flex-direction: row; */
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+
+        .img__width {
+        position: absolute;
+        top: var(--header-height);
+        width: 100vw;
+        }
+        .card-content {
+            margin-bottom: 0;
+        }
+        .card-btn {
+            margin-top: 1rem;
+        }
+    }
+    @keyframes scrollingY {
+        100% {
+            transform: translateY(calc(200svh));
+        }
+    }
+    .home-Introduction {
+        .img__width {
+            display: none;
+        }
+        .card-btn {
+            margin-top: 1rem;
+        }
+
+    }
+    .font-weight__light {
+        font-weight: 400;
     }
     .two-thirds-height,
     .half-heigth {
@@ -51,6 +82,9 @@
         flex-direction: column;
         gap: 3rem;
     }
+    .flex-dir_column:has(.card-availability_1) {
+        gap: 1rem;
+    }
     .fixed-width {
         width: 100%;
     }
@@ -62,7 +96,7 @@
         width: 0;
     }
     #header  {
-        box-shadow: 0 0 30px 30px var(--color-primary-background);
+        box-shadow: 0 -60px 40px 100px var(--color-primary-background);
     }
     .dialog {
         width: 100vw;
@@ -81,9 +115,6 @@
         left: 0;
         width: 60%;
     }
-    /* .card-content {
-        width: 100%;
-    } */
     .nav {
         margin-top: 0;
     }
@@ -93,7 +124,6 @@
         .card-img {
             width: 100%;
         }
-
     }
     .wrapper:has(.card-img):not(.padding-zero)
     {

@@ -37,9 +37,6 @@ export default class DutchMode {
             
             lang.current = "en";
             lang.notCurrent = "nl";
-            // switch to english
-            // document.querySelectorAll('[lang="nl"]').forEach(el => el.classList.add('hidden'));
-            // document.querySelectorAll('[lang="en"]').forEach(el => el.classList.remove('hidden'));
         } 
         document.querySelectorAll(`[lang="${lang.current}"]`).forEach(el => el.classList.remove('hidden'));
         document.querySelectorAll(`[lang="${lang.notCurrent}"]`).forEach(el => { if (el.tagName !== 'HTML') {el.classList.add('hidden')} else {el.lang = lang.current};});

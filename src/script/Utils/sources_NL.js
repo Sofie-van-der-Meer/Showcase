@@ -139,7 +139,7 @@ export default {
                         year:     "2018 - 2019"
                     },
                     {
-                        company:  "Regionaal Landschap Haspengouw & Voeren",
+                        company:  "Regionale Landschappen Haspengouw & Voeren",
                         job:      "Stage",
                         year:     "2017"
                     }
@@ -189,15 +189,14 @@ export default {
                             {
                                 id:             "Project_Content",
                                 
-                                introductie:  "Het ontwikkelen van een webshop voor een klant bood een unieke gelegenheid om de Scrum Agile-methodiek in de praktijk toe te passen. Samen met acht andere student-developers uit heel Vlaanderen werkten we aan dit project, waarbij we niet alleen onze technische vaardigheden verder ontwikkelden, maar ook leerden hoe we als team effectief konden samenwerken. De uitdaging bestond niet alleen uit het bouwen van de webshop, maar ook in het begrijpen en toepassen van de Scrum-werkwijze.",
-                                uitdagingen:  "We stonden voor de uitdaging om een functionele en gebruiksvriendelijke webshop te ontwikkelen binnen een beperkte tijd. Bezoekers moesten gemakkelijk producten kunnen bekijken en aan hun winkelmandje toevoegen, zonder dat inloggen vereist was. We ontwikkelden aparte pagina's voor klantregistratie, inloggen en het plaatsen van bestellingen. Daarnaast zorgden we ervoor dat de webshop voldeed aan de GDPR-vereisten, wat betekende dat we veilige encryptie voor wachtwoorden moesten implementeren en expliciete toestemming voor het gebruik van cookies moesten verkrijgen. Verder stelden we prioriteiten voor elke sprint, aangezien de beschikbare tijd beperkt was.",
-                                resultaat:    "Het project resulteerde in een functionele webshop. De eerste twee sprints leverden een werkende webshop op, waarin klanten producten konden bekijken, toevoegen aan hun winkelmandje en bestellingen konden plaatsen. We implementeerden de basisfunctionaliteiten, zoals het plaatsen van bestellingen, en verfijnden zowel de visuele als functionele aspecten van de webshop. Met meer tijd hadden we in de derde sprint productpagina's met extra informatie, profielbeheer en bestelstatus-tracking ontwikkeld. n/ Gedurende het proces maakten we actief gebruik van de Scrum-methodiek, met dagelijkse stand-up meetings en het ScrumBord om de voortgang bij te houden. We werkten als een hecht team samen, namen gezamenlijk beslissingen en ondersteunden elkaar waar nodig.",
+                                introductie:    "Het ontwikkelen van een webshop voor een klant bood een unieke gelegenheid om de Scrum Agile-methodiek in de praktijk toe te passen. Samen met acht andere student-developers uit heel Vlaanderen werkten we aan dit project, waarbij we niet alleen onze technische vaardigheden verder ontwikkelden, maar ook leerden hoe we als team effectief konden samenwerken. De uitdaging bestond niet alleen uit het bouwen van de webshop, maar ook in het begrijpen en toepassen van de Scrum-werkwijze.",
+                                uitdagingen:    "We stonden voor de uitdaging om een functionele en gebruiksvriendelijke webshop te ontwikkelen binnen een beperkte tijd. Bezoekers moesten gemakkelijk producten kunnen bekijken en aan hun winkelmandje toevoegen, zonder dat inloggen vereist was. We ontwikkelden aparte pagina's voor klantregistratie, inloggen en het plaatsen van bestellingen. Daarnaast zorgden we ervoor dat de webshop voldeed aan de GDPR-vereisten, wat betekende dat we veilige encryptie voor wachtwoorden moesten implementeren en expliciete toestemming voor het gebruik van cookies moesten verkrijgen. Verder stelden we prioriteiten voor elke sprint, aangezien de beschikbare tijd beperkt was.",
+                                resultaat:      "Het project resulteerde in een functionele webshop. De eerste twee sprints leverden een werkende webshop op, waarin klanten producten konden bekijken, toevoegen aan hun winkelmandje en bestellingen konden plaatsen. We implementeerden de basisfunctionaliteiten, zoals het plaatsen van bestellingen, en verfijnden zowel de visuele als functionele aspecten van de webshop. Met meer tijd hadden we in de derde sprint productpagina's met extra informatie, profielbeheer en bestelstatus-tracking ontwikkeld. n/ Gedurende het proces maakten we actief gebruik van de Scrum-methodiek, met dagelijkse stand-up meetings en het ScrumBord om de voortgang bij te houden. We werkten als een hecht team samen, namen gezamenlijk beslissingen en ondersteunden elkaar waar nodig.",
                                 wat_de_scrum_coach_zegt:  
-                                                "“Sofie was altijd actief aanwezig tijdens de meetings. Ze luisterde aandachtig en stelde vragen wanneer zaken onduidelijk waren. De functie van Scrum Master werd elke dag door iemand anders vervuld. Sofie vervulde deze rol uitstekend en stond klaar om het team te ondersteunen. Tijdens de stand-up meetings kon ze goed prioriteiten stellen. Zo stelde ze voor om een complexer item op dat moment niet in detail te bespreken, maar dit in een aparte meeting verder uit te werken met de betrokken developers.”",
-                            
+                                                "“Sofie toonde zich als een gemotiveerde en betrokken deelnemer tijdens het SCRUM-project. Ze wist de praktische tips van de lesgevers effectief toe te passen in de scrum-oefening, wat haar leergierigheid benadrukt. Tijdens de daily scrum meetings hield ze de focus scherp en wist ze haar codeerwerk op een beknopte en duidelijke manier toe te lichten. Haar proactieve houding viel op; ze nam regelmatig het initiatief om gesprekken te starten en samenwerking te stimuleren. Daarnaast hechtte ze veel waarde aan het opleveren van een afgewerkt en kwalitatief product op het einde van een sprint, wat haar resultaatgerichtheid en verantwoordelijkheidsgevoel onderstreept.”",
                                 textBtn_1:      "Ga naar de website",
                                 textBtn_2:      "Ga naar de code",
-                                urlBtn_1:       "urlgolive",
+                                urlBtn_1:       "http://www.demo-prularia.wuaze.com",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Prularia",
                                 img_01:         "../src/assets/images/prularia/icons.png",
                                 img_02:         "../src/assets/images/prularia/page-down.png",
@@ -245,7 +244,7 @@ export default {
 
                                 textBtn_1:      "Ga naar de website",
                                 textBtn_2:      "Ga naar de code",
-                                urlBtn_1:       "urlgolive",
+                                urlBtn_1:       "http://www.demo-pizzaria.wuaze.com",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Pizzaria",
                                 img_01:         "../src/assets/images/pizzaria/structure.png",
                                 img_02:         "../src/assets/images/pizzaria/add-to-shoppingcart.png",

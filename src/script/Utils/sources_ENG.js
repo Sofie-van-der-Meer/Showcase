@@ -142,7 +142,7 @@ export default {
                         year:     "2018 - 2019"
                     },
                     {
-                        company:  "Regional Landscape Hesbaye & Voeren",
+                        company:  "Regional Landscapes Hesbaye & Voeren",
                         job:      "Internship",
                         year:     "2017"
                     }
@@ -196,11 +196,10 @@ export default {
                                 challenges:     "We faced the challenge of developing a functional and user-friendly webshop within a limited timeframe. Visitors needed to easily browse products and add them to their shopping cart without the requirement to log in. We developed separate pages for customer registration, login, and order placement. Additionally, we ensured that the webshop complied with GDPR requirements, which meant implementing secure password encryption and obtaining explicit consent for cookie usage. Furthermore, we set priorities for each sprint, as the available time was limited.",
                                 result:         "The project resulted in a functional webshop. The first two sprints delivered a working webshop, where customers could browse products, add them to their cart, and place orders. We implemented the core functionalities, such as order placement, and refined both the visual and functional aspects of the webshop. With more time, we would have developed product pages with additional information, profile management, and order status tracking in the third sprint. <br><br> Throughout the process, we actively utilized the Scrum methodology, with daily stand-up meetings and the Scrum board to track progress. We worked as a close-knit team, made joint decisions, and supported each other as needed.",
                                 what_the_scrum_coach_says:    
-                                                "“Sofie was always actively engaged during meetings. She listened attentively and asked questions when things were unclear. The Scrum Master role was taken on by a different team member each day, and Sofie excelled in this role, always ready to support the team. During the stand-up meetings, she was good at setting priorities. For instance, she suggested not discussing a more complex issue in detail at that moment but instead addressing it in a separate meeting with the involved developers.”",
-        
+                                                "“Sofie proved to be a motivated and engaged participant during the SCRUM project. She effectively applied the practical tips from the instructors in the scrum exercise, highlighting her eagerness to learn. During the daily scrum meetings, she kept the focus sharp and was able to explain her coding work in a concise and clear manner. Her proactive attitude stood out; she frequently took the initiative to start conversations and encourage collaboration. Moreover, she placed great importance on delivering a finished and high-quality product at the end of each sprint, underscoring her result-oriented mindset and sense of responsibility.”",
                                 textBtn_1:      "Go live",
                                 textBtn_2:      "View code",
-                                urlBtn_1:       "urlgolive",
+                                urlBtn_1:       "http://www.demo-prularia.wuaze.com",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Prularia",
                                 img_01:         "../src/assets/images/prularia/page-down.png",
                                 img_02:         "../src/assets/images/prularia/icons.png",
@@ -234,7 +233,7 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "e-commerce",
                                 img:            "../src/assets/icons/pizza.svg",
-                                imgAlt:       "pizzaslice, logo of project Pizzaria",
+                                imgAlt:         "pizzaslice, logo of project Pizzaria",
                                 title:          "Pizzaria",
                                 languages:      ["PHP", "CSS"],
                                 date:           "August 2024",
@@ -249,7 +248,7 @@ export default {
 
                                 textBtn_1:      "Go live",
                                 textBtn_2:      "View code",
-                                urlBtn_1:       "urlgolive",
+                                urlBtn_1:       "http://www.demo-pizzaria.wuaze.com",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Pizzaria",
                                 img_01:         "../src/assets/images/pizzaria/structure.png",
                                 img_02:         "../src/assets/images/pizzaria/add-to-shoppingcart.png",

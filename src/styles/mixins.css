@@ -30,9 +30,12 @@
     --accent-bright:    #d91254;
 
     /* colors - use in global */
-    --color-primary-background:     var(--very-light);
+    /* --color-primary-background:     var(--very-light);
     --color-secundary-background:   var(--white);
-    --color-tertiairy-background:    var(--light);
+    --color-tertiairy-background:    var(--light); */
+    --color-primary-background:     var(--light);
+    --color-secundary-background:   var(--very-light);
+    --color-tertiairy-background:    var(--white);
 
     --color-primary:    var(--very-dark);
     --color-secundary:  var(--dark);
@@ -41,7 +44,7 @@
 
     --accent-primary:   var(--accent-dark);
     --accent-secundary: var(--accent-bright);
-    --accent-tertiairy:  var(--accent-very-dark);            
+    --accent-tertiairy:  var(--accent-very-dark);   
     
     & .dark {
     --color-primary-background:     var(--black);
@@ -96,7 +99,7 @@
     flex-grow: 2;
 }
 .fixed-width {
-    /* width: 40%; */
+    width: 40%;
     height: 50svh;
 }
 

@@ -223,7 +223,6 @@ header and footer styles, general container widths, etc. */
 .card-subtitle {
     text-transform: uppercase;
     padding-bottom: 0.5rem;
-    padding-left: 2rem;
 }
 .card-langratio {
     display: none;
@@ -247,6 +246,9 @@ header and footer styles, general container widths, etc. */
         width: auto;
         display: block;
         margin-inline: auto;
+    }
+    .card-subtitle {
+        padding-left: 2rem;
     }
     .color__grey span {
         text-transform: uppercase;
@@ -328,6 +330,7 @@ header:is(.half-height) {
 }
 
 .img__transition {
+    z-index: -1;
     animation: scrollingY linear;
     animation-timeline: scroll();
 }
@@ -407,6 +410,7 @@ header:is(.half-height) {
 
 button {
     background-color: var(--accent-secundary);
+    color: var(--light);
     border: 1px solid var(--accent-tertiairy);
     padding: 0.4rem 0.8rem;
     border-radius: 1rem;
@@ -414,6 +418,7 @@ button {
 }
 .card-group button {
     background-color: var(--accent-tertiairy-backround);
+    color: var(--color-primary);
     margin-block: 1rem;
 }
 
@@ -469,16 +474,20 @@ button:has(i) {
 
 /* hover */
 a:not(.card-url):hover {
-    text-decoration: underline var(--accent-primary) 0.1rem;
+    color: inherit;
+    text-decoration: underline 0.1rem;
 }
 button:has(a:hover) {
     background-color: var(--accent-primary);
 } 
 .card-group button:hover {
     background-color: var(--accent-secundary);
+    color: var(--light);
 }
 .projects-card .card:hover {
-    box-shadow: 2px -2px 15px var(--accent-secundary);
+    /* box-shadow: 2px -2px 15px var(--accent-secundary); */
+    
+    box-shadow: 2px -2px 15px var(--color-tertiairy-background);
 }
 .nav li a:hover, 
 .nav .color__grey:hover,
@@ -490,9 +499,12 @@ button:has(a:hover) {
 Global helper classes 
 (e.g., .hidden, .text-center, .container, .clearfix). */
 
-.hidden {
+.hidden:not(:has(.showParent)) {
     display: none;
 }
+/* .hidden {
+    display: block;
+} */
 .visible {
     display: block;
 }
