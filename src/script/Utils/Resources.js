@@ -8,168 +8,89 @@ export default class Resources {
         this.hashName = hashName;
         this.isPublished = true;
         this.dutchMode = new DutchMode();
-        this.dutchMode.setLangAttr();
-        (sessionStorage.getItem('dutch-mode') == 'true' ) ? 
-        this.sources = sources_NL  :
-        this.sources = sources_ENG ;
-        
-        if (this.sources && this.sources[this.pageName]) {
-            this.transcript = this.sources[this.pageName]
-        }
+        this.transcript;
 
-        console.log(this.transcript || "failed");
+        this.setTranscript();
     }
-    
+
+    // SETTERS    
+    setTranscript() {
+        try {
+            this.dutchMode.setLangAttr();
+            (sessionStorage.getItem('dutch-mode') == 'true' ) ? 
+            this.sources = sources_NL  :
+            this.sources = sources_ENG ;
+            
+            if (this.sources && this.sources[this.pageName]) {
+                this.transcript = this.sources[this.pageName]
+            }
+        } catch (error) {
+            console.error('failed to load transcript');
+        }
+    }
     setInnerHTML() {
         try {
-            const headerElem = document.getElementById('headername');
-            const headerText = this.transcript['headername'];
-            if (headerElem && headerText) {
-                headerElem.innerHTML = headerText;
-            }
+            this.setPageNameInHeader();
 
-            let sections;
-            if ( this.hashName ) { 
-                const transcript = this.transcript.sections[1]['projects'];
-                transcript.forEach(element => {
-                    if (element.id == this.hashName) {
-                        sections = element.sections;
-                    }
-                })              
-            } else sections = this.transcript.sections;
+            let sections = this.getSections();
+            console.log(sections);
+            this.loopOverSections(sections);
 
-            
-            for (let i = 0; i < sections.length; i++) { 
-                const headSection = sections[i];
-                const headSectionId = document.getElementById(headSection.id);
-                const firstChildHeadSection = headSectionId.children[0];
-
-                if (firstChildHeadSection.classList[0] == 'card-group' && !firstChildHeadSection.children.length ) {
-                    this.addCardsInCardGroup(sections[i].projects.length, firstChildHeadSection);
-                }
-
-                if (i == 1 && !this.isPublished) {
-                    this.setMessageNotPublished(sections);
-                }
-                
-                if (headSectionId.children.length) {
-                    const arrResources = Object.entries(headSection);
-                    this.looOverpChilderen(headSectionId, arrResources);
-                }
-            }
-            
             this.dutchMode.setLangAttr();
 
         } catch (err) {
             console.error(err.stack);
         }
     }
-    addCardsInCardGroup(count, parent) {
-        for (let i = 0; i < count; i++) {
-            const card              = document.createElement("section")
-            const card_url          = document.createElement("a")
-            const card_img          = document.createElement("img")
-            const card_content      = document.createElement("section")
-            const card_title        = document.createElement("h4")
-            const card_description  = document.createElement("p")
-            const card_languages    = document.createElement("p")
-            const card_langratio    = document.createElement("p")
-            const card_library      = document.createElement("p")
-            const card_btn          = document.createElement("button")
-            const card_urlBtn       = document.createElement("a")
-            const card_span1        = document.createElement("span")
-            const card_span2        = document.createElement("span")
-            const card_div          = document.createElement("div")
-    
-            //classlist[0] for resource reference
-            card.classList.add('card');
-            card_url.classList.add('card-url');
-            card_img.classList.add('card-img');
-            card_content.classList.add('card-content');
-            card_title.classList.add('card-title');
-            card_description.classList.add('card-description');
-            card_languages.classList.add('card-languages');
-            card_langratio.classList.add('card-langratio');
-            card_library.classList.add('card-library');
-            card_btn.classList.add('card-btn');
-            card_urlBtn.classList.add('card-urlBtn');
-            card_div.classList.add('card-content');
-    
-            //classlist[n+1] for css styles
-            card_img.classList.add('padding-block__3');
-            card_content.classList.add('flex');
-            card_content.classList.add('flex-column');
-            card_title.classList.add('font-weight__light');
-            card_title.classList.add('color__accent-primary');
-            card_span1.classList.add('color__grey');
-            card_span2.classList.add('color__grey');
-    
-            card_btn.appendChild(card_urlBtn)
-            card_languages.appendChild(card_span1)
-            card_library.appendChild(card_span2)
-            card_div.appendChild(card_languages)
-            card_div.appendChild(card_library)
-            card_content.appendChild(card_title)
-            card_content.appendChild(card_description)-
-            card_content.appendChild(card_div)
-            card_content.appendChild(card_btn)
-            card_url.appendChild(card_img)
-            card_url.appendChild(card_content)
-            card.appendChild(card_url)
-            parent.appendChild(card);
+
+    setPageNameInHeader() {
+        const headerElem = document.getElementById('headername');
+        const headerText = this.transcript['headername'];
+        if (headerElem && headerText) {
+            headerElem.textContent = headerText;
         }
     }
     setMessageNotPublished(sections) {
         const sect2 = document.getElementById(sections[1].id);
         const text = sections[0]['notPublished'];
-        // nieuwe versie
-        sect2.getElementsByClassName('sect-group')[0].classList.add('hidden');
         const message = document.createElement('h5');
+
         message.classList.add('message_notPublished');
+        message.textContent = text;
+        
         sect2.classList.add('flex');
-        message.innerHTML = text;
+        sect2.getElementsByClassName('sect-group')[0].classList.add('hidden');
         sect2.appendChild(message);
     }
-    loopOverChilderen(parent, arrResources) {
-        
-        for (const child of parent.children) {
-            let childName;
-            const childClassName = child.classList[0];
+    setProperty(element, property, value) {
+        const propertyHandlers = {
+            'alt':          (elem) => { if (elem instanceof HTMLImageElement) elem.alt = value; },
+            'textContent':  (elem) => { if (elem instanceof HTMLElement) elem.textContent = value; },
+            'href':         (elem) => { if (elem instanceof HTMLAnchorElement) elem.href = value; },
+        }
 
-            if (!childClassName) {
-                continue;
-            }
-            if (childClassName == 'card-group') {
-                this.loopOverCards(child, this.getSubArrResources(arrResources)) 
-            }
-
-            if (   childClassName == 'card-content' 
-                || childClassName == 'card' 
-                || child.children.length ) {
-                this.loopOverChilderen(child, arrResources) 
-            }
-
-            if (childClassName.startsWith('card-')
-            || childClassName.startsWith('sect-')) {
-                childName = childClassName.slice(5) 
-            }
-
-            if (childName) {
-                this.setInnerHTMLOfChild(parent, childClassName, arrResources, childName);
-            } 
+        if (propertyHandlers[property]) {
+           propertyHandlers[property](element);
+        } else {
+            console.error('Property ' + property + ' is not applicable for this element');
         }
     }
-    loopOverCards(parent, subArrResources) {
-        const children = parent.getElementsByClassName('card');
-        for (let i = 0; i < children.length; i++) {
-            console.log(children);
-            this.loopOverChilderen(children[i], subArrResources[i]);
-        }
+    setSpanInElement(english, dutch, element) {
+        element.innerHTML = `<span lang="en">${english} </span><span lang="nl">${dutch} </span>`
+    }
+    // GETTERS
+    getSections() {
+        if ( !this.hashName ) return this.transcript.sections;
+
+        const transcriptProjects = this.transcript.sections[1]['projects'];
+        for (const project of transcriptProjects) {
+            if (project.id == this.hashName) return project.sections;
+        }        
     }
     getSubArrResources(arrResources) {
         const subArrResources = [];
 
-        arrResources.forEach(element => {
+        for (const element of arrResources) {
             const resourceKey = element[0]; 
             const resourceValue = element[1];
 
@@ -178,133 +99,8 @@ export default class Resources {
             } else if (typeof resourceValue == 'object') {
                 subArrResources.push(Object.entries(resourceValue).map(objElem => [objElem[0], objElem[1]]));
             }
-        })
+        }
         return subArrResources;
-    }
-    setInnerHTMLOfChild(parent, childClassName, arrResources, childName) {
-        let childHtml = parent.getElementsByClassName(childClassName)[0];
-        let arrResourcesHasTextBtn = false;
-        if (!arrResources) {
-            return;
-        }
-        // console.log(arrResources); zeer inefficient trouwens!!!
-
-        for (let i = 0; i < arrResources.length; i++) {
-            const resourceKey = arrResources[i][0];
-            const resourceValue = arrResources[i][1];
-
-            switch (resourceKey) {
-                case 'textBtn':
-                    if (childName == 'urlBtn') childHtml.innerHTML = resourceValue;    
-                    break;
-
-                case 'textBtn_1':
-                    if (childName == 'urlBtn_1') childHtml.innerHTML = resourceValue;    
-                    break;
-
-                case 'textBtn_2':
-                    if (childName == 'urlBtn_2') childHtml.innerHTML = resourceValue;
-                    break;
-                case 'urlBtn':
-                    if (childName == 'url') childHtml.href = resourceValue;
-                    
-                case 'imgAlt':
-                    if (childName == 'img') childHtml.alt = resourceValue;
-                default:
-                    break;
-            }
-
-            if (resourceKey.startsWith('textBtn')) {
-                arrResourcesHasTextBtn = true;
-            };
-
-            if (resourceKey == 'notPublished') {
-                this.isPublished = false;
-            }
-
-            if (childName !== resourceKey) continue;
-
-            switch (childName) {
-                case 'colors':
-                    resourceValue.forEach(element => {
-                        
-                        const div = document.createElement('div')
-                        div.style.background = element
-                        div.classList.add('bullet')
-                        div.innerHTML = element
-                        childHtml.appendChild(div)
-                        if (this.getBrightnessOfColor(element) < 128) {
-                            div.classList.add('bullet-dark')
-                        }
-                    });
-                    break;
-                case 'img_01':
-                case 'img_02':
-                case 'img':
-                    childHtml.src = resourceValue;
-                    break;
-                case 'imgList':
-                    for (let i = 0; i < resourceValue.length; i++) {
-                        const img = childHtml.appendChild(document.createElement("img"))
-                        img.classList.add('img-small')
-                        img.src = resourceValue[i];
-                    }
-                    break;
-
-                case 'previous':
-                case 'next':
-                    childHtml.innerHTML = resourceKey;       
-                case 'urlBtn':
-                case 'urlBtn_1':
-                case 'urlBtn_2':
-                    childHtml.href = resourceValue;
-                    break;
-                case 'langratio':
-                    childHtml.innerHTML =  resourceValue.join('% - ') + '%';
-                    break;
-            
-                default:
-                    if (childHtml.children[0] && childHtml.children[0].tagName == 'SPAN'){
-
-                        switch (resourceKey) {
-                            case 'library':
-                                childHtml.children[0].innerHTML = '<span lang="en">And with:&numsp;&numsp;</span><span lang="nl">En met: &numsp;&numsp;&numsp;&numsp;&nbsp; </span>';
-                                break;
-                            case 'languages':
-                                childHtml.children[0].innerHTML = '<span lang="en">Made in:&numsp;&numsp;&numsp;</span><span lang="nl">Gemaakt in:&numsp;</span>';
-                                break;
-                        
-                            case 'availability':
-                                childHtml.children[0].innerHTML = '<span lang="en">Availability: </span><span lang="nl">Beschikbaarheid: </span>';
-                                break;
-                        
-                            case 'related_interests':
-                                childHtml.children[0].innerHTML = '<span lang="en">Related interests: </span><span lang="nl">Gerelateerde interesse: </span>';
-                                break;
-                        
-                            default:
-                                childHtml.children[0].innerHTML = resourceKey.replaceAll('_', ' ') + ': <br> ';
-                                childHtml.classList.add('showParent');
-                                break;
-                        }
-
-                        (Array.isArray(resourceValue)) ?
-                            childHtml.innerHTML += resourceValue.join(' - ') :
-                            childHtml.innerHTML += resourceValue;
-                        break;
-                    }
-                    (Array.isArray(resourceValue)) ?
-                            (childName == 'library') ?
-                            childHtml.innerHTML = `- ${resourceValue.join(' - ')}` :
-                            childHtml.innerHTML = resourceValue.join(' - ') :
-                            childHtml.innerHTML = resourceValue;
-                    break;
-            }
-        }
-
-        if (!arrResourcesHasTextBtn && (parent.classList[0] == 'card-btn' && childName == 'urlBtn') ) {
-            childHtml.innerHTML = '<span lang="en">Get more info</span><span lang="nl">Meer info</span>';
-        }
     }
     getBrightnessOfColor(element) {
         let hex = element.slice(1).match(/.{1,2}/g)
@@ -314,342 +110,246 @@ export default class Resources {
         rgb.b = parseInt(hex[2], 16)
         
         return ((rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000)
+    } 
+    // LOOPS
+    loopOverSections(listOfSections) {
+        for (let i = 0; i < listOfSections.length; i++) { 
+            const section = listOfSections[i];
+            const elemSectionId = document.getElementById(section.id);
+            const firstChildSection = elemSectionId.children[0];
+
+            if (firstChildSection.classList[0] == 'card-group' && !firstChildSection.children.length ) {
+                this.addCardsInCardGroup(listOfSections[i].projects.length, firstChildSection);
+            }
+
+            if (i == 1 && !this.isPublished) {
+                this.setMessageNotPublished(listOfSections);
+            }
+            
+            if (elemSectionId.children.length) {
+                const arrResources = Object.entries(section);
+                this.loopOverChilderen(elemSectionId, arrResources);
+            }
+        }
+    }
+    loopOverChilderen(parent, arrResources) {
+        for (const child of parent.children) {
+            const childFirstClassName = child.classList[0];
+
+            if (!childFirstClassName) {
+                continue;
+            }
+            if (childFirstClassName == 'card-group') {
+                this.loopOverCards(child, this.getSubArrResources(arrResources)) 
+            }
+
+            if (   childFirstClassName == 'card-content' 
+                || childFirstClassName == 'card' 
+                || child.children.length ) {
+                this.loopOverChilderen(child, arrResources) 
+            }
+
+            if (childFirstClassName.startsWith('card-')
+            || childFirstClassName.startsWith('sect-')) {
+                const childName = childFirstClassName.slice(5) 
+                this.checkResourceOfChild(parent, childFirstClassName, arrResources, childName);
+            } 
+        }
+    }
+    loopOverCards(parent, subArrResources) {
+        const children = parent.getElementsByClassName('card');
+        for (let i = 0; i < children.length; i++) {
+            this.loopOverChilderen(children[i], subArrResources[i]);
+        }
+    }
+    // CREATE 
+    createCard() {
+        const card = document.createElement("section")
+        card.classList.add('card');
+
+        const card_url = document.createElement("a");
+        card_url.classList.add('card-url');
+
+        const card_img = document.createElement("img");
+        card_img.classList.add('card-img', 'padding-block__3');
+
+        const card_content = document.createElement("section");
+        card_content.classList.add('card-content', 'flex', 'flex-column');
+
+        const card_title = document.createElement("h4");
+        card_title.classList.add('card-title', 'font-weight__light', 'color__accent-primary');
+
+        const card_description = document.createElement("p");
+        card_description.classList.add('card-description');
+
+        const card_languages = document.createElement("p");
+        card_languages.classList.add('card-languages');
+
+        const card_langratio = document.createElement("p");
+        card_langratio.classList.add('card-langratio');
+
+        const card_library = document.createElement("p");
+        card_library.classList.add('card-library');
+
+        const card_btn = document.createElement("button");
+        card_btn.classList.add('card-btn');
+
+        const card_urlBtn = document.createElement("a");
+        card_urlBtn.classList.add('card-urlBtn');
+
+        const card_span1 = document.createElement("span");
+        card_span1.classList.add('color__grey');
+
+        const card_span2 = document.createElement("span");
+        card_span2.classList.add('color__grey');
+
+        const card_div = document.createElement("div");
+        card_div.classList.add('card-content');
+
+        card_btn.appendChild(card_urlBtn);
+        card_languages.appendChild(card_span1);
+        card_library.appendChild(card_span2);
+        card_div.appendChild(card_languages);
+        card_div.appendChild(card_library);
+        card_content.appendChild(card_title);
+        card_content.appendChild(card_description);
+        card_content.appendChild(card_div);
+        card_content.appendChild(card_btn);
+        card_url.appendChild(card_img);
+        card_url.appendChild(card_content);
+        card.appendChild(card_url);
+
+        return card;
+    }
+    // ADD TO
+    addCardsInCardGroup(count, parent) {
+        const fragment = document.createDocumentFragment();
+
+        for (let i = 0; i < count; i++) {
+            fragment.appendChild(this.createCard());
+        }
+        parent.appendChild(fragment);
+    }
+    addColors(value, elemChild) {
+        for (const colorCode of value) {
+            const div = document.createElement('div')
+            div.style.background = colorCode
+            div.classList.add('bullet')
+            div.textContent = colorCode
+            elemChild.appendChild(div)
+
+            if (this.getBrightnessOfColor(colorCode) < 128) {
+                div.classList.add('bullet-dark')
+            }
+        }
+    }  
+    addImages(value, elemChild) {
+        for (const src of value) {
+            const img = elemChild.appendChild(document.createElement("img"))
+            img.classList.add('img-small')
+            img.src = src;            
+        }
+    } 
+    // CHECKERS
+
+    checkResourceOfChild(parent, childClassName, arrResources, childName) { //name setResourceOfChild
+        if (!arrResources) return;
+
+        let arrResources_HasTextBtn = false;
+        let elemChild = parent.getElementsByClassName(childClassName)[0];
+
+        for (const resource of arrResources) {
+            const key = resource[0];
+            const value = resource[1];
+
+            if (key.startsWith('textBtn')) arrResources_HasTextBtn = true;
+
+            if (key == 'notPublished') this.isPublished = false;
+
+            this.checkKeyAndChildName(key, value, childName, elemChild);
+
+            if (childName !== key) continue;
+
+            this.checkChildName(childName, key, value, elemChild);
+        }
+
+        if (!arrResources_HasTextBtn && (parent.classList[0] == 'card-btn' && childName == 'urlBtn') ) {
+            elemChild.innerHTML = '<span lang="en">Get more info</span><span lang="nl">Meer info</span>';
+        }
+    }
+    checkKeyAndChildName(key, value, childName, elemChild) {
+        const variants = [
+            { key: 'textBtn',   childName: 'urlBtn',    property: 'textContent'},
+            { key: 'textBtn_1', childName: 'urlBtn_1',  property: 'textContent'},
+            { key: 'textBtn_2', childName: 'urlBtn_2',  property: 'textContent'},
+            { key: 'urlBtn',    childName: 'url',       property: 'href'},
+            { key: 'imgAlt',    childName: 'img',       property: 'alt'},
+        ]
+        const variant = variants.find(v => v.key == key && v.childName == childName);
+        if (variant) {
+            this.setProperty(elemChild, variant.property, value);
+            return;
+        }
+    }            
+    checkChildName(childName, key, value, elemChild) {
+        switch (childName) {
+            case 'colors':
+                this.addColors(value, elemChild);
+                break;
+            case 'img_01':
+            case 'img_02':
+            case 'img':
+                elemChild.src = value;
+                break;
+            case 'imgList':
+                this.addImages(value, elemChild);
+                break;
+            case 'previous':
+            case 'next':
+                elemChild.textContent = key;       
+            case 'urlBtn':
+            case 'urlBtn_1':
+            case 'urlBtn_2':
+                elemChild.href = value;
+                break;
+            case 'langratio':
+                elemChild.textContent =  value.join('% - ') + '%';
+                break;
+        
+            default:
+                if (elemChild.children[0] && elemChild.children[0].tagName == 'SPAN'){
+
+                    this.checkKey(key, elemChild);
+
+                    (Array.isArray(value)) ?
+                        elemChild.innerHTML += value.join(' - ') :
+                        elemChild.innerHTML += value;
+                    break;
+                }
+                (Array.isArray(value)) ?
+                        (childName == 'library') ?
+                        elemChild.textContent = `- ${value.join(' - ')}` :
+                        elemChild.textContent = value.join(' - ') :
+                        elemChild.textContent = value;
+                break;
+        }
+    }
+    checkKey(key, elemChild) {
+        const spanVariants = [
+            { key: 'library',           english: 'And with:&numsp;&numsp;',         dutch: 'En met: &numsp;&numsp;&numsp;&numsp;&nbsp; '},
+            { key: 'languages',         english: 'Made in:&numsp;&numsp;&numsp;',   dutch: 'Gemaakt in:&numsp;'},
+            { key: 'availability',      english: 'Availability: ',                  dutch: 'Beschikbaarheid: '},
+            { key: 'related_interests', english: 'Related interests: ',             dutch: 'Gerelateerde interesse: '},
+        ]
+        const variant = spanVariants.find(v => v.key == key);
+        if (variant) {
+            this.setSpanInElement(variant.english, variant.dutch, elemChild.children[0])
+            return;
+        } else {
+            const value = key.replaceAll('_', ' ') + ': \n ';
+            this.setProperty(elemChild.children[0], 'textContent', value);
+            elemChild.classList.add('showParent');
+        }
     }
 }
 
-// class Resources {
-//     constructor(pageName, hashName) {
-//         this.pageName = pageName;
-//         this.hashName = hashName;
-//         this.isPublished = true;
-//         this.dutchMode = new DutchMode();
-//         this.dutchMode.setLangAttr();
-//         (sessionStorage.getItem('dutch-mode') == 'true' ) ? 
-//         this.sources = sources_NL  :
-//         this.sources = sources_ENG ;
-        
-//         if (this.sources && this.sources[this.pageName]) {
-//             this.transcript = this.sources[this.pageName]
-//         }
-
-//         console.log(this.transcript || "failed");
-//     }
-    
-//     setInnerHTML() {
-//         try {
-//             const headerElem = document.getElementById('headername');
-//             const headerText = this.transcript['headername'];
-//             if (headerElem && headerText) {
-//                 headerElem.innerHTML = headerText;
-//             }
-
-//             let sections;
-//             if ( this.hashName && this.hashName !== 'nl' ) { 
-//                 try {
-//                     const transcript = this.transcript.sections[1]['projects'];
-//                     transcript.forEach(element => {
-//                         if (element.id == this.hashName) {
-//                             sections = element.sections;
-//                         }
-//                     });              
-//                 } catch {}
-//             } else sections = this.transcript.sections;
-//             // console.log(sections);
-            
-//             for (let i = 0; i < sections.length; i++) { 
-//                 // console.log(sections[i]);
-//                 const headSection = sections[i];
-//                 const sectionId = document.getElementById(headSection.id);
-
-//                 if (sectionId.children[0].classList[0] == 'card-group' && !sectionId.children[0].children.length ) {
-//                     let count = sections[i].projects.length;
-//                     for (let i = 0; i < count; i++) {  
-//                         this.addCardHTML(sectionId.children[0]);  
-//                     }
-//                 }
-//                 if (i == 1 && !this.isPublished) {
-//                     console.log('maak hier een functie om een nieuw element te creëren');
-//                     console.log(sections[0]['notPublished']);
-
-//                     const setNotPublishedMessage = function(sections) {
-//                         const sect2 = document.getElementById(sections[1].id);
-//                         const text = sections[0]['notPublished'];
-//                         // nieuwe versie
-//                         sect2.getElementsByClassName('sect-group')[0].classList.add('hidden');
-//                         const message = document.createElement('h5');
-//                         message.classList.add('message_notPublished');
-//                         sect2.classList.add('flex');
-//                         message.innerHTML = text;
-//                         sect2.appendChild(message);
-//                         }
-//                     setNotPublishedMessage(sections);
-
-//                 }
-//                 // console.log(sectionId);
-//                 if (sectionId.children.length) {
-//                     const arrResources = Object.entries(headSection);
-                    
-//                     this.loopChilderen(sectionId, arrResources);
-//                 }
-//             }
-            
-//             this.dutchMode.setLangAttr();
-
-//         } catch (err) {
-//             console.error(err.stack);
-//         }
-//     }
-//     addCardHTML(parent) {
-
-//         const card              = document.createElement("section")
-//         const card_url          = document.createElement("a")
-//         const card_img          = document.createElement("img")
-//         const card_content      = document.createElement("section")
-//         const card_title        = document.createElement("h4")
-//         const card_description  = document.createElement("p")
-//         const card_languages    = document.createElement("p")
-//         const card_langratio    = document.createElement("p")
-//         const card_library      = document.createElement("p")
-//         const card_btn          = document.createElement("button")
-//         const card_urlBtn       = document.createElement("a")
-//         const card_span1        = document.createElement("span")
-//         const card_span2        = document.createElement("span")
-//         const card_div          = document.createElement("div")
-
-//         //classlist[0]
-//         card.classList.add('card');
-//         card_url.classList.add('card-url');
-//         card_img.classList.add('card-img');
-//         card_content.classList.add('card-content');
-//         card_title.classList.add('card-title');
-//         card_description.classList.add('card-description');
-//         card_languages.classList.add('card-languages');
-//         card_langratio.classList.add('card-langratio');
-//         card_library.classList.add('card-library');
-//         card_btn.classList.add('card-btn');
-//         card_urlBtn.classList.add('card-urlBtn');
-//         card_div.classList.add('card-content');
-
-//         //classlist[n+1] for css styles
-//         card_img.classList.add('padding-block__3');
-//         card_content.classList.add('flex');
-//         card_content.classList.add('flex-column');
-//         card_title.classList.add('font-weight__light');
-//         card_title.classList.add('color__accent-primary');
-//         card_span1.classList.add('color__grey');
-//         card_span2.classList.add('color__grey');
-
-        
-//         card_btn.appendChild(card_urlBtn)
-//         card_languages.appendChild(card_span1)
-//         card_library.appendChild(card_span2)
-//         card_div.appendChild(card_languages)
-//         card_div.appendChild(card_library)
-//         card_content.appendChild(card_title)
-//         card_content.appendChild(card_description)
-//         // card_content.appendChild(card_languages)
-//         // card_content.appendChild(card_langratio)
-//         // card_content.appendChild(card_library)
-//         card_content.appendChild(card_div)
-//         card_content.appendChild(card_btn)
-//         card_url.appendChild(card_img)
-//         card_url.appendChild(card_content)
-//         card.appendChild(card_url)
-//         parent.appendChild(card);
-
-//     }
-//     loopChilderen(parent, arrResources) {
-        
-//         for (const child of parent.children) {
-//             let childName;
-//             const childClassName = child.classList[0];
-
-//             if (!childClassName) {
-//                 continue;
-//             }
-//             if (parent == document.getElementById('Project_Content') ) {
-//                 // console.log(arrResources);
-//                 this.loopCardGroup(child, arrResources);
-//             }
-
-//             if (childClassName == 'card-group') {
-//                 this.loopCardGroup(child, arrResources)  
-//             }
-
-//             if (   childClassName == 'card-content' 
-//                 || childClassName == 'card' 
-//                 || child.children.length ) {
-//                 this.loopChilderen(child, arrResources) 
-//             }
-
-//             if (childClassName.startsWith('card-')
-//             || childClassName.startsWith('sect-')) {
-//                 childName = childClassName.slice(5) 
-//             }
-
-//             if (childName) {
-//                 this.setInnerHTMLOfChild(parent, childClassName, arrResources, childName);
-//             } 
-//         }
-//     }
-//     loopCardGroup(parent, arrResources) {
-//         // console.log(arrResources);
-
-//         const children = parent.getElementsByClassName('card');
-//         const subArrResources = [];
-
-//         arrResources.forEach(element => {
-
-//             if (element[0] == 'projects' || element[0] == 'projects2') {
-//                 element[1].forEach(element => subArrResources.push(Object.entries(element)));
-//                 // console.log(element[0]);
-//             } else if (typeof element[1] == 'object') {
-//                 subArrResources.push(Object.entries(element[1]).map(entry => [entry[0], entry[1]]));
-//             }
-//         })
-//         // console.log(subArrResources);
-
-//         for (let i = 0; i < children.length; i++) {
-//             this.loopChilderen(children[i], subArrResources[i]);
-//         }
-//     }
-//     setInnerHTMLOfChild(parent, childClassName, arrResources, childName) {
-//         let childHtml = parent.getElementsByClassName(childClassName)[0];
-//         let arrResourcesHasTextBtn = false;
-//         if (!arrResources) {
-//             return;
-//         }
-//         // console.log(arrResources); zeer inefficient trouwens!!!
-
-//         for (let i = 0; i < arrResources.length; i++) {
-//             const resourceKey = arrResources[i][0];
-//             const resourceValue = arrResources[i][1];
-
-//             switch (resourceKey) {
-//                 case 'textBtn':
-//                     if (childName == 'urlBtn') childHtml.innerHTML = resourceValue;    
-//                     break;
-
-//                 case 'textBtn_1':
-//                     if (childName == 'urlBtn_1') childHtml.innerHTML = resourceValue;    
-//                     break;
-
-//                 case 'textBtn_2':
-//                     if (childName == 'urlBtn_2') childHtml.innerHTML = resourceValue;
-//                     break;
-//                 case 'urlBtn':
-//                     if (childName == 'url') childHtml.href = resourceValue;
-                    
-//                 case 'imgAlt':
-//                     if (childName == 'img') childHtml.alt = resourceValue;
-//                 default:
-//                     break;
-//             }
-
-//             if (resourceKey.startsWith('textBtn')) {
-//                 arrResourcesHasTextBtn = true;
-//             };
-
-//             if (resourceKey == 'notPublished') {
-//                 this.isPublished = false;
-//             }
-
-//             if (childName !== resourceKey) continue;
-
-//             switch (childName) {
-//                 case 'colors':
-//                     resourceValue.forEach(element => {
-                        
-//                         const div = document.createElement('div')
-//                         div.style.background = element
-//                         div.classList.add('bullet')
-//                         div.innerHTML = element
-//                         childHtml.appendChild(div)
-//                         console.log(this.getBrightness(element) < 128);
-//                         if (this.getBrightness(element) < 128) {
-//                             div.classList.add('bullet-dark')
-//                         }
-//                     });
-//                     break;
-//                 case 'img_01':
-//                 case 'img_02':
-//                 case 'img':
-//                     childHtml.src = resourceValue;
-//                     break;
-//                 case 'imgList':
-//                     for (let i = 0; i < resourceValue.length; i++) {
-//                         const href = resourceValue[i];
-//                         console.log(href);
-//                         const img = childHtml.appendChild(document.createElement("img"))
-//                         img.classList.add('img-small')
-//                         img.src = href;
-//                     }
-//                     break;
-
-//                 case 'previous':
-//                 case 'next':
-//                     childHtml.innerHTML = resourceKey;       
-//                 case 'urlBtn':
-//                 case 'urlBtn_1':
-//                 case 'urlBtn_2':
-//                     childHtml.href = resourceValue;
-//                     break;
-//                 case 'langratio':
-//                     childHtml.innerHTML =  resourceValue.join('% - ') + '%';
-//                     break;
-            
-//                 default:
-//                     if (childHtml.children[0] && childHtml.children[0].tagName == 'SPAN'){
-
-//                         switch (resourceKey) {
-//                             case 'library':
-//                                 childHtml.children[0].innerHTML = '<span lang="en">And with:&numsp;&numsp;</span><span lang="nl">En met: &numsp;&numsp;&numsp;&numsp;&nbsp; </span>';
-//                                 break;
-//                             case 'languages':
-//                                 childHtml.children[0].innerHTML = '<span lang="en">Made in:&numsp;&numsp;&numsp;</span><span lang="nl">Gemaakt in:&numsp;</span>';
-//                                 break;
-                        
-//                             case 'availability':
-//                                 childHtml.children[0].innerHTML = '<span lang="en">Availability: </span><span lang="nl">Beschikbaarheid: </span>';
-//                                 break;
-                        
-//                             case 'related_interests':
-//                                 childHtml.children[0].innerHTML = '<span lang="en">Related interests: </span><span lang="nl">Gerelateerde interesse: </span>';
-//                                 break;
-                        
-//                             default:
-//                                 childHtml.children[0].innerHTML = resourceKey.replaceAll('_', ' ') + ': <br> ';
-//                                 childHtml.classList.add('showParent');
-//                                 break;
-//                         }
-
-//                         (Array.isArray(resourceValue)) ?
-//                             childHtml.innerHTML += resourceValue.join(' - ') :
-//                             childHtml.innerHTML += resourceValue;
-//                         break;
-//                     }
-//                     (Array.isArray(resourceValue)) ?
-//                             (childName == 'library') ?
-//                             childHtml.innerHTML = `- ${resourceValue.join(' - ')}` :
-//                             childHtml.innerHTML = resourceValue.join(' - ') :
-//                             childHtml.innerHTML = resourceValue;
-//                     break;
-//             }
-//         }
-
-//         if (!arrResourcesHasTextBtn && (parent.classList[0] == 'card-btn' && childName == 'urlBtn') ) {
-//             childHtml.innerHTML = '<span lang="en">Get more info</span><span lang="nl">Meer info</span>';
-//         }
-//     }
-//     getBrightness(element) {
-//         let hex = element.slice(1).match(/.{1,2}/g)
-//         console.log(hex);
-//         let rgb = {}
-//         rgb.r = parseInt(hex[0], 16),
-//         rgb.g = parseInt(hex[1], 16),
-//         rgb.b = parseInt(hex[2], 16)
-        
-//         console.log(rgb);
-//         return ((rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000)
-//     }
-// }
