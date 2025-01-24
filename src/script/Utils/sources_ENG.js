@@ -1,7 +1,6 @@
 export default {
     home: {
         headername:   "Home",
-        // url:          "index.html",
         sections:     [
             {
                 id:             "Home_Welkom",
@@ -17,42 +16,41 @@ export default {
                 img:            "../src/assets/images/black-white.jpg",
                 imgAlt:         "black and white photo of Sofie van der Meer",
                 title:          "Creative Full-Stack developer",
-                // subtitle:       "- Creative Full-Stack developer -",
                 description:    "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
                 textBtn:        "Get to know me",
                 urlBtn:         "about.html"
             },
             {
-                id:           "Home_Projects",
-                projects:     [
+                id:         "Home_Projects",
+                projects:   [
                     {
-                        img:          "../src/assets/images/prularia/prularia_logo.png",
-                        imgAlt:       "crown, logo of project Prularia",
-                        title:        "Prularia",
-                        description:  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
-                        languages:    ["JavaScript", "PHP", "CSS"],
-                        langratio:    [47, 39, 12],
-                        library:      ["Bootstrap"],
-                        urlBtn:      "project.html#prularia"
+                        img:            "../src/assets/images/prularia/prularia_logo.png",
+                        imgAlt:         "crown, logo of project Prularia",
+                        title:          "Prularia",
+                        description:    "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
+                        languages:      ["JavaScript", "PHP", "CSS"],
+                        langratio:      [47, 39, 12],
+                        library:        ["Bootstrap"],
+                        urlBtn:         "project.html#prularia"
                     },
                     {
-                        img:          "../src/assets/icons/pizza.svg",
-                        imgAlt:       "pizzaslice, logo of project Pizzaria",
-                        title:        "Pizzaria",
-                        description:  "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
-                        languages:    ["PHP", "CSS"],
-                        langratio:    [97, 3],
-                        urlBtn:       "project.html#pizzaria"
+                        img:            "../src/assets/icons/pizza.svg",
+                        imgAlt:         "pizzaslice, logo of project Pizzaria",
+                        title:          "Pizzaria",
+                        description:    "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
+                        languages:      ["PHP", "CSS"],
+                        langratio:      [97, 3],
+                        urlBtn:         "project.html#pizzaria"
                     },
                     {
-                        img:          "../src/assets/icons/bullets.svg",
-                        imgAlt:       "9 circles forming a box, logo of project Bubbles in Color",
-                        title:        "Bubbles in Color",
-                        description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
-                        languages:    ["JavaScript", "HTML", "CSS"],
-                        langratio:    [0, 0, 0],
-                        library:      ["THREE.js"],
-                        urlBtn:       "project.html#bubbles-in-color"
+                        img:            "../src/assets/icons/bullets.svg",
+                        imgAlt:         "9 circles forming a box, logo of project Bubbles in Color",
+                        title:          "Bubbles in Color",
+                        description:    "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
+                        languages:      ["JavaScript", "HTML", "CSS"],
+                        langratio:      [0, 0, 0],
+                        library:        ["THREE.js"],
+                        urlBtn:         "project.html#bubbles-in-color"
                     }
                 ]
             }
@@ -79,20 +77,21 @@ export default {
                 availability:       "Available from 1st March 2025, open to internship/IBO.",
                 related_interests:  ["Virtual Realty", "2D & 3D Visuals"]            },
             {
-                id:             "About_Hard-Skills",
-                title:          "hard skills",
-                projects:       [
+                id:         "About_Hard-Skills",
+                title:      "hard skills",
+                projects:   [
                     {
                         Programming_Languages:      ["PHP", "JS", "HTML", "CSS"],
-                        Framework_And_Libraries:    ["Bootstrap", "THREE.js"],
+                        // Framework_And_Libraries:    ["Bootstrap", "THREE.js"],
+                        Libraries:                  ["Bootstrap", "THREE.js"],
                         Development_Methodologies:  ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
                     }
                 ] 
             },
             {
-                id:             "About_Soft-Skills",
-                title:          "soft skills",
-                projects:       [
+                id:         "About_Soft-Skills",
+                title:      "soft skills",
+                projects:   [
                     {
                         Creativity:       ["Artistic", "Innovative", "Eye for Detail", "Perfectionist"],
                         Problem_Solving:  ["Analytical", "Solution-Oriented"],
@@ -102,8 +101,8 @@ export default {
                 ] 
             },
             {
-                id:               "About_Education",
-                title:            "education",
+                id:         "About_Education",
+                title:      "education",
                 projects:   [
                     {
                         school:   "VDAB",
@@ -123,8 +122,8 @@ export default {
                 ]
             },
             {
-                id:               "About_Work",
-                title:            "professional experience",
+                id:         "About_Work",
+                title:      "professional experience",
                 projects:   [
                     {
                         company:  "Agency Nature & Forests",
@@ -158,26 +157,26 @@ export default {
         ]
     },
     projects: {
-        headername:     "Projects",
-        sections:           [
+        headername: "Projects",
+        sections:   [
             {   id:             "Projects_Top",
                 title:          "Projects",
                 description:    "Below are some of the projects I have developed"
 
             },
             {
-                id:           "Projects_List",
-                projects:     [
+                id:         "Projects_List",
+                projects:   [
                     {
-                        id:           "#prularia",
-                        img:          "../src/assets/images/prularia/prularia_logo.png",
-                        imgAlt:       "crown, logo of project Prularia",
-                        title:        "Prularia",
-                        description:  "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
-                        languages:    ["JavaScript", "PHP", "CSS"],
-                        langratio:    [47, 39, 12],
-                        library:      ["Bootstrap"],
-                        urlBtn:       "project.html#prularia",
+                        id:             "#prularia",
+                        img:            "../src/assets/images/prularia/prularia_logo.png",
+                        imgAlt:         "crown, logo of project Prularia",
+                        title:          "Prularia",
+                        description:    "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
+                        languages:      ["JavaScript", "PHP", "CSS"],
+                        langratio:      [47, 39, 12],
+                        library:        ["Bootstrap"],
+                        urlBtn:         "project.html#prularia",
                         sections:       [
                             {
                                 id:             "Project_Top",
@@ -199,7 +198,7 @@ export default {
                                                 "“Sofie proved to be a motivated and engaged participant during the SCRUM project. She effectively applied the practical tips from the instructors in the scrum exercise, highlighting her eagerness to learn. During the daily scrum meetings, she kept the focus sharp and was able to explain her coding work in a concise and clear manner. Her proactive attitude stood out; she frequently took the initiative to start conversations and encourage collaboration. Moreover, she placed great importance on delivering a finished and high-quality product at the end of each sprint, underscoring her result-oriented mindset and sense of responsibility.”",
                                 textBtn_1:      "Go live",
                                 textBtn_2:      "View code",
-                                urlBtn_1:       "http://www.demo-prularia.wuaze.com",
+                                urlBtn_1:       "demo/prularia/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Prularia",
                                 img_01:         "../src/assets/images/prularia/page-down.png",
                                 img_02:         "../src/assets/images/prularia/icons.png",
@@ -241,14 +240,14 @@ export default {
                             {
                                 id:             "Project_Content",
                                 
-                                introduction: "This project was the final assignment for the PHP course and involved building a pizza ordering web application. The goal was to create a user-friendly website where customers could easily view and order pizzas. The web application utilized various techniques and concepts that I learned throughout the course.",
-                                approach:     "In the first phase of the project, I performed an extensive normalization, set up the database in SQL, and implemented it to ensure that all necessary data was properly stored. After working on the normalization, I received feedback from my instructor that it was too detailed for the limited time I had. I decided to focus on the key tables, such as orders, customers, locations, and order lines, and not further develop the other tables (such as promotions and payment methods). \n\n Next, I developed the application following the MVC structure, keeping the application logic separate from the user interface. I also worked on error handling to ensure the app managed invalid user input properly. Before writing any code, I created a list of possible exceptions to have an overview of expected errors.",
-                                result:       "The result is a functional pizza ordering application that allows users to easily select pizzas, add them to their cart, and place their orders. The application retrieves products from the database and displays them neatly on the website. Users can register, log in, adjust the quantity of items, change their contact and delivery address, and complete their order. The user interface is simple yet functional, making it clear for customers how to place their order.",
+                                introduction:   "This project was the final assignment for the PHP course and involved building a pizza ordering web application. The goal was to create a user-friendly website where customers could easily view and order pizzas. The web application utilized various techniques and concepts that I learned throughout the course.",
+                                approach:       "In the first phase of the project, I performed an extensive normalization, set up the database in SQL, and implemented it to ensure that all necessary data was properly stored. After working on the normalization, I received feedback from my instructor that it was too detailed for the limited time I had. I decided to focus on the key tables, such as orders, customers, locations, and order lines, and not further develop the other tables (such as promotions and payment methods). \n\n Next, I developed the application following the MVC structure, keeping the application logic separate from the user interface. I also worked on error handling to ensure the app managed invalid user input properly. Before writing any code, I created a list of possible exceptions to have an overview of expected errors.",
+                                result:         "The result is a functional pizza ordering application that allows users to easily select pizzas, add them to their cart, and place their orders. The application retrieves products from the database and displays them neatly on the website. Users can register, log in, adjust the quantity of items, change their contact and delivery address, and complete their order. The user interface is simple yet functional, making it clear for customers how to place their order.",
                 
 
                                 textBtn_1:      "Go live",
                                 textBtn_2:      "View code",
-                                urlBtn_1:       "http://www.demo-pizzaria.wuaze.com",
+                                urlBtn_1:       "demo/pizzaria/App/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Pizzaria",
                                 img_01:         "../src/assets/images/pizzaria/structure.png",
                                 img_02:         "../src/assets/images/pizzaria/add-to-shoppingcart.png",
@@ -285,12 +284,12 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "game",
                                 img:            "../src/assets/icons/bullets.svg",
-                                imgAlt:       "9 circles forming a box, logo of project Bubbles in Color",
+                                imgAlt:         "9 circles forming a box, logo of project Bubbles in Color",
                                 title:          "Bubbles in Color",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
                                 date:           "January 2025",
-                                notPublished:          "This project is currently under development and is expected to be published soon."
+                                notPublished:   "This project is currently under development and is expected to be published soon."
                             },
                             {
                                 id:             "Project_Content",
@@ -316,26 +315,26 @@ export default {
                         ]
                     },
                     {
-                        id:           "#treasure-hunt",
-                        img:          "../src/assets/icons/cat.svg",
-                        imgAlt:       "sitting cat, logo of project Treasure Hunt",
-                        title:        "Treasure Hunt",
-                        description:  "In this exciting treasure hunt game, players embark on an adventurous quest to uncover hidden treasures.",
-                        languages:    ["JavaScript", "HTML", "CSS"],
-                        langratio:    [0, 0, 0],
-                        library:      ["THREE.js"],
-                        urlBtn:       "project.html#treasure-hunt",
+                        id:             "#treasure-hunt",
+                        img:            "../src/assets/icons/cat.svg",
+                        imgAlt:         "sitting cat, logo of project Treasure Hunt",
+                        title:          "Treasure Hunt",
+                        description:    "In this exciting treasure hunt game, players embark on an adventurous quest to uncover hidden treasures.",
+                        languages:      ["JavaScript", "HTML", "CSS"],
+                        langratio:      [0, 0, 0],
+                        library:        ["THREE.js"],
+                        urlBtn:         "project.html#treasure-hunt",
                         sections:       [
                             {
                                 id:             "Project_Top",
                                 websiteType:    "game",
                                 img:            "../src/assets/icons/cat.svg",
-                                imgAlt:       "sitting cat, logo of project Treasure Hunt",
+                                imgAlt:         "sitting cat, logo of project Treasure Hunt",
                                 title:          "Treasure Hunt",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
                                 date:           "January 2025",
-                                notPublished:          "This project is currently under development and is expected to be published soon."
+                                notPublished:   "This project is currently under development and is expected to be published soon."
                             },
                             {
                                 id:             "Project_Content",
@@ -363,30 +362,5 @@ export default {
                 ]
             }
         ]
-    } //,
-    // contact: {
-    //     headername:   "Contact me",
-    //     // url:          "/public/mailto:sofievandermeer@outlook.com",
-    //     sections:     [
-    //         {
-    //             id:         "Contact_Top",
-    //             title:      "Let's Talk",
-    //             subtitle:   "Fill in the form below, or reach out to me directly", 
-    //             urlBtn_1:   "mailto:sofievandermeer@outlook.com", 
-    //             textBtn_1:  "sofievandermeer@outlook.com", 
-    //             urlBtn_2:   "sofievandermeer@outlook.com", 
-    //             textBtn_2:  "(click to copy)",  
-    //             subtitle_on_Mobile: "prefer contact form?"
-    //         },
-    //         {
-    //             id:         "Contact_Form",
-    //             label_1:    "First Name",
-    //             label_2:    "Last Name",
-    //             label_3:    "Email",
-    //             label_4:    "Company",
-    //             label_5:    "Let's Talk",
-    //             textBtn:    "Send"
-    //         }
-    //     ]
-    // }    
+    }    
 }

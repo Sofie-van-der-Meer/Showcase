@@ -16,7 +16,6 @@ export default {
                 img:          "../src/assets/images/black-white.jpg",
                 imgAlt:       "zwart-wit foto van Sofie van der Meer",
                 title:        "Creatieve Full-Stack developer",
-                // subtitle:     "- Creatieve Full-Stack developer -",
                 description:  "Ik word gedreven door nieuwsgierigheid en ambitie. Mijn analytische vaardigheden, gecombineerd met mijn creativiteit, stellen me in staat om oplossingen te creëren, zoals 2D- en 3D-visuals, die zowel innovatief als nauwkeurig zijn, en mijn aandacht voor detail en probleemoplossend vermogen weerspiegelen.",
                 textBtn:      "Leer mij beter kennen",
                 urlBtn:       "about.html"
@@ -59,7 +58,7 @@ export default {
     },
     about: {
         headername:     "over mij",
-        sections:           [
+        sections:       [
             {
                 id:                 "About_Top",
                 img:                "../src/assets/images/black-white.jpg",
@@ -76,20 +75,23 @@ export default {
                 textBtn:            "sofievandermeer@outlook.com", 
                 availability:       "Beschikbaar vanaf 1 maart ‘25, sta open voor stage/IBO.",
                 related_interests:  ["Virtual Realty", "2D & 3D Visuals"] 
-            },            {
-                id:             "About_Hard-Skills",
-                title:          "hard skills",
-                projects:    [
+            },
+            {
+                id:         "About_Hard-Skills",
+                title:      "hard skills",
+                projects:   [
                     {
                         Programmeertalen:           ["PHP", "JS", "HTML", "CSS"],
-                        Frameworks_en_bibliotheken: ["Bootstrap", "THREE.js"],
+                        // Frameworks_en_bibliotheken: ["Bootstrap", "THREE.js"],
+                        Bibliotheken:               ["Bootstrap", "THREE.js"],
                         Development_Methodes:       ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
                     }
                 ] 
-            },            {
-                id:             "About_Soft-Skills",
-                title:          "soft skills",
-                projects:    [
+            },
+            {
+                id:         "About_Soft-Skills",
+                title:      "soft skills",
+                projects:   [
                     {
                         Creativiteit:       ["Artistiek", "Innovatief", "Oog voor Detail", "Perfectionist"],
                         Probleemoplossend:  ["Analytisch", "Oplossingsgericht"],
@@ -99,29 +101,29 @@ export default {
                 ] 
             },
             {
-                id:               "About_Education",
-                title:            "opleiding",
+                id:         "About_Education",
+                title:      "opleiding",
                 projects:   [
                     {
-                        school:     "VDAB",
+                        school: "VDAB",
                         study:  "Full-Stack Developer",
-                        year:       "2024 - 2025"
+                        year:   "2024 - 2025"
                     },
                     {
-                        school:     "CleanTechPunt Houthalen",
+                        school: "CleanTechPunt Houthalen",
                         study:  "Cleantech Ambassador",
-                        year:       "2023"
+                        year:   "2023"
                     },
                     {
-                        school:     "Erasmushogeschool Brussel",
+                        school: "Erasmushogeschool Brussel",
                         study:  "Bachelor in Landschap & Tuinarchitectuur",
-                        year:       "2014 - 2018"
+                        year:   "2014 - 2018"
                     }
                 ]
             },
             {
-                id:               "About_Work",
-                title:            "werkervaring",
+                id:         "About_Work",
+                title:      "werkervaring",
                 projects:   [
                     {
                         company:  "Agentschap voor Natuur & Bos",
@@ -155,26 +157,26 @@ export default {
         ]
     },
     projects:   {
-        headername:     "Projecten",
-        sections:           [
+        headername: "Projecten",
+        sections:   [
             {   id:             "Projects_Top",
                 title:          "Projecten",
                 description:    "Dit is een verzameling van projecten waaraan ik heb gewerkt"
 
             },
             {
-                id:           "Projects_List",
-                projects:     [
+                id:         "Projects_List",
+                projects:   [
                     {
-                        id:           "#prularia",
-                        img:          "../src/assets/images/prularia/prularia_logo.png",
-                        imgAlt:       "kroon, logo van project Prularia",
-                        title:        "Prularia",
-                        description:  "Als een team van 9 ontwikkelaars hebben we een e-commerceplatform gebouwd om praktijkervaring op te doen met de principes van Scrum en Agile-methodologieën.",
-                        languages:    ["JavaScript", "PHP", "CSS"],
-                        langratio:    [47, 39, 12],
-                        library:      ["Bootstrap"],
-                        urlBtn:       "project.html#prularia",
+                        id:             "#prularia",
+                        img:            "../src/assets/images/prularia/prularia_logo.png",
+                        imgAlt:         "kroon, logo van project Prularia",
+                        title:          "Prularia",
+                        description:    "Als een team van 9 ontwikkelaars hebben we een e-commerceplatform gebouwd om praktijkervaring op te doen met de principes van Scrum en Agile-methodologieën.",
+                        languages:      ["JavaScript", "PHP", "CSS"],
+                        langratio:      [47, 39, 12],
+                        library:        ["Bootstrap"],
+                        urlBtn:         "project.html#prularia",
                         sections:       [
                             {
                                 id:             "Project_Top",
@@ -196,7 +198,7 @@ export default {
                                                 "“Sofie toonde zich als een gemotiveerde en betrokken deelnemer tijdens het SCRUM-project. Ze wist de praktische tips van de lesgevers effectief toe te passen in de scrum-oefening, wat haar leergierigheid benadrukt. Tijdens de daily scrum meetings hield ze de focus scherp en wist ze haar codeerwerk op een beknopte en duidelijke manier toe te lichten. Haar proactieve houding viel op; ze nam regelmatig het initiatief om gesprekken te starten en samenwerking te stimuleren. Daarnaast hechtte ze veel waarde aan het opleveren van een afgewerkt en kwalitatief product op het einde van een sprint, wat haar resultaatgerichtheid en verantwoordelijkheidsgevoel onderstreept.”",
                                 textBtn_1:      "Ga naar de website",
                                 textBtn_2:      "Ga naar de code",
-                                urlBtn_1:       "http://www.demo-prularia.wuaze.com",
+                                urlBtn_1:       "demo/prularia",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Prularia",
                                 img_01:         "../src/assets/images/prularia/icons.png",
                                 img_02:         "../src/assets/images/prularia/page-down.png",
@@ -210,9 +212,9 @@ export default {
                                 colors:         ["#abd7a8", "#8ab987", "#63a15e", "#ffffff", "#f5f9f6", "#e8f5e9", "#111510"]
                             },
                             {
-                                id:             "Project_Bottom",
-                                previous:       "project.html#treasure-hunt",
-                                next:           "project.html#pizzaria"
+                                id:         "Project_Bottom",
+                                previous:   "project.html#treasure-hunt",
+                                next:       "project.html#pizzaria"
                             }
                         ]
                     },
@@ -238,13 +240,13 @@ export default {
                             {
                                 id:             "Project_Content",
                                 
-                                introductie:  "Dit project was het eindresultaat van de PHP-cursus en bestond uit het bouwen van een pizzaBestelwebapplicatie. Het doel was om een gebruiksvriendelijke website te creëren waar klanten eenvoudig pizza’s kunnen bekijken en bestellen. De webapplicatie maakte gebruik van verschillende technieken en concepten die ik tijdens de cursus heb geleerd.",
-                                aanpak:       "In de eerste fase van het project heb ik een uitgebreide normalisatie uitgevoerd, de databank in SQL opgezet en geïmplementeerd, zodat alle benodigde gegevens goed in de database werden opgeslagen. Na het uitwerken van de normalisatie kreeg ik feedback van mijn docent dat het te gedetailleerd was voor de beperkte tijd die ik had. Ik besloot me te concentreren op de belangrijkste tabellen, zoals bestellingen, klanten, locaties en bestellijnen, en de andere tabellen (zoals promoties en betaalmethoden) niet verder uit te werken. \n Vervolgens heb ik de applicatie ontwikkeld volgens de MVC-structuur, waarbij de logica van de applicatie gescheiden werd van de gebruikersinterface. Daarnaast heb ik gewerkt aan foutafhandeling, zodat de app goed omging met eventuele ongeldige invoer van de gebruiker. Voorafgaand aan het schrijven van de code maakte ik een lijst van mogelijke uitzonderingen om een overzicht te krijgen van de te verwachten fouten.",
-                                resultaat:    "Het resultaat is een werkende pizzaBestelapplicatie die gebruikers in staat stelt om eenvoudig pizza’s te kiezen, aan hun winkelwagentje toe te voegen en hun bestellingen te plaatsen. De applicatie haalt de producten uit de databank en toont ze netjes op de website. Gebruikers kunnen zich registreren, inloggen, de hoeveelheid van producten aanpassen, hun contact- en leveringsadres wijzigen, en de bestelling afronden. De gebruikersinterface is eenvoudig maar functioneel, waardoor het voor klanten duidelijk is hoe ze hun bestelling kunnen plaatsen.",
+                                introductie:    "Dit project was het eindresultaat van de PHP-cursus en bestond uit het bouwen van een pizzaBestelwebapplicatie. Het doel was om een gebruiksvriendelijke website te creëren waar klanten eenvoudig pizza’s kunnen bekijken en bestellen. De webapplicatie maakte gebruik van verschillende technieken en concepten die ik tijdens de cursus heb geleerd.",
+                                aanpak:         "In de eerste fase van het project heb ik een uitgebreide normalisatie uitgevoerd, de databank in SQL opgezet en geïmplementeerd, zodat alle benodigde gegevens goed in de database werden opgeslagen. Na het uitwerken van de normalisatie kreeg ik feedback van mijn docent dat het te gedetailleerd was voor de beperkte tijd die ik had. Ik besloot me te concentreren op de belangrijkste tabellen, zoals bestellingen, klanten, locaties en bestellijnen, en de andere tabellen (zoals promoties en betaalmethoden) niet verder uit te werken. \n Vervolgens heb ik de applicatie ontwikkeld volgens de MVC-structuur, waarbij de logica van de applicatie gescheiden werd van de gebruikersinterface. Daarnaast heb ik gewerkt aan foutafhandeling, zodat de app goed omging met eventuele ongeldige invoer van de gebruiker. Voorafgaand aan het schrijven van de code maakte ik een lijst van mogelijke uitzonderingen om een overzicht te krijgen van de te verwachten fouten.",
+                                resultaat:      "Het resultaat is een werkende pizzaBestelapplicatie die gebruikers in staat stelt om eenvoudig pizza’s te kiezen, aan hun winkelwagentje toe te voegen en hun bestellingen te plaatsen. De applicatie haalt de producten uit de databank en toont ze netjes op de website. Gebruikers kunnen zich registreren, inloggen, de hoeveelheid van producten aanpassen, hun contact- en leveringsadres wijzigen, en de bestelling afronden. De gebruikersinterface is eenvoudig maar functioneel, waardoor het voor klanten duidelijk is hoe ze hun bestelling kunnen plaatsen.",
 
                                 textBtn_1:      "Ga naar de website",
                                 textBtn_2:      "Ga naar de code",
-                                urlBtn_1:       "http://www.demo-pizzaria.wuaze.com",
+                                urlBtn_1:       "demo/pizzaria/App",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Pizzaria",
                                 img_01:         "../src/assets/images/pizzaria/structure.png",
                                 img_02:         "../src/assets/images/pizzaria/add-to-shoppingcart.png",
@@ -281,12 +283,12 @@ export default {
                                 id:             "Project_Top",
                                 websiteType:    "game",
                                 img:            "../src/assets/icons/bullets.svg",
-                                imgAlt:       "9 cirkels die een vierkant vormen, logo van project Bubbles in Color",
+                                imgAlt:         "9 cirkels die een vierkant vormen, logo van project Bubbles in Color",
                                 title:          "Bubbles in Color",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
                                 date:           "januari 2025",
-                                notPublished:          "Dit project is momenteel in ontwikkeling en wordt binnenkort gepubliceerd."
+                                notPublished:   "Dit project is momenteel in ontwikkeling en wordt binnenkort gepubliceerd."
                             },
                             {
                                 id:             "Project_Content",
@@ -312,15 +314,15 @@ export default {
                         ]
                     },
                     {
-                        id:           "#treasure-hunt",
-                        img:          "../src/assets/icons/cat.svg",
-                        imgAlt:       "zittende kat, logo van project Treasure Hunt",
-                        title:        "Treasure Hunt",
-                        description:  "In dit spannende schattenjachtspel gaan spelers op een avontuurlijke zoektocht om verborgen schatten te ontdekken.",
-                        languages:    ["JavaScript", "HTML", "CSS"],
-                        langratio:    [0, 0, 0],
-                        library:      ["THREE.js"],
-                        urlBtn:       "project.html#treasure-hunt",
+                        id:             "#treasure-hunt",
+                        img:            "../src/assets/icons/cat.svg",
+                        imgAlt:         "zittende kat, logo van project Treasure Hunt",
+                        title:          "Treasure Hunt",
+                        description:    "In dit spannende schattenjachtspel gaan spelers op een avontuurlijke zoektocht om verborgen schatten te ontdekken.",
+                        languages:      ["JavaScript", "HTML", "CSS"],
+                        langratio:      [0, 0, 0],
+                        library:        ["THREE.js"],
+                        urlBtn:         "project.html#treasure-hunt",
                         sections:       [
                             {
                                 id:             "Project_Top",
@@ -331,7 +333,7 @@ export default {
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
                                 date:           "januari 2025",
-                                notPublished:          "Dit project is momenteel in ontwikkeling en wordt binnenkort gepubliceerd."
+                                notPublished:   "Dit project is momenteel in ontwikkeling en wordt binnenkort gepubliceerd."
                             },
                             {
                                 id:             "Project_Content",
@@ -359,29 +361,5 @@ export default {
                 ]
             }
         ]
-    } //,
-    // contact: {
-    //     headername:   "Contact",
-    //     sections:     [
-    //         {
-    //             id:         "Contact_Top",
-    //             title:      "Neem contact op",
-    //             subtitle:   "Vul het onderstaande formulier in, of neem direct contact met mij op", 
-    //             urlBtn_1:   "mailto:sofievandermeer@outlook.com", 
-    //             textBtn_1:  "sofievandermeer@outlook.com", 
-    //             urlBtn_2:   "sofievandermeer@outlook.com", 
-    //             textBtn_2:  "(klik om te kopiëren)",  
-    //             subtitle_on_Mobile: "Verkiest u liever het contactformulier?"
-    //         },
-    //         {
-    //             id:         "Contact_Form",
-    //             label_1:    "Voornaam",
-    //             label_2:    "Achternaam",
-    //             label_3:    "E-mail",
-    //             label_4:    "company",
-    //             label_5:    "Neem contact op",
-    //             textBtn:    "Verzend"
-    //         }
-    //     ]
-    // }    
+    }   
 }
