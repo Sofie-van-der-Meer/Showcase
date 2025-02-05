@@ -1,5 +1,5 @@
 # SHOWCASE
-An website that show what I've learned so far as a junior Full-Stack developer.
+A website that shows what I've learned so far as a junior Full-Stack developer.
 
 
 ## About The Project
@@ -16,7 +16,7 @@ As a Junior Full-Stack Developer, it's important to show what I have learned ove
 ### Extra Features:
 - [x] **Dark Mode and Toggle:** The website initially follows the browser's preferred color scheme, with a toggle button to switch between light and dark modes.
 - [x] **Language Toggle (English/Dutch):** The website defaults to English, but users can switch to the Dutch version via a toggle button. Document downloads are also available in the corresponding language.
-- [x] **Projects Page:** The projectspage displays an overview of all projects, including key details and a button linking to each project's individual page. The homepage displays the three most important projects.
+- [x] **Projects Page:** The projects page displays an overview of all projects, including key details and a button linking to each project's individual page. The homepage displays the three most important projects.
 
 ## Build With
 * HTML
