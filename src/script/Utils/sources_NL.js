@@ -198,7 +198,7 @@ export default {
                                                 "“Sofie toonde zich als een gemotiveerde en betrokken deelnemer tijdens het SCRUM-project. Ze wist de praktische tips van de lesgevers effectief toe te passen in de scrum-oefening, wat haar leergierigheid benadrukt. Tijdens de daily scrum meetings hield ze de focus scherp en wist ze haar codeerwerk op een beknopte en duidelijke manier toe te lichten. Haar proactieve houding viel op; ze nam regelmatig het initiatief om gesprekken te starten en samenwerking te stimuleren. Daarnaast hechtte ze veel waarde aan het opleveren van een afgewerkt en kwalitatief product op het einde van een sprint, wat haar resultaatgerichtheid en verantwoordelijkheidsgevoel onderstreept.”",
                                 textBtn_1:      "Ga naar de website",
                                 textBtn_2:      "Ga naar de code",
-                                urlBtn_1:       "demo/prularia",
+                                urlBtn_1:       "https://demo.prularia.Sofie-van-der-Meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Prularia",
                                 img_01:         "../src/assets/images/prularia/icons.png",
                                 img_02:         "../src/assets/images/prularia/page-down.png",
@@ -246,7 +246,7 @@ export default {
 
                                 textBtn_1:      "Ga naar de website",
                                 textBtn_2:      "Ga naar de code",
-                                urlBtn_1:       "demo/pizzaria/App",
+                                urlBtn_1:       "https://demo.pizzaria.Sofie-van-der-Meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Pizzaria",
                                 img_01:         "../src/assets/images/pizzaria/structure.png",
                                 img_02:         "../src/assets/images/pizzaria/add-to-shoppingcart.png",
@@ -287,7 +287,7 @@ export default {
                                 title:          "Bubbles in Color",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
-                                date:           "januari 2025",
+                                date:           "februari 2025",
                                 notPublished:   "Dit project is momenteel in ontwikkeling en wordt binnenkort gepubliceerd."
                             },
                             {
@@ -299,7 +299,7 @@ export default {
 
                                 // textBtn_1:      "Go live",
                                 // textBtn_2:      "View code",
-                                // urlBtn_1:       "urlgolive",
+                                // urlBtn_1:       "https://demo.bubbles-in-color.Sofie-van-der-Meer.be/",
                                 // urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Bubbles-In-Color",
                                 // img_01:         "../src/assets/images/bubbles-in-color/img.png",
                                 // img_02:         "../src/assets/images/bubbles-in-color/img.png",
@@ -332,7 +332,7 @@ export default {
                                 title:          "Treasure Hunt",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
-                                date:           "januari 2025",
+                                date:           "februari 2025",
                                 notPublished:   "Dit project is momenteel in ontwikkeling en wordt binnenkort gepubliceerd."
                             },
                             {
@@ -344,7 +344,7 @@ export default {
 
                                 // textBtn_1:      "Go live",
                                 // textBtn_2:      "View code",
-                                // urlBtn_1:       "urlgolive",
+                                // urlBtn_1:       "https://demo.treasure-hunt.Sofie-van-der-Meer.be/",
                                 // urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Treasure-Hunt",
                                 // img_01:         "../src/assets/images/treasure-hunt/img.png",
                                 // img_02:         "../src/assets/images/treasure-hunt/img.png",

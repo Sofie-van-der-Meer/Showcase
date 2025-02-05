@@ -1,13 +1,10 @@
-import DarkMode from "./Utils/Darkmode"
-import Fetch from "./Utils/Fetch"
-import Modal from "./Utils/Modal";
-import Resources from "./Utils/Resources"
+import DarkMode from "./Utils/Darkmode.js";
+import Modal from "./Utils/Modal.js";
+import Resources from "./Utils/Resources.js";
 
 
 class Script {
     constructor() {
-        // new Fetch("nav"); 
-        // new Fetch("footer"); 
         this.modal = new Modal();
 
         this.location = window.location;
@@ -16,6 +13,7 @@ class Script {
         document.addEventListener('DOMContentLoaded', () => {
             new DarkMode();
         })
+        console.log('Hey, I noticed you\'re checking out my code! Feel free to explore it further on my GitHub: https://github.com/Sofie-van-der-Meer/Showcase');
     }
     loadPage() {
         this.getPage();
@@ -28,8 +26,6 @@ class Script {
         this.page = "about" :
         this.location.href.includes("project") ?
         this.page = "projects" :
-        // this.location.href.includes("project") ?
-        // this.page = "project" :
         this.location.href.includes("contact") ?
         this.page = "contact" :
         this.page = "home";
@@ -41,12 +37,11 @@ class Script {
 
 const script = new Script();
 
-document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(document.body.classList.add('loaded'), 20000);
-    // window.scrollTo(0, 0);
+window.onload = function() {
+    document.body.classList.add('loaded');
     window.scroll({
         top: 0,
         left: 0,
         behavior: "smooth"
     })
-})
+}

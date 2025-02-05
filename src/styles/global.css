@@ -104,6 +104,7 @@ header and footer styles, general container widths, etc. */
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px var(--grey);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 8vw;
     text-align: center;
     align-content: center;
     width: 100%;
@@ -114,13 +115,13 @@ header and footer styles, general container widths, etc. */
     opacity: 75%;
     visibility: hidden;
 
-    transition: all 1s 3s ease-out;
+    transition: all 0.9s 1.4s ease-out;
 }
 .loaded .entry-title {
     opacity: 0;
     visibility: hidden;
 
-    transition: all 1.5s 1s ease-out;
+    transition: all 0.9s 0.5s ease-out;
 } 
 #exit {
     display: none;
@@ -274,44 +275,36 @@ header and footer styles, general container widths, etc. */
 
 
 /* main */
-html {
-    scroll-snap-type: y proximity; /* html */
-}
+/* html {
+    scroll-snap-type: y mandatory;
+} */
 .main {
     margin-top: var(--header-height);
-    /* padding-top: var(--header-height); */
 }
-.main > section
- {
+/* .main > section
+{
     scroll-snap-align: start;
-    /* outline: 3px solid yellow; */
-}
+} */
 .main header {
     margin-top: var(--header-height);
 }
-
 .full-height {
     min-height: 100svh;
-    /* height: 100svh; */
-    /* outline: 1px white solid; */
 }
 .two-thirds-height {
     min-height: 66svh;
 }
 .half-height {
     min-height: 50svh;
-    /* outline: 3px solid green; */
 }
 .thirds-height {
     min-height: 33svh;
 }
 header:is(.full-height) { 
-    /* outline: 3px solid red; */
     min-height: calc(100svh - var(--header-height));
     padding-block: var(--header-height);
 }
 header:is(.half-height) { 
-    /* outline: 3px solid red; */
     min-height: calc(50svh - var(--header-height));
 }
 .full-width {
@@ -340,18 +333,8 @@ header:is(.half-height) {
     }
 }
 
-
-
-
-/* @keyframes scrollingX {
-    100% {
-        transform: translateY(100%);
-    } 
-}*/
 .inline-scroll_container {
     position: relative;
-    /* animation: scrollingX linear;
-    animation-timeline: view(100px 50svh); */
 }
 .inline-scroll_sticky {
     padding-top: calc(var(--header-height) * 2);
@@ -360,7 +343,6 @@ header:is(.half-height) {
     z-index: 1;
 }
 .sect-imgList {
-    /* overflow-x: scroll; */
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: inline mandatory;
@@ -371,14 +353,13 @@ header:is(.half-height) {
 .sect-imgList > img {
     scroll-snap-align: start;
 }
-
 .img-small {
     height: 30rem;
 }
+
 .landing {
     position: relative;
 }
-
 .landing_section{
     height: calc(100svh - var(--header-height) - (2 * 1rem)) ;
     margin-left: 40%;
@@ -387,17 +368,13 @@ header:is(.half-height) {
     padding-top: 10svh;
 }
 
-
 .wrapper:has(.card-img) {
     background-color: var(--color-secundary-background);
     width: auto;
     max-width: 100%;
     height: 50svh;
-    /* margin-block: 3.75rem; */
     .card-img {
         height: 100%;
-        /* width: fit-content;
-        height: fit-content;*/
         max-height: 100%; 
         max-width: 100%;
     }
@@ -406,7 +383,6 @@ header:is(.half-height) {
 {
     padding: 5rem;
 }
-
 
 button {
     background-color: var(--accent-secundary);
@@ -423,21 +399,17 @@ button {
 }
 
 .sect-colors {
-    /* grid-template-columns: repeat(3, 1fr);*/
     width: 40%; 
     grid-template-columns: repeat(
         auto-fill, minmax(min(4.5rem, 100%), 1fr));
 }
 
 .bullet {
-    /* --color: attr(data-color); */
-    /* background-color: var(--color); */
     color: transparent;
     font-size: 0.9rem;
     text-transform: uppercase;
     width: 4.5rem;
     height: min(10vw, 4.5rem);
-    /* margin: 1rem; */
     border-radius: 2.25rem;
     border: 1px solid var(--color-primary);
     text-align: center;
@@ -450,7 +422,6 @@ button {
     color: var(--white);
 }
 
-
 /* Global colors: 
 Primary colors, background colors, text colors, etc. */
 
@@ -460,7 +431,6 @@ body, .wrapper {
 body, a, i {
     color: var(--color-primary);
 }
-
 button:has(i) {
     background-color: transparent;
     border: none;
@@ -485,8 +455,6 @@ button:has(a:hover) {
     color: var(--light);
 }
 .projects-card .card:hover {
-    /* box-shadow: 2px -2px 15px var(--accent-secundary); */
-    
     box-shadow: 2px -2px 15px var(--color-tertiairy-background);
 }
 .nav li a:hover, 
@@ -502,9 +470,6 @@ Global helper classes
 .hidden:not(:has(.showParent)) {
     display: none;
 }
-/* .hidden {
-    display: block;
-} */
 .visible {
     display: block;
 }

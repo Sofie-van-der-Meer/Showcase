@@ -1,7 +1,6 @@
 /*  Responsive breakpoints: 
     Media queries stored in a reusable format. */
 
-    
 @media screen and (min-width: 601px) {
     .card-content:has(.btn__pos_absolute),
     .sect-content:has(.btn__pos_absolute) {
@@ -25,6 +24,10 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .entry-title {
+        -webkit-text-fill-color: var(--grey);
+        font-size: 36px;
+    }
     .three-quarters-width,
     .half-width,
     .img__width,
@@ -32,7 +35,6 @@
         width: 100%;
     }
     .home-Welkom {
-        /* flex-direction: row; */
         justify-content: center;
         align-items: flex-end;
         position: relative;
@@ -61,7 +63,6 @@
         .card-btn {
             margin-top: 1rem;
         }
-
     }
     .font-weight__light {
         font-weight: 400;

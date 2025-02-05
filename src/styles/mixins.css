@@ -9,7 +9,6 @@
     --header-height:        calc(3rem + 2rem);
     --header-logo-width:    calc(3rem * 1.1320312); /* hoogte * ratio of logo */
     --header-bar-width:     35px;
-    /* --scrollbar-witdh:      0.25rem; */
 
     /* fonts */
     --font-family__source-sans-3: "Source Sans 3", serif;
@@ -30,9 +29,6 @@
     --accent-bright:    #d91254;
 
     /* colors - use in global */
-    /* --color-primary-background:     var(--very-light);
-    --color-secundary-background:   var(--white);
-    --color-tertiairy-background:    var(--light); */
     --color-primary-background:     var(--light);
     --color-secundary-background:   var(--very-light);
     --color-tertiairy-background:    var(--white);
@@ -119,7 +115,6 @@
 }
 
 .container {
-    /* margin: 1rem auto 1rem auto; */
     margin-block: 1rem;
     margin-inline: auto;
     width: min(71.2rem, calc(100vw - 4rem));

@@ -1,6 +1,6 @@
-import DutchMode from "./Dutchmode";
-import sources_ENG from "./sources_ENG";
-import sources_NL from "./sources_NL";
+import DutchMode from "./Dutchmode.js";
+import sources_ENG from "./sources_ENG.js";
+import sources_NL from "./sources_NL.js";
 
 export default class Resources {
     constructor(pageName, hashName) {
@@ -33,7 +33,6 @@ export default class Resources {
             this.setPageNameInHeader();
 
             let sections = this.getSections();
-            console.log(sections);
             this.loopOverSections(sections);
 
             this.dutchMode.setLangAttr();

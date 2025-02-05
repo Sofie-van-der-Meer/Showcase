@@ -16,19 +16,19 @@ export default class DarkMode {
     }
 
     setMode() {
-        this.faviconTag.href = `http://localhost/showcase/public/favicon_${this.current}.svg`;
+        this.faviconTag.href = `favicon_${this.current}.svg`;
         this.bodyTag.className = this.current;
         this.setSpan();
     }
 
     changeMode() {
         if (this.bodyTag.classList.contains('dark')) {
-            this.faviconTag.href = "http://localhost/showcase/public/favicon_light.svg";
+            this.faviconTag.href = "favicon_light.svg";
             this.bodyTag.classList.remove('dark');
             this.bodyTag.classList.add('light');
             sessionStorage.setItem('color-scheme', 'light');
         } else {
-            this.faviconTag.href = "http://localhost/showcase/public/favicon_dark.svg";
+            this.faviconTag.href = "favicon_dark.svg";
             this.bodyTag.classList.remove('light');
             this.bodyTag.classList.add('dark');
             sessionStorage.setItem('color-scheme', 'dark');
