@@ -98,6 +98,10 @@
     width: 40%;
     height: 50svh;
 }
+.flex-dir_column:has(.sect-colors) {
+    flex-wrap: wrap;
+    align-content: center;
+}
 
 .grid {
     display: grid;

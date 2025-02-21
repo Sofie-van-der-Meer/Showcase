@@ -43,14 +43,14 @@ export default {
                         urlBtn:         "project.html#pizzaria"
                     },
                     {
-                        img:            "../src/assets/icons/bullets.svg",
-                        imgAlt:         "9 circles forming a box, logo of project Bubbles in Color",
-                        title:          "Bubbles in Color",
-                        description:    "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
+                        img:            "../src/assets/icons/gem.svg",
+                        imgAlt:         "diamond, logo of project Treasure Hunt",
+                        title:          "Treasure Hunt",
+                        description:    "In this exciting treasure hunt game, a little fox embarks on a thrilling quest to uncover hidden, yummy treasures.",
                         languages:      ["JavaScript", "HTML", "CSS"],
-                        langratio:      [0, 0, 0],
+                        langratio:      [91, 5, 4],
                         library:        ["THREE.js"],
-                        urlBtn:         "project.html#bubbles-in-color"
+                        urlBtn:         "project.html#treasure-hunt",
                     }
                 ]
             }
@@ -66,15 +66,15 @@ export default {
                 imgAlt:             "black and white photo of Sofie van der Meer",
                 title:              "Sofie van der Meer",
                 subtitle:           "Junior Full-Stack developer",
-                availability_1:     "Available from 1st March 2025",
+                availability_1:     "Available from 31st March 2025",
                 availability_2:     "Open to internship/IBO"
             },
             {
                 id:                 "About_Me",
-                profile:            "A curious and ambitious developer with a strong analytical mindset and a passion for creative solutions. \n \n Eager to learn and thrive in Full-Stack development, looking for a position where creative thinking and problem solving can be fully utilized. \n \n Ready to become your next Full-Stack Developer!",
+                profile:            "A curious and ambitious developer with a strong analytical mindset and a passion for creative solutions. \n\n Eager to learn and thrive in Full-Stack development, looking for a position where creative thinking and problem solving can be fully utilized. \n\n Ready to become your next Full-Stack Developer!",
                 urlBtn:             "mailto:sofievandermeer@outlook.com", 
                 textBtn:            "sofievandermeer@outlook.com", 
-                availability:       "Available from 1st March 2025, open to internship/IBO.",
+                availability:       "Available from 31st March 2025, open to internship/IBO.",
                 related_interests:  ["Virtual Realty", "2D & 3D Visuals"]            },
             {
                 id:         "About_Hard-Skills",
@@ -265,96 +265,101 @@ export default {
                             {
                                 id:             "Project_Bottom",
                                 previous:       "project.html#prularia",
-                                next:           "project.html#bubbles-in-color"
-                            }
-                        ]
-                    },
-                    {
-                        id:           "#bubbles-in-color",
-                        img:          "../src/assets/icons/bullets.svg",
-                        imgAlt:       "9 circles forming a box, logo of project Bubbles in Color",
-                        title:        "Bubbles in Color",
-                        description:  "In this interactive game, users can color a variety of bubbles, offering a fun and creative experience.",
-                        languages:    ["JavaScript", "HTML", "CSS"],
-                        langratio:    [0, 0, 0],
-                        library:      ["THREE.js"],
-                        urlBtn:       "project.html#bubbles-in-color",
-                        sections:     [
-                            {
-                                id:             "Project_Top",
-                                websiteType:    "game",
-                                img:            "../src/assets/icons/bullets.svg",
-                                imgAlt:         "9 circles forming a box, logo of project Bubbles in Color",
-                                title:          "Bubbles in Color",
-                                languages:      ["JavaScript", "HTML", "CSS"],
-                                library:        ["THREE.js"],
-                                date:           "February 2025",
-                                notPublished:   "This project is currently under development and is expected to be published soon."
-                            },
-                            {
-                                id:             "Project_Content",
-                                
-                                // introduction:   "",
-                                // challenges:     "",
-                                // result:         "",
-
-                                // textBtn_1:      "Go live",
-                                // textBtn_2:      "View code",
-                                // urlBtn_1:       "https://demo.bubbles-in-color.Sofie-van-der-Meer.be/",
-                                // urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Bubbles-In-Color",
-                                // img_01:         "../src/assets/images/bubbles-in-color/img.png",
-                                // img_02:         "../src/assets/images/bubbles-in-color/img.png",
-                                // imgList:        [],
-                                // colors:         []
-                            },
-                            {
-                                id:             "Project_Bottom",
-                                previous:       "project.html#pizzaria",
                                 next:           "project.html#treasure-hunt"
                             }
                         ]
                     },
                     {
                         id:             "#treasure-hunt",
-                        img:            "../src/assets/icons/cat.svg",
-                        imgAlt:         "sitting cat, logo of project Treasure Hunt",
+                        img:            "../src/assets/icons/gem.svg",
+                        imgAlt:         "diamond, logo of project Treasure Hunt",
                         title:          "Treasure Hunt",
-                        description:    "In this exciting treasure hunt game, players embark on an adventurous quest to uncover hidden treasures.",
+                        description:    "In this exciting treasure hunt game, a little fox embarks on a thrilling quest to uncover hidden, yummy treasures.",
                         languages:      ["JavaScript", "HTML", "CSS"],
-                        langratio:      [0, 0, 0],
+                        langratio:      [91, 5, 4],
                         library:        ["THREE.js"],
                         urlBtn:         "project.html#treasure-hunt",
                         sections:       [
                             {
                                 id:             "Project_Top",
                                 websiteType:    "game",
-                                img:            "../src/assets/icons/cat.svg",
-                                imgAlt:         "sitting cat, logo of project Treasure Hunt",
+                                img:            "../src/assets/icons/gem.svg",
+                                imgAlt:         "diamond, logo of project Treasure Hunt",
                                 title:          "Treasure Hunt",
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
-                                date:           "February 2025",
-                                notPublished:   "This project is currently under development and is expected to be published soon."
+                                date:           "February 2025"
                             },
                             {
                                 id:             "Project_Content",
                                 
-                                // introduction:   "",
-                                // challenges:     "",
-                                // result:         "",
+                                introduction:   "For my JavaScript course, I was asked to create a game called 'Treasure Hunt'. The goal was to allow the player to move around using event listeners. I saw this as a great chance to create a 3D experience using Three.js, making the game more fun to play.",
+                                challenges:     "The first challenge was designing the characters and treasures. I had many ideas, but creating 3D models in Blender was new to me and time-consuming. Because of the limited time, I decided to use an existing 3D model instead. I used a single fox model, and by changing its size, I created both a small fox and a mother fox. \n\n For the JavaScript structure, I used Object-Oriented Programming (OOP) based on the Three.js journey course. This approach gave me a solid starting point to build the game’s logic. \n\n By organizing all the game data into a JavaScript object, I could easily create and manage the game elements using OOP. \n\n \n",
+                                approach:       "Once the elements showed up correctly and animations worked, I started improving the gameplay. I created a matrix array to randomly place game elements in different spots each time the game was loaded. This kept the game fresh and exciting with every play. \n\n Next, I worked on the movement of the foxes. My first attempt didn’t work well and was too complicated, but after simplifying the logic, I got it right. I also added new features: the mother fox (enemy) could move randomly or towards a target, and the small fox (hunter) could be controlled both by keyboard and by touch events on mobile devices. Instead of using keys, I added arrow buttons on the screen, allowing players to move the fox by touching these buttons. This made the game more interactive and mobile-friendly.",
+                                result:         "After a few days of coding, I created a fun, interactive game. Adding Three.js made the game look great in 3D. It was a rewarding challenge, and I’m excited to explore Three.js more in future projects. \n\n After the game launched, I fixed a small bug related to the responsive design, ensuring the game works well on all devices. Now, everyone can enjoy the game smoothly, no matter their screen size.",
 
-                                // textBtn_1:      "Go live",
-                                // textBtn_2:      "View code",
-                                // urlBtn_1:       "https://demo.treasure-hunt.Sofie-van-der-Meer.be/",
-                                // urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Treasure-Hunt",
-                                // img_01:         "../src/assets/images/treasure-hunt/img.png",
-                                // img_02:         "../src/assets/images/treasure-hunt/img.png",
-                                // imgList:        [],
-                                // colors:         []
+                                textBtn_1:      "Go live",
+                                textBtn_2:      "View code",
+                                urlBtn_1:       "https://demo.treasurehunt.sofie-van-der-meer.be/",
+                                urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Treasure-Hunt",
+                                img_01:         "../src/assets/images/treasure-hunt/gamePlay.png",
+                                img_02:         "../src/assets/images/treasure-hunt/introGame_touch-device.png",
+                                imgList:        [
+                                    "../src/assets/images/treasure-hunt/zoomIntoGame.png",
+                                    "../src/assets/images/treasure-hunt/gameStarts_touch-device_2.png",
+                                    "../src/assets/images/treasure-hunt/gamePlay.png",
+                                    "../src/assets/images/treasure-hunt/lostGame.png"
+                                ],
+                                colors:         ["#F3FFC6", "#B6174B", "#1C5253", "#C3EB78", "#7F675B"]
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "project.html#bubbles-in-color",
+                                previous:       "project.html#pizzaria",
+                                next:           "project.html#peekaboo"
+                            }
+                        ]
+                    },
+                    {
+                        id:             "#peekaboo",
+                        img:            "../src/assets/icons/hands-holding-child.svg",
+                        imgAlt:         "hands holding a child, logo of project Peekaboo",
+                        title:          "Peekaboo",
+                        description:    "A project where I recreated the BackstageTalks website into Peekaboo, focusing on frontend skills such as dynamic background colors, full-page scrolling, and mobile responsiveness.",
+                        languages:      ["JavaScript", "CSS", "HTML"],
+                        langratio:      [42, 33, 25],
+                        urlBtn:         "project.html#peekaboo",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    "e-commerce",
+                                img:            "../src/assets/icons/hands-holding-child.svg",
+                                imgAlt:         "hands holding a child, logo of project Peekaboo",
+                                title:          "Peekaboo",
+                                languages:      ["JavaScript", "CSS", "HTML"],
+                                date:           "September 2024"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "After gaining a solid foundation in HTML and CSS during my basic training, I wanted to deepen my knowledge further. That's when I came across the website frontendpractice.com, which offers various projects that you can recreate to improve your frontend skills. I decided to take on the challenge and transform the website BackstageTalks into Peekaboo.",
+                                challenges:     "Choosing a project was easy, but finding the right photos that matched the project proved to be a bigger challenge. After some searching, I found a set of photos that worked well together and aligned with the color palette of the example project. I also had to do some research for the typography. Once everything was in place, I could begin the real work.\n With a list of data for each item, I wrote a script to create an article element for each item. This allowed me to easily replicate multiple articles with just a few lines of code. I also added a data attribute to each article element to dynamically adjust the background color. \n\n Frontendpractice offers additional challenges, such as a full-page scroll with background transition and making the website responsive for mobile devices. I didn't shy away from these challenges. For the scroll function, I implemented a feature that changes the background color based on the data attribute of the currently visible article element. I also made a few minor CSS adjustments to ensure the website was fully responsive.",
+                                result:         "Although the articles aren’t an exact match to the original, I was still able to create a solid replica of the website. The scroll effect still lags occasionally, which can be a small annoyance for a perfectionist developer like myself. Nevertheless, this project has significantly improved my skills.",
+
+                                textBtn_1:      "Go live",
+                                textBtn_2:      "View code",
+                                urlBtn_1:       "https://demo.peekaboo.sofie-van-der-meer.be/",
+                                urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Peekaboo",
+                                img_01:         "../src/assets/images/peekaboo/model_1.png",
+                                img_02:         "../src/assets/images/peekaboo/model_4.png",
+                                imgList:        [
+                                    "../src/assets/images/peekaboo/model_1.png",
+                                    "../src/assets/images/peekaboo/model_4.png",
+                                ],
+                                colors:         ["#01cfe6", "#e9c201", "#d4d4d4", "#ca5d02", "#f2b8ce"]
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#treasure-hunt",
                                 next:           "project.html#prularia"
                             }
                         ]

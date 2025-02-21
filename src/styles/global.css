@@ -231,6 +231,9 @@ header and footer styles, general container widths, etc. */
 /* .card-btn:not(.card-group .card-btn) {
     margin: 1rem 0 0 2rem;
 } */
+.sect-group {
+    width: 100%;
+}
 .projects-card .card-group {
     width: 100%;
     .card {
@@ -288,6 +291,13 @@ header and footer styles, general container widths, etc. */
 .main header {
     margin-top: var(--header-height);
 }
+.sect:not(:has(button + button)) section {
+    width: 100%;
+}
+.sect p {
+    white-space: pre-line;
+}
+
 .full-height {
     min-height: 100svh;
 }
@@ -399,7 +409,7 @@ button {
 }
 
 .sect-colors {
-    width: 40%; 
+    width: 100%; 
     grid-template-columns: repeat(
         auto-fill, minmax(min(4.5rem, 100%), 1fr));
 }
