@@ -213,7 +213,7 @@ export default {
                             },
                             {
                                 id:         "Project_Bottom",
-                                previous:   "project.html#treasure-hunt",
+                                previous:   "project.html#tamagotchi",
                                 next:       "project.html#pizzaria"
                             }
                         ]
@@ -358,6 +358,59 @@ export default {
                             {
                                 id:             "Project_Bottom",
                                 previous:       "project.html#treasure-hunt",
+                                next:           "project.html#tamagotchi"
+                            }
+                        ]
+                    },
+                    {
+                        id:             "#tamagotchi",
+                        img:            "../src/assets/icons/cubes-stacked.svg",
+                        imgAlt:         "kubussen op elkaar gestapeld, logo van project tamagotchi",
+                        title:          "tamagotchi",
+                        description:    "Voor dit project maakte ik gebruik van Three.js om een insuline meetapparaat met Tamagotchi-achtige functies te visualiseren, waarbij een bloed dorstige vampier als huisdier fungeert.",
+                        languages:      ["JavaScript", "HTML", "CSS"],
+                        langratio:      [57, 29, 14],
+                        library:        ["THREE.js"],
+                        urlBtn:         "project.html#tamagotchi",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    "showcase",
+                                img:            "../src/assets/icons/cubes-stacked.svg",
+                                imgAlt:         "kubussen op elkaar gestapeld, logo van project tamagotchi",
+                                title:          "tamagotchi",
+                                languages:      ["JavaScript", "HTML", "CSS"],
+                                library:        ["THREE.js"],
+                                date:           "Februari 2025"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introductie:    "Voor dit project nam ik deel aan de Three.js Challenge van februari, georganiseerd door Three.js Journey. Het Tamagotchi-thema inspireerde me om een vampier die bloed drinkt te koppelen aan een insuline meetapparaat met een interactieve Tamagotchi-achtige functie. Dit project gaf me de kans om te experimenteren met Three.js en Blender.",
+                                uitdagingen:    "Ik had veel creatieve ideeën en wilde mezelf zowel op het gebied van 3D-modellering als interactieve rendering uitdagen, maar tijd werd al snel mijn grootste beperking. Ik had plannen om Tamagotchi-stijl animaties toe te voegen, wat de interactie nog leuker had gemaakt, maar door de beperkte tijd kon ik deze helaas niet realiseren.",
+                                aanpak:         "Om mijn ideeën vorm te geven, gebruikte ik Blender voor het ontwerp van het insuline meetapparaat, evenals voor de iconen en het vampierkarakter. Ik experimenteerde met verschillende vormen en materialen in Blender om het project een unieke en creatieve uitstraling te geven. Ondanks de tijdsdruk heb ik veel geleerd van elke stap in het proces.\n\n Daarnaast wilde ik een website creëren waarin de 3D renders en modellen geïntegreerd zouden zijn. Ik koos een layout van Frontend Practice om mijn HTML en CSS vaardigheden op te frissen. Hoewel dit goed was voor mijn front-end development, betekende het ook dat ik minder tijd had om me te concentreren op de 3D renders en modellering, wat de kern van het project was.",
+                                resultaat:      "Het project is niet helemaal zoals ik het oorspronkelijk had bedacht, omdat de tijdsdruk de animaties beperkte. Toch ben ik erin geslaagd om enkele belangrijke elementen af te ronden. \n\n Ik maakte drie Three.js renders: \n\n <ul class='list--list-style-type-shown'><li>De eerste render laat gebruikers de 3D-weergave van het insuline meetapparaat roteren en inzoomen.</li> <li>De tweede render toont de vampier in een gedetailleerde 3D-omgeving, maar zonder effecten of animaties.</li> <li>De derde render laat gebruikers de kleur van de hoes van het apparaat aanpassen, wat een leuke personalisatiemogelijkheid biedt.</li></ul>\n\nDaarnaast maakte ik twee Blender-afbeeldingen met de vampier en de vleermuis als personages, beide met haarpartikels, wat mijn eerste poging was om dit effect toe te passen in Blender.\n\n Al met al was de Three.js Challenge een waardevolle leerervaring. Hoewel ik niet alle functies die ik oorspronkelijk wilde toevoegen kon implementeren, ben ik trots op de vooruitgang die ik heb geboekt. Dit project heeft me geholpen mijn vaardigheden verder te ontwikkelen en ik kijk ernaar uit om mijn reis met de Three.js Journey-cursus voort te zetten om mijn kennis verder uit te breiden en meer geavanceerde technieken te leren.",
+
+                                textBtn_1:      "Ga naar de website",
+                                textBtn_2:      "Ga naar de code",
+                                urlBtn_1:       "https://demo.vampitest.sofie-van-der-meer.be/",
+                                urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Tamagotchi",
+                                img_01:         "../src/assets/images/tamagotchi/home-title.png",
+                                img_02:         "../src/assets/images/tamagotchi/batbat.png",
+                                imgList:        [
+                                    "../src/assets/images/tamagotchi/home.png",
+                                    "../src/assets/images/tamagotchi/device-cover-black.png",
+                                    "../src/assets/images/tamagotchi/device-cover-purple.png",
+                                    "../src/assets/images/tamagotchi/home-title.png",
+                                    "../src/assets/images/tamagotchi/device-cover-red.png",
+                                    "../src/assets/images/tamagotchi/batbat.png",
+                                    "../src/assets/images/tamagotchi/vampire.png",
+                                ],
+                                colors:         ["#F4F4F4", "#000000", "#B41C1C", "#8C8C8C", "#6A4C9C"]
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#peekaboo",
                                 next:           "project.html#prularia"
                             }
                         ]

@@ -5,6 +5,7 @@
     .card-content:has(.btn__pos_absolute),
     .sect-content:has(.btn__pos_absolute) {
         position: relative;
+        min-height: 25vh;
     }
     .btn__pos_absolute {
         position: absolute;
