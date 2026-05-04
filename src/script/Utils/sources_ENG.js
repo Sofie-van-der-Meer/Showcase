@@ -6,8 +6,8 @@ export default {
                 id:             "Home_Welkom",
                 img:            "../src/assets/images/black-white.jpg",
                 imgAlt:         "black and white photo of Sofie van der Meer",
-                title:          "Hello I'm \n Sofie van der Meer",
-                description:    "Welcome to this platform, where you get a hint of my expertise and capabilities as a Junior Full-Stack Developer.",
+                title:          "Hello I'm Sofie \n van der Meer",
+                description:    "Welcome to my portfolio. Here is a selection of my work in landscape design, creative projects, and explorations across disciplines. \n\n My focus lies in designing environments that contribute to nature, sustainability, and long-term impact.",
                 textBtn:        "Contact me",
                 urlBtn:         "mailto:sofievandermeer@outlook.com"
             },
@@ -15,8 +15,8 @@ export default {
                 id:             "Home_Introduction",
                 img:            "../src/assets/images/black-white.jpg",
                 imgAlt:         "black and white photo of Sofie van der Meer",
-                title:          "Creative Full-Stack developer",
-                description:    "I am driven by curiosity and ambition. My analytical skills, combined with my creativity, allow me to craft solutions such as 2D and 3D visuals that are both innovative and precise, reflecting my attention to detail and problem-solving abilities.",
+                title:          "Landscape designer & artist",
+                description:    "I’m a landscape designer with a strong connection to nature and the environment. My work focuses on creating spaces that combine aesthetics with climate resilience and biodiversity. \n\n I approach design both analytically and creatively, with a curiosity that extends into areas like art, sustainable building, and nature.",
                 textBtn:        "Get to know me",
                 urlBtn:         "about.html"
             },
@@ -65,17 +65,17 @@ export default {
                 img:                "../src/assets/images/black-white.jpg",
                 imgAlt:             "black and white photo of Sofie van der Meer",
                 title:              "Sofie van der Meer",
-                subtitle:           "Junior Full-Stack developer",
-                availability_1:     "Available from 31st March 2025",
-                availability_2:     "Open to internship/IBO"
+                subtitle:           "Landscape designer & artist",
+                availability_1:     "Open to work",
+                availability_2:     "Open to create"
             },
             {
                 id:                 "About_Me",
-                profile:            "A curious and ambitious developer with a strong analytical mindset and a passion for creative solutions. \n\n Eager to learn and thrive in Full-Stack development, looking for a position where creative thinking and problem solving can be fully utilized. \n\n Ready to become your next Full-Stack Developer!",
+                profile:            "I’m a landscape designer driven by curiosity, creativity, and a strong connection to nature and environment. I believe design plays a key role in addressing challenges such as climate change, biodiversity loss, and the way we shape our surroundings.\n\n My work is rooted in analysis, concept development, and systems thinking. I enjoy understanding how different elements interact, connecting disciplines, and translating complex ideas into clear and meaningful designs. I move easily between the bigger picture and detailed work, exploring concepts on a broader level while refining them with care and precision.\n\nAlongside landscape design, I explore creative work such as drawing, murals, and hands-on projects. This artistic approach strengthens how I think, design, and communicate visually.\n\n I have a strong interest in sustainable architecture and building techniques, which I’ve explored independently over time. This self-driven learning continues to influence how I look at space, materials, and long-term impact.\n\n I also completed a training in full-stack development, driven by my interest in problem-solving and structured ways of working. There, I discovered the Agile approach, working in a transparent, collaborative way with room for feedback and iteration. This experience reshaped how I view teamwork: while I value working independently, I do my best work in an environment where ideas can be shared, discussed, and refined together.\n\n I’m naturally inclined to question, improve, and look beyond standard solutions, always asking how things can be done better, more sustainably, and with greater impact.",
                 urlBtn:             "mailto:sofievandermeer@outlook.com", 
                 textBtn:            "sofievandermeer@outlook.com", 
-                availability:       "Available from 31st March 2025, open to internship/IBO.",
-                related_interests:  ["Virtual Realty", "2D & 3D Visuals"]            },
+                availability:       "Open to work & create",
+                related_interests:  ["Bats", "art", "nature", "architecture"]            },
             {
                 id:         "About_Hard-Skills",
                 title:      "hard skills",
