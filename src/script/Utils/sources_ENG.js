@@ -24,33 +24,25 @@ export default {
                 id:         "Home_Projects",
                 projects:   [
                     {
-                        img:            "../src/assets/images/prularia/prularia_logo.png",
-                        imgAlt:         "crown, logo of project Prularia",
-                        title:          "Prularia",
-                        description:    "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
-                        languages:      ["JavaScript", "PHP", "CSS"],
-                        langratio:      [47, 39, 12],
-                        library:        ["Bootstrap"],
-                        urlBtn:         "project.html#prularia"
+                        img:            "../src/assets/images/landscape_architecture_tower.png",
+                        imgAlt:         "Image of a wooden lookout tower that gives a beautiful view over a nature in Diest",
+                        title:          "Landscape Design",
+                        description:    "A selection of projects developed across different roles — from student work to garden design and larger landscape proposals. My experience ranges from designing wooden lookout towers to shaping public spaces and creating greener school environments.\n\nEach project reflects a hands-on approach to designing with nature, scale, and context in mind.",
+                        urlBtn:         "projects.html#landscape-design"
                     },
                     {
-                        img:            "../src/assets/icons/pizza.svg",
-                        imgAlt:         "pizzaslice, logo of project Pizzaria",
-                        title:          "Pizzaria",
-                        description:    "This project is an e-commerce web application designed for users to explore and order a variety of pizzas.",
-                        languages:      ["PHP", "CSS"],
-                        langratio:      [97, 3],
-                        urlBtn:         "project.html#pizzaria"
+                        img:            "../src/assets/images/art_lion.png",
+                        imgAlt:         "Image of a mural on a black wall, the mural is a mix of two animals: a lion that has ears and antlers of a deer. The mural is made with gold spraypaint, details are made with black and white wall paint.",
+                        title:          "Art",
+                        description:    "I enjoy drawing, painting, and creating in different ways. This space brings together a selection of artworks I’ve made over time, ranging from sketches to more developed pieces.\n\nA personal exploration of ideas, materials, and expression.",
+                        urlBtn:         "projects.html#art"
                     },
                     {
-                        img:            "../src/assets/icons/gem.svg",
-                        imgAlt:         "diamond, logo of project Treasure Hunt",
-                        title:          "Treasure Hunt",
-                        description:    "In this exciting treasure hunt game, a little fox embarks on a thrilling quest to uncover hidden, yummy treasures.",
-                        languages:      ["JavaScript", "HTML", "CSS"],
-                        langratio:      [91, 5, 4],
-                        library:        ["THREE.js"],
-                        urlBtn:         "project.html#treasure-hunt",
+                        img:            "../src/assets/images/tamagotchi/home.png",
+                        imgAlt:         "Image of a website-demo. The website promote a fictional product of a blood sugar testing device that acts like a tamagotchi. The tamagotchi itself is a vampire that needs to 'drink' blood to track the bloodsugar.",
+                        title:          "Full Stack Development",
+                        description:    "Projects developed during my training as a full stack developer, focused on problem-solving, structure, and usability.\n\nA small selection of web applications and technical work.",
+                        urlBtn:         "projects.html#development"
                     }
                 ]
             }

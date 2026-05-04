@@ -75,7 +75,7 @@
 }
 .flex-column {
     flex-direction: column;
-    height: calc(100% - 10rem);
+    /* height: calc(100% - 10rem); */
 }
 .flex-center {
     justify-content: center;
@@ -117,6 +117,26 @@
 .col_full-width {
     grid-column: 1/-1;
 }
+
+#Home_Projects .grid {
+    grid-template-columns: 1fr 1fr minmax(min(400px, 100%), 1fr);
+    grid-template-areas: 
+    "first first first"
+    "second second third";
+
+    :first-child {
+        grid-area: first;
+    }
+
+    :nth-child(2) {
+        grid-area: second;
+    }
+    :nth-child(3) {
+        grid-area: third;
+    }
+}
+
+
 
 .container {
     margin-block: 1rem;

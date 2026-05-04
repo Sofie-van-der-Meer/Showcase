@@ -170,7 +170,8 @@ export default class Resources {
         card_url.classList.add('card-url');
 
         const card_img = document.createElement("img");
-        card_img.classList.add('card-img', 'padding-block__3');
+        // card_img.classList.add('card-img', 'padding-block__3');
+        card_img.classList.add('card-img');
 
         const card_content = document.createElement("section");
         card_content.classList.add('card-content', 'flex', 'flex-column');
@@ -181,14 +182,14 @@ export default class Resources {
         const card_description = document.createElement("p");
         card_description.classList.add('card-description');
 
-        const card_languages = document.createElement("p");
-        card_languages.classList.add('card-languages');
+        // const card_languages = document.createElement("p");
+        // card_languages.classList.add('card-languages');
 
         const card_langratio = document.createElement("p");
         card_langratio.classList.add('card-langratio');
 
-        const card_library = document.createElement("p");
-        card_library.classList.add('card-library');
+        // const card_library = document.createElement("p");
+        // card_library.classList.add('card-library');
 
         const card_btn = document.createElement("button");
         card_btn.classList.add('card-btn');
@@ -196,23 +197,23 @@ export default class Resources {
         const card_urlBtn = document.createElement("a");
         card_urlBtn.classList.add('card-urlBtn');
 
-        const card_span1 = document.createElement("span");
-        card_span1.classList.add('color__grey');
+        // const card_span1 = document.createElement("span");
+        // card_span1.classList.add('color__grey');
 
-        const card_span2 = document.createElement("span");
-        card_span2.classList.add('color__grey');
+        // const card_span2 = document.createElement("span");
+        // card_span2.classList.add('color__grey');
 
-        const card_div = document.createElement("div");
-        card_div.classList.add('card-content');
+        // const card_div = document.createElement("div");
+        // card_div.classList.add('card-content');
 
         card_btn.appendChild(card_urlBtn);
-        card_languages.appendChild(card_span1);
-        card_library.appendChild(card_span2);
-        card_div.appendChild(card_languages);
-        card_div.appendChild(card_library);
+        // card_languages.appendChild(card_span1);
+        // card_library.appendChild(card_span2);
+        // card_div.appendChild(card_languages);
+        // card_div.appendChild(card_library);
         card_content.appendChild(card_title);
         card_content.appendChild(card_description);
-        card_content.appendChild(card_div);
+        // card_content.appendChild(card_div);
         card_content.appendChild(card_btn);
         card_url.appendChild(card_img);
         card_url.appendChild(card_content);
@@ -261,7 +262,11 @@ export default class Resources {
             const key = resource[0];
             const value = resource[1];
 
-            if (key.startsWith('textBtn')) arrResources_HasTextBtn = true;
+            // if (key.startsWith('textBtn')) arrResources_HasTextBtn = true;
+            if (key.startsWith('textBtn')) {
+                arrResources_HasTextBtn = true;
+                console.log(key, value, childName, elemChild);
+            }
 
             if (key == 'notPublished') this.isPublished = false;
 

@@ -231,6 +231,9 @@ header and footer styles, general container widths, etc. */
     text-transform: uppercase;
     padding-bottom: 0.5rem;
 }
+.card-description {
+    max-width: 60rem;
+}
 .card-langratio {
     display: none;
 }
@@ -271,6 +274,22 @@ header and footer styles, general container widths, etc. */
         padding-left: 1.5rem;
     }
 }
+    #Home_Projects .card-group {
+        .card {
+            padding: 0;
+        }
+        .card-img {
+            height: 25rem;
+            width: 100%;
+            border-radius: 50px 50px 0 0;
+            object-fit: cover;
+            display: block;
+            margin-inline: auto;
+        }
+        .card-content {
+            padding: 2rem;
+        }
+    }
 .about-card .card {
     background-color: var(--color-secundary-background);
     border-radius: 20px;
