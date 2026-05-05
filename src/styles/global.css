@@ -536,6 +536,12 @@ input[type="checkbox"] {
 .text-right {
     text-align: right;
 }
+.text-wrap__balance {
+    text-wrap: balance;
+}
+.width__max {
+    width: max-content;
+}
 
 /* scrollbar */
 ::-webkit-scrollbar {

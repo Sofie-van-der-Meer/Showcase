@@ -73,10 +73,16 @@ export default {
                 title:      "hard skills",
                 projects:   [
                     {
-                        Programming_Languages:      ["PHP", "JS", "HTML", "CSS"],
-                        // Framework_And_Libraries:    ["Bootstrap", "THREE.js"],
-                        Libraries:                  ["Bootstrap", "THREE.js"],
-                        Development_Methodologies:  ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
+                        skillgroup:         "Softwares",
+                        skills:             ["AutoCAD", "Civil 3D", "ArcGIS", "Indesign", "SketchUp", "Blender"]
+                    },
+                    {
+                        skillgroup:         "Languages",
+                        skills:             ["Dutch (native)", "English (intermediate)"]
+                    },
+                    {
+                        skillgroup:         "Programming",
+                        skills:             ["PHP", "JS", "HTML", "CSS", "Bootstrap", "THREE.js", "Agile Scrum"]
                     }
                 ] 
             },
@@ -85,11 +91,21 @@ export default {
                 title:      "soft skills",
                 projects:   [
                     {
-                        Creativity:       ["Artistic", "Innovative", "Eye for Detail", "Perfectionist"],
-                        Problem_Solving:  ["Analytical", "Solution-Oriented"],
-                        Growth:           ["Eager to Learn", "Curious", "Autodidactic"],
-                        Driven:           ["Ambitious", "Perseverance" ]
-                    } 
+                        skillgroup:         "Creativity",
+                        skills:             ["Artistic", "Innovative", "Eye for Detail", "Perfectionist"]
+                    },
+                    {
+                        skillgroup:         "Problem Solving",
+                        skills:             ["Analytical", "Solution-Oriented", "Critical Thinker"]
+                    },
+                    {
+                        skillgroup:         "Growth",
+                        skills:             ["Eager to Learn", "Curious", "Autodidactic"]
+                    },
+                    {
+                        skillgroup:         "Driven",
+                        skills:             ["Ambitious", "Perseverance"]
+                    }
                 ] 
             },
             {
@@ -102,14 +118,56 @@ export default {
                         year:     "2024 - 2025"
                     },
                     {
+                        school:   "Erasmushogeschool Brussel",
+                        study:    "Bachelor in Landscape & Garden Architecture",
+                        year:     "2014 - 2018"
+                    },
+                    {
+                        school:   "Heilig Graf Turnhout",
+                        study:    "Creation & Fashion",
+                        year:     "2010 - 2014"
+                    }
+                ]
+            },
+            {
+                id:         "About_Courses",
+                title:      "courses",
+                projects:   [
+                    {
+                        school:   "Climatecontact",
+                        study:    "Enlarge your handprint",
+                        year:     "2024"
+                    },
+                    {
                         school:   "CleanTechPunt Houthalen",
                         study:    "Cleantech Ambassador",
                         year:     "2023"
                     },
                     {
-                        school:   "Erasmushogeschool Brussel",
-                        study:    "Bachelor in Landscape & Garden Architecture",
-                        year:     "2014 - 2018"
+                        school:   "Artacademy Heusden-Zolder",
+                        study:    "Drawing",
+                        year:     "2018 - 2019"
+                    },
+                    {
+                        school:   "Natuurpunt CVN",
+                        study:    "Natureguide",
+                        year:     "2013"
+                    }
+                ]
+            },
+            {
+                id:         "About_Volunteering",
+                title:      "volunteering",
+                projects:   [
+                    {
+                        school:   "JNM",
+                        study:    "Youth League for Nature and Environment",
+                        year:     "2012 - now"
+                    },
+                    {
+                        school:   "Natuurpunt Mammel workgroup",
+                        study:    "Bats monitoring",
+                        year:     "2012 - now"
                     }
                 ]
             },
@@ -117,6 +175,11 @@ export default {
                 id:         "About_Work",
                 title:      "professional experience",
                 projects:   [
+                    {
+                        company:  "Dignify",
+                        job:      "Marketing Solutions - Junior Full Stack Developer",
+                        year:     "2025"
+                    },
                     {
                         company:  "Agency Nature & Forests",
                         job:      "Expert Public Procurement & Landscape Architect",
@@ -134,7 +197,7 @@ export default {
                     },
                     {
                         company:  "Regional Landscapes Hesbaye & Voeren",
-                        job:      "Internship",
+                        job:      "Internship - Biodiversity",
                         year:     "2017"
                     }
                 ]

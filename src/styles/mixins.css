@@ -103,6 +103,7 @@
     align-content: center;
 }
 
+
 .grid {
     display: grid;
 }
@@ -116,6 +117,15 @@
 }
 .col_full-width {
     grid-column: 1/-1;
+}
+#About_Work {
+    grid-row: span 5;
+}
+#About_Soft-Skills {
+    grid-row: span 4;
+}
+#About_Hard-Skills, #About_Education, #About_Courses {
+    grid-row: span 3;
 }
 
 #Home_Projects .grid {
