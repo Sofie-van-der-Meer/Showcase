@@ -7,7 +7,7 @@ export default {
                 img:          "../src/assets/images/black-white.jpg",
                 imgAlt:       "zwart-wit foto van Sofie van der Meer",
                 title:        "Hey ik ben \n Sofie van der Meer",
-                description:  "Welkom op dit platform, waar je een glimp krijgt van mijn skills en capaciteiten als Junior Full-Stack Developer.",
+                description:  "Hier vind je een selectie van mijn werk binnen landschapsontwerp, creatieve projecten en verkenningen over verschillende disciplines heen. Mijn focus ligt op het ontwerpen van omgevingen die bijdragen aan natuur, duurzaamheid en een positieve impact hebben op lange termijn.",
                 textBtn:      "Contacteer mij",
                 urlBtn:       "mailto:sofievandermeer@outlook.com"
             },
@@ -15,42 +15,36 @@ export default {
                 id:           "Home_Introduction",
                 img:          "../src/assets/images/black-white.jpg",
                 imgAlt:       "zwart-wit foto van Sofie van der Meer",
-                title:        "Creatieve Full-Stack developer",
-                description:  "Ik word gedreven door nieuwsgierigheid en ambitie. Mijn analytische vaardigheden, gecombineerd met mijn creativiteit, stellen me in staat om oplossingen te creëren, zoals 2D- en 3D-visuals, die zowel innovatief als nauwkeurig zijn, en mijn aandacht voor detail en probleemoplossend vermogen weerspiegelen.",
+                title:        "Landschapsontwerper & kunstenaar",
+                description:  "Ik ben een landschapsontwerper die sterk verbonden is met natuur en omgeving. Mijn werk richt zich op het creëren van ruimtes die esthetiek combineren met klimaatbestendigheid en biodiversiteit. \n\n Ik benader ontwerp zowel analytisch als creatief, vanuit een nieuwsgierigheid die zich ook uitstrekt naar kunst, duurzaam bouwen en natuur.",
                 textBtn:      "Leer mij beter kennen",
                 urlBtn:       "about.html"
             },
             {
-                id:           "Home_Projects",
-                projects:     [
+                id:         "Home_Projects",
+                projects:   [
                     {
-                        img:          "../src/assets/images/prularia/prularia_logo.png",
-                        imgAlt:       "kroon, logo van project Prularia",
-                        title:        "Prularia",
-                        description:  "Als een team van 9 ontwikkelaars hebben we een e-commerceplatform gebouwd om praktijkervaring op te doen met de principes van Scrum en Agile-methodologieën.",
-                        languages:    ["JavaScript", "PHP", "CSS"],
-                        langratio:    [47, 39, 12],
-                        library:      ["Bootstrap"],
-                        urlBtn:       "project.html#prularia"
+                        img:            "../src/assets/images/landscape_architecture_tower.png",
+                        imgAlt:         "Image of a wooden lookout tower that gives a beautiful view over a nature in Diest",
+                        title:          "Landschapsontwerp",
+                        description:    "Een selectie van projecten uit verschillende contexten: van studentenwerk tot tuinontwerp en grotere landschappelijke ontwerpen. Mijn ervaring gaat van het ontwerpen van houten uitkijktorens tot het vormgeven van publieke ruimte en het creëren van groene schoolomgevingen.\n\nElk project weerspiegelt een praktische benadering van ontwerpen met aandacht voor natuur, schaal en context.",
+                        urlBtn:         "https://www.linkedin.com/in/sofie-van-der-meer/details/projects/",
+                        urlBtn_original:"projects.html#landscape-design"
                     },
                     {
-                        img:          "../src/assets/icons/pizza.svg",
-                        imgAlt:       "pizzastuk, logo van project Pizzaria",
-                        title:        "Pizzaria",
-                        description:  "Dit project is een e-commerce webapplicatie die gebruikers de mogelijkheid biedt om een verscheidenheid aan pizza's te verkennen en te bestellen.",
-                        languages:    ["PHP", "CSS"],
-                        langRatio:    [97, 3],
-                        urlBtn:       "project.html#pizzaria"
+                        img:            "../src/assets/images/art_lion.png",
+                        imgAlt:         "Image of a mural on a black wall, the mural is a mix of two animals: a lion that has ears and antlers of a deer. The mural is made with gold spraypaint, details are made with black and white wall paint.",
+                        title:          "Kunst",
+                        description:    "Ik teken en schilder graag en werk op verschillende manieren creatief. In deze sectie vind je een selectie van werken die ik doorheen de tijd heb gemaakt, van schetsen tot meer uitgewerkte stukken.\n\nHet is een persoonlijke verkenning van ideeën, materialen en expressie.",
+                        urlBtn:         "projects.html#art"
                     },
                     {
-                        img:            "../src/assets/icons/gem.svg",
-                        imgAlt:         "diamant, logo van project Treasure Hunt",
-                        title:          "Treasure Hunt",
-                        description:    "In dit spannende schattenjachtspel gaat een klein vosje op een opwindende zoektocht om verborgen, lekkere schatten te zoeken.",
-                        languages:      ["JavaScript", "HTML", "CSS"],
-                        langratio:      [91, 5, 4],
-                        library:        ["THREE.js"],
-                        urlBtn:         "project.html#treasure-hunt",
+                        img:            "../src/assets/images/tamagotchi/home.png",
+                        imgAlt:         "Image of a website-demo. The website promote a fictional product of a blood sugar testing device that acts like a tamagotchi. The tamagotchi itself is a vampire that needs to 'drink' blood to track the bloodsugar.",
+                        title:          "Full Stack Development",
+                        description:    "Projecten ontwikkeld tijdens mijn opleiding tot full-stack developer, met een focus op probleemoplossend denken, structuur en gebruiksvriendelijkheid.",
+                        urlBtn:         "projects.html",
+                        urlBtn_original:"projects.html#development"
                     }
                 ]
             }
@@ -64,27 +58,34 @@ export default {
                 img:                "../src/assets/images/black-white.jpg",
                 imgAlt:             "zwart-wit foto van Sofie van der Meer",
                 title:              "Sofie van der Meer",
-                subtitle:           "Junior Full-Stack developer",
-                availability_1:     "Beschikbaar vanaf 31 maart ‘25",
-                availability_2:     "sta open voor stage/IBO"
+                subtitle:           "Landschapsontwerper & kunstenaar",
+                availability_1:     "Beschikbaar voor werk",
+                availability_2:     "Beschikbaar voor creatieve projecten"
             },
             {
                 id:                 "About_Me",
-                profile:            "Een nieuwsgierige en ambitieuze developer met een sterk analytisch denkvermogen en een passie voor creatieve oplossingen. \n\n Leergierig en vastbesloten om te groeien in Full-Stack development, op zoek naar een positie waar creatief denken en probleemoplossend vermogen volledig benut kunnen worden. \n\n Klaar om jouw volgende Full-Stack Developer te worden!",
+                profile:            "Ik ben een landschapsontwerper gedreven door nieuwsgierigheid, creativiteit en een sterke verbondenheid met natuur en omgeving. Ik geloof dat ontwerp een belangrijke rol speelt in het omgaan met uitdagingen zoals klimaatverandering, biodiversiteitsverlies en de manier waarop we onze leefomgeving vormgeven.\n\n Mijn werk vertrekt vanuit analyse, conceptontwikkeling en een brede manier van denken over systemen en samenhang. Ik haal voldoening uit het begrijpen van hoe verschillende elementen elkaar beïnvloeden, het verbinden van disciplines en het vertalen van complexe ideeën naar heldere en betekenisvolle ontwerpen. Daarbij beweeg ik vlot tussen het grotere geheel en detailwerk: ik onderzoek concepten op een brede schaal en werk ze tegelijk zorgvuldig en nauwkeurig uit.\n\n Naast landschapsontwerp ben ik ook actief met creatieve projecten zoals tekenen, muurschilderingen en DIY. Deze artistieke benadering versterkt de manier waarop ik denk, ontwerp en visueel communiceer.\n\n Daarnaast heb ik een sterke interesse in duurzame architectuur en bouwtechnieken, waarin ik mij de voorbije jaren zelfstandig heb verdiept. Deze zelfgedreven manier van leren beïnvloedt nog steeds hoe ik kijk naar ruimte, materialen en impact op lange termijn.\n\n Vanuit mijn interesse in probleemoplossend denken en gestructureerd werken volgde ik ook een opleiding tot full-stack developer. Daar maakte ik kennis met de Agile-aanpak: een transparante en collaboratieve manier van werken met ruimte voor feedback. Die ervaring heeft mijn kijk op samenwerking verruimd. Hoewel ik graag zelfstandig werk, functioneer ik het best in een omgeving waar ideeën gedeeld, besproken en samen verder verfijnd worden.\n\n Ik heb van nature de neiging om zaken in vraag te stellen, te verbeteren en verder te kijken dan standaardoplossingen, steeds met de vraag hoe iets duurzamer, doordachter en met meer impact kan worden aangepakt.",
                 urlBtn:             "mailto:sofievandermeer@outlook.com", 
                 textBtn:            "sofievandermeer@outlook.com", 
-                availability:       "Beschikbaar vanaf 31 maart ‘25, sta open voor stage/IBO.",
-                related_interests:  ["Virtual Realty", "2D & 3D Visuals"] 
+                availability:       "Beschikbaar voor werk en creatieve projecten",
+                related_interests:  ["Bats", "art", "nature", "architecture"]
             },
+            
             {
                 id:         "About_Hard-Skills",
                 title:      "hard skills",
                 projects:   [
                     {
-                        Programmeertalen:           ["PHP", "JS", "HTML", "CSS"],
-                        // Frameworks_en_bibliotheken: ["Bootstrap", "THREE.js"],
-                        Bibliotheken:               ["Bootstrap", "THREE.js"],
-                        Development_Methodes:       ["BEM", "OOP", "MVC", "Mobile First Design", "Agile Scrum"]
+                        skillgroup:         "Softwareprogramma's",
+                        skills:             ["AutoCAD", "Civil 3D", "ArcGIS", "Indesign", "SketchUp", "Blender"]
+                    },
+                    {
+                        skillgroup:         "Talen",
+                        skills:             ["Nederlands (moedertaal)", "Engels (gemiddeld niveau)"]
+                    },
+                    {
+                        skillgroup:         "Programmeren",
+                        skills:             ["PHP", "JS", "HTML", "CSS", "Bootstrap", "THREE.js", "Agile Scrum"]
                     }
                 ] 
             },
@@ -93,38 +94,95 @@ export default {
                 title:      "soft skills",
                 projects:   [
                     {
-                        Creativiteit:       ["Artistiek", "Innovatief", "Oog voor Detail", "Perfectionist"],
-                        Probleemoplossend:  ["Analytisch", "Oplossingsgericht"],
-                        Groei:              ["Leergierig", "Nieuwsgierig", "Autodidactisch"],
-                        Gedreven:           ["Ambitieus", "Doorzettingsvermogen"]
-                    } 
+                        skillgroup:         "Creativiteit",
+                        skills:             ["Artistiek", "Innovatief", "Oog voor Detail", "Perfectionist"]
+                    },
+                    {
+                        skillgroup:         "Probleemoplossend",
+                        skills:             ["Analytisch", "Oplossingsgericht", "Kritisch denken"]
+                    },
+                    {
+                        skillgroup:         "Groei",
+                        skills:             ["Leergierig", "Nieuwsgierig", "Autodidactisch"]
+                    },
+                    {
+                        skillgroup:         "Gedreven",
+                        skills:             ["Ambitieus", "Doorzettingsvermogen"]
+                    }
                 ] 
             },
             {
                 id:         "About_Education",
-                title:      "opleiding",
+                title:      "Opleiding",
                 projects:   [
                     {
-                        school: "VDAB",
-                        study:  "Full-Stack Developer",
-                        year:   "2024 - 2025"
+                        school:   "VDAB",
+                        study:    "Full-Stack Developer",
+                        year:     "2024 - 2025"
                     },
                     {
-                        school: "CleanTechPunt Houthalen",
-                        study:  "Cleantech Ambassador",
-                        year:   "2023"
+                        school:   "Erasmushogeschool Brussel",
+                        study:    "Bachelor in Landschap & Tuinarchitectuur",
+                        year:     "2014 - 2018"
                     },
                     {
-                        school: "Erasmushogeschool Brussel",
-                        study:  "Bachelor in Landschap & Tuinarchitectuur",
-                        year:   "2014 - 2018"
+                        school:   "Heilig Graf Turnhout",
+                        study:    "Creatie & Mode",
+                        year:     "2010 - 2014"
+                    }
+                ]
+            },
+            {
+                id:         "About_Courses",
+                title:      "Cursussen",
+                projects:   [
+                    {
+                        school:   "Klimaatcontact",
+                        study:    "Vergroot je handafdruk",
+                        year:     "2024"
+                    },
+                    {
+                        school:   "CleanTechPunt Houthalen",
+                        study:    "Cleantech Ambassadeur",
+                        year:     "2023"
+                    },
+                    {
+                        school:   "Kunstacademie Heusden-Zolder",
+                        study:    "Tekenen",
+                        year:     "2018 - 2019"
+                    },
+                    {
+                        school:   "Natuurpunt CVN",
+                        study:    "Natuurgids",
+                        year:     "2013"
+                    }
+                ]
+            },
+            {
+                id:         "About_Volunteering",
+                title:      "Vrijwillerswerk",
+                projects:   [
+                    {
+                        school:   "JNM",
+                        study:    "Jeugdbond voor Natuur en Milieu",
+                        year:     "2012 - heden"
+                    },
+                    {
+                        school:   "Natuurpunt Zoogdierenwerkgroep",
+                        study:    "Vleermuisonderzoek",
+                        year:     "2012 - heden"
                     }
                 ]
             },
             {
                 id:         "About_Work",
-                title:      "werkervaring",
+                title:      "Werkervaring",
                 projects:   [
+                    {
+                        company:  "Dignify",
+                        job:      "Marketing Solutions \nJunior Full Stack Developer",
+                        year:     "2025"
+                    },                    
                     {
                         company:  "Agentschap voor Natuur & Bos",
                         job:      "Deskundige overheidsopdrachten & landschapsarchitect",
@@ -142,7 +200,7 @@ export default {
                     },
                     {
                         company:  "Regionale Landschappen Haspengouw & Voeren",
-                        job:      "Stage",
+                        job:      "Stage - Biodiversiteit",
                         year:     "2017"
                     }
                 ]

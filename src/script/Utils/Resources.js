@@ -333,7 +333,7 @@ export default class Resources {
                 (Array.isArray(value)) ?
                         (childName == 'library') ?
                         elemChild.textContent = `- ${value.join(' - ')}` :
-                        elemChild.textContent = value.join(' - ') :
+                        elemChild.textContent = value.join(' | ') :
                         elemChild.textContent = value;
                 break;
         }

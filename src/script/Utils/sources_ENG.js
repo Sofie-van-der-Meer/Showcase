@@ -27,8 +27,9 @@ export default {
                         img:            "../src/assets/images/landscape_architecture_tower.png",
                         imgAlt:         "Image of a wooden lookout tower that gives a beautiful view over a nature in Diest",
                         title:          "Landscape Design",
-                        description:    "A selection of projects developed across different roles — from student work to garden design and larger landscape proposals. My experience ranges from designing wooden lookout towers to shaping public spaces and creating greener school environments.\n\nEach project reflects a hands-on approach to designing with nature, scale, and context in mind.",
-                        urlBtn:         "projects.html#landscape-design"
+                        description:    "A selection of projects developed across different roles — from student work to garden design and larger landscape proposals. My experience ranges from designing wooden lookout towers to shaping public spaces and creating green school environments.\n\nEach project reflects a hands-on approach to designing with nature, scale, and context in mind.",
+                        urlBtn:         "https://www.linkedin.com/in/sofie-van-der-meer/details/projects/",
+                        urlBtn_original:"projects.html#landscape-design"
                     },
                     {
                         img:            "../src/assets/images/art_lion.png",
@@ -42,7 +43,8 @@ export default {
                         imgAlt:         "Image of a website-demo. The website promote a fictional product of a blood sugar testing device that acts like a tamagotchi. The tamagotchi itself is a vampire that needs to 'drink' blood to track the bloodsugar.",
                         title:          "Full Stack Development",
                         description:    "Projects developed during my training as a full stack developer, focused on problem-solving, structure, and usability.\n\nA small selection of web applications and technical work.",
-                        urlBtn:         "projects.html#development"
+                        urlBtn:         "projects.html",
+                        urlBtn_original:"projects.html#development"
                     }
                 ]
             }
@@ -67,7 +69,8 @@ export default {
                 urlBtn:             "mailto:sofievandermeer@outlook.com", 
                 textBtn:            "sofievandermeer@outlook.com", 
                 availability:       "Open to work & create",
-                related_interests:  ["Bats", "art", "nature", "architecture"]            },
+                related_interests:  ["Bats", "art", "nature", "architecture"]
+            },
             {
                 id:         "About_Hard-Skills",
                 title:      "hard skills",
