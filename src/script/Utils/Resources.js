@@ -81,10 +81,26 @@ export default class Resources {
     getSections() {
         if ( !this.hashName ) return this.transcript.sections;
 
-        const transcriptProjects = this.transcript.sections[1]['projects'];
-        for (const project of transcriptProjects) {
-            if (project.id == this.hashName) return project.sections;
-        }        
+        if (window.location.pathname == '/project.html' || window.location.pathname == '/public/project.html') {
+            const transcriptProjects = this.transcript.sections[1]['projects'];
+            for (const project of transcriptProjects) {
+                if (project.id == this.hashName) return project.sections;
+            } 
+        } else {
+            const transcriptSections = this.transcript.sections;
+            const transcriptSelectedProjects = transcriptSections.map(section => {
+                if (section.projects) {
+                    return {
+                        ...section,
+                        projects: section.projects.filter(project => project.field == this.hashName)    
+                    }
+                }
+                return section;
+            });
+            return transcriptSelectedProjects;
+        }
+
+       
     }
     getSubArrResources(arrResources) {
         const subArrResources = [];
@@ -114,7 +130,11 @@ export default class Resources {
     loopOverSections(listOfSections) {
         for (let i = 0; i < listOfSections.length; i++) { 
             const section = listOfSections[i];
+            console.log(section);
             const elemSectionId = document.getElementById(section.id);
+            if (!elemSectionId) {
+                console.log('No children found for element with id: ' + section.id);
+            };
             const firstChildSection = elemSectionId.children[0];
 
             if (firstChildSection.classList[0] == 'card-group' && !firstChildSection.children.length ) {
