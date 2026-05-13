@@ -95,7 +95,12 @@ export default class Resources {
                         projects: section.projects.filter(project => project.field == this.hashName)    
                     }
                 }
-                return section;
+                if (section.fields) {
+                    return {
+                        ...section,
+                        description: section.fields.filter(field => field.id == this.hashName)[0]?.description || section.description
+                    }
+                }
             });
             return transcriptSelectedProjects;
         }
@@ -130,7 +135,6 @@ export default class Resources {
     loopOverSections(listOfSections) {
         for (let i = 0; i < listOfSections.length; i++) { 
             const section = listOfSections[i];
-            console.log(section);
             const elemSectionId = document.getElementById(section.id);
             if (!elemSectionId) {
                 console.log('No children found for element with id: ' + section.id);
@@ -285,7 +289,7 @@ export default class Resources {
             // if (key.startsWith('textBtn')) arrResources_HasTextBtn = true;
             if (key.startsWith('textBtn')) {
                 arrResources_HasTextBtn = true;
-                console.log(key, value, childName, elemChild);
+                // console.log(key, value, childName, elemChild);
             }
 
             if (key == 'notPublished') this.isPublished = false;
@@ -316,6 +320,17 @@ export default class Resources {
         }
     }            
     checkChildName(childName, key, value, elemChild) {
+        if (!value || value.length === 0) {
+            console.log('No value found for key: ' + key);
+            console.log('No value found for childName: ' + childName);
+            console.log(elemChild);
+
+
+            (childName == 'urlBtn_1' || childName == 'urlBtn_2') ?
+                elemChild.parentElement.classList.add('hidden') :
+                elemChild.classList.add('hidden');
+            return;
+        }
         switch (childName) {
             case 'colors':
                 this.addColors(value, elemChild);
@@ -351,8 +366,8 @@ export default class Resources {
                     break;
                 }
                 (Array.isArray(value)) ?
-                        (childName == 'library') ?
-                        elemChild.textContent = `- ${value.join(' - ')}` :
+                        // (childName == 'library') ?
+                        // elemChild.textContent = `- ${value.join(' - ')}` :
                         elemChild.textContent = value.join(' | ') :
                         elemChild.textContent = value;
                 break;
