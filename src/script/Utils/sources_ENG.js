@@ -221,22 +221,161 @@ export default {
                 fields:       [
                     {   id:             "#landscape-design",
                         description:    "Below are some of the projects I have designed in the field of landscape architecture"
-
                     },
                     {   id:             "#art",
                         description:    "Below are some of the artworks I have created"
-
                     },
                     {   id:             "#development",
                         description:    "Below are some of the websites I have developed during my training as a full stack developer"
                     }                    
                 ]
             },
-
-
             {
                 id:         "Projects_List",
                 projects:   [
+                    // landscape design
+                    {
+                        id:             "#de-plas",
+                        field:          "#landscape-design",
+                        img:            "../src/assets/icons/cubes-stacked.svg",
+                        imgAlt:         "...",
+                        title:          "De Plas",
+                        description:    "Redesigned Recreational Domain De Plas into a future-proof destination that seamlessly combines recreation, nature, accessibility, and event infrastructure.",
+                        urlBtn:         "project.html#de-plas",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Landscape design", "Public design"], //sort project
+                                img:            "../src/assets/icons/cubes-stacked.svg",
+                                imgAlt:         "boxes stacked on top of each other",
+                                title:          "The redevelopment of Recreational Domain De Plas",
+                                languages:      ["Professional"], //sort projectrole
+                                library:        ["ANB"], //company
+                                date:           "2020 - 2023"
+                            },
+                            {
+                                id:             "Project_Content",
+                        
+                                introduction:   "The redevelopment of Recreational Domain De Plas in Houthalen-Helchteren focused on transforming an outdated recreation area into an attractive, accessible, and future-proof destination. The site contained aging infrastructure, extensive worn asphalt surfaces, and a fragmented spatial layout that reduced both its visual appeal and user experience. As landscape architect, I was responsible for the design process from concept development through to the final design. The project provided valuable experience in balancing recreation, nature conservation, accessibility, and event infrastructure within a single landscape vision while collaborating closely with rangers, site managers, municipal services, and project partners.",
+                                challenges:     "One of the main challenges was responding to the site's many and sometimes conflicting requirements. The domain had to accommodate everyday recreational use, protect surrounding natural areas, support ecological development, and continue functioning as a venue for large-scale events such as Extrema Outdoor. Accessibility was another important consideration, requiring the creation of routes that could be enjoyed by all visitors while respecting sensitive natural habitats. In addition, the design had to integrate existing topography, water edges, circulation routes, and operational needs without compromising the overall landscape experience.",
+                                approach:       "I developed the project through an iterative design process, starting with hand sketches and gradually refining the concept into detailed technical plans in AutoCAD. Regular site visits and design discussions with stakeholders helped ensure that the proposals remained both realistic and aligned with operational requirements. Using Civil 3D and survey data, I calculated earthworks and adjusted the design to work efficiently with the existing terrain. Key interventions included reshaping shorelines to improve safety and ecological value, creating an accessible walking loop, redesigning parking areas with stronger landscape integration, and developing infrastructure that supports event logistics while preserving open recreational space.",
+                                result:         "The result is a comprehensive landscape design that strengthens the recreational identity of De Plas while improving accessibility, safety, ecological quality, and visitor experience. The design creates a more coherent and attractive environment, encourages visitors to remain within the recreation domain rather than placing pressure on nearby sensitive nature areas, and provides infrastructure that supports both daily use and major events. The project further strengthened my skills in large-scale landscape planning, stakeholder coordination, technical design development, and balancing ecological and recreational objectives.",
+
+                                img_01:         "",
+                                img_02:         "../src/assets/images/map/img.png",
+                                imgList:        [
+                                    "../src/assets/images/map/img.png",
+                                ],
+                                colors:         [],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#previous-project",
+                                next:           "project.html#next-project"
+                            }
+                        ]
+                    },
+                    {
+                        id:             "#lookout-platforms",
+                        field:          "#landscape-design",
+                        img:            "../src/assets/images/lookout-platforms/view-on-top.jpg",
+                        imgAlt:         "view of the nature reservate Webbekomsbroek, on top of the lookout platform",
+                        title:          "Lookout platforms",
+                        description:    "I designed two viewing platforms at the locks in the Webbekomsbroek nature reserve near Diest.",
+                        urlBtn:         "project.html#lookout-platforms",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Public design"], //sort project
+                                img:            "../src/assets/images/lookout-platforms/P2_front-side_finished.jpg",
+                                imgAlt:         "The front side of the wooden lookout platform. There is an intrance for the main level and a staircase to go on top of the platform.",
+                                title:          "tower",
+                                languages:      ["Professional"], //sort projectrole
+                                library:        ["ANB"], //company
+                                date:           "2022 - 2023"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction: "Following the completion of the lookout tower in Borgloon, I was commissioned to design two viewing platforms at the locks in the Webbekomsbroek nature reserve near Diest. The goal was to better integrate the technical infrastructure into the landscape while creating high-quality viewpoints for visitors to enjoy the surrounding nature. As landscape architect, I was responsible for the entire process, from concept design and stakeholder consultations to tender documentation and construction supervision. This project allowed me to further develop my experience in designing recreational infrastructure within a natural environment.",
+                                challenges: "One of the main challenges was balancing visitor experience with the technical requirements of the lock infrastructure. During the initial design phase, I explored the possibility of placing a platform on top of the technical building. However, the roof needed to remain accessible for maintenance and future replacement of equipment. Another challenge was creating platforms that were accessible and comfortable for a wide range of visitors while ensuring that the structures remained visually integrated within the landscape.",
+                                approach: "Through a series of design sketches, I explored different options for the location and construction of the platforms. After discussions with stakeholders, the decision was made to position the platforms alongside the lock structures rather than on top of them. This approach also created the opportunity to incorporate sheltered resting areas beneath the platforms. The design was carefully adapted to its surroundings, with particular attention given to accessibility, views, and material selection. In collaboration with a structural engineer, the timber and steel components were further developed and technically detailed for construction.",
+                                result: "The result is a pair of viewing platforms that successfully integrate technical infrastructure into the landscape while offering visitors attractive viewpoints over the Webbekomsbroek nature reserve. By combining accessibility, functionality, and a thoughtful material palette, the platforms enhance both the visitor experience and the character of the site. The project strengthened my skills in designing landscape structures and translating complex technical and environmental requirements into a coherent and buildable design.",
+
+                                img_01:         "../src/assets/images/lookout-platforms/view-on-top.jpg",
+                                img_02:         "../src/assets/images/lookout-platforms/P2_front-side_finished.jpg",
+                                imgList:        [
+                                    "../src/assets/images/lookout-platforms/P2_front_finished.jpg",
+                                    "../src/assets/images/lookout-platforms/P2_front-side_finished.jpg",
+                                    "../src/assets/images/lookout-platforms/view-on-top.jpg",
+                                    // "../src/assets/images/lookout-platforms/P1_front_work-in-progress.jpg",
+                                    "../src/assets/images/lookout-platforms/P1_front-side_finished.jpg",
+                                    "../src/assets/images/lookout-platforms/P1_side_finished.jpg"
+                                ],
+                                colors:         [],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#previous-project",
+                                next:           "project.html#next-project"
+                            }
+                        ]
+                    },
+                    {
+                        id:             "#tower",
+                        field:          "#landscape-design",
+                        img:            "../src/assets/icons/cubes-stacked.svg",
+                        imgAlt:         "boxes stacked on top of each other",
+                        title:          "tower",
+                        description:    "description of the project.",
+                        urlBtn:         "project.html#tower",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Landscape design", "Garden Design", "Urban design", "Public design", "Semi-public design"], //sort project
+                                img:            "../src/assets/icons/cubes-stacked.svg",
+                                imgAlt:         "boxes stacked on top of each other",
+                                title:          "Zoet Water",
+                                languages:      ["Professional"], //sort projectrole
+                                library:        ["ANB"], //company
+                                date:           "2022 - jan 2023"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "As a landscape architect, I contributed to the development of a future vision for the Zoet Water ponds in Oud-Heverlee as part of a multidisciplinary project team. The project aimed to improve the ecological quality of the ponds while strengthening the site as a gateway to the Brabantse Wouden. This project provided me with valuable experience in large-scale ecological restoration, where ecology, recreation, multidisciplinary collaboration, and technical feasibility all come together.",
+                                challenges:     "The ecological quality of the ponds had been under pressure for many years. Due to the existing cascade system of the Vaalbeek, fish migration was impossible, and several pond edges were in poor condition. One of the main challenges was finding a solution that would improve the ecological functioning of the area while remaining technically feasible. Factors such as elevation differences, water levels, available space, and budget constraints had to be carefully considered throughout the design process.",
+                                approach:       "The concept was developed collaboratively within the project team, where different scenarios for the reconfiguration of the Vaalbeek were explored. Ultimately, the decision was made to separate the stream from the ponds and allow it to flow again in its own channel. As part of the design team, I contributed to the further development of the landscape design. During the final phase of my involvement, I used cross-sections to study how the stream could meander through the site and how elevation differences could be resolved to support fish migration. In addition, I carried out earthworks calculations in Civil 3D to determine how much soil could be reused on-site and how much additional material would be required.",
+                                result:         "The result was an approved concept design that provided a strong foundation for the future restoration of the area. By separating the Vaalbeek from the ponds, the project introduced a sustainable solution that improves the ecological quality of the water system and restores opportunities for fish migration. At the same time, space was created for recreational elements that bring visitors closer to the water and surrounding nature. This project further strengthened my skills in multidisciplinary collaboration, technical analysis, and translating ecological objectives into a landscape design.",
+                                img_01:         "",
+                                img_02:         "../src/assets/images/map/img.png",
+                                imgList:        [
+                                    "../src/assets/images/map/img.png",
+                                ],
+                                colors:         [],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#previous-project",
+                                next:           "project.html#next-project"
+                            }
+                        ]
+                    },
                     {
                         id:             "#tower",
                         field:          "#landscape-design",
@@ -282,6 +421,7 @@ export default {
                             }
                         ]
                     },
+                    // art
                     {
                         id:             "#lion",
                         field:          "#art",
@@ -327,6 +467,7 @@ export default {
                             }
                         ]
                     },
+                    // development
                     {
                         id:             "#prularia",
                         field:          "#development",

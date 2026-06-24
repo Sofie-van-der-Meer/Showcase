@@ -366,8 +366,8 @@ export default class Resources {
                     break;
                 }
                 (Array.isArray(value)) ?
-                        // (childName == 'library') ?
-                        // elemChild.textContent = `- ${value.join(' - ')}` :
+                        (childName == 'library') ?
+                        elemChild.textContent = `- ${value.join(' | ')}` :
                         elemChild.textContent = value.join(' | ') :
                         elemChild.textContent = value;
                 break;
