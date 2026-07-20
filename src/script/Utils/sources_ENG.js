@@ -145,7 +145,7 @@ export default {
                         year:     "2023"
                     },
                     {
-                        school:   "Artacademy Heusden-Zolder",
+                        school:   "Art Academy Heusden-Zolder",
                         study:    "Drawing",
                         year:     "2018 - 2019"
                     },
@@ -421,25 +421,27 @@ export default {
                             }
                         ]
                     },
-                    // art
+                    // Art Projects
+                        // Baphomet
+                        // Bear
                     {
-                        id:             "#lion",
+                        id:             "#bear",
                         field:          "#art",
-                        img:            "../src/assets/icons/cubes-stacked.svg",
-                        imgAlt:         "boxes stacked on top of each other, logo of project lion",
-                        title:          "lion",
-                        description:    "description of the project.",
-                        urlBtn:         "project.html#lion",
+                        img:            "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
+                        imgAlt:         "Pastel drawing of a bear, the bear is looking to the side and is roaring, the drawing is made with pastel on black paper.",
+                        title:          "Bear",
+                        description:    "Pastel drawing of a bear, the bear is looking to the side and is roaring, the drawing is made with pastel on black paper.",
+                        urlBtn:         "project.html#bear",
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Drawing", "Mural", "Mixed media"], //sort project
-                                img:            "../src/assets/icons/cubes-stacked.svg",
-                                imgAlt:         "boxes stacked on top of each other, logo of project lion",
-                                title:          "lion",
-                                languages:      ["Student","Personal", "Professional"], //sort projectrole
-                                library:        ["@ artacademy Heusden-Zolder", "@ home"], //company
-                                date:           "Month 20.."
+                                websiteType:    ["Pastel drawing"], //sort project
+                                img:            "../src/assets/images/art/Bear/IMG_20260720_171126.jpg",
+                                imgAlt:         "Pastel drawing of a bear, the bear is looking to the side and is roaring, the drawing is made with pastel on black paper.",
+                                title:          "Bear",
+                                languages:      ["Student Work"], //sort projectrole
+                                library:        ["@ Art Academy Heusden-Zolder"], //company
+                                date:           "2019"
                             },
                             {
                                 id:             "Project_Content",
@@ -448,12 +450,113 @@ export default {
                                 challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
                                 approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
                                 result:         "the result of the project, what I achieved, what I learned from it, etc.",
-                                img_01:         "../src/assets/images/map/img.png",
-                                img_02:         "../src/assets/images/map/img.png",
+                                img_01:         "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
+                                img_02:         "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
                                 imgList:        [
-                                    "../src/assets/images/map/img.png",
+                                    "../src/assets/images/art/Bear/IMG_20260720_171120.jpg",
+                                    "../src/assets/images/art/Bear/IMG_20260720_171126.jpg",
+                                    "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
+                                    "../src/assets/images/art/Bear/IMG_20260720_171148.jpg"
                                 ],
-                                colors:         ["#F4F4F4", "#000000", "#B41C1C", "#8C8C8C", "#6A4C9C"],
+                                colors:         ["#979272", "#FFFFFF", "#000000", "#997A89", "#B9648B"],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#peekaboo",
+                                next:           "project.html#prularia"
+                            }
+                        ]
+                    },
+                        // Boy
+                    {
+                        id:             "#boy",
+                        field:          "#art",
+                        img:            "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
+                        imgAlt:         "Drawing of a boy standing at a table in the artstyle pointïsme.",
+                        title:          "A Boy, pointïsme",
+                        description:    "Drawing of a boy standing at a table in the artstyle pointïsme.",
+                        urlBtn:         "project.html#boy",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Drawing"], //sort project
+                                img:            "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
+                                imgAlt:         "Drawing of a boy standing at a table in the artstyle pointïsme.",
+                                title:          "A Boy, pointïsme",
+                                languages:      ["Student"], //sort projectrole
+                                library:        ["@ Art Academy Heusden-Zolder"], //company
+                                date:           "2019"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "introduction of the project, what I did, what I learned, etc.",
+                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
+                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
+                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                img_01:         "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
+                                img_02:         "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
+                                imgList:        [
+                                    "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
+                                ],
+                                colors:         ["#F4F4F4", "#000000"],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#peekaboo",
+                                next:           "project.html#prularia"
+                            }
+                        ]
+                    },
+                        // Dragon
+                        // Forest
+                        // Lion
+                    {
+                        id:             "#lion",
+                        field:          "#art",
+                        img:            "../src/assets/images/art/Lion/IMG_20251015_083329_cropped.jpg",
+                        imgAlt:         "Mural of a lion with antlers and ears of a deer, made with gold spraypaint, details are made with black and white wall paint.",
+                        title:          "Mytical Lion",
+                        description:    "Mural of a lion with antlers and ears of a deer, made with gold spraypaint, details are made with black and white wall paint.",
+                        urlBtn:         "project.html#lion",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Mural"], //sort project
+                                img:            "../src/assets/images/art/Lion/IMG_20250920_183045.jpg",
+                                imgAlt:         "Mural of a lion with antlers and ears of a deer, made with gold spraypaint, details are made with black and white wall paint.",
+                                title:          "Mytical Lion",
+                                languages:      ["Personal Work"], //sort projectrole
+                                library:        ["@ home"], //company
+                                date:           "September 2025"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "introduction of the project, what I did, what I learned, etc.",
+                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
+                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
+                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                img_01:         "../src/assets/images/art/Lion/IMG_20250920_183045.jpg",
+                                img_02:         "../src/assets/images/art/Lion/IMG_20250920_183045.jpg",
+                                imgList:        [
+                                    "../src/assets/images/art/Lion/IMG_20250912_215053.jpg",
+                                    "../src/assets/images/art/Lion/IMG_20250913_222856.jpg",
+                                    "../src/assets/images/art/Lion/IMG_20250913_223731.jpg",
+                                    "../src/assets/images/art/Lion/IMG_20250917_210016.jpg",
+                                    "../src/assets/images/art/Lion/IMG_20250920_183045.jpg"
+                                ],
+                                colors:         ["#F4F4F4", "#000000", "Gold"],
 
                                 textBtn_1:      "",
                                 textBtn_2:      "",

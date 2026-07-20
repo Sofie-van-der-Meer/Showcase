@@ -225,6 +225,60 @@ export default {
             {
                 id:         "Projects_List",
                 projects:   [
+                    // Landscape Architecture Projects
+                    // Art Projects
+                        // Baphomet
+                        // Bear
+                        // Boy
+                        // Dragon
+                        // Forest
+                        // Lion
+                    {
+                        id:             "#lion",
+                        field:          "#art",
+                        img:            "../src/assets/icons/cubes-stacked.svg",
+                        imgAlt:         "boxes stacked on top of each other, logo of project lion",
+                        title:          "lion",
+                        description:    "description of the project.",
+                        urlBtn:         "project.html#lion",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Drawing", "Mural", "Mixed media"], //sort project
+                                img:            "../src/assets/icons/cubes-stacked.svg",
+                                imgAlt:         "boxes stacked on top of each other, logo of project lion",
+                                title:          "lion",
+                                languages:      ["Student","Personal", "Professional"], //sort projectrole
+                                library:        ["@ Art Academy Heusden-Zolder", "@ home"], //company
+                                date:           "Month 20.."
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "introduction of the project, what I did, what I learned, etc.",
+                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
+                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
+                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                img_01:         "../src/assets/images/map/img.png",
+                                img_02:         "../src/assets/images/map/img.png",
+                                imgList:        [
+                                    "../src/assets/images/map/img.png",
+                                ],
+                                colors:         ["#F4F4F4", "#000000", "#B41C1C", "#8C8C8C", "#6A4C9C"],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#peekaboo",
+                                next:           "project.html#prularia"
+                            }
+                        ]
+                    },
+                    // Development Projects
                     {
                         id:             "#prularia",
                         img:            "../src/assets/images/prularia/prularia_logo.png",
