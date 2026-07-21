@@ -38,7 +38,7 @@ export default {
                         urlBtn:         "projects.html#art"
                     },
                     {
-                        img:            "../src/assets/images/tamagotchi/home.png",
+                        img:            "../src/assets/images/development/tamagotchi/home.png",
                         imgAlt:         "Image of a website-demo. The website promote a fictional product of a blood sugar testing device that acts like a tamagotchi. The tamagotchi itself is a vampire that needs to 'drink' blood to track the bloodsugar.",
                         title:          "Full Stack Development",
                         description:    "Projects developed during my training as a full stack developer, focused on problem-solving, structure, and usability.\n\nA small selection of web applications and technical work.",
@@ -423,25 +423,24 @@ export default {
                     },
                     // Art Projects
                         // Baphomet
-                        // Bear
                     {
-                        id:             "#bear",
+                        id:             "#baphomet",
                         field:          "#art",
-                        img:            "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
-                        imgAlt:         "Pastel drawing of a bear, the bear is looking to the side and is roaring, the drawing is made with pastel on black paper.",
-                        title:          "Bear",
-                        description:    "Pastel drawing of a bear, the bear is looking to the side and is roaring, the drawing is made with pastel on black paper.",
-                        urlBtn:         "project.html#bear",
+                        img:            "/src/assets/images/art/Baphomet/IMG_20260709_183402.jpg",
+                        imgAlt:         "Claysculpture of the horns for the cosplay character Baphomet.",
+                        title:          "Baphomet",
+                        description:    "I'm currently working on a cosplay project where I am creating a costume of the character Baphomet. The project involves sculpting the horns and other elements of the costume.",
+                        urlBtn:         "project.html#baphomet",
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Pastel drawing"], //sort project
-                                img:            "../src/assets/images/art/Bear/IMG_20260720_171126.jpg",
-                                imgAlt:         "Pastel drawing of a bear, the bear is looking to the side and is roaring, the drawing is made with pastel on black paper.",
-                                title:          "Bear",
-                                languages:      ["Student Work"], //sort projectrole
-                                library:        ["@ Art Academy Heusden-Zolder"], //company
-                                date:           "2019"
+                                websiteType:    ["Cosplay"], //sort project
+                                img:            "/src/assets/images/art/Baphomet/IMG_20260709_183402.jpg",
+                                imgAlt:         "Claysculpture of the horns for the cosplay character Baphomet.",
+                                title:          "Baphomet",
+                                languages:      ["Personal work"], //sort projectrole
+                                library:        ["@ home"], //company
+                                date:           "In progress"
                             },
                             {
                                 id:             "Project_Content",
@@ -450,15 +449,15 @@ export default {
                                 challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
                                 approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
                                 result:         "the result of the project, what I achieved, what I learned from it, etc.",
-                                img_01:         "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
-                                img_02:         "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
+                                img_01:         "/src/assets/images/art/Baphomet/IMG_20260709_183347.jpg",
+                                img_02:         "/src/assets/images/art/Baphomet/IMG_20260709_183402.jpg",
                                 imgList:        [
-                                    "../src/assets/images/art/Bear/IMG_20260720_171120.jpg",
-                                    "../src/assets/images/art/Bear/IMG_20260720_171126.jpg",
-                                    "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
-                                    "../src/assets/images/art/Bear/IMG_20260720_171148.jpg"
+                                    "/src/assets/images/art/Baphomet/IMG_20260709_183347.jpg",
+                                    "/src/assets/images/art/Baphomet/IMG_20260709_183357.jpg",
+                                    "/src/assets/images/art/Baphomet/IMG_20260709_183402.jpg",
+                                    "/src/assets/images/art/Baphomet/IMG_20260709_183417.jpg",
                                 ],
-                                colors:         ["#979272", "#FFFFFF", "#000000", "#997A89", "#B9648B"],
+                                colors:         [],
 
                                 textBtn_1:      "",
                                 textBtn_2:      "",
@@ -467,59 +466,121 @@ export default {
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "project.html#peekaboo",
-                                next:           "project.html#prularia"
-                            }
-                        ]
-                    },
-                        // Boy
-                    {
-                        id:             "#boy",
-                        field:          "#art",
-                        img:            "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
-                        imgAlt:         "Drawing of a boy standing at a table in the artstyle pointïsme.",
-                        title:          "A Boy, pointïsme",
-                        description:    "Drawing of a boy standing at a table in the artstyle pointïsme.",
-                        urlBtn:         "project.html#boy",
-                        sections:       [
-                            {
-                                id:             "Project_Top",
-                                websiteType:    ["Drawing"], //sort project
-                                img:            "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
-                                imgAlt:         "Drawing of a boy standing at a table in the artstyle pointïsme.",
-                                title:          "A Boy, pointïsme",
-                                languages:      ["Student"], //sort projectrole
-                                library:        ["@ Art Academy Heusden-Zolder"], //company
-                                date:           "2019"
-                            },
-                            {
-                                id:             "Project_Content",
-                                
-                                introduction:   "introduction of the project, what I did, what I learned, etc.",
-                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
-                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
-                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
-                                img_01:         "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
-                                img_02:         "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
-                                imgList:        [
-                                    "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
-                                ],
-                                colors:         ["#F4F4F4", "#000000"],
-
-                                textBtn_1:      "",
-                                textBtn_2:      "",
-                                urlBtn_1:       "",
-                                urlBtn_2:       "",
-                            },
-                            {
-                                id:             "Project_Bottom",
-                                previous:       "project.html#peekaboo",
-                                next:           "project.html#prularia"
+                                previous:       "project.html#boy",
+                                next:           "project.html#dragon"
                             }
                         ]
                     },
                         // Dragon
+                    {
+                        id:             "#dragon",
+                        field:          "#art",
+                        img:            "/src/assets/images/art/Dragon/IMG_20260605_185825.jpg",
+                        imgAlt:         "Mural of a dragon, the dragon breads fire, the lighting of the fire refelcts on the dragons scales.",
+                        title:          "Dragon",
+                        description:    "For a family member I created a mural of a dragon, the dragon breads fire, the lighting of the fire refelcts on the dragons scales.",
+                        urlBtn:         "project.html#dragon",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Mural"], //sort project
+                                img:            "/src/assets/images/art/Dragon/IMG_20260605_185825.jpg",
+                                imgAlt:         "Mural of a dragon, the dragon breads fire, the lighting of the fire refelcts on the dragons scales.",
+                                title:          "Dragon",
+                                languages:      ["Personal work"], //sort projectrole
+                                library:        [], //company
+                                date:           "April - June 2026"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "introduction of the project, what I did, what I learned, etc.",
+                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
+                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
+                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                img_01:         "../src/assets/images/art/Dragon/IMG_20260605_185825_cropped.jpg",
+                                img_02:         "../src/assets/images/art/Dragon/IMG_20260605_185825.jpg",
+                                imgList:        [
+                                    "../src/assets/images/art/Dragon/IMG_20260417_114501.jpg",
+                                    "../src/assets/images/art/Dragon/IMG_20260417_182422.jpg",
+                                    "../src/assets/images/art/Dragon/IMG_20260424_194309.jpg",
+                                    "../src/assets/images/art/Dragon/IMG_20260508_192212.jpg",
+                                    "../src/assets/images/art/Dragon/IMG_20260515_133209.jpg",
+                                    "../src/assets/images/art/Dragon/IMG_20260515_181346.jpg",
+                                    "../src/assets/images/art/Dragon/IMG_20260605_185825.jpg"
+                                ],
+                                colors:         ["#354751", "#302E43", "#C28E2B", "#A6482C", "#7D6A3F"],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#baphomet",
+                                next:           "project.html#forest"
+                            }
+                        ]
+                    },
                         // Forest
+                    {
+                        id:             "#forest",
+                        field:          "#art",
+                        img:            "../src/assets/images/art/Forest/IMG_20260329_092812.jpg",
+                        imgAlt:         "A Mural of a forest, with a lot of native animals like a fox, roe deers, birds, etc.",
+                        title:          "Forest in Summertime",
+                        description:    "For a family member I created a hugh mural of a forest, with a lot of native animals like a fox, roe deers, birds, a mouse, etc.",
+                        urlBtn:         "project.html#forest",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Mural"], //sort project
+                                img:            "../src/assets/images/art/Forest/IMG_20260329_092921.jpg",
+                                imgAlt:         "A Mural of a forest, with a lot of native animals like a fox, deers, birds, etc.",
+                                title:          "Forest in Summertime",
+                                languages:      ["Personal work"], //sort projectrole
+                                library:        [], //company
+                                date:           "February - March 2026"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "introduction of the project, what I did, what I learned, etc.",
+                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
+                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
+                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                img_01:         "../src/assets/images/art/Forest/IMG_20260329_092812.jpg",
+                                img_02:         "../src/assets/images/art/Forest/IMG_20260329_092921.jpg",
+                                imgList:        [
+                                    "../src/assets/images/art/Forest/IMG_20260329_092739.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_092751.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_092805.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_092812.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_092831.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_092842.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_092854.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_092921.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_092936.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_092947.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_093009.jpg",
+                                    "../src/assets/images/art/Forest/IMG_20260329_093026.jpg"
+                                ],
+                                video:          "../src/assets/images/art/Forest/ForestInSummertime.mp4",
+                                colors:         ["#94604A", "#CBC2C3", "#55473E", "#4D6438", "#233A1E", "#BDA670", "#91A067"],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#dragon",
+                                next:           "project.html#lion"
+                            }
+                        ]
+                    },
                         // Lion
                     {
                         id:             "#lion",
@@ -527,7 +588,7 @@ export default {
                         img:            "../src/assets/images/art/Lion/IMG_20251015_083329_cropped.jpg",
                         imgAlt:         "Mural of a lion with antlers and ears of a deer, made with gold spraypaint, details are made with black and white wall paint.",
                         title:          "Mytical Lion",
-                        description:    "Mural of a lion with antlers and ears of a deer, made with gold spraypaint, details are made with black and white wall paint.",
+                        description:    "For a redecoration of one of my rooms in gothic/bohemion style I created a mural of a mytical creature with the face of a lion and ears en antlers of a deer.",
                         urlBtn:         "project.html#lion",
                         sections:       [
                             {
@@ -565,8 +626,155 @@ export default {
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "project.html#peekaboo",
-                                next:           "project.html#prularia"
+                                previous:       "project.html#forest",
+                                next:           "project.html#bear"
+                            }
+                        ]
+                    },
+                        // Bear
+                    {
+                        id:             "#bear",
+                        field:          "#art",
+                        img:            "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
+                        imgAlt:         "Pastel drawing of a bear, the bear is looking to the side and is roaring, the drawing is made with pastel on black paper.",
+                        title:          "Bear",
+                        description:    "As part of my drawing course at the Art Academy, I created a pastel drawing of a bear, using a stunning photograph as reference.",
+                        urlBtn:         "project.html#bear",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Pastel drawing"], //sort project
+                                img:            "../src/assets/images/art/Bear/IMG_20260720_171126.jpg",
+                                imgAlt:         "Pastel drawing of a bear, the bear is looking to the side and is roaring, the drawing is made with pastel on black paper.",
+                                title:          "Bear",
+                                languages:      ["Student Work"], //sort projectrole
+                                library:        ["@ Art Academy Heusden-Zolder"], //company
+                                date:           "2019"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "introduction of the project, what I did, what I learned, etc.",
+                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
+                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
+                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                img_01:         "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
+                                img_02:         "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
+                                imgList:        [
+                                    "../src/assets/images/art/Bear/IMG_20260720_171120.jpg",
+                                    "../src/assets/images/art/Bear/IMG_20260720_171126.jpg",
+                                    "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
+                                    "../src/assets/images/art/Bear/IMG_20260720_171148.jpg"
+                                ],
+                                colors:         ["#979272", "#FFFFFF", "#000000", "#997A89", "#B9648B"],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#lion",
+                                next:           "project.html#bluehues"
+                            }
+                        ]
+                    },
+                        // The fall in Blue hues
+                    {
+                        id:             "#bluehues",
+                        field:          "#art",
+                        img:            "../src/assets/images/art/BlueHues/IMG_20260721_135512.jpg",
+                        imgAlt:         "Artwork where two artists were combined into one artwork, the artwork is made with a blue background and a drawing made with white, brown and black colors.",
+                        title:          "The fall in Blue hues",
+                        description:    "As part of my art history course at the Art Academy, I made a project where two artists were combined into one artwork.",
+                        urlBtn:         "project.html#bluehues",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Mixed media"], //sort project
+                                img:            "../src/assets/images/art/BlueHues/IMG_20260721_135431.jpg",
+                                imgAlt:         "Artwork where two artists were combined into one artwork, the artwork is made with a blue background and a drawing made with white, brown and black colors.",
+                                title:          "The fall in Blue hues",
+                                languages:      ["Student"], //sort projectrole
+                                library:        ["@ Art Academy Heusden-Zolder"], //company
+                                date:           "2019"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                // The Fall of the Rebel Angels, by Luca Giordano, 1660/1665
+                                // Pablo Picasso, Blue Period, 1901-1904
+                                introduction:   "introduction of the project, what I did, what I learned, etc.",
+                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
+                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
+                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                img_01:         "../src/assets/images/art/BlueHues/IMG_20260721_135512.jpg",
+                                img_02:         "../src/assets/images/art/BlueHues/IMG_20260721_135450.jpg",
+                                imgList:        [
+                                    "../src/assets/images/art/BlueHues/IMG_20260721_135431.jpg",
+                                    "../src/assets/images/art/BlueHues/IMG_20260721_135442.jpg",
+                                    "../src/assets/images/art/BlueHues/IMG_20260721_135450.jpg",
+                                    "../src/assets/images/art/BlueHues/IMG_20260721_135506.jpg",
+                                    "../src/assets/images/art/BlueHues/IMG_20260721_135512.jpg"
+                                ],
+                                colors:         ["#57BDD4", "#4489AA", "#E8E8E6", "#805C4C", "#5A463D", "#4C4D48"],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#bear",
+                                next:           "project.html#boy"
+                            }
+                        ]
+                    },
+                        // Boy
+                    {
+                        id:             "#boy",
+                        field:          "#art",
+                        img:            "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
+                        imgAlt:         "Drawing of a boy standing at a table in the artstyle pointïsme.",
+                        title:          "A Boy, pointïsme",
+                        description:    "As part of my drawing course at the Art Academy, I created a pointïsme drawing of a boy standing at a table, using an old painting as reference.",
+                        urlBtn:         "project.html#boy",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                websiteType:    ["Drawing"], //sort project
+                                img:            "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
+                                imgAlt:         "Drawing of a boy standing at a table in the artstyle pointïsme.",
+                                title:          "A Boy, pointïsme",
+                                languages:      ["Student"], //sort projectrole
+                                library:        ["@ Art Academy Heusden-Zolder"], //company
+                                date:           "2019"
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "introduction of the project, what I did, what I learned, etc.",
+                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
+                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
+                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                img_01:         "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
+                                img_02:         "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
+                                imgList:        [
+                                    "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
+                                ],
+                                colors:         ["#F4F4F4", "#000000"],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#bluehues",
+                                next:           "project.html#baphomet"
                             }
                         ]
                     },
@@ -574,7 +782,7 @@ export default {
                     {
                         id:             "#prularia",
                         field:          "#development",
-                        img:            "../src/assets/images/prularia/prularia_logo.png",
+                        img:            "../src/assets/images/development/prularia/prularia_logo.png",
                         imgAlt:         "crown, logo of project Prularia",
                         title:          "Prularia",
                         description:    "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
@@ -586,7 +794,7 @@ export default {
                             {
                                 id:             "Project_Top",
                                 websiteType:    "e-commerce",
-                                img:            "../src/assets/images/prularia/prularia_logo.png",
+                                img:            "../src/assets/images/development/prularia/prularia_logo.png",
                                 imgAlt:         "crown, logo of project Prularia",
                                 title:          "Prularia",
                                 languages:      ["JavaScript", "PHP", "CSS"],
@@ -605,14 +813,14 @@ export default {
                                 textBtn_2:      "View code",
                                 urlBtn_1:       "https://demo.prularia.Sofie-van-der-Meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Prularia",
-                                img_01:         "../src/assets/images/prularia/page-down.png",
-                                img_02:         "../src/assets/images/prularia/icons.png",
+                                img_01:         "../src/assets/images/development/prularia/page-down.png",
+                                img_02:         "../src/assets/images/development/prularia/icons.png",
                                 imgList:        [
-                                    "../src/assets/images/prularia/desktop_login-page.png",
-                                    "../src/assets/images/prularia/desktop_shopping-bag.png",
-                                    "../src/assets/images/prularia/desktop_shopping-bag-remove.png",
-                                    "../src/assets/images/prularia/icons.png",
-                                    "../src/assets/images/prularia/shopping-bag.png"
+                                    "../src/assets/images/development/prularia/desktop_login-page.png",
+                                    "../src/assets/images/development/prularia/desktop_shopping-bag.png",
+                                    "../src/assets/images/development/prularia/desktop_shopping-bag-remove.png",
+                                    "../src/assets/images/development/prularia/icons.png",
+                                    "../src/assets/images/development/prularia/shopping-bag.png"
                                 ],
                                 colors:         ["#abd7a8", "#8ab987", "#63a15e", "#ffffff", "#f5f9f6", "#e8f5e9", "#111510"]
                             },
@@ -655,16 +863,16 @@ export default {
                                 textBtn_2:      "View code",
                                 urlBtn_1:       "https://demo.pizzaria.Sofie-van-der-Meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Pizzaria",
-                                img_01:         "../src/assets/images/pizzaria/structure.png",
-                                img_02:         "../src/assets/images/pizzaria/add-to-shoppingcart.png",
+                                img_01:         "../src/assets/images/development/pizzaria/structure.png",
+                                img_02:         "../src/assets/images/development/pizzaria/add-to-shoppingcart.png",
                                 imgList:        [
-                                    "../src/assets/images/pizzaria/home-page.png",
-                                    "../src/assets/images/pizzaria/add-to-shoppingcart.png",
-                                    "../src/assets/images/pizzaria/order-page.png",
-                                    "../src/assets/images/pizzaria/order-page_change-contactdetails.png",
-                                    "../src/assets/images/pizzaria/register-page.png",
-                                    "../src/assets/images/pizzaria/sql.svg",
-                                    "../src/assets/images/pizzaria/structure.png"
+                                    "../src/assets/images/development/pizzaria/home-page.png",
+                                    "../src/assets/images/development/pizzaria/add-to-shoppingcart.png",
+                                    "../src/assets/images/development/pizzaria/order-page.png",
+                                    "../src/assets/images/development/pizzaria/order-page_change-contactdetails.png",
+                                    "../src/assets/images/development/pizzaria/register-page.png",
+                                    "../src/assets/images/development/pizzaria/sql.svg",
+                                    "../src/assets/images/development/pizzaria/structure.png"
                                 ],
                                 colors:         ["#f5deb3", "#fffff0", "#ff0000", "#ffffff", "#000000"]
                             },
@@ -709,13 +917,13 @@ export default {
                                 textBtn_2:      "View code",
                                 urlBtn_1:       "https://demo.treasurehunt.sofie-van-der-meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Treasure-Hunt",
-                                img_01:         "../src/assets/images/treasure-hunt/gamePlay.png",
-                                img_02:         "../src/assets/images/treasure-hunt/introGame_touch-device.png",
+                                img_01:         "../src/assets/images/development/treasure-hunt/gamePlay.png",
+                                img_02:         "../src/assets/images/development/treasure-hunt/introGame_touch-device.png",
                                 imgList:        [
-                                    "../src/assets/images/treasure-hunt/zoomIntoGame.png",
-                                    "../src/assets/images/treasure-hunt/gameStarts_touch-device_2.png",
-                                    "../src/assets/images/treasure-hunt/gamePlay.png",
-                                    "../src/assets/images/treasure-hunt/lostGame.png"
+                                    "../src/assets/images/development/treasure-hunt/zoomIntoGame.png",
+                                    "../src/assets/images/development/treasure-hunt/gameStarts_touch-device_2.png",
+                                    "../src/assets/images/development/treasure-hunt/gamePlay.png",
+                                    "../src/assets/images/development/treasure-hunt/lostGame.png"
                                 ],
                                 colors:         ["#F3FFC6", "#B6174B", "#1C5253", "#C3EB78", "#7F675B"]
                             },
@@ -757,11 +965,11 @@ export default {
                                 textBtn_2:      "View code",
                                 urlBtn_1:       "https://demo.peekaboo.sofie-van-der-meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Peekaboo",
-                                img_01:         "../src/assets/images/peekaboo/model_1.png",
-                                img_02:         "../src/assets/images/peekaboo/model_4.png",
+                                img_01:         "../src/assets/images/development/peekaboo/model_1.png",
+                                img_02:         "../src/assets/images/development/peekaboo/model_4.png",
                                 imgList:        [
-                                    "../src/assets/images/peekaboo/model_1.png",
-                                    "../src/assets/images/peekaboo/model_4.png",
+                                    "../src/assets/images/development/peekaboo/model_1.png",
+                                    "../src/assets/images/development/peekaboo/model_4.png",
                                 ],
                                 colors:         ["#01cfe6", "#e9c201", "#d4d4d4", "#ca5d02", "#f2b8ce"]
                             },
@@ -806,16 +1014,16 @@ export default {
                                 textBtn_2:      "View code",
                                 urlBtn_1:       "https://demo.vampitest.sofie-van-der-meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Tamagotchi",
-                                img_01:         "../src/assets/images/tamagotchi/home-title.png",
-                                img_02:         "../src/assets/images/tamagotchi/batbat.png",
+                                img_01:         "../src/assets/images/development/tamagotchi/home-title.png",
+                                img_02:         "../src/assets/images/development/tamagotchi/batbat.png",
                                 imgList:        [
-                                    "../src/assets/images/tamagotchi/home.png",
-                                    "../src/assets/images/tamagotchi/device-cover-black.png",
-                                    "../src/assets/images/tamagotchi/device-cover-purple.png",
-                                    "../src/assets/images/tamagotchi/home-title.png",
-                                    "../src/assets/images/tamagotchi/device-cover-red.png",
-                                    "../src/assets/images/tamagotchi/batbat.png",
-                                    "../src/assets/images/tamagotchi/vampire.png",
+                                    "../src/assets/images/development/tamagotchi/home.png",
+                                    "../src/assets/images/development/tamagotchi/device-cover-black.png",
+                                    "../src/assets/images/development/tamagotchi/device-cover-purple.png",
+                                    "../src/assets/images/development/tamagotchi/home-title.png",
+                                    "../src/assets/images/development/tamagotchi/device-cover-red.png",
+                                    "../src/assets/images/development/tamagotchi/batbat.png",
+                                    "../src/assets/images/development/tamagotchi/vampire.png",
                                 ],
                                 colors:         ["#F4F4F4", "#000000", "#B41C1C", "#8C8C8C", "#6A4C9C"]
                             },
