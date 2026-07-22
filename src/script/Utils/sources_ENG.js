@@ -439,19 +439,30 @@ export default {
                                 imgAlt:         "Claysculpture of the horns for the cosplay character Baphomet.",
                                 title:          "Baphomet",
                                 languages:      ["Personal work"], //sort projectrole
-                                library:        ["@ home"], //company
-                                date:           "In progress"
+                                library:        [], //company
+                                date:           "In progress",
+                                projectType:    "Personal project",
+                                medium:         "Cosplay outfit",
+                                materials:      "Plasticine clay, EVA foam",
+                                location:       "",
+                                duration:       ""
                             },
+                            
                             {
                                 id:             "Project_Content",
                                 
-                                introduction:   "introduction of the project, what I did, what I learned, etc.",
-                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
-                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
-                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
-                                img_01:         "/src/assets/images/art/Baphomet/IMG_20260709_183347.jpg",
-                                img_02:         "/src/assets/images/art/Baphomet/IMG_20260709_183402.jpg",
+                                introduction:   "This project is my second year participating in cosplay and is currently still in development. After attending my first cosplay event last year, I wanted to challenge myself by creating a more ambitious look while exploring new techniques within prop making and costume design. \n\n As I am exploring a future as a professional artist, this project gives me the opportunity to experiment with sculpting, mould making, and casting techniques that can also be applied to future creations.",
+                                // concept & inspiration
+                                challenges:     "The idea for this cosplay comes from the general appearance of Baphomet and a Pinterest image featuring dramatic Baphomet-inspired face paint. I was inspired by the strong visual impact of the makeup and wanted to create my own interpretation. \n\n During my journey into alternative, gothic, metalhead, and darker aesthetics, I discovered new sides of my own style and interests. This exploration is one of the reasons why I feel drawn to the imagery of Baphomet: the combination of mystery, symbolism, and dark fantasy strongly connects with the aesthetic I have been developing. \n\n The final look will consist of sculpted horns, ears, wings, facial hair, and a dark whimsical gothic style. The clothing is still being explored and will depend on the time available before the cosplay event.",
+                                // current proress
+                                approach:       "The horns are currently the most developed part of the project. I created an internal structure using wood and metal wire, then built up the shape with plasticine clay. One horn has the complete basic form, while the other is still being developed. The next step will be adding realistic horn textures before creating moulds and lightweight casts. \n\n For the wings, I started designing a construction that can attach to a gothic harness I recently bought. The harness inspired me to reuse it as a possible base structure for the wings. Currently, only the first foam base layers have been created; the attachment system, internal support, feathers, and details still need to be developed. \n\n I also designed the makeup by drawing on a copy of my own face, using the Baphomet reference and goat features as inspiration. For the beard, I collected hair from my own haircut and am exploring how to combine it with fibres from a black wig.",
+                                // What's next
+                                result:         "There is still a lot to finish before the cosplay event. The horns need their final details before mould making can begin, and the wings require most of their construction and finishing work. \n\n The clothing will depend on the time available. Ideally, I would like to create parts of the outfit myself using the sewing skills I developed while studying fashion and creation as a teenager. If time becomes limited, I will combine existing pieces from my wardrobe. \n\n This project is an experiment in combining cosplay, prop making, sculpting, and costume design while developing new techniques for future artwork.",
+                                img_01:         "/src/assets/images/art/Baphomet/IMG_20260704_192408.jpg",
+                                img_02:         "/src/assets/images/art/Baphomet/IMG_20260709_183347.jpg",
                                 imgList:        [
+                                    "/src/assets/images/art/Baphomet/IMG_20260704_192340.jpg",
+                                    "/src/assets/images/art/Baphomet/IMG_20260704_192408.jpg",
                                     "/src/assets/images/art/Baphomet/IMG_20260709_183347.jpg",
                                     "/src/assets/images/art/Baphomet/IMG_20260709_183357.jpg",
                                     "/src/assets/images/art/Baphomet/IMG_20260709_183402.jpg",
@@ -483,23 +494,29 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Mural"], //sort project
+                                websiteType:    ["Wall Mural"], //sort project
                                 img:            "/src/assets/images/art/Dragon/IMG_20260605_185825.jpg",
                                 imgAlt:         "Mural of a dragon, the dragon breads fire, the lighting of the fire refelcts on the dragons scales.",
                                 title:          "Dragon",
                                 languages:      ["Personal work"], //sort projectrole
                                 library:        [], //company
-                                date:           "April - June 2026"
+                                date:           "April - June 2026, 5 days",
+                                projectType:    "Personal project",
+                                medium:         "Wall mural",
+                                materials:      "Wall paint (custom hand-mixed) colours",
+                                location:       "Private residence",
+                                duration:       "5 days"
                             },
                             {
                                 id:             "Project_Content",
                                 
-                                introduction:   "introduction of the project, what I did, what I learned, etc.",
-                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
-                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
-                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                introduction:   "This wall mural was created for my youngest nephew after I had painted a mural for his older brother a few years earlier. Since he loves dragons, my sister asked if I could create a dragon mural for his bedroom as well.\n\nBesides creating the mural, the project gave me valuable experience in planning a smaller wall mural over multiple sessions. Since I could only paint while my nephew wasn't using his room, I learned to organise the work efficiently and gained a better understanding of the time involved in completing a mural like this.",
+                                // concept & inspiration
+                                challenges:     "Instead of painting a static dragon, I imagined a scene where the dragon was breathing fire, with the flames illuminating its face and scales. I liked the idea of telling a small story rather than simply painting the animal itself. My sister liked the concept as well, but asked me to make sure the dragon wouldn't look too frightening for a young child.\n\nSince I had never drawn dragons before, I searched for reference images to better understand their anatomy and appearance. I selected two designs that matched the scene I had in mind, and my nephew's family chose the one they liked best.",
+                                approach:       "",
+                                result:         "",
                                 img_01:         "../src/assets/images/art/Dragon/IMG_20260605_185825_cropped.jpg",
-                                img_02:         "../src/assets/images/art/Dragon/IMG_20260605_185825.jpg",
+                                // img_02:         "../src/assets/images/art/Dragon/IMG_20260605_185825.jpg",
                                 imgList:        [
                                     "../src/assets/images/art/Dragon/IMG_20260417_114501.jpg",
                                     "../src/assets/images/art/Dragon/IMG_20260417_182422.jpg",
@@ -528,28 +545,36 @@ export default {
                         id:             "#forest",
                         field:          "#art",
                         img:            "../src/assets/images/art/Forest/IMG_20260329_092812.jpg",
-                        imgAlt:         "A Mural of a forest, with a lot of native animals like a fox, roe deers, birds, etc.",
+                        imgAlt:         "Large forest mural depicting a sunlit forest filled with native wildlife, including a fox, roe deer, birds, and other woodland animals.",
                         title:          "Forest in Summertime",
-                        description:    "For a family member I created a hugh mural of a forest, with a lot of native animals like a fox, roe deers, birds, a mouse, etc.",
+                        description:    "As a birthday gift for my mother, I created a large forest mural depicting a sunlit forest filled with native wildlife, including a fox, roe deer, birds, and a mouse.",
                         urlBtn:         "project.html#forest",
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Mural"], //sort project
+                                websiteType:    ["Wall Mural"], //sort project
                                 img:            "../src/assets/images/art/Forest/IMG_20260329_092921.jpg",
-                                imgAlt:         "A Mural of a forest, with a lot of native animals like a fox, deers, birds, etc.",
+                                imgAlt:         "Large forest mural depicting a sunlit forest filled with native wildlife, including a fox, roe deer, birds, and other woodland animals.",
                                 title:          "Forest in Summertime",
                                 languages:      ["Personal work"], //sort projectrole
                                 library:        [], //company
-                                date:           "February - March 2026"
+                                date:           "February - March 2026",
+                                projectType:    "Personal project",
+                                medium:         "Wall mural",
+                                materials:      "Wall paint (custom hand-mixed) colours",
+                                location:       "Private residence",
+                                duration:       "2 months"
                             },
                             {
                                 id:             "Project_Content",
                                 
-                                introduction:   "introduction of the project, what I did, what I learned, etc.",
-                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
-                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
-                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                introduction:   "This mural was created as a birthday present for my mother's 60th birthday. She loves nature and wildlife and originally wanted a painting of an owl on the plain white wall of her bathroom. Around that time I was considering exploring mural painting professionally, so this project became the perfect opportunity to experiment, gain experience, and challenge myself with a large-scale artwork. \n\n Rather than painting a single owl, we quickly agreed that transforming the entire wall into a forest scene would create a much more immersive atmosphere.",
+                                // concept & inspiration
+                                challenges:     "The mural depicts a peaceful forest filled with native wildlife, including a fox, roe deer, birds, a mouse, mushrooms, ferns, and other woodland details. The composition is built around the golden spiral, guiding the viewer's eye through the scene towards the sunlight shining through the trees. \n\n As the design developed, we decided to continue the composition onto a second wall, allowing the fox to become part of a larger scene instead of feeling confined to a single surface. Finding the right composition was initially difficult, especially with the bathroom window interrupting the main wall. The breakthrough came unexpectedly when I visualised the entire scene in my head one evening and immediately sketched the layout before I could forget it.",
+                                // creation process
+                                approach:       "Before starting, I watched several mural artists to better understand how large wall paintings are approached. One workflow particularly inspired me, as it closely resembled the process of creating a digital painting: beginning with large colour blocks before gradually refining the details. \n\n To make colour mixing more flexible, I had a paint shop mix a selection of base wall paint colours that are commonly used in traditional painting. Instead of relying on ready-made colours, I mixed every shade myself throughout the project, which was a valuable learning experience. \n\n Unlike many of my previous artworks, I didn't simply copy a reference image. Instead, I combined multiple references while continuously adjusting the composition as the mural evolved. For example, the fox's pose was created from several photographs because I couldn't find a reference that matched exactly what I envisioned. I also studied real birch trees outdoors to better understand how sunlight affects their bark before painting them into the mural.",
+                                // refection
+                                result:         "This project took considerably longer than I originally expected and wasn't finished in time for my mother's birthday. Even so, I didn't want to compromise on the level of detail. Small discoveries, such as the hidden ant hill beneath the bathroom cabinet or the mouse hiding in the undergrowth, reward viewers who take the time to explore the mural. \n\n I'm incredibly proud of the final result. It perfectly matches my mother's love for nature and has become a unique centrepiece in her home. The project taught me a great deal about composition, colour mixing, large-scale planning, and working without relying entirely on a single reference image. Although it confirmed that I enjoy creating murals, it also made me realise just how much time highly detailed wall paintings require, and that I would probably approach projects of this scale differently in the future.",
                                 img_01:         "../src/assets/images/art/Forest/IMG_20260329_092812.jpg",
                                 img_02:         "../src/assets/images/art/Forest/IMG_20260329_092921.jpg",
                                 imgList:        [
@@ -586,28 +611,36 @@ export default {
                         id:             "#lion",
                         field:          "#art",
                         img:            "../src/assets/images/art/Lion/IMG_20251015_083329_cropped.jpg",
-                        imgAlt:         "Mural of a lion with antlers and ears of a deer, made with gold spraypaint, details are made with black and white wall paint.",
-                        title:          "Mytical Lion",
-                        description:    "For a redecoration of one of my rooms in gothic/bohemion style I created a mural of a mytical creature with the face of a lion and ears en antlers of a deer.",
+                        imgAlt:         "Wall mural of a mythical lion with deer antlers, painted with gold spray paint and detailed using black and white wall paint.",
+                        title:          "Mythical Lion",
+                        description:    "As part of redesigning my bedroom in a gothic and bohemian style, I created a mural of a mythical creature with the face of a lion and the ears and antlers of a roe deer.",
                         urlBtn:         "project.html#lion",
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Mural"], //sort project
+                                websiteType:    ["Wall Mural"], //sort project
                                 img:            "../src/assets/images/art/Lion/IMG_20250920_183045.jpg",
-                                imgAlt:         "Mural of a lion with antlers and ears of a deer, made with gold spraypaint, details are made with black and white wall paint.",
-                                title:          "Mytical Lion",
+                                imgAlt:         "Wall mural of a mythical lion with deer antlers, painted with gold spray paint and detailed using black and white wall paint.",
+                                title:          "Mythical Lion",
                                 languages:      ["Personal Work"], //sort projectrole
-                                library:        ["@ home"], //company
-                                date:           "September 2025"
+                                library:        ["Home"], //company
+                                date:           "September 2025",
+                                projectType:    "Personal project",
+                                medium:         "Wall mural",
+                                materials:      "Gold spray paint, black and white wall paint",
+                                location:       "Private residence",
+                                duration:       "+- one week"
                             },
                             {
                                 id:             "Project_Content",
                                 
-                                introduction:   "introduction of the project, what I did, what I learned, etc.",
-                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
-                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
-                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                introduction:   "This mural was created as part of the complete redesign of my bedroom. I wanted to move away from the room's original appearance and create a space that better reflected my personal style. Inspired by gothic and bohemian interiors, I painted two walls black and one in a deep green tone, decorated the room with vintage picture frames, and planned several future artworks to complete the space. \n\n The lion mural became the centrepiece of the room, bringing together my love for mythology, nature, and expressive animal portraits.",
+                                // concept & inspiration
+                                challenges:     "The idea for this creature came from combining two different inspirations. I've always liked the majestic appearance of lions, especially their long, wild mane, while antlers add a mythical and almost fantasy-like character. By combining the face of a lion with the ears and antlers of a roe deer, I created a creature that feels both powerful and mysterious. \n\n The visual style was inspired by a black, white, and gold lion painting I discovered on Pinterest. I immediately fell in love with the limited colour palette and dramatic contrast, and decided to create my own interpretation using those colours.",
+                                // creation process
+                                approach:       "To create the mural, I gathered reference photographs of both a lion and a roe deer. Using a projector, I projected the references onto the wall to sketch the initial outlines. Because the two animals came from different photographs, matching their proportions and viewing angles wasn't always straightforward. At the time I hadn't drawn for quite a while, so using a projector gave me the confidence to tackle such a large wall painting. \n\n The first layers were applied with gold spray paint, which was my first time working with this medium. Once the base colours were finished, I added highlights using white wall paint. Unfortunately, the paint was several years old and had become thick and lumpy, making it difficult to apply cleanly. Although it made the detailing more challenging, the uneven texture unexpectedly added an interesting relief to the mural. \n\n While adding the highlights, I noticed another issue. Because I had combined two different reference photos, the light source on the lion and the antlers came from different directions. Rather than leaving the inconsistency, I repainted the lighting on the antlers so that the entire creature was illuminated from a single, believable light source. \n\n The mural was completed through multiple layers of gold, white, and finally black wall paint, gradually refining the details and increasing the overall contrast.",
+                                // reflection
+                                result:         "This project was a valuable learning experience. It was my first time incorporating spray paint into an artwork, and I learned how important consistent lighting is when combining multiple reference images into a single composition. \n\n Despite the challenges, I'm very proud of the final result. The mural became the focal point of my redesigned bedroom and perfectly captures the atmosphere I wanted to create. Looking back, it marks an important step in becoming more confident with large-scale murals and experimenting with new materials and techniques.",
                                 img_01:         "../src/assets/images/art/Lion/IMG_20250920_183045.jpg",
                                 img_02:         "../src/assets/images/art/Lion/IMG_20250920_183045.jpg",
                                 imgList:        [
@@ -617,7 +650,7 @@ export default {
                                     "../src/assets/images/art/Lion/IMG_20250917_210016.jpg",
                                     "../src/assets/images/art/Lion/IMG_20250920_183045.jpg"
                                 ],
-                                colors:         ["#F4F4F4", "#000000", "Gold"],
+                                colors:         ["#F4F4F4", "#000000", "#D4AF37"],
 
                                 textBtn_1:      "",
                                 textBtn_2:      "",
@@ -636,30 +669,35 @@ export default {
                         id:             "#bear",
                         field:          "#art",
                         img:            "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
-                        imgAlt:         "Pastel drawing of a bear, the bear is looking to the side and is roaring, the drawing is made with pastel on black paper.",
-                        title:          "Bear",
-                        description:    "As part of my drawing course at the Art Academy, I created a pastel drawing of a bear, using a stunning photograph as reference.",
+                        imgAlt:         "Pastel drawing of a roaring bear looking to the side, created with pastel on black paper.",
+                        title:          "Bear, pastel study",
+                        description:    "Created during a drawing course at the Art Academy, this pastel study recreates a reference photograph of a roaring bear.",
                         urlBtn:         "project.html#bear",
                         sections:       [
                             {
                                 id:             "Project_Top",
                                 websiteType:    ["Pastel drawing"], //sort project
                                 img:            "../src/assets/images/art/Bear/IMG_20260720_171126.jpg",
-                                imgAlt:         "Pastel drawing of a bear, the bear is looking to the side and is roaring, the drawing is made with pastel on black paper.",
-                                title:          "Bear",
+                                imgAlt:         "Pastel drawing of a roaring bear looking to the side, created with pastel on black paper.",
+                                title:          "Bear, pastel study",
                                 languages:      ["Student Work"], //sort projectrole
-                                library:        ["@ Art Academy Heusden-Zolder"], //company
-                                date:           "2019"
+                                library:        ["Art Academy Heusden-Zolder"], //company
+                                date:           "2019",
+                                projectType:    "Personal project",
+                                medium:         "Pastel drawing",
+                                materials:      "Pastel on black paper"
                             },
                             {
                                 id:             "Project_Content",
                                 
-                                introduction:   "introduction of the project, what I did, what I learned, etc.",
-                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
-                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
-                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                introduction:   "This pastel drawing was created as part of a drawing course at the Art Academy. The assignment was to recreate a reference photograph of a roaring bear using pastel on black paper.\n\nAlthough it was completed as a study, it remains one of my favourite drawings from the course and is a piece I'm still proud to include in my portfolio.",
+                                // Approach
+                                challenges:     "The drawing was built up on black paper using layers of pastel to gradually develop the fur, lighting, and facial features. Working on a dark surface meant that both the highlights and midtones had to be carefully established to create contrast and volume.\n\nThe focus of the assignment was on observation, colour, texture, and accurately translating the reference image into a finished pastel drawing.",
+                                approach:       "",
+                                // Reflection
+                                result:         "Looking back, this drawing represents an important moment in my development as an artist. It strengthened my observation skills and gave me valuable experience with pastel as a medium. Even years later, it remains one of the artworks I am most proud of from my time at the Art Academy.",
                                 img_01:         "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
-                                img_02:         "../src/assets/images/art/Bear/IMG_20260720_171134.jpg",
+                                img_02:         "../src/assets/images/art/Bear/IMG_20260720_171120.jpg",
                                 imgList:        [
                                     "../src/assets/images/art/Bear/IMG_20260720_171120.jpg",
                                     "../src/assets/images/art/Bear/IMG_20260720_171126.jpg",
@@ -687,7 +725,7 @@ export default {
                         img:            "../src/assets/images/art/BlueHues/IMG_20260721_135512.jpg",
                         imgAlt:         "Artwork where two artists were combined into one artwork, the artwork is made with a blue background and a drawing made with white, brown and black colors.",
                         title:          "The fall in Blue hues",
-                        description:    "As part of my art history course at the Art Academy, I made a project where two artists were combined into one artwork.",
+                        description:    "Created as part of an art history course at the Art Academy, this project combines the artistic influences of Luca Giordano and Pablo Picasso into a single composition.",
                         urlBtn:         "project.html#bluehues",
                         sections:       [
                             {
@@ -696,19 +734,25 @@ export default {
                                 img:            "../src/assets/images/art/BlueHues/IMG_20260721_135431.jpg",
                                 imgAlt:         "Artwork where two artists were combined into one artwork, the artwork is made with a blue background and a drawing made with white, brown and black colors.",
                                 title:          "The fall in Blue hues",
-                                languages:      ["Student"], //sort projectrole
-                                library:        ["@ Art Academy Heusden-Zolder"], //company
-                                date:           "2019"
+                                languages:      ["Student work"], //sort projectrole
+                                library:        ["Art Academy Heusden-Zolder"], //company
+                                date:           "2019",
+                                projectType:    "Personal project",
+                                medium:         "Mixed media drawing",
+                                materials:      "Conté pencils on paper with a blue hand-painted background",
                             },
                             {
                                 id:             "Project_Content",
                                 
                                 // The Fall of the Rebel Angels, by Luca Giordano, 1660/1665
                                 // Pablo Picasso, Blue Period, 1901-1904
-                                introduction:   "introduction of the project, what I did, what I learned, etc.",
-                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
-                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
-                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                introduction:   "This artwork was created as part of an art history assignment at the Art Academy. The goal was to combine two artists into a single artwork, regardless of the period they lived in or whether they had ever influenced one another.\n\nFor this project, I combined the work of Luca Giordano and Pablo Picasso, using their artistic styles and historical context as the basis for a new interpretation.",
+                                // concept
+                                challenges:     "The composition is based on The Fall of the Rebel Angels by Luca Giordano, while the overall atmosphere is inspired by Pablo Picasso's Blue Period. To reinforce this connection, the background was painted in blue before the drawing was developed using Conté pencils.\n\nRather than simply merging two visual styles, I wanted to create a narrative. In my interpretation, Picasso stands at the top of the composition while other artists fall beneath him, echoing the composition of Giordano's painting. The fallen figures, including Salvador Dalí and some of Picasso's former partners, represent my interpretation of the relationships and influence surrounding Picasso.",
+                                // inspired by
+                                approach:       "Inspired by: The Fall of the Rebel Angels (Luca Giordano) and Pablo Picasso's Blue Period.",
+                                // reflection
+                                result:         "This assignment challenged me to think beyond technique and instead focus on storytelling through art history. Rather than copying existing artworks, I had to analyse the characteristics of two artists and combine them into a single concept that remained visually connected to both.\n\nLooking back, I still enjoy how the composition, colour palette, and symbolism come together to tell a new story while remaining recognisable as a dialogue between two very different artists.",
                                 img_01:         "../src/assets/images/art/BlueHues/IMG_20260721_135512.jpg",
                                 img_02:         "../src/assets/images/art/BlueHues/IMG_20260721_135450.jpg",
                                 imgList:        [
@@ -738,27 +782,32 @@ export default {
                         field:          "#art",
                         img:            "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
                         imgAlt:         "Drawing of a boy standing at a table in the artstyle pointïsme.",
-                        title:          "A Boy, pointïsme",
-                        description:    "As part of my drawing course at the Art Academy, I created a pointïsme drawing of a boy standing at a table, using an old painting as reference.",
+                        title:          "Boy, pointillism study",
+                        description:    "Created during a drawing course at the Art Academy, this pointillism study recreates part of an old painting using black fineliner on white paper.",
                         urlBtn:         "project.html#boy",
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Drawing"], //sort project
+                                websiteType:    ["Pointillism Drawing"], //sort project
                                 img:            "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
                                 imgAlt:         "Drawing of a boy standing at a table in the artstyle pointïsme.",
-                                title:          "A Boy, pointïsme",
-                                languages:      ["Student"], //sort projectrole
-                                library:        ["@ Art Academy Heusden-Zolder"], //company
-                                date:           "2019"
+                                title:          "Boy, pointillism study",
+                                languages:      ["Student work"], //sort projectrole
+                                library:        ["Art Academy Heusden-Zolder"], //company
+                                date:           "2019",
+                                projectType:    "Personal project",
+                                medium:         "Fineliner drawing",
+                                materials:      "Black fineliner on white paper",
                             },
                             {
                                 id:             "Project_Content",
                                 
-                                introduction:   "introduction of the project, what I did, what I learned, etc.",
-                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
-                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
-                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                                introduction:   "This drawing was created during a drawing course at the Art Academy. The assignment was to recreate part of an old painting in the style of pointillism using black fineliners on white paper.\n\nAlthough it was completed as a study, I chose to include it in my portfolio because it represents a technique that I genuinely enjoy working with.",
+                                // Approach
+                                challenges:     "The drawing was built entirely from thousands of individual dots. By varying the density of the stippling, I gradually created the values, shadows, and depth of the original painting without using traditional lines or shading.\n\nWorking in pointillism requires patience and consistency, as every area is developed dot by dot until the desired level of contrast is achieved.",
+                                approach:       "",
+                                // Reflection
+                                result:         "One of the reasons I wanted to include this drawing is because of the technique itself. I find working in pointillism surprisingly relaxing. Although the process is repetitive and time-consuming, I often become completely absorbed in placing one dot after another until the image slowly starts to emerge. For me, the technique feels almost meditative, which is one of the reasons I enjoy returning to it.",
                                 img_01:         "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
                                 img_02:         "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
                                 imgList:        [
