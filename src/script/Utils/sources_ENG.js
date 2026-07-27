@@ -234,11 +234,12 @@ export default {
                 id:         "Projects_List",
                 projects:   [
                     // landscape design
+                        // De Plas
                     {
                         id:             "#de-plas",
                         field:          "#landscape-design",
-                        img:            "../src/assets/icons/cubes-stacked.svg",
-                        imgAlt:         "...",
+                        img:            "../src/assets/images/landscapedesign/De_Plas/Watersportzone.png",
+                        imgAlt:         "Design of the watersports area in Recreational Domain De Plas.",
                         title:          "De Plas",
                         description:    "Redesigned Recreational Domain De Plas into a future-proof destination that seamlessly combines recreation, nature, accessibility, and event infrastructure.",
                         urlBtn:         "project.html#de-plas",
@@ -246,12 +247,13 @@ export default {
                             {
                                 id:             "Project_Top",
                                 websiteType:    ["Landscape design", "Public design"], //sort project
-                                img:            "../src/assets/icons/cubes-stacked.svg",
-                                imgAlt:         "boxes stacked on top of each other",
-                                title:          "The redevelopment of Recreational Domain De Plas",
+                                img:            "../src/assets/images/landscapedesign/De_Plas/Watersportzone.png",
+                                imgAlt:         "Design of the watersports area in Recreational Domain De Plas.",
+                                title:          "De Plas",
                                 languages:      ["Professional"], //sort projectrole
                                 library:        ["ANB"], //company
-                                date:           "2020 - 2023"
+                                date:           "2020 - 2023",
+                                Location:       "Binnenvaartstraat, Houthalen-Helchteren, Limburg",
                             },
                             {
                                 id:             "Project_Content",
@@ -261,10 +263,17 @@ export default {
                                 approach:       "I developed the project through an iterative design process, starting with hand sketches and gradually refining the concept into detailed technical plans in AutoCAD. Regular site visits and design discussions with stakeholders helped ensure that the proposals remained both realistic and aligned with operational requirements. Using Civil 3D and survey data, I calculated earthworks and adjusted the design to work efficiently with the existing terrain. Key interventions included reshaping shorelines to improve safety and ecological value, creating an accessible walking loop, redesigning parking areas with stronger landscape integration, and developing infrastructure that supports event logistics while preserving open recreational space.",
                                 result:         "The result is a comprehensive landscape design that strengthens the recreational identity of De Plas while improving accessibility, safety, ecological quality, and visitor experience. The design creates a more coherent and attractive environment, encourages visitors to remain within the recreation domain rather than placing pressure on nearby sensitive nature areas, and provides infrastructure that supports both daily use and major events. The project further strengthened my skills in large-scale landscape planning, stakeholder coordination, technical design development, and balancing ecological and recreational objectives.",
 
-                                img_01:         "",
-                                img_02:         "../src/assets/images/map/img.png",
+                                img_01:         "../src/assets/images/landscapedesign/De_Plas/Onthaal_En_Zwemzone.png",
+                                img_02:         "../src/assets/images/landscapedesign/De_Plas/Watersportzone.png",
                                 imgList:        [
-                                    "../src/assets/images/map/img.png",
+                                    "../src/assets/images/landscapedesign/De_Plas/Onthaal_En_Parking.png",
+                                    "../src/assets/images/landscapedesign/De_Plas/Paintball_En_Eventementenzone.png",
+                                    "../src/assets/images/landscapedesign/De_Plas/Zone_Voor_Paintballveld.png",
+                                    "../src/assets/images/landscapedesign/De_Plas/Eventementenzone.png",
+                                    "../src/assets/images/landscapedesign/De_Plas/Onthaal_En_Zwemzone.png",
+                                    "../src/assets/images/landscapedesign/De_Plas/Parking.png",
+                                    "../src/assets/images/landscapedesign/De_Plas/Watersportzone.png",
+                                    "../src/assets/images/landscapedesign/De_Plas/Busrotonde.png",
                                 ],
                                 colors:         [],
 
@@ -275,29 +284,38 @@ export default {
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "project.html#previous-project",
-                                next:           "project.html#next-project"
+                                previous:       "project.html#School-Velm",
+                                next:           "project.html#lookout-platforms"
                             }
                         ]
                     },
+                        // lookout platforms
                     {
                         id:             "#lookout-platforms",
                         field:          "#landscape-design",
-                        img:            "../src/assets/images/lookout-platforms/view-on-top.jpg",
-                        imgAlt:         "view of the nature reservate Webbekomsbroek, on top of the lookout platform",
+                        img:            "../src/assets/images/landscapedesign/Lookout_Platforms/view-on-top.jpg",
+                        imgAlt:         "View of the nature reservate Webbekomsbroek, on top of the lookout platform.",
                         title:          "Lookout platforms",
-                        description:    "I designed two viewing platforms at the locks in the Webbekomsbroek nature reserve near Diest.",
+                        description:    "Design of two viewing platforms at the locks in the Webbekomsbroek nature reserve.",
                         urlBtn:         "project.html#lookout-platforms",
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Public design"], //sort project
-                                img:            "../src/assets/images/lookout-platforms/P2_front-side_finished.jpg",
+                                img:            "../src/assets/images/landscapedesign/Lookout_Platforms/P2_front-side_finished.jpg",
                                 imgAlt:         "The front side of the wooden lookout platform. There is an intrance for the main level and a staircase to go on top of the platform.",
-                                title:          "tower",
+                                title:          "Lookout platforms",
+
+                                projectCat:     ["Public design"],
+                                date:           "2022 - 2023",
+                                location:       "Webbekomsbroek nature reserve, Diest, Flemish Brabant",
+                                role:           "Landscape architect",
+                                sortProject:    ["Public design"],
+                                client:         "Local forest ranger, ANB",
+                                company:        "Agency for Nature and Forests (ANB)",
+
+                                websiteType:    ["Public design"], //sort project
                                 languages:      ["Professional"], //sort projectrole
                                 library:        ["ANB"], //company
-                                date:           "2022 - 2023"
                             },
                             {
                                 id:             "Project_Content",
@@ -307,48 +325,57 @@ export default {
                                 approach: "Through a series of design sketches, I explored different options for the location and construction of the platforms. After discussions with stakeholders, the decision was made to position the platforms alongside the lock structures rather than on top of them. This approach also created the opportunity to incorporate sheltered resting areas beneath the platforms. The design was carefully adapted to its surroundings, with particular attention given to accessibility, views, and material selection. In collaboration with a structural engineer, the timber and steel components were further developed and technically detailed for construction.",
                                 result: "The result is a pair of viewing platforms that successfully integrate technical infrastructure into the landscape while offering visitors attractive viewpoints over the Webbekomsbroek nature reserve. By combining accessibility, functionality, and a thoughtful material palette, the platforms enhance both the visitor experience and the character of the site. The project strengthened my skills in designing landscape structures and translating complex technical and environmental requirements into a coherent and buildable design.",
 
-                                img_01:         "../src/assets/images/lookout-platforms/view-on-top.jpg",
-                                img_02:         "../src/assets/images/lookout-platforms/P2_front-side_finished.jpg",
+                                img_01:         "../src/assets/images/landscapedesign/Lookout_Platforms/view-on-top.jpg",
+                                img_02:         "../src/assets/images/landscapedesign/Lookout_Platforms/P2_front-side_finished.jpg",
                                 imgList:        [
-                                    "../src/assets/images/lookout-platforms/P2_front_finished.jpg",
-                                    "../src/assets/images/lookout-platforms/P2_front-side_finished.jpg",
-                                    "../src/assets/images/lookout-platforms/view-on-top.jpg",
-                                    // "../src/assets/images/lookout-platforms/P1_front_work-in-progress.jpg",
-                                    "../src/assets/images/lookout-platforms/P1_front-side_finished.jpg",
-                                    "../src/assets/images/lookout-platforms/P1_side_finished.jpg"
+                                    "../src/assets/images/landscapedesign/Lookout_Platforms/P2_front_finished.jpg",
+                                    "../src/assets/images/landscapedesign/Lookout_Platforms/P2_front-side_finished.jpg",
+                                    "../src/assets/images/landscapedesign/Lookout_Platforms/view-on-top.jpg",
+                                    // "../src/assets/images/landscapedesign/Lookout_Platforms/P1_front_work-in-progress.jpg",
+                                    "../src/assets/images/landscapedesign/Lookout_Platforms/P1_front-side_finished.jpg",
+                                    "../src/assets/images/landscapedesign/Lookout_Platforms/P1_side_finished.jpg"
                                 ],
                                 colors:         [],
 
-                                textBtn_1:      "",
+                                textBtn_1:      "Lookout tower in Borgloon",
                                 textBtn_2:      "",
-                                urlBtn_1:       "",
+                                urlBtn_1:       "project.html#tower",
                                 urlBtn_2:       "",
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "project.html#previous-project",
-                                next:           "project.html#next-project"
+                                previous:       "project.html#de-plas",
+                                next:           "project.html#zoet-water"
                             }
                         ]
                     },
+                        // Zoet Water
                     {
-                        id:             "#tower",
+                        id:             "#zoet-water",
                         field:          "#landscape-design",
-                        img:            "../src/assets/icons/cubes-stacked.svg",
-                        imgAlt:         "boxes stacked on top of each other",
-                        title:          "tower",
-                        description:    "description of the project.",
-                        urlBtn:         "project.html#tower",
+                        img:            "../src/assets/images/landscapedesign/Zoet_Water/Illustration.jpg",
+                        imgAlt:         "Plan of the Zoet Water ponds in Oud-Heverlee, with the Vaalbeek flowing alongside the ponds.",
+                        title:          "Zoet Water",
+                        description:    "As a landscape architect, I contributed to the development of a future vision for the Zoet Water ponds in Oud-Heverlee as part of a multidisciplinary project team.",
+                        urlBtn:         "project.html#zoet-water",
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Landscape design", "Garden Design", "Urban design", "Public design", "Semi-public design"], //sort project
-                                img:            "../src/assets/icons/cubes-stacked.svg",
-                                imgAlt:         "boxes stacked on top of each other",
+                                img:            "../src/assets/images/landscapedesign/Zoet_Water/Illustration.jpg",
+                                imgAlt:         "Plan of the Zoet Water ponds in Oud-Heverlee, with the Vaalbeek stream flowing through the site.",
                                 title:          "Zoet Water",
+
+                                projectCat:     ["Landscape design", "Public design"],
+                                date:           "2022 - January 2023",
+                                location:       "Zoet Water, Oud-Heverlee, Flemish Brabant",
+                                role:           "Landscape architect",
+                                sortProject:    ["Landscape design", "Public design"],
+                                client:         "Flemish Brabant, city Oud-Heverlee en other partners",
+                                company:        "Agency for Nature and Forests (ANB)",
+
+                                websiteType:    ["Landscape design", "Public design"], //sort project
                                 languages:      ["Professional"], //sort projectrole
                                 library:        ["ANB"], //company
-                                date:           "2022 - jan 2023"
                             },
                             {
                                 id:             "Project_Content",
@@ -357,55 +384,76 @@ export default {
                                 challenges:     "The ecological quality of the ponds had been under pressure for many years. Due to the existing cascade system of the Vaalbeek, fish migration was impossible, and several pond edges were in poor condition. One of the main challenges was finding a solution that would improve the ecological functioning of the area while remaining technically feasible. Factors such as elevation differences, water levels, available space, and budget constraints had to be carefully considered throughout the design process.",
                                 approach:       "The concept was developed collaboratively within the project team, where different scenarios for the reconfiguration of the Vaalbeek were explored. Ultimately, the decision was made to separate the stream from the ponds and allow it to flow again in its own channel. As part of the design team, I contributed to the further development of the landscape design. During the final phase of my involvement, I used cross-sections to study how the stream could meander through the site and how elevation differences could be resolved to support fish migration. In addition, I carried out earthworks calculations in Civil 3D to determine how much soil could be reused on-site and how much additional material would be required.",
                                 result:         "The result was an approved concept design that provided a strong foundation for the future restoration of the area. By separating the Vaalbeek from the ponds, the project introduced a sustainable solution that improves the ecological quality of the water system and restores opportunities for fish migration. At the same time, space was created for recreational elements that bring visitors closer to the water and surrounding nature. This project further strengthened my skills in multidisciplinary collaboration, technical analysis, and translating ecological objectives into a landscape design.",
-                                img_01:         "",
-                                img_02:         "../src/assets/images/map/img.png",
+                                img_01:         "../src/assets/images/landscapedesign/Zoet_Water/Illustration.jpg",
+                                img_02:         "../src/assets/images/landscapedesign/Zoet_Water/240114_luchtfoto_plan.jpg",
                                 imgList:        [
-                                    "../src/assets/images/map/img.png",
+                                    "../src/assets/images/landscapedesign/Zoet_Water/Illustration.jpg",
+                                    "../src/assets/images/landscapedesign/Zoet_Water/240114_luchtfoto_plan.jpg"
                                 ],
                                 colors:         [],
 
-                                textBtn_1:      "",
+                                textBtn_1:      "News article about the project",
                                 textBtn_2:      "",
-                                urlBtn_1:       "",
+                                urlBtn_1:       "https://pers.vlaamsbrabant.be/startschot-voor-het-ecologisch-herstel-van-de-vijvers-van-het-zoet-water-in-oud-heverlee",
                                 urlBtn_2:       "",
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "project.html#previous-project",
-                                next:           "project.html#next-project"
+                                previous:       "project.html#lookout-platforms",
+                                next:           "project.html#tower"
                             }
                         ]
                     },
+                        // Lookout tower
                     {
                         id:             "#tower",
                         field:          "#landscape-design",
-                        img:            "../src/assets/icons/cubes-stacked.svg",
-                        imgAlt:         "boxes stacked on top of each other, logo of project tower",
-                        title:          "tower",
-                        description:    "description of the project.",
+                        img:            "../src/assets/images/landscapedesign/Tower/Sideview_1.jpg",
+                        imgAlt:         "Side view of the wooden lookout tower in Borgloon, Limburg.",
+                        title:          "Standard model lookout towers",
+                        description:    "Flexible standard models for lookout towers that can be adapted to the specific context of different nature reserves. The first implementation was a single-level tower constructed in 2021.",
                         urlBtn:         "project.html#tower",
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Landscape design", "Garden Design", "Urban design", "Public design", "Semi-public design"], //sort project
-                                img:            "../src/assets/icons/cubes-stacked.svg",
-                                imgAlt:         "boxes stacked on top of each other, logo of project tower",
-                                title:          "tower",
-                                languages:      ["Student", "Internship", "Professional"], //sort projectrole
-                                library:        ["EHB", "Tielens Tuinen", "ANB"], //company
-                                date:           "Month 20.."
+                                img:            "../src/assets/images/landscapedesign/Tower/Sideview_1.jpg",
+                                imgAlt:         "Side view of the wooden lookout tower in Borgloon, Limburg.",
+                                title:          "Standard model lookout towers",
+
+                                projectCat:     ["Public design"],
+                                date:           "2020 - 2023",
+                                location:       "Vilsterbron, Tongeren-Borgloon, Limburg",
+                                role:           "Landscape architect",
+                                sortProject:    ["Public design"],
+                                client:         "Agency for Nature and Forests (ANB)",
+                                company:        "Agency for Nature and Forests (ANB)",
+
+                                websiteType:    ["Public design"], //sort project
+                                languages:      ["Professional"], //sort projectrole
+                                library:        ["ANB"], //company
                             },
                             {
                                 id:             "Project_Content",
                                 
-                                introduction:   "introduction of the project, what I did, what I learned, etc.",
-                                challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
-                                approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
-                                result:         "the result of the project, what I achieved, what I learned from it, etc.",
-                                img_01:         "",
-                                img_02:         "../src/assets/images/map/img.png",
+                                introduction:   "Within the Agency for Nature and Forests, rangers regularly requested lookout towers for nature reserves. At that time, only a standard design for bird hides was available, so my team leader asked me to develop a reusable design for lookout towers. The goal was to create a solution that could be applied across different nature reserves. The project resulted in a modular design with variations in height and width, depending on the context. The viewing tower in Borgloon became the first realised application of this concept.",
+                                challenges:     "The main challenge was to develop a single coherent design that was flexible enough to function in different nature reserves, while remaining sufficiently standardised to allow reuse. In addition, the design had to meet high requirements in terms of structural stability, safety, accessibility, and durability, while offering variations in height to suit different locations.",
+                                approach:       "I started with sketch designs exploring different typologies and height variations, ranging from single-level to multi-level towers. I then developed the structural and spatial concept into a coherent standard model. This included defining the spatial layout, staircase configuration, viewing openings, and the detailing of the wooden façade cladding. Material choices were aligned with the organisation’s existing guidelines. In collaboration with a structural engineer, the structural components were further dimensioned, where the engineer was responsible for calculating columns, beams, and metal connections, while I mainly defined the spatial and architectural design. The final concept was presented to rangers and received positive feedback.",
+                                result:         "The project resulted in a flexible standard model for lookout towers that can be adapted to the specific context of different nature reserves. The first implementation took place in Borgloon, where a single-level tower was constructed in 2021. After that, the model was further applied and explored for other locations with different site conditions. This project strengthened my experience in developing reusable design concepts, technically detailing structures, and collaborating with engineers."
+,
+                                img_01:         "../src/assets/images/landscapedesign/Tower/View_on_top_2.jpg",
+                                img_02:         "../src/assets/images/landscapedesign/Tower/Sideview_1.jpg",
                                 imgList:        [
-                                    "../src/assets/images/map/img.png",
+                                    "../src/assets/images/landscapedesign/Tower/Frontview.jpg",
+                                    "../src/assets/images/landscapedesign/Tower/Sideview_1.jpg",
+                                    "../src/assets/images/landscapedesign/Tower/Sideview_2.jpg",
+                                    "../src/assets/images/landscapedesign/Tower/Plan_sidesections.png",
+                                    "../src/assets/images/landscapedesign/Tower/Plan_floorsections_small_tower.png",
+                                    "../src/assets/images/landscapedesign/Tower/Plan_floorsections_wide_tower.png",
+                                    "../src/assets/images/landscapedesign/Tower/Staircase.jpg",
+                                    "../src/assets/images/landscapedesign/Tower/Detail_lookout_windows.jpg",
+                                    "../src/assets/images/landscapedesign/Tower/Detail_staircase.jpg",
+                                    "../src/assets/images/landscapedesign/Tower/View_on_top_1.jpg",
+                                    "../src/assets/images/landscapedesign/Tower/View_on_top_2.jpg"
                                 ],
                                 colors:         [],
 
@@ -416,11 +464,217 @@ export default {
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "project.html#previous-project",
-                                next:           "project.html#next-project"
+                                previous:       "project.html#zoet-water",
+                                next:           "project.html#elzenhof"
                             }
                         ]
                     },
+                        // Elzenhof
+                    {
+                        id:             "#elzenhof",
+                        field:          "#landscape-design",
+                        img:            "../src/assets/images/landscapedesign/Elzenhof/3D_beeld.png",
+                        imgAlt:         "3D visualization of the design for the Elzenhof site in Nieuwland, Aarschot.",
+                        title:          "Elzenhof - Nieuwland",
+                        description:    "This studentproject explores how an existing industrial area within a valley landscape can be redesigned into a more biodiverse and landscape-integrated environment.",
+                        urlBtn:         "project.html#elzenhof",
+                        sections:       [
+                            {                               
+                                id:             "Project_Top",
+                                img:            "../src/assets/images/landscapedesign/Elzenhof/3D_beeld.png",
+                                imgAlt:         "3D visualization of the design for the Elzenhof site in Nieuwland, Aarschot.",
+                                title:          "Elzenhof - Nieuwland",
+
+                                projectCat:     ["Landscape", "Public Area", "Semi-public Area"],
+                                date:           "February - June 2017",
+                                location:       "Nieuwland industrial area, Aarschot, Flemish Brabant",
+                                role:           "Student",
+                                sortProject:    ["Landscape design", "Public space design", "Semi-public space design"],
+                                client:         "",
+                                company:        "Erasmus Hogeschool Brussel (EHB)",
+
+                                websiteType:    ["Urban design", "Public space design", "Semi-public space design"], //sort project
+                                languages:      ["Student"], //sort projectrole
+                                library:        ["EHB"], //company
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "For the school project Elzenhof, I developed a design for a site located in the Nieuwland industrial area in Aarschot. The project explores how an existing industrial area within a valley landscape can be redesigned into a more biodiverse and landscape-integrated environment.",
+                                challenges:     "The site is located in a valley area with flood sensitivity, which formed an important design constraint. In addition, the area consisted of a typical industrial landscape with limited ecological cohesion. The challenge was to reconcile water management, industrial activity, and landscape quality within a single coherent design approach.",
+                                approach:       "The design is structured around water as the main organizing element. It introduces ponds and water surfaces to buffer excess water during wet periods, combined with natural water purification systems. Along the roads, rain gardens with avenue trees were integrated to support infiltration. A green zone around the industrial buildings connects the adjacent Elzenhof forest park with the industrial area, supported by walking paths and green linkages. The existing buildings were also considered in the design, with attention to sustainable materials such as wooden façades, extensive glazing for natural light, green façades, and solar panels on the roofs.",
+                                result:         "The result is a conceptual design in which a conventional industrial area is reimagined as a green and water-resilient landscape. By combining water buffering, infiltration strategies, and green structures with a renewed approach to the built environment, a more coherent and future-oriented industrial landscape is created that integrates with the surrounding context."
+,
+                                img_01:         "../src/assets/images/landscapedesign/Elzenhof/Detailsnede_Nieuwlandlaan.png",
+                                img_02:         "../src/assets/images/landscapedesign/Elzenhof/Detailsnede_Nieuwlandpark.png",
+                                imgList:        [
+                                    "../src/assets/images/landscapedesign/Elzenhof/Ontwerpvoorstel.png",
+                                    "../src/assets/images/landscapedesign/Elzenhof/3D_beeld.png",
+                                    "../src/assets/images/landscapedesign/Elzenhof/Detailsnede_Nieuwlandlaan.png",
+                                    "../src/assets/images/landscapedesign/Elzenhof/Detailsnede_Nieuwlandpark.png",
+                                ],
+                                colors:         [],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#tower",
+                                next:           "project.html#school-velm"
+                            }
+                        ]
+                    },
+                        // School Velm
+                    {
+                        id:             "#School-Velm",
+                        field:          "#landscape-design",
+                        img:            "../src/assets/images/landscapedesign/School_Velm/Grondplan.jpg",
+                        imgAlt:         "Plan of the school playground in Velm, with the new design for the playground.",
+                        title:          "School playground",
+                        description:    "The school playground in Velm was redesigned to create a greener and more interactive outdoor environment for the pupils, incorporating play, nature, and learning elements.",
+                        urlBtn:         "project.html#School-Velm",
+                        sections:       [
+                            {
+                                id:             "Project_Top",
+                                img:            "../src/assets/images/landscapedesign/School_Velm/Grondplan.jpg",
+                                imgAlt:         "Plan of the school playground in Velm, with the new design for the playground.",
+                                title:          "School playground",
+
+                                projectCat:     ["Semi-public area"],
+                                date:           "October - December 2017",
+                                location:       "Primary School 't Vlindertje, Battelestraat 18, Sint-Truiden, Limburg",
+                                role:           "Internship landscape architect",
+                                sortProject:    ["Semi-public design"],
+                                client:         "Primary School 't Vlindertje",
+                                company:        "Regional Landscapes Hesbaye & Voeren (RLHV)",
+
+                                websiteType:    ["Semi-public design"], //sort project
+                                languages:      ["Internship"], //sort projectrole
+                                library:        ["RLHV"], //company
+                            },
+                            {
+                                id:             "Project_Content",
+                                
+                                introduction:   "The school playground consisted of a paved area and a large grass surface, with a number of trees and other existing vegetation along the edge of the site. The school’s goal was to further green the playground and make it more interactive for the pupils.",
+                                challenges:     "The existing playground offered limited variation in use, with a strong focus on hard surfaces and open grass areas. The challenge was to transform it into a more diverse and engaging outdoor environment that combines play, nature, and learning, while working within the constraints of the existing site structure.",
+                                approach:       "The design introduces additional trees, including oak, maple, hornbeam, and walnut trees. Fruit trees such as plum, apple, and pear are planted in a structured grid, forming a small orchard with picnic tables. New play elements are added, including willow huts and tunnels, a sandpit, a mud kitchen, and a stage. A central amphitheatre provides a space for presentations, performances, and group activities. The football field is reduced in size and relocated, with extensive grass management around it to slow down the ball when it leaves the pitch. A slide is repositioned on a steeper slope within the playground. An educational zone is also introduced, including a vegetable garden, an outdoor kitchen, picnic areas, a fruit hedge, and a small water feature for nature-related learning. A narrow path connects the different parts of the playground, allowing teachers to move across the entire site.",
+                                result:         "The result is a greener and more diverse school playground that combines play, education, and nature. The design creates a varied outdoor environment that encourages children to explore, learn, and interact within a natural setting."
+,
+                                img_01:         "../src/assets/images/landscapedesign/School_Velm/Concept.png",
+                                img_02:         "../src/assets/images/landscapedesign/School_Velm/Grondplan.jpg",
+                                imgList:        [
+                                    "../src/assets/images/landscapedesign/School_Velm/Concept.png",
+                                    "../src/assets/images/landscapedesign/School_Velm/Grondplan.jpg",
+                                ],
+                                colors:         [],
+
+                                textBtn_1:      "",
+                                textBtn_2:      "",
+                                urlBtn_1:       "",
+                                urlBtn_2:       "",
+                            },
+                            {
+                                id:             "Project_Bottom",
+                                previous:       "project.html#elzenhof",
+                                next:           "project.html#de-plas"
+                            }
+                        ]
+                    },
+                        // Cuypergaerde
+                    // {
+                    //     id:             "#cuypergaerde",
+                    //     field:          "#landscape-design",
+                    //     img:            "../src/assets/icons/cubes-stacked.svg",
+                    //     imgAlt:         "boxes stacked on top of each other, logo of project tower",
+                    //     title:          "tower",
+                    //     description:    "description of the project.",
+                    //     urlBtn:         "project.html#cuypergaerde",
+                    //     sections:       [
+                    //         {
+                    //             id:             "Project_Top",
+                    //             websiteType:    ["Landscape design", "Garden Design", "Urban design", "Public design", "Semi-public design"], //sort project
+                    //             img:            "../src/assets/icons/cubes-stacked.svg",
+                    //             imgAlt:         "boxes stacked on top of each other, logo of project tower",
+                    //             title:          "tower",
+                    //             languages:      ["Student", "Internship", "Professional"], //sort projectrole
+                    //             library:        ["EHB", "Tielens Tuinen", "ANB"], //company
+                    //             date:           "Month 20.."
+                    //         },
+                    //         {
+                    //             id:             "Project_Content",
+                                
+                    //             introduction:   "introduction of the project, what I did, what I learned, etc.",
+                    //             challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
+                    //             approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
+                    //             result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                    //             img_01:         "",
+                    //             img_02:         "../src/assets/images/map/img.png",
+                    //             imgList:        [
+                    //                 "../src/assets/images/map/img.png",
+                    //             ],
+                    //             colors:         [],
+
+                    //             textBtn_1:      "",
+                    //             textBtn_2:      "",
+                    //             urlBtn_1:       "",
+                    //             urlBtn_2:       "",
+                    //         },
+                    //         {
+                    //             id:             "Project_Bottom",
+                    //             previous:       "project.html#previous-project",
+                    //             next:           "project.html#next-project"
+                    //         }
+                    //     ]
+                    // },
+                        // Egelpad
+                    // {
+                    //     id:             "#tower",
+                    //     field:          "#landscape-design",
+                    //     img:            "../src/assets/icons/cubes-stacked.svg",
+                    //     imgAlt:         "boxes stacked on top of each other, logo of project tower",
+                    //     title:          "tower",
+                    //     description:    "description of the project.",
+                    //     urlBtn:         "project.html#tower",
+                    //     sections:       [
+                    //         {
+                    //             id:             "Project_Top",
+                    //             websiteType:    ["Landscape design", "Garden Design", "Urban design", "Public design", "Semi-public design"], //sort project
+                    //             img:            "../src/assets/icons/cubes-stacked.svg",
+                    //             imgAlt:         "boxes stacked on top of each other, logo of project tower",
+                    //             title:          "tower",
+                    //             languages:      ["Student", "Internship", "Professional"], //sort projectrole
+                    //             library:        ["EHB", "Tielens Tuinen", "ANB"], //company
+                    //             date:           "Month 20.."
+                    //         },
+                    //         {
+                    //             id:             "Project_Content",
+                                
+                    //             introduction:   "introduction of the project, what I did, what I learned, etc.",
+                    //             challenges:     "challenges I faced during the project, how I overcame them, what I learned from them, etc.",
+                    //             approach:       "the approach I took to solve the challenges, how I structured my work, what I learned from it, etc.",
+                    //             result:         "the result of the project, what I achieved, what I learned from it, etc.",
+                    //             img_01:         "",
+                    //             img_02:         "../src/assets/images/map/img.png",
+                    //             imgList:        [
+                    //                 "../src/assets/images/map/img.png",
+                    //             ],
+                    //             colors:         [],
+
+                    //             textBtn_1:      "",
+                    //             textBtn_2:      "",
+                    //             urlBtn_1:       "",
+                    //             urlBtn_2:       "",
+                    //         },
+                    //         {
+                    //             id:             "Project_Bottom",
+                    //             previous:       "project.html#previous-project",
+                    //             next:           "project.html#next-project"
+                    //         }
+                    //     ]
+                    // },
                     // Art Projects
                         // Baphomet
                     {
@@ -828,6 +1082,7 @@ export default {
                         ]
                     },
                     // development
+                        // Prularia
                     {
                         id:             "#prularia",
                         field:          "#development",
@@ -880,6 +1135,7 @@ export default {
                             }
                         ]
                     },
+                        // Pizzaria
                     {
                         id:           "#pizzaria",
                         field:        "#development",
@@ -932,6 +1188,7 @@ export default {
                             }
                         ]
                     },
+                        // Treasure Hunt
                     {
                         id:             "#treasure-hunt",
                         field:          "#development",
@@ -983,6 +1240,7 @@ export default {
                             }
                         ]
                     },
+                        // Peekaboo
                     {
                         id:             "#peekaboo",
                         field:          "#development",
@@ -1029,6 +1287,7 @@ export default {
                             }
                         ]
                     },
+                        // Tamagotchi
                     {
                         id:             "#tamagotchi",
                         field:          "#development",
