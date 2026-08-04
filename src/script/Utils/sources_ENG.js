@@ -228,7 +228,16 @@ export default {
                     {   id:             "#development",
                         description:    "Below are some of the websites I have developed during my training as a full stack developer"
                     }                    
-                ]
+                ],
+                
+                textBtn_1:      "Landscape Design",
+                textBtn_2:      "Art",
+                textBtn_3:      "Development",
+                textBtn_4:      "All works",
+                urlBtn_1:       "./#landscape-design",
+                urlBtn_2:       "./#art",
+                urlBtn_3:       "./#development",
+                urlBtn_4:       "./",
             },
             {
                 id:         "Projects_List",
@@ -1086,7 +1095,7 @@ export default {
                     {
                         id:             "#prularia",
                         field:          "#development",
-                        img:            "../src/assets/images/development/prularia/prularia_logo.png",
+                        img:            "../src/assets/icons/crown.png",
                         imgAlt:         "crown, logo of project Prularia",
                         title:          "Prularia",
                         description:    "As a team of 9 developers, we built an e-commerce platform to gain hands-on experience with the principles of Scrum and Agile methodologies.",
@@ -1098,7 +1107,7 @@ export default {
                             {
                                 id:             "Project_Top",
                                 websiteType:    "e-commerce",
-                                img:            "../src/assets/images/development/prularia/prularia_logo.png",
+                                img:            "../src/assets/icons/crown.png",
                                 imgAlt:         "crown, logo of project Prularia",
                                 title:          "Prularia",
                                 languages:      ["JavaScript", "PHP", "CSS"],

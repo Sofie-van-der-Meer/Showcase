@@ -158,7 +158,7 @@ export default {
             },
             {
                 id:         "About_Volunteering",
-                title:      "Vrijwillerswerk",
+                title:      "Vrijwilligerswerk",
                 projects:   [
                     {
                         school:   "JNM",
@@ -232,7 +232,16 @@ export default {
                         id: "#development",
                         description: "Hieronder staan enkele websites die ik heb ontwikkeld tijdens mijn opleiding tot full-stack developer"
                     }
-                ]
+                ],
+                
+                textBtn_1:      "Landschapsontwerp",
+                textBtn_2:      "Kunst",
+                textBtn_3:      "Webdesign",
+                textBtn_4:      "All works",
+                urlBtn_1:       "./#landscape-design",
+                urlBtn_2:       "./#art",
+                urlBtn_3:       "./#development",
+                urlBtn_4:       "./",
             },
             {
                 id:         "Projects_List",
@@ -683,7 +692,16 @@ export default {
                             },
                             {
                                 id:             "Project_Content",
-                                
+
+                                text_01:        "For my youngest nephew, I created a mural of a dragon in his bedroom. This project was inspired by the mural I had painted for his older brother a few years earlier. Since my nephew loves dragons, my sister asked if I could create a dragon mural for his room as well.",
+                                text_02:        "The mural depicts a dragon breathing fire, with the flames illuminating its face and scales. I wanted to create a scene that tells a small story rather than simply painting the animal itself. My sister liked the concept but requested that the dragon not appear too frightening for a young child.",
+                                text_03:        "Since I had never drawn dragons before, I researched reference images to better understand their anatomy and appearance. I selected two designs that matched the scene I had in mind, and my nephew's family chose the one they liked best.",
+                                text_04:        "The project also provided valuable experience in planning a smaller wall mural over multiple sessions. Since I could only paint while my nephew wasn't using his room, I learned to organise the work efficiently and gained a better understanding of the time involved in completing a mural like this.",
+                                text_title_01:   "introductie",
+                                text_title_02:   "concept & inspiratie",
+                                text_title_03:   "uitvoering",
+                                text_title_04:   "resultaat",
+
                                 introduction:   "This wall mural was created for my youngest nephew after I had painted a mural for his older brother a few years earlier. Since he loves dragons, my sister asked if I could create a dragon mural for his bedroom as well.\n\nBesides creating the mural, the project gave me valuable experience in planning a smaller wall mural over multiple sessions. Since I could only paint while my nephew wasn't using his room, I learned to organise the work efficiently and gained a better understanding of the time involved in completing a mural like this.",
                                 // concept & inspiration
                                 challenges:     "Instead of painting a static dragon, I imagined a scene where the dragon was breathing fire, with the flames illuminating its face and scales. I liked the idea of telling a small story rather than simply painting the animal itself. My sister liked the concept as well, but asked me to make sure the dragon wouldn't look too frightening for a young child.\n\nSince I had never drawn dragons before, I searched for reference images to better understand their anatomy and appearance. I selected two designs that matched the scene I had in mind, and my nephew's family chose the one they liked best.",
@@ -1006,7 +1024,7 @@ export default {
                     {
                         id:             "#prularia",
                         field:          "#development",
-                        img:            "../src/assets/images/development/prularia/prularia_logo.png",
+                        img:            "../src/assets/icons/crown.png",
                         imgAlt:         "kroon, logo van project Prularia",
                         title:          "Prularia",
                         description:    "Als een team van 9 ontwikkelaars hebben we een e-commerceplatform gebouwd om praktijkervaring op te doen met de principes van Scrum en Agile-methodologieën.",
@@ -1018,7 +1036,7 @@ export default {
                             {
                                 id:             "Project_Top",
                                 websiteType:    "e-commerce",
-                                img:            "../src/assets/images/development/prularia/prularia_logo.png",
+                                img:            "../src/assets/icons/crown.png",
                                 imgAlt:         "kroon, logo van project Prularia",
                                 title:          "Prularia",
                                 languages:      ["JavaScript", "PHP", "CSS"],
@@ -1087,16 +1105,16 @@ export default {
                                 textBtn_2:      "Ga naar de code",
                                 urlBtn_1:       "https://demo.pizzaria.Sofie-van-der-Meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Pizzaria",
-                                img_01:         "../src/assets/images/pizzaria/structure.png",
-                                img_02:         "../src/assets/images/pizzaria/add-to-shoppingcart.png",
+                                img_01:         "../src/assets/images/development/pizzaria/structure.png",
+                                img_02:         "../src/assets/images/development/pizzaria/add-to-shoppingcart.png",
                                 imgList:        [
-                                    "../src/assets/images/pizzaria/home-page.png",
-                                    "../src/assets/images/pizzaria/add-to-shoppingcart.png",
-                                    "../src/assets/images/pizzaria/order-page.png",
-                                    "../src/assets/images/pizzaria/order-page_change-contactdetails.png",
-                                    "../src/assets/images/pizzaria/register-page.png",
-                                    "../src/assets/images/pizzaria/sql.svg",
-                                    "../src/assets/images/pizzaria/structure.png"
+                                    "../src/assets/images/development/pizzaria/home-page.png",
+                                    "../src/assets/images/development/pizzaria/add-to-shoppingcart.png",
+                                    "../src/assets/images/development/pizzaria/order-page.png",
+                                    "../src/assets/images/development/pizzaria/order-page_change-contactdetails.png",
+                                    "../src/assets/images/development/pizzaria/register-page.png",
+                                    "../src/assets/images/development/pizzaria/sql.svg",
+                                    "../src/assets/images/development/pizzaria/structure.png"
                                 ],
                                 colors:         ["#f5deb3", "#fffff0", "#ff0000", "#ffffff", "#000000"]
                             },
@@ -1142,13 +1160,13 @@ export default {
                                 textBtn_2:      "Ga naar de code",
                                 urlBtn_1:       "https://demo.treasurehunt.sofie-van-der-meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Treasure-Hunt",
-                                img_01:         "../src/assets/images/treasure-hunt/gamePlay.png",
-                                img_02:         "../src/assets/images/treasure-hunt/introGame_touch-device.png",
+                                img_01:         "../src/assets/images/development/treasure-hunt/gamePlay.png",
+                                img_02:         "../src/assets/images/development/treasure-hunt/introGame_touch-device.png",
                                 imgList:        [
-                                    "../src/assets/images/treasure-hunt/zoomIntoGame.png",
-                                    "../src/assets/images/treasure-hunt/gameStarts_touch-device_2.png",
-                                    "../src/assets/images/treasure-hunt/gamePlay.png",
-                                    "../src/assets/images/treasure-hunt/lostGame.png"
+                                    "../src/assets/images/development/treasure-hunt/zoomIntoGame.png",
+                                    "../src/assets/images/development/treasure-hunt/gameStarts_touch-device_2.png",
+                                    "../src/assets/images/development/treasure-hunt/gamePlay.png",
+                                    "../src/assets/images/development/treasure-hunt/lostGame.png"
                                 ],
                                 colors:         ["#F3FFC6", "#B6174B", "#1C5253", "#C3EB78", "#7F675B"]
                             },
@@ -1190,11 +1208,11 @@ export default {
                                 textBtn_2:      "Ga naar de code",
                                 urlBtn_1:       "https://demo.peekaboo.sofie-van-der-meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Peekaboo",
-                                img_01:         "../src/assets/images/peekaboo/model_1.png",
-                                img_02:         "../src/assets/images/peekaboo/model_4.png",
+                                img_01:         "../src/assets/images/development/peekaboo/model_1.png",
+                                img_02:         "../src/assets/images/development/peekaboo/model_4.png",
                                 imgList:        [
-                                    "../src/assets/images/peekaboo/model_1.png",
-                                    "../src/assets/images/peekaboo/model_4.png",
+                                    "../src/assets/images/development/peekaboo/model_1.png",
+                                    "../src/assets/images/development/peekaboo/model_4.png",
                                 ],
                                 colors:         ["#01cfe6", "#e9c201", "#d4d4d4", "#ca5d02", "#f2b8ce"]
                             },
@@ -1240,16 +1258,16 @@ export default {
                                 textBtn_2:      "Ga naar de code",
                                 urlBtn_1:       "https://demo.vampitest.sofie-van-der-meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Tamagotchi",
-                                img_01:         "../src/assets/images/tamagotchi/home-title.png",
-                                img_02:         "../src/assets/images/tamagotchi/batbat.png",
+                                img_01:         "../src/assets/images/development/tamagotchi/home-title.png",
+                                img_02:         "../src/assets/images/development/tamagotchi/batbat.png",
                                 imgList:        [
-                                    "../src/assets/images/tamagotchi/home.png",
-                                    "../src/assets/images/tamagotchi/device-cover-black.png",
-                                    "../src/assets/images/tamagotchi/device-cover-purple.png",
-                                    "../src/assets/images/tamagotchi/home-title.png",
-                                    "../src/assets/images/tamagotchi/device-cover-red.png",
-                                    "../src/assets/images/tamagotchi/batbat.png",
-                                    "../src/assets/images/tamagotchi/vampire.png",
+                                    "../src/assets/images/development/tamagotchi/home.png",
+                                    "../src/assets/images/development/tamagotchi/device-cover-black.png",
+                                    "../src/assets/images/development/tamagotchi/device-cover-purple.png",
+                                    "../src/assets/images/development/tamagotchi/home-title.png",
+                                    "../src/assets/images/development/tamagotchi/device-cover-red.png",
+                                    "../src/assets/images/development/tamagotchi/batbat.png",
+                                    "../src/assets/images/development/tamagotchi/vampire.png",
                                 ],
                                 colors:         ["#F4F4F4", "#000000", "#B41C1C", "#8C8C8C", "#6A4C9C"]
                             },

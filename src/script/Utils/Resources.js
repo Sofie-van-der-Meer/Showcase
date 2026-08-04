@@ -62,10 +62,12 @@ export default class Resources {
         sect2.appendChild(message);
     }
     setProperty(element, property, value) {
+        // console.log('setProperty', element, property, value);
         const propertyHandlers = {
             'alt':          (elem) => { if (elem instanceof HTMLImageElement) elem.alt = value; },
             'textContent':  (elem) => { if (elem instanceof HTMLElement) elem.textContent = value; },
             'href':         (elem) => { if (elem instanceof HTMLAnchorElement) elem.href = value; },
+            'textTitle':    (elem) => { if (elem instanceof HTMLElement) elem.children[0].textContent = value + ': \n '; },
         }
 
         if (propertyHandlers[property]) {
@@ -279,6 +281,8 @@ export default class Resources {
     checkResourceOfChild(parent, childClassName, arrResources, childName) { //name setResourceOfChild
         if (!arrResources) return;
 
+        console.log(childName);
+
         let arrResources_HasTextBtn = false;
         let elemChild = parent.getElementsByClassName(childClassName)[0];
 
@@ -307,11 +311,17 @@ export default class Resources {
     }
     checkKeyAndChildName(key, value, childName, elemChild) {
         const variants = [
-            { key: 'textBtn',   childName: 'urlBtn',    property: 'textContent'},
-            { key: 'textBtn_1', childName: 'urlBtn_1',  property: 'textContent'},
-            { key: 'textBtn_2', childName: 'urlBtn_2',  property: 'textContent'},
-            { key: 'urlBtn',    childName: 'url',       property: 'href'},
-            { key: 'imgAlt',    childName: 'img',       property: 'alt'},
+            { key: 'textBtn',       childName: 'urlBtn',    property: 'textContent'},
+            { key: 'textBtn_1',     childName: 'urlBtn_1',  property: 'textContent'},
+            { key: 'textBtn_2',     childName: 'urlBtn_2',  property: 'textContent'},
+            { key: 'textBtn_3',     childName: 'urlBtn_3',  property: 'textContent'},
+            { key: 'textBtn_4',     childName: 'urlBtn_4',  property: 'textContent'},
+            { key: 'text_title_01', childName: 'text_01',   property: 'textTitle'},
+            { key: 'text_title_02', childName: 'text_02',   property: 'textTitle'},
+            { key: 'text_title_03', childName: 'text_03',   property: 'textTitle'},
+            { key: 'text_title_04', childName: 'text_04',   property: 'textTitle'},
+            { key: 'urlBtn',        childName: 'url',       property: 'href'},
+            { key: 'imgAlt',        childName: 'img',       property: 'alt'},
         ]
         const variant = variants.find(v => v.key == key && v.childName == childName);
         if (variant) {
@@ -321,11 +331,11 @@ export default class Resources {
     }            
     checkChildName(childName, key, value, elemChild) {
         if (!value || value.length === 0) {
-            console.log('No value found for key: ' + key);
-            console.log('No value found for childName: ' + childName);
-            console.log(elemChild);
+            // console.log('No value found for key: ' + key);
+            // console.log('No value found for childName: ' + childName);
+            // console.log(elemChild);
 
-
+// text_nr toevoegen!
             (childName == 'urlBtn_1' || childName == 'urlBtn_2') ?
                 elemChild.parentElement.classList.add('hidden') :
                 elemChild.classList.add('hidden');
@@ -339,16 +349,29 @@ export default class Resources {
             case 'img_02':
             case 'img':
                 elemChild.src = value;
-                break;
+                if (value.startsWith('../src/assets/icons')) {
+                    elemChild.classList.add('img-icon');
+                }
+                                break;
             case 'imgList':
                 this.addImages(value, elemChild);
                 break;
+            case 'video':
+                console.log('video', value, elemChild);
+                elemChild.src = value;
             case 'previous':
             case 'next':
                 elemChild.textContent = key;       
-            case 'urlBtn':
             case 'urlBtn_1':
             case 'urlBtn_2':
+            case 'urlBtn_3':
+                // console.log(value, this.hashName);
+                if (value.endsWith(this.hashName)) {
+                    document.querySelectorAll('.sect-urlBtn_4').forEach(btn => btn.classList.remove('current'));
+                    elemChild.classList.add('current');
+                }
+            case 'urlBtn_4':
+            case 'urlBtn':
                 elemChild.href = value;
                 break;
             case 'langratio':
@@ -357,7 +380,7 @@ export default class Resources {
         
             default:
                 if (elemChild.children[0] && elemChild.children[0].tagName == 'SPAN'){
-
+                    // console.log('default', key, elemChild);
                     this.checkKey(key, elemChild);
 
                     (Array.isArray(value)) ?
@@ -385,6 +408,7 @@ export default class Resources {
             this.setSpanInElement(variant.english, variant.dutch, elemChild.children[0])
             return;
         } else {
+            // console.log('checkKey', key, elemChild);
             const value = key.replaceAll('_', ' ') + ': \n ';
             this.setProperty(elemChild.children[0], 'textContent', value);
             elemChild.classList.add('showParent');

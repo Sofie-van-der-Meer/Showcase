@@ -223,6 +223,11 @@ header and footer styles, general container widths, etc. */
 
 
 /* card */
+.card-content {
+    h2, p {
+        text-align: center;
+    }
+}
 .card-title,
 .sect-profile {
     white-space-collapse: preserve-breaks;
@@ -246,7 +251,6 @@ header and footer styles, general container widths, etc. */
 .projects-card .card-group {
     width: 100%;
     .card {
-        padding: 1rem;
         text-align: left;
         border-radius: 50px;
         background: linear-gradient(145deg, 
@@ -255,10 +259,22 @@ header and footer styles, general container widths, etc. */
         min-height: 460px;
     }
     .card-img {
-        height: 10rem;
-        width: auto;
+        height: 12rem;
+        width: 100%;
         display: block;
-        margin-inline: auto;
+        /* margin-inline: auto; */
+        object-fit: cover;
+        border-radius: 50px 50px 0 0;
+    }
+    .img-icon {
+        padding: 1rem 0;
+        object-fit: contain;
+    }
+    .card-content {
+        margin: 1rem max(1.3rem, 7%);
+    }
+    .card-title {
+        text-align: center;
     }
     .card-subtitle {
         padding-left: 2rem;
@@ -269,27 +285,28 @@ header and footer styles, general container widths, etc. */
     }
     p, div {
         width: 100%;
+        text-align: justify;
     }
     div {
         padding-left: 1.5rem;
     }
 }
-    #Home_Projects .card-group {
-        .card {
-            padding: 0;
-        }
-        .card-img {
-            height: 25rem;
-            width: 100%;
-            border-radius: 50px 50px 0 0;
-            object-fit: cover;
-            display: block;
-            margin-inline: auto;
-        }
-        .card-content {
-            padding: 2rem;
-        }
+#Home_Projects .card-group {
+    .card {
+        padding: 0;
     }
+    .card-img {
+        height: 25rem;
+        width: 100%;
+        border-radius: 50px 50px 0 0;
+        object-fit: cover;
+        display: block;
+        margin-inline: auto;
+    }
+    .card-content {
+        padding: 2rem;
+    }
+}
 .about-card .card {
     background-color: var(--color-secundary-background);
     border-radius: 20px;
@@ -426,6 +443,12 @@ button {
     padding: 0.4rem 0.8rem;
     border-radius: 1rem;
     font-weight: 600;
+    min-width: 6rem;
+    width: max-content;
+}
+button:has(.current) {
+    background-color: var(--accent-primary);
+    color: var(--light);
 }
 .card-group button {
     background-color: var(--accent-tertiairy-backround);

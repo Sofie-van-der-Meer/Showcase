@@ -80,6 +80,9 @@
 .flex-center {
     justify-content: center;
 }
+.flex-right {
+    justify-content: right;
+}
 .flex__small {
     justify-content: left;
     flex-wrap: wrap;
@@ -154,6 +157,9 @@
     width: min(71.2rem, calc(100vw - 4rem));
 }
 
+.sect {
+    outline: 1px solid;
+}
 
 /*  Typography mixins: 
     Reusable font sizes, line heights, etc. */
@@ -175,14 +181,17 @@
 .margin-top__1 {
     margin-top: 1rem;
 }
+.margin-inline__1 {
+    margin-inline: 1rem;
+}
 .margin-block__2 {
     margin-block: 2rem;
 }
+.margin-top__2 {
+    margin-top: 2rem;
+}
 .margin-block__3 {
     margin-block: 3rem;
-}
-.margin-inline__1 {
-    margin-inline: 1rem;
 }
 .margin-bottom__3 {
     margin-bottom: 3rem;

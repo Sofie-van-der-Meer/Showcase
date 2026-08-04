@@ -48,6 +48,9 @@
         .card-content {
             margin-bottom: 0;
         }
+        .card-description {
+            background-color: rgba(140 139 141 / 0.5);
+        }
         .card-btn {
             margin-top: 1rem;
         }
@@ -84,7 +87,8 @@
         flex-direction: column;
         gap: 3rem;
     }
-    .flex-dir_column:has(.card-availability_1) {
+    .flex-dir_column:has(.card-availability_1),
+    .flex-dir_column:has(.current) {
         gap: 1rem;
     }
     .fixed-width {
@@ -159,10 +163,11 @@
         justify-content: center;
     }
     #Home_Projects .grid {
-    grid-template-areas: 
-    "first first first"
-    "second second second"
-    "third third third";
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "first"
+        "second"
+        "third";
     }
 }
 @media screen and (min-width: 600px) and (max-width: 1340px) {
