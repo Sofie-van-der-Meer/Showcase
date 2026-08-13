@@ -15,7 +15,7 @@ export default {
                 id:           "Home_Introduction",
                 img:          "../src/assets/images/black-white.jpg",
                 imgAlt:       "zwart-wit foto van Sofie van der Meer",
-                title:        "Landschapsontwerper & kunstenaar",
+                title:        `Landschaps- ontwerper & kunstenaar`,
                 description:  "Ik ben een landschapsontwerper die sterk verbonden is met natuur en omgeving. Mijn werk richt zich op het creëren van ruimtes die esthetiek combineren met klimaatbestendigheid en biodiversiteit. \n\n Ik benader ontwerp zowel analytisch als creatief, vanuit een nieuwsgierigheid die zich ook uitstrekt naar kunst, duurzaam bouwen en natuur.",
                 textBtn:      "Leer mij beter kennen",
                 urlBtn:       "about.html"
@@ -262,18 +262,19 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/De_Plas/Watersportzone.png",
                                 imgAlt:         "Ontwerp van het watersportgebied in het recreatiegebied De Plas.",
                                 title:          "De Plas",
+                                projecttype:    ["Landschapsontwerp", "Publieke ruimte"],
                                 
-                                projectCat:     ["Landschapsontwerp", "Publieke ruimte"],
+
                                 date:           "2020 - 2023",
+                                // duration:    "",
                                 location:       "Binnenvaartstraat, Houthalen-Helchteren, Limburg",
                                 role:           "Landschapsarchitect",
-                                sortProject:    ["Landschapsontwerp", "Publieke ruimte"],
                                 client:         "Agentschap voor Natuur en Bos (ANB), gemeente Houthalen-Helchteren en andere partners",
                                 company:        "Agentschap voor Natuur en Bos (ANB)",
-
-                                websiteType:    ["Landschapsontwerp", "Publieke ruimte"], //sort project
-                                languages:      ["Professional"], //sort projectrole
-                                library:        ["ANB"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -328,18 +329,19 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/Lookout_Platforms/P2_front-side_finished.jpg",
                                 imgAlt:         "Uitzicht op natuurreservaat Webbekomsbroek, vanop het uitkijkplatform.",
                                 title:          "Uitkijkplatforms",
+                                projecttype:    ["Publieke ruimte"],
 
-                                projectCat:     ["Publieke ruimte"],
                                 date:           "2022 - 2023",
+                                // duration:    "",
                                 location:       "Natuurgebied Webbekomsbroek, Diest, Vlaams-Brabant",
-                                role:           "Landschapsarchitect",
-                                sortProject:    ["Ontwerp publieke ruimte"],
+                                role:           ["Landschapsarchitect"],
                                 client:         "Lokale boswachter, ANB",
                                 company:        "Agentschap voor Natuur en Bos (ANB)",
 
-                                websiteType:    ["Publieke ruimte"], //sort project
-                                languages:      ["Professioneel"], //sort projectrole
-                                library:        ["ANB"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -392,18 +394,19 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/Zoet_Water/Illustration.jpg",
                                 imgAlt:         "Plattegrond van de Zoet Water-vijvers in Oud-Heverlee, met de Vaalbeek die langst de vijvers stroomt.",
                                 title:          "Zoet Water",
+                                projecttype:    ["Landschap", "Publieke ruimte"],
 
-                                projectCat:     ["Landschap", "Publieke ruimte"],
                                 date:           "2022 - januari 2023",
+                                // duration:    "",
                                 location:       "Zoet Water, Oud-Heverlee, Vlaams-Brabant",
                                 role:           "Landschapsarchitect",
-                                sortProject:    ["Landschapsontwerp", "Ontwerp Publieke ruimte"],
                                 client:         "Vlaams-Brabant, gemeente Oud-Heverlee en andere partners",
                                 company:        "Agentschap voor Natuur en Bos (ANB)",
 
-                                websiteType:    ["Landschapsontwerp", "Ontwerp Publieke ruimte"], //sort project
-                                languages:      ["Professioneel"], //sort projectrole
-                                library:        ["ANB"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -452,18 +455,19 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/Tower/Sideview_1.jpg",
                                 imgAlt:         "Zijaanzicht van de houten uitkijktoren in Borgloon, Limburg.",
                                 title:          "Standaardmodel uitkijktorens",
+                                projecttype:    ["Publieke ruimte"],
 
-                                projectCat:     ["Publieke ruimte"],
                                 date:           "2020 - 2023",
+                                // duration:    "time",
                                 location:       "Vilsterbron, Tongeren-Borgloon, Limburg",
                                 role:           "Landschapsarchitect",
-                                sortProject:    ["Ontwerp Publieke ruimte"],
                                 client:         "Lokale boswachter, ANB",
                                 company:        "Agentschap voor Natuur en Bos (ANB)",
 
-                                websiteType:    ["Publieke ruimte"], //sort project
-                                languages:      ["Professioneel"], //sort projectrole
-                                library:        ["ANB"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -522,18 +526,19 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/Elzenhof/3D_beeld.png",
                                 imgAlt:         "3D-visualisatie van het ontwerp Elzenhof - Nieuwland, Aarschot.",
                                 title:          "Elzenhof - Nieuwland",
+                                projecttype:    ["Landschap", "Publieke ruimte", "Semi publieke ruimte"],
 
-                                projectCat:     ["Landschap", "Publieke ruimte", "Semi publieke ruimte"],
                                 date:           "Februari - juni 2017",
+                                // duration:    "",
                                 location:       "Industriegebied Nieuwland, Aarschot, Vlaams-Brabant",
                                 role:           "Student",
-                                sortProject:    ["Landschapsontwerp", "Ontwerp publieke ruimte", "Ontwerp semi publieke ruimte"],
                                 client:         "",
                                 company:        "Erasmus Hogeschool Brussel (EHB)",
 
-                                websiteType:    ["Landschapsontwerp", "Ontwerp publieke ruimte", "Ontwerp semi publieke ruimte"], //sort project
-                                languages:      ["Student"], //sort projectrole
-                                library:        ["EHB"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -585,18 +590,19 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/School_Velm/Grondplan.jpg",
                                 imgAlt:         "Plattegrond van de schoolspeelplaats in Velm, met het nieuwe ontwerp voor de speelplaats.",
                                 title:          "Schoolspeelplaats",
+                                projecttype:    ["Semi publieke ruimte"],
 
-                                projectCat:     ["Semi publieke ruimte"],
                                 date:           "Oktober - december 2017",
+                                // duration:    "",
                                 location:       "Basisschool 't Vlindertje, Battelestraat 18, Sint-Truiden, Limburg",
                                 role:           "Stagiair landschapsarchitect",
-                                sortProject:    ["Ontwerp semi publieke ruimte"],
                                 client:         "Basisschool 't Vlindertje",
                                 company:        "Regional Landscapes Hesbaye & Voeren (RLHV)",
 
-                                websiteType:    ["Ontwerp semi publieke ruimte"], //sort project
-                                languages:      ["Stagiair"], //sort projectrole
-                                library:        ["RLHV"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -644,18 +650,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Cosplay"], //sort project
                                 img:            "/src/assets/images/art/Baphomet/IMG_20260709_183402.jpg",
                                 imgAlt:         "Claysculpture of the horns for the cosplay character Baphomet.",
                                 title:          "Baphomet",
-                                languages:      ["Personal work"], //sort projectrole
-                                library:        [], //company
-                                date:           "In progress",
-                                projectType:    "Personal project",
-                                medium:         "Cosplay outfit",
-                                materials:      "Plasticine clay, EVA foam",
-                                location:       "",
-                                duration:       ""
+                                projecttype:    ["Cosplay"],
+
+                                date:           "Juli - Augustus 2026",
+                                // duration:    "",
+                                // location:    "",
+                                role:           ["Kunstenaar"],
+                                client:         "Personal work",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["drawing", "sculpture", "textiles", "mixed media"],
+                                materials:      "Plasticine clay, silicone, polyurethane resin, EVA foam, cotton",
                             },
                             
                             {
@@ -706,18 +716,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Wall Mural"], //sort project
                                 img:            "/src/assets/images/art/Dragon/IMG_20260605_185825.jpg",
                                 imgAlt:         "Mural of a dragon, the dragon breads fire, the lighting of the fire refelcts on the dragons scales.",
                                 title:          "Dragon",
-                                languages:      ["Personal work"], //sort projectrole
-                                library:        [], //company
-                                date:           "April - June 2026, 5 days",
-                                projectType:    "Personal project",
-                                medium:         "Wall mural",
-                                materials:      "Wall paint (custom hand-mixed) colours",
+                                projecttype:    ["Wall Mural"],
+
+                                date:           "April - June 2026",
+                                duration:       "5 days",
                                 location:       "Private residence",
-                                duration:       "5 days"
+                                role:           ["Kunstenaar"],
+                                client:         "Personal work",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["painting"],
+                                materials:      "Wall paint (custom hand-mixed) colours",
                             },
                             {
                                 id:             "Project_Content",
@@ -768,18 +782,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Wall Mural"], //sort project
                                 img:            "../src/assets/images/art/Forest/IMG_20260329_092921.jpg",
                                 imgAlt:         "Large forest mural depicting a sunlit forest filled with native wildlife, including a fox, roe deer, birds, and other woodland animals.",
                                 title:          "Forest in Summertime",
-                                languages:      ["Personal work"], //sort projectrole
-                                library:        [], //company
+                                projecttype: ["Wall Mural"],
+
                                 date:           "February - March 2026",
-                                projectType:    "Personal project",
-                                medium:         "Wall mural",
-                                materials:      "Wall paint (custom hand-mixed) colours",
+                                duration:       "2 months",
                                 location:       "Private residence",
-                                duration:       "2 months"
+                                role:           ["Kunstenaar"],
+                                client:         "Personal work",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["painting"],
+                                materials:      "Wall paint (custom hand-mixed) colours",
                             },
                             {
                                 id:             "Project_Content",
@@ -837,18 +855,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Wall Mural"], //sort project
                                 img:            "../src/assets/images/art/Lion/IMG_20250920_183045.jpg",
                                 imgAlt:         "Wall mural of a mythical lion with deer antlers, painted with gold spray paint and detailed using black and white wall paint.",
                                 title:          "Mythical Lion",
-                                languages:      ["Personal Work"], //sort projectrole
-                                library:        ["Home"], //company
+                                projecttype:    ["Wall Mural"],
+
                                 date:           "September 2025",
-                                projectType:    "Personal project",
-                                medium:         "Wall mural",
-                                materials:      "Gold spray paint, black and white wall paint",
+                                duration:       "+- one week",
                                 location:       "Private residence",
-                                duration:       "+- one week"
+                                role:           ["Kunstenaar"],
+                                client:         "Personal work",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["painting"],
+                                materials:      "Gold spray paint, black and white wall paint",
                             },
                             {
                                 id:             "Project_Content",
@@ -897,15 +919,21 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Pastel drawing"], //sort project
                                 img:            "../src/assets/images/art/Bear/IMG_20260720_171126.jpg",
                                 imgAlt:         "Pastel drawing of a roaring bear looking to the side, created with pastel on black paper.",
                                 title:          "Bear, pastel study",
-                                languages:      ["Student Work"], //sort projectrole
-                                library:        ["Art Academy Heusden-Zolder"], //company
+                                projecttype:    ["Pastel drawing"],
+
                                 date:           "2019",
-                                projectType:    "Personal project",
-                                medium:         "Pastel drawing",
+                                // duration:    "time",
+                                // location:    "adres",
+                                role:           ["Kunstenaar", "Student"],
+                                client:         "Art Academy Heusden-Zolder",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["drawing"],
                                 materials:      "Pastel on black paper"
                             },
                             {
@@ -952,15 +980,21 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Mixed media"], //sort project
                                 img:            "../src/assets/images/art/BlueHues/IMG_20260721_135431.jpg",
                                 imgAlt:         "Artwork where two artists were combined into one artwork, the artwork is made with a blue background and a drawing made with white, brown and black colors.",
                                 title:          "The fall in Blue hues",
-                                languages:      ["Student work"], //sort projectrole
-                                library:        ["Art Academy Heusden-Zolder"], //company
+                                projecttype:    ["Drawing"],
+
                                 date:           "2019",
-                                projectType:    "Personal project",
-                                medium:         "Mixed media drawing",
+                                // duration:    "time",
+                                // location:    "adres",
+                                role:           ["Kunstenaar", "Student"],
+                                client:         "Art Academy Heusden-Zolder",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["mixed media"],
                                 materials:      "Conté pencils on paper with a blue hand-painted background",
                             },
                             {
@@ -1009,15 +1043,21 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Pointillism Drawing"], //sort project
                                 img:            "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
                                 imgAlt:         "Drawing of a boy standing at a table in the artstyle pointïsme.",
                                 title:          "Boy, pointillism study",
-                                languages:      ["Student work"], //sort projectrole
-                                library:        ["Art Academy Heusden-Zolder"], //company
+                                projecttype:    ["Drawing"],
+
                                 date:           "2019",
-                                projectType:    "Personal project",
-                                medium:         "Fineliner drawing",
+                                // duration:    "time",
+                                // location:    "adres",
+                                role:           ["Kunstenaar", "Student"],
+                                client:         "Art Academy Heusden-Zolder",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["drawing"],
                                 materials:      "Black fineliner on white paper",
                             },
                             {
@@ -1050,6 +1090,23 @@ export default {
                         ]
                     },
                     // Development Projects
+                                // id
+                                // img:         "../src/assets/images/landscapedesign/De_Plas/Watersportzone.png",
+                                // imgAlt:      "Ontwerp van het watersportgebied in het recreatiegebied De Plas.",
+                                // title:       "De Plas",
+                                // projecttype: ["Website", "Game", "Tekening", "Kunstwerk", "Landschapsontwerp"],
+
+                                // date:        "year - year",
+                                // duration:    "time",
+                                // location:    "adres",
+                                // role:        ["Landschapsarchitect", "Kunstenaar", "Student", "Developer"],
+                                // client:      "",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      ["drawing", "painting", "printmaking", "sculpture", "textiles", "digital art", "mixed media"],
+                                // materials:   "",
                         // Prularia
                     {
                         id:             "#prularia",

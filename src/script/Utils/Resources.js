@@ -65,7 +65,10 @@ export default class Resources {
         // console.log('setProperty', element, property, value);
         const propertyHandlers = {
             'alt':          (elem) => { if (elem instanceof HTMLImageElement) elem.alt = value; },
-            'textContent':  (elem) => { if (elem instanceof HTMLElement) elem.textContent = value; },
+            'textContent':  (elem) => { if (elem instanceof HTMLElement) {
+                elem.textContent = value;
+                elem.parentElement.parentElement.classList.remove('hidden');
+            } },
             'href':         (elem) => { if (elem instanceof HTMLAnchorElement) elem.href = value; },
             'textTitle':    (elem) => { if (elem instanceof HTMLElement) elem.children[0].textContent = value + ': \n '; },
         }
@@ -272,7 +275,7 @@ export default class Resources {
     addImages(value, elemChild) {
         for (const src of value) {
             const img = elemChild.appendChild(document.createElement("img"))
-            img.classList.add('img-small')
+            img.classList.add('img-carrousel')
             img.src = src;            
         }
     } 
@@ -280,8 +283,6 @@ export default class Resources {
 
     checkResourceOfChild(parent, childClassName, arrResources, childName) { //name setResourceOfChild
         if (!arrResources) return;
-
-        console.log(childName);
 
         let arrResources_HasTextBtn = false;
         let elemChild = parent.getElementsByClassName(childClassName)[0];
@@ -331,19 +332,18 @@ export default class Resources {
     }            
     checkChildName(childName, key, value, elemChild) {
         if (!value || value.length === 0) {
-            // console.log('No value found for key: ' + key);
-            // console.log('No value found for childName: ' + childName);
-            // console.log(elemChild);
 
-// text_nr toevoegen!
             (childName == 'urlBtn_1' || childName == 'urlBtn_2') ?
                 elemChild.parentElement.classList.add('hidden') :
                 elemChild.classList.add('hidden');
             return;
         }
+        // console.log('checkChildName', childName);
+
         switch (childName) {
             case 'colors':
                 this.addColors(value, elemChild);
+                elemChild.classList.remove('hidden');
                 break;
             case 'img_01':
             case 'img_02':
@@ -357,8 +357,9 @@ export default class Resources {
                 this.addImages(value, elemChild);
                 break;
             case 'video':
-                console.log('video', value, elemChild);
                 elemChild.src = value;
+                elemChild.parentElement.parentElement.classList.remove('hidden');
+                break;
             case 'previous':
             case 'next':
                 elemChild.textContent = key;       

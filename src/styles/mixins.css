@@ -67,6 +67,9 @@
 .gap__3 {
     gap: 3rem;
 }
+.gap__5 {
+    gap: 5rem;
+}
 
 .flex {
     display: flex;
@@ -103,7 +106,7 @@
 }
 .flex-dir_column:has(.sect-colors) {
     flex-wrap: wrap;
-    align-content: center;
+    /* align-content: start; */
 }
 
 
@@ -157,9 +160,9 @@
     width: min(71.2rem, calc(100vw - 4rem));
 }
 
-.sect {
+/* .sect {
     outline: 1px solid;
-}
+} */
 
 /*  Typography mixins: 
     Reusable font sizes, line heights, etc. */
@@ -198,6 +201,9 @@
 }
 .padding-block__3 {
     padding-block: 3rem;
+}
+.padding-bottom__5 {
+    padding-bottom: 5rem;
 }
 
 .color__accent-primary {

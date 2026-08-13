@@ -1,5 +1,6 @@
-import DarkMode from "./Utils/Darkmode.js";
 import Modal from "./Utils/Modal.js";
+import Transitions from "./Utils/Transitions.js";
+import DarkMode from "./Utils/Darkmode.js";
 import Resources from "./Utils/Resources.js";
 
 
@@ -20,6 +21,7 @@ class Script {
         this.getHash();
         this.resources = new Resources(this.page, this.hash);
         this.resources.setInnerHTML();
+        if (this.page == "projects" && this.hash) new Transitions();
     }
     getPage() {
         this.location.href.includes("about") ?

@@ -95,6 +95,9 @@ h6 { font-size: clamp(1.0rem * 0.7, 2vw + 1rem, 1.0rem * 1.2 ); }
 Styles that affect the layout of the whole page, such as body margins, 
 header and footer styles, general container widths, etc. */
 
+img {
+    object-fit: cover;
+}
 
 /* entry and exit */
 .entry {
@@ -192,12 +195,14 @@ header and footer styles, general container widths, etc. */
     width: auto;
 }
 .header_btn {
-    /* padding-bottom: 0.6rem;
-    text-align: end; */
+    /* padding-bottom: 0.6rem; */
+    text-align: end;
     padding: 0;
-    padding-left: calc(var(--header-logo-width) - var(--header-bar-width));
+    min-width: 54.344px;
+    /* padding-left: calc(var(--header-logo-width) - var(--header-bar-width)); */
     /* padding-left: calc(55px - 35px); */
 } 
+
 
 /* dialog */
 .dialog {
@@ -234,7 +239,7 @@ header and footer styles, general container widths, etc. */
 }
 .card-subtitle {
     text-transform: uppercase;
-    padding-bottom: 0.5rem;
+    /* padding-bottom: 0.5rem; */
 }
 .card-description {
     max-width: 60rem;
@@ -263,7 +268,7 @@ header and footer styles, general container widths, etc. */
         width: 100%;
         display: block;
         /* margin-inline: auto; */
-        object-fit: cover;
+        /* object-fit: cover; */
         border-radius: 50px 50px 0 0;
     }
     .img-icon {
@@ -299,12 +304,12 @@ header and footer styles, general container widths, etc. */
         height: 25rem;
         width: 100%;
         border-radius: 50px 50px 0 0;
-        object-fit: cover;
+        /* object-fit: cover; */
         display: block;
         margin-inline: auto;
     }
     .card-content {
-        padding: 2rem;
+        padding-block: min(2rem, 3vh);
     }
 }
 .about-card .card {
@@ -385,28 +390,53 @@ header:is(.half-height) {
     }
 }
 
-.inline-scroll_container {
-    position: relative;
-}
-.inline-scroll_sticky {
+/* .inline-scroll_sticky {
     padding-top: calc(var(--header-height) * 2);
     position: sticky;
     top: 0;
     z-index: 1;
+} */
+.inline-scroll_container {
+    height: 66svh;
+    width: 100%;
+    /* min-height: 0; */
+    overflow: hidden;
+    position: relative;
 }
 .sect-imgList {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: inline mandatory;
-    scrollbar-width: thin;
+    width: 100%;
+    height: 66%;
+    /* display: flex;*/
+    gap: 0; 
+    flex-wrap: nowrap;
+    /* overflow-x: auto;
+    overflow-y: hidden; */
+    /* scroll-snap-type: x mandatory;
+    scrollbar-width: thin; */
 
     background-color: var(--color-secundary-background);
+
+    position: absolute;
+    /* top: 0; */
+    left: 0;
 }
-.sect-imgList > img {
-    scroll-snap-align: start;
+.img-carrousel {
+    max-height: 100%;
+    min-height: 100%;
+    width: auto;
+    padding-right: 3rem;
+    /* flex: 0 0 auto; */
+    object-fit: contain;
+    /* scroll-snap-align: start; */
 }
-.img-small {
-    height: 30rem;
+.fa-hand-pointer {
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    right: 2rem;
+    font-size: 3rem;
+    color: var(--color-tertiairy-background);
+    transform: translateX(0);
+    rotate: 10deg;
 }
 
 .landing {
@@ -436,7 +466,7 @@ header:is(.half-height) {
     padding: 5rem;
 }
 
-button {
+button:not(.header_btn) {
     background-color: var(--accent-secundary);
     color: var(--light);
     border: 1px solid var(--accent-tertiairy);
@@ -446,14 +476,15 @@ button {
     min-width: 6rem;
     width: max-content;
 }
-button:has(.current) {
-    background-color: var(--accent-primary);
-    color: var(--light);
-}
+.btn-list button,
 .card-group button {
-    background-color: var(--accent-tertiairy-backround);
+    background-color: var(--color-primary-background);
     color: var(--color-primary);
     margin-block: 1rem;
+}
+button:has(.current) {
+    background-color: var(--accent-bright);
+    color: var(--light);
 }
 
 .sect-colors {
@@ -526,6 +557,9 @@ Global helper classes
 (e.g., .hidden, .text-center, .container, .clearfix). */
 
 .hidden:not(:has(.showParent)) {
+    display: none;
+}
+.hidden {
     display: none;
 }
 .visible {
