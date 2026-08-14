@@ -309,7 +309,7 @@ export default {
                             },
                             {
                                 id:             "Project_Bottom",
-                                previous:       "project.html#School-Velm",
+                                previous:       "project.html#school-velm",
                                 next:           "project.html#lookout-platforms"
                             }
                         ]
@@ -396,7 +396,7 @@ export default {
                                 title:          "Zoet Water",
                                 projecttype:    ["Landschap", "Publieke ruimte"],
 
-                                date:           "2022 - januari 2023",
+                                date:           "2022 - 2023",
                                 // duration:    "",
                                 location:       "Zoet Water, Oud-Heverlee, Vlaams-Brabant",
                                 role:           "Landschapsarchitect",
@@ -526,9 +526,9 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/Elzenhof/3D_beeld.png",
                                 imgAlt:         "3D-visualisatie van het ontwerp Elzenhof - Nieuwland, Aarschot.",
                                 title:          "Elzenhof - Nieuwland",
-                                projecttype:    ["Landschap", "Publieke ruimte", "Semi publieke ruimte"],
+                                projecttype:    ["Landschap", "Publieke ruimte", "Semi-publieke ruimte"],
 
-                                date:           "Februari - juni 2017",
+                                date:           "Februari 2017 - juni 2017",
                                 // duration:    "",
                                 location:       "Industriegebied Nieuwland, Aarschot, Vlaams-Brabant",
                                 role:           "Student",
@@ -571,19 +571,19 @@ export default {
                             {
                                 id:             "Project_Bottom",
                                 previous:       "project.html#tower",
-                                next:           "project.html#School-Velm"
+                                next:           "project.html#school-velm"
                             }
                         ]
                     },
                         // School Velm
                     {
-                        id:             "#School-Velm",
+                        id:             "#school-velm",
                         field:          "#landscape-design",
                         img:            "../src/assets/images/landscapedesign/School_Velm/Grondplan.jpg",
                         imgAlt:         "Plattegrond van de schoolspeelplaats in Velm, met het nieuwe ontwerp voor de speelplaats.",
                         title:          "Schoolspeelplaats",
                         description:    "De schoolspeelplaats in Velm werd heringericht om een groenere en meer interactieve buitenomgeving voor de leerlingen te creëren, waarin spelen, natuur en leren samenkomen.",                       
-                        urlBtn:         "project.html#School-Velm",
+                        urlBtn:         "project.html#school-velm",
                         sections:       [
                             {
                                 id:             "Project_Top",
@@ -592,7 +592,7 @@ export default {
                                 title:          "Schoolspeelplaats",
                                 projecttype:    ["Semi publieke ruimte"],
 
-                                date:           "Oktober - december 2017",
+                                date:           "Oktober 2017 - december 2017",
                                 // duration:    "",
                                 location:       "Basisschool 't Vlindertje, Battelestraat 18, Sint-Truiden, Limburg",
                                 role:           "Stagiair landschapsarchitect",
@@ -655,19 +655,18 @@ export default {
                                 title:          "Baphomet",
                                 projecttype:    ["Cosplay"],
 
-                                date:           "Juli - Augustus 2026",
+                                date:           "Juli 2026 - Augustus 2026",
                                 // duration:    "",
                                 // location:    "",
                                 role:           ["Kunstenaar"],
-                                client:         "Personal work",
+                                client:         "Persoonlijk werk",
                                 // company:     "",
 
                                 // languages:   [""],
                                 // library:     [""],
                                 medium:         ["drawing", "sculpture", "textiles", "mixed media"],
-                                materials:      "Plasticine clay, silicone, polyurethane resin, EVA foam, cotton",
+                                materials:      ["Plasticine clay", "silicone", "polyurethane resin", "EVA foam", "cotton"],
                             },
-                            
                             {
                                 id:             "Project_Content",
                                 
@@ -719,19 +718,19 @@ export default {
                                 img:            "/src/assets/images/art/Dragon/IMG_20260605_185825.jpg",
                                 imgAlt:         "Mural of a dragon, the dragon breads fire, the lighting of the fire refelcts on the dragons scales.",
                                 title:          "Dragon",
-                                projecttype:    ["Wall Mural"],
+                                projecttype:    ["Mural"],
 
-                                date:           "April - June 2026",
+                                date:           "April 2026 - June 2026",
                                 duration:       "5 days",
-                                location:       "Private residence",
+                                // location:       "",
                                 role:           ["Kunstenaar"],
-                                client:         "Personal work",
+                                client:         "Persoonlijk werk",
                                 // company:     "",
 
                                 // languages:   [""],
                                 // library:     [""],
                                 medium:         ["painting"],
-                                materials:      "Wall paint (custom hand-mixed) colours",
+                                materials:      ["Wall paint (custom hand-mixed) colours"],
                             },
                             {
                                 id:             "Project_Content",
@@ -785,19 +784,19 @@ export default {
                                 img:            "../src/assets/images/art/Forest/IMG_20260329_092921.jpg",
                                 imgAlt:         "Large forest mural depicting a sunlit forest filled with native wildlife, including a fox, roe deer, birds, and other woodland animals.",
                                 title:          "Forest in Summertime",
-                                projecttype: ["Wall Mural"],
+                                projecttype: ["Mural"],
 
                                 date:           "February - March 2026",
                                 duration:       "2 months",
                                 location:       "Private residence",
                                 role:           ["Kunstenaar"],
-                                client:         "Personal work",
+                                client:         "Persoonlijk werk",
                                 // company:     "",
 
                                 // languages:   [""],
                                 // library:     [""],
                                 medium:         ["painting"],
-                                materials:      "Wall paint (custom hand-mixed) colours",
+                                materials:      ["Wall paint (custom hand-mixed) colours"],
                             },
                             {
                                 id:             "Project_Content",
@@ -858,19 +857,19 @@ export default {
                                 img:            "../src/assets/images/art/Lion/IMG_20250920_183045.jpg",
                                 imgAlt:         "Wall mural of a mythical lion with deer antlers, painted with gold spray paint and detailed using black and white wall paint.",
                                 title:          "Mythical Lion",
-                                projecttype:    ["Wall Mural"],
+                                projecttype:    ["Mural"],
 
                                 date:           "September 2025",
                                 duration:       "+- one week",
                                 location:       "Private residence",
                                 role:           ["Kunstenaar"],
-                                client:         "Personal work",
+                                client:         "Persoonlijk werk",
                                 // company:     "",
 
                                 // languages:   [""],
                                 // library:     [""],
                                 medium:         ["painting"],
-                                materials:      "Gold spray paint, black and white wall paint",
+                                materials:      ["Gold spray paint", "black and white wall paint"],
                             },
                             {
                                 id:             "Project_Content",
@@ -927,14 +926,14 @@ export default {
                                 date:           "2019",
                                 // duration:    "time",
                                 // location:    "adres",
-                                role:           ["Kunstenaar", "Student"],
+                                role:           ["Student", "Kunstenaar"],
                                 client:         "Art Academy Heusden-Zolder",
                                 // company:     "",
 
                                 // languages:   [""],
                                 // library:     [""],
                                 medium:         ["drawing"],
-                                materials:      "Pastel on black paper"
+                                materials:      ["Pastel", "black paper"]
                             },
                             {
                                 id:             "Project_Content",
@@ -988,14 +987,14 @@ export default {
                                 date:           "2019",
                                 // duration:    "time",
                                 // location:    "adres",
-                                role:           ["Kunstenaar", "Student"],
+                                role:           ["Student", "Kunstenaar"],
                                 client:         "Art Academy Heusden-Zolder",
                                 // company:     "",
 
                                 // languages:   [""],
                                 // library:     [""],
                                 medium:         ["mixed media"],
-                                materials:      "Conté pencils on paper with a blue hand-painted background",
+                                materials:      ["Conté pencils", "paper with a blue hand-painted background"],
                             },
                             {
                                 id:             "Project_Content",
@@ -1051,14 +1050,14 @@ export default {
                                 date:           "2019",
                                 // duration:    "time",
                                 // location:    "adres",
-                                role:           ["Kunstenaar", "Student"],
+                                role:           ["Student", "Kunstenaar"],
                                 client:         "Art Academy Heusden-Zolder",
                                 // company:     "",
 
                                 // languages:   [""],
                                 // library:     [""],
                                 medium:         ["drawing"],
-                                materials:      "Black fineliner on white paper",
+                                materials:      ["Black fineliner", "white paper"],
                             },
                             {
                                 id:             "Project_Content",
@@ -1090,23 +1089,6 @@ export default {
                         ]
                     },
                     // Development Projects
-                                // id
-                                // img:         "../src/assets/images/landscapedesign/De_Plas/Watersportzone.png",
-                                // imgAlt:      "Ontwerp van het watersportgebied in het recreatiegebied De Plas.",
-                                // title:       "De Plas",
-                                // projecttype: ["Website", "Game", "Tekening", "Kunstwerk", "Landschapsontwerp"],
-
-                                // date:        "year - year",
-                                // duration:    "time",
-                                // location:    "adres",
-                                // role:        ["Landschapsarchitect", "Kunstenaar", "Student", "Developer"],
-                                // client:      "",
-                                // company:     "",
-
-                                // languages:   [""],
-                                // library:     [""],
-                                // medium:      ["drawing", "painting", "printmaking", "sculpture", "textiles", "digital art", "mixed media"],
-                                // materials:   "",
                         // Prularia
                     {
                         id:             "#prularia",
@@ -1122,13 +1104,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    "e-commerce",
                                 img:            "../src/assets/icons/crown.png",
                                 imgAlt:         "kroon, logo van project Prularia",
                                 title:          "Prularia",
+                                projecttype:    ["Website"],
+
+                                date:           "november 2024",
+                                duration:       "3 weeks",
+                                // location:    "",
+                                role:           ["Student", "Full-Stack Developer"],
+                                client:         "VDAB",
+                                // company:     "",
+
                                 languages:      ["JavaScript", "PHP", "CSS"],
                                 library:        ["Bootstrap"],
-                                date:           "november 2024",
+                                // medium:      [""],
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -1142,10 +1133,10 @@ export default {
                                 text_title_03:  "resultaat",
                                 text_title_04:  "wat de scrum coach zegt",                                
                                 
-                                textBtn_1:      "Ga naar de website",
-                                textBtn_2:      "Ga naar de code",
+                                textBtn_1:      "Bekijk de website",
+                                textBtn_2:      "",
                                 urlBtn_1:       "https://demo.prularia.Sofie-van-der-Meer.be/",
-                                urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Prularia",
+                                urlBtn_2:       "",
                                 img_01:         "../src/assets/images/development/prularia/icons.png",
                                 img_02:         "../src/assets/images/development/prularia/page-down.png",
                                 imgList:        [
@@ -1178,12 +1169,22 @@ export default {
                         sections:     [
                             {
                                 id:             "Project_Top",
-                                websiteType:    "e-commerce",
                                 img:            "../src/assets/icons/pizza.svg",
                                 imgAlt:         "pizzastuk, logo van project Pizzaria",
                                 title:          "Pizzaria",
-                                languages:      ["PHP", "CSS"],
+                                projecttype:    ["Website"],
+
                                 date:           "augustus 2024",
+                                // duration:    "",
+                                // location:    "",
+                                role:           ["Student", "Full-Stack Developer"],
+                                client:         "VDAB",
+                                // company:     "",
+
+                                languages:      ["PHP", "CSS"],
+                                // library:     [""],
+                                // medium:      [""],
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -1195,8 +1196,8 @@ export default {
                                 text_title_02:  "aanpak",
                                 text_title_04:  "resultaat",
 
-                                textBtn_1:      "Ga naar de website",
-                                textBtn_2:      "Ga naar de code",
+                                textBtn_1:      "Bekijk de website",
+                                textBtn_2:      "Bekijk de code",
                                 urlBtn_1:       "https://demo.pizzaria.Sofie-van-der-Meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Pizzaria",
                                 img_01:         "../src/assets/images/development/pizzaria/structure.png",
@@ -1234,13 +1235,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    "game",
                                 img:            "../src/assets/icons/gem.svg",
                                 imgAlt:         "zittende kat, logo van project Treasure Hunt",
                                 title:          "Treasure Hunt",
+                                projecttype:    ["Game"],
+
+                                date:           "februari 2025",
+                                // duration:    "time",
+                                // location:    "",
+                                role:           ["Student", "Full-Stack Developer"],
+                                client:         "VDAB",
+                                // company:     "",
+
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
-                                date:           "februari 2025"
+                                // medium:      [""],
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -1254,8 +1264,8 @@ export default {
                                 text_title_03:  "aanpak",
                                 text_title_04:  "resultaat",
 
-                                textBtn_1:      "Ga naar de website",
-                                textBtn_2:      "Ga naar de code",
+                                textBtn_1:      "Bekijk de website",
+                                textBtn_2:      "Bekijk de code",
                                 urlBtn_1:       "https://demo.treasurehunt.sofie-van-der-meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Treasure-Hunt",
                                 img_01:         "../src/assets/images/development/treasure-hunt/gamePlay.png",
@@ -1289,12 +1299,23 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    "e-commerce",
                                 img:            "../src/assets/icons/hands-holding-child.svg",
                                 imgAlt:         "handen houden kind vast, logo van project Peekaboo",
                                 title:          "Peekaboo",
+                                projecttype:    ["Website"],
+
+                                date:           "September 2024",
+                                // duration:    "time",
+                                // location:    "",
+                                role:           ["Student", "Full-Stack Developer"],
+                                // client:      "",
+                                // company:     "",
+
                                 languages:      ["JavaScript", "CSS", "HTML"],
-                                date:           "September 2024"},
+                                // library:     [""],
+                                // medium:      [""],
+                                // materials:   "",
+                            },
                             {
                                 id:             "Project_Content",
                                 
@@ -1305,8 +1326,8 @@ export default {
                                 text_title_02:  "uitdagingen",
                                 text_title_04:  "resultaat",
 
-                                textBtn_1:      "Ga naar de website",
-                                textBtn_2:      "Ga naar de code",
+                                textBtn_1:      "Bekijk de website",
+                                textBtn_2:      "Bekijk de code",
                                 urlBtn_1:       "https://demo.peekaboo.sofie-van-der-meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Peekaboo",
                                 img_01:         "../src/assets/images/development/peekaboo/model_1.png",
@@ -1339,13 +1360,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    "showcase",
                                 img:            "../src/assets/icons/cubes-stacked.svg",
                                 imgAlt:         "kubussen op elkaar gestapeld, logo van project tamagotchi",
                                 title:          "tamagotchi",
+                                projecttype:    ["Website"],
+
+                                date:           "Februari 2025",
+                                // duration:    "time",
+                                // location:    "",
+                                role:           ["Student", "Full-Stack Developer"],
+                                client:         "three.js Journey",
+                                // company:     "",
+
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
-                                date:           "Februari 2025"
+                                // medium:      [""],
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -1359,8 +1389,8 @@ export default {
                                 text_title_03:  "aanpak",
                                 text_title_04:  "resultaat",
 
-                                textBtn_1:      "Ga naar de website",
-                                textBtn_2:      "Ga naar de code",
+                                textBtn_1:      "Bekijk de website",
+                                textBtn_2:      "Bekijk de code",
                                 urlBtn_1:       "https://demo.vampitest.sofie-van-der-meer.be/",
                                 urlBtn_2:       "https://github.com/Sofie-van-der-Meer/Tamagotchi",
                                 img_01:         "../src/assets/images/development/tamagotchi/home-title.png",

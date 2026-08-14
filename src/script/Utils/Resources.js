@@ -337,7 +337,7 @@ export default class Resources {
                 elemChild.parentElement.classList.add('hidden') :
                 elemChild.classList.add('hidden');
             return;
-        }
+        } else elemChild.classList.remove('hidden');
         // console.log('checkChildName', childName);
 
         switch (childName) {
@@ -385,7 +385,7 @@ export default class Resources {
                     this.checkKey(key, elemChild);
 
                     (Array.isArray(value)) ?
-                        elemChild.innerHTML += value.join(' - ') :
+                        elemChild.innerHTML += value.join(' | ') :
                         elemChild.innerHTML += value;
                     break;
                 }
@@ -399,8 +399,8 @@ export default class Resources {
     }
     checkKey(key, elemChild) {
         const spanVariants = [
-            { key: 'library',           english: 'And with:&numsp;&numsp;',         dutch: 'En met: &numsp;&numsp;&numsp;&numsp;&nbsp; '},
-            { key: 'languages',         english: 'Made in:&numsp;&numsp;&numsp;',   dutch: 'Gemaakt in:&numsp;'},
+            // { key: 'library',           english: 'And with:&numsp;&numsp;',         dutch: 'En met: &numsp;&numsp;&numsp;&numsp;&nbsp; '},
+            // { key: 'languages',         english: 'Made in:&numsp;&numsp;&numsp;',   dutch: 'Gemaakt in:&numsp;'},
             { key: 'availability',      english: 'Availability: ',                  dutch: 'Beschikbaarheid: '},
             { key: 'related_interests', english: 'Related interests: ',             dutch: 'Gerelateerde interesse: '},
         ]

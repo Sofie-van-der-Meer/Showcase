@@ -119,7 +119,7 @@ export default {
                         year:     "2024 - 2025"
                     },
                     {
-                        school:   "Erasmushogeschool Brussel",
+                        school:   "Erasmus Brussels University",
                         study:    "Bachelor in Landscape & Garden Architecture",
                         year:     "2014 - 2018"
                     },
@@ -255,14 +255,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Landscape design", "Public design"], //sort project
                                 img:            "../src/assets/images/landscapedesign/De_Plas/Watersportzone.png",
                                 imgAlt:         "Design of the watersports area in Recreational Domain De Plas.",
                                 title:          "De Plas",
-                                languages:      ["Professional"], //sort projectrole
-                                library:        ["ANB"], //company
+                                projecttype:    ["Landscape", "public space"],
+                                
+
                                 date:           "2020 - 2023",
-                                Location:       "Binnenvaartstraat, Houthalen-Helchteren, Limburg",
+                                // duration:    "",
+                                location:       "Binnenvaartstraat, Houthalen-Helchteren, Limburg",
+                                role:           "Landscape architect",
+                                client:         "Agency for nature and forests (ANB), the town Houthalen-Helchteren and other partners",
+                                company:        "Agency for nature and forests (ANB)",
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -317,18 +325,19 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/Lookout_Platforms/P2_front-side_finished.jpg",
                                 imgAlt:         "The front side of the wooden lookout platform. There is an intrance for the main level and a staircase to go on top of the platform.",
                                 title:          "Lookout platforms",
+                                projecttype:    ["public space"],
 
-                                projectCat:     ["Public design"],
                                 date:           "2022 - 2023",
-                                location:       "Webbekomsbroek nature reserve, Diest, Flemish Brabant",
-                                role:           "Landscape architect",
-                                sortProject:    ["Public design"],
-                                client:         "Local forest ranger, ANB",
-                                company:        "Agency for Nature and Forests (ANB)",
+                                // duration:    "",
+                                location:       "Webbekomsbroek Nature Reserve, Diest, Flemish-Brabant",
+                                role:           ["Landscape architect"],
+                                client:         "Locale forest ranger, ANB",
+                                company:        "Agency for nature and forests (ANB)",
 
-                                websiteType:    ["Public design"], //sort project
-                                languages:      ["Professional"], //sort projectrole
-                                library:        ["ANB"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -381,18 +390,19 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/Zoet_Water/Illustration.jpg",
                                 imgAlt:         "Plan of the Zoet Water ponds in Oud-Heverlee, with the Vaalbeek stream flowing through the site.",
                                 title:          "Zoet Water",
+                                projecttype:    ["Landscape", "public space"],
 
-                                projectCat:     ["Landscape design", "Public design"],
-                                date:           "2022 - January 2023",
-                                location:       "Zoet Water, Oud-Heverlee, Flemish Brabant",
+                                date:           "2022 - 2023",
+                                // duration:    "",
+                                location:       "Zoet Water, Oud-Heverlee, Flemish-Brabant",
                                 role:           "Landscape architect",
-                                sortProject:    ["Landscape design", "Public design"],
-                                client:         "Flemish Brabant, city Oud-Heverlee en other partners",
-                                company:        "Agency for Nature and Forests (ANB)",
+                                client:         "Flemish-Brabant, the town Oud-Heverlee and other partners",
+                                company:        "Agency for nature and forests (ANB)",
 
-                                websiteType:    ["Landscape design", "Public design"], //sort project
-                                languages:      ["Professional"], //sort projectrole
-                                library:        ["ANB"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -441,18 +451,19 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/Tower/Sideview_1.jpg",
                                 imgAlt:         "Side view of the wooden lookout tower in Borgloon, Limburg.",
                                 title:          "Standard model lookout towers",
+                                projecttype:    ["public space"],
 
-                                projectCat:     ["Public design"],
                                 date:           "2020 - 2023",
+                                // duration:    "",
                                 location:       "Vilsterbron, Tongeren-Borgloon, Limburg",
                                 role:           "Landscape architect",
-                                sortProject:    ["Public design"],
-                                client:         "Agency for Nature and Forests (ANB)",
-                                company:        "Agency for Nature and Forests (ANB)",
+                                client:         "Locale forest ranger, ANB",
+                                company:        "Agency for nature and forests (ANB)",
 
-                                websiteType:    ["Public design"], //sort project
-                                languages:      ["Professional"], //sort projectrole
-                                library:        ["ANB"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -510,26 +521,27 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/Elzenhof/3D_beeld.png",
                                 imgAlt:         "3D visualization of the design for the Elzenhof site in Nieuwland, Aarschot.",
                                 title:          "Elzenhof - Nieuwland",
+                                projecttype:    ["Landscape", "public space", "Semi-public space"],
 
-                                projectCat:     ["Landscape", "Public Area", "Semi-public Area"],
-                                date:           "February - June 2017",
-                                location:       "Nieuwland industrial area, Aarschot, Flemish Brabant",
+                                date:           "February 2017 - June 2017",
+                                // duration:    "",
+                                location:       "Industrial area Nieuwland, Aarschot, Flemish-Brabant",
                                 role:           "Student",
-                                sortProject:    ["Landscape design", "Public space design", "Semi-public space design"],
                                 client:         "",
-                                company:        "Erasmus Hogeschool Brussel (EHB)",
+                                company:        "Erasmus Brussels University (EhB)",
 
-                                websiteType:    ["Urban design", "Public space design", "Semi-public space design"], //sort project
-                                languages:      ["Student"], //sort projectrole
-                                library:        ["EHB"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
                                 
-                                text_01:   "For the school project Elzenhof, I developed a design for a site located in the Nieuwland industrial area in Aarschot. The project explores how an existing industrial area within a valley landscape can be redesigned into a more biodiverse and landscape-integrated environment.",
-                                text_02:     "The site is located in a valley area with flood sensitivity, which formed an important design constraint. In addition, the area consisted of a typical industrial landscape with limited ecological cohesion. The challenge was to reconcile water management, industrial activity, and landscape quality within a single coherent design approach.",
-                                text_03:       "The design is structured around water as the main organizing element. It introduces ponds and water surfaces to buffer excess water during wet periods, combined with natural water purification systems. Along the roads, rain gardens with avenue trees were integrated to support infiltration. A green zone around the industrial buildings connects the adjacent Elzenhof forest park with the industrial area, supported by walking paths and green linkages. The existing buildings were also considered in the design, with attention to sustainable materials such as wooden façades, extensive glazing for natural light, green façades, and solar panels on the roofs.",
-                                text_04:         "The result is a conceptual design in which a conventional industrial area is reimagined as a green and water-resilient landscape. By combining water buffering, infiltration strategies, and green structures with a renewed approach to the built environment, a more coherent and future-oriented industrial landscape is created that integrates with the surrounding context.",
+                                text_01:        "For the school project Elzenhof, I developed a design for a site located in the Nieuwland industrial area in Aarschot. The project explores how an existing industrial area within a valley landscape can be redesigned into a more biodiverse and landscape-integrated environment.",
+                                text_02:        "The site is located in a valley area with flood sensitivity, which formed an important design constraint. In addition, the area consisted of a typical industrial landscape with limited ecological cohesion. The challenge was to reconcile water management, industrial activity, and landscape quality within a single coherent design approach.",
+                                text_03:        "The design is structured around water as the main organizing element. It introduces ponds and water surfaces to buffer excess water during wet periods, combined with natural water purification systems. Along the roads, rain gardens with avenue trees were integrated to support infiltration. A green zone around the industrial buildings connects the adjacent Elzenhof forest park with the industrial area, supported by walking paths and green linkages. The existing buildings were also considered in the design, with attention to sustainable materials such as wooden façades, extensive glazing for natural light, green façades, and solar panels on the roofs.",
+                                text_04:        "The result is a conceptual design in which a conventional industrial area is reimagined as a green and water-resilient landscape. By combining water buffering, infiltration strategies, and green structures with a renewed approach to the built environment, a more coherent and future-oriented industrial landscape is created that integrates with the surrounding context.",
                                 text_title_01:  "introduction",
                                 text_title_02:  "challenges",
                                 text_title_03:  "approach",
@@ -572,18 +584,19 @@ export default {
                                 img:            "../src/assets/images/landscapedesign/School_Velm/Grondplan.jpg",
                                 imgAlt:         "Plan of the school playground in Velm, with the new design for the playground.",
                                 title:          "School playground",
+                                projecttype:    ["semi-public space"],
 
-                                projectCat:     ["Semi-public area"],
-                                date:           "October - December 2017",
-                                location:       "Primary School 't Vlindertje, Battelestraat 18, Sint-Truiden, Limburg",
-                                role:           "Internship landscape architect",
-                                sortProject:    ["Semi-public design"],
-                                client:         "Primary School 't Vlindertje",
+                                date:           "October 2017 - December 2017",
+                                // duration:    "",
+                                location:       "Primary school 't Vlindertje, Battelestraat 18, Sint-Truiden, Limburg",
+                                role:           ["intern", "landscape architect"],
+                                client:         "Primary school 't Vlindertje",
                                 company:        "Regional Landscapes Hesbaye & Voeren (RLHV)",
 
-                                websiteType:    ["Semi-public design"], //sort project
-                                languages:      ["Internship"], //sort projectrole
-                                library:        ["RLHV"], //company
+                                // languages:   [""],
+                                // library:     [""],
+                                // medium:      "",
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -634,7 +647,7 @@ export default {
                     //             imgAlt:         "boxes stacked on top of each other, logo of project tower",
                     //             title:          "tower",
                     //             languages:      ["Student", "Internship", "Professional"], //sort projectrole
-                    //             library:        ["EHB", "Tielens Tuinen", "ANB"], //company
+                    //             library:        ["EhB", "Tielens Tuinen", "ANB"], //company
                     //             date:           "Month 20.."
                     //         },
                     //         {
@@ -680,7 +693,7 @@ export default {
                     //             imgAlt:         "boxes stacked on top of each other, logo of project tower",
                     //             title:          "tower",
                     //             languages:      ["Student", "Internship", "Professional"], //sort projectrole
-                    //             library:        ["EHB", "Tielens Tuinen", "ANB"], //company
+                    //             library:        ["EhB", "Tielens Tuinen", "ANB"], //company
                     //             date:           "Month 20.."
                     //         },
                     //         {
@@ -722,20 +735,23 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Cosplay"], //sort project
                                 img:            "/src/assets/images/art/Baphomet/IMG_20260709_183402.jpg",
                                 imgAlt:         "Claysculpture of the horns for the cosplay character Baphomet.",
                                 title:          "Baphomet",
-                                languages:      ["Personal work"], //sort projectrole
-                                library:        [], //company
-                                date:           "In progress",
-                                projectType:    "Personal project",
-                                medium:         "Cosplay outfit",
-                                materials:      "Plasticine clay, EVA foam",
-                                location:       "",
-                                duration:       ""
+                                projecttype:    ["Cosplay"],
+
+                                date:           "July 2026 - August 2026",
+                                // duration:    "",
+                                // location:    "",
+                                role:           ["Artist"],
+                                client:         "Personal work",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["drawing", "sculpture", "textiles", "mixed media"],
+                                materials:      ["Plasticine clay", "silicone", "polyurethane resin", "EVA foam", "cotton"],
                             },
-                            
                             {
                                 id:             "Project_Content",
                                 
@@ -784,18 +800,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Wall Mural"], //sort project
                                 img:            "/src/assets/images/art/Dragon/IMG_20260605_185825.jpg",
                                 imgAlt:         "Mural of a dragon, the dragon breads fire, the lighting of the fire refelcts on the dragons scales.",
                                 title:          "Dragon",
-                                languages:      ["Personal work"], //sort projectrole
-                                library:        [], //company
-                                date:           "April - June 2026, 5 days",
-                                projectType:    "Personal project",
-                                medium:         "Wall mural",
-                                materials:      "Wall paint (custom hand-mixed) colours",
-                                location:       "Private residence",
-                                duration:       "5 days"
+                                projecttype:    ["Mural"],
+
+                                date:           "April 2026 - June 2026",
+                                duration:       "5 days",
+                                // location:       "",
+                                role:           ["Artist"],
+                                client:         "Personal work",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["painting"],
+                                materials:      ["Wall paint (custom hand-mixed) colours"],
                             },
                             {
                                 id:             "Project_Content",
@@ -846,18 +866,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Wall Mural"], //sort project
                                 img:            "../src/assets/images/art/Forest/IMG_20260329_092921.jpg",
                                 imgAlt:         "Large forest mural depicting a sunlit forest filled with native wildlife, including a fox, roe deer, birds, and other woodland animals.",
                                 title:          "Forest in Summertime",
-                                languages:      ["Personal work"], //sort projectrole
-                                library:        [], //company
+                                projecttype: ["Mural"],
+
                                 date:           "February - March 2026",
-                                projectType:    "Personal project",
-                                medium:         "Wall mural",
-                                materials:      "Wall paint (custom hand-mixed) colours",
+                                duration:       "2 months",
                                 location:       "Private residence",
-                                duration:       "2 months"
+                                role:           ["Artist"],
+                                client:         "Personal work",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["painting"],
+                                materials:      ["Wall paint (custom hand-mixed) colours"],
                             },
                             {
                                 id:             "Project_Content",
@@ -914,18 +938,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Wall Mural"], //sort project
                                 img:            "../src/assets/images/art/Lion/IMG_20250920_183045.jpg",
                                 imgAlt:         "Wall mural of a mythical lion with deer antlers, painted with gold spray paint and detailed using black and white wall paint.",
                                 title:          "Mythical Lion",
-                                languages:      ["Personal Work"], //sort projectrole
-                                library:        ["Home"], //company
+                                projecttype:    ["Mural"],
+
                                 date:           "September 2025",
-                                projectType:    "Personal project",
-                                medium:         "Wall mural",
-                                materials:      "Gold spray paint, black and white wall paint",
+                                duration:       "+- one week",
                                 location:       "Private residence",
-                                duration:       "+- one week"
+                                role:           ["Artist"],
+                                client:         "Personal work",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["painting"],
+                                materials:      ["Gold spray paint", "black and white wall paint"],
                             },
                             {
                                 id:             "Project_Content",
@@ -974,16 +1002,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Pastel drawing"], //sort project
                                 img:            "../src/assets/images/art/Bear/IMG_20260720_171126.jpg",
                                 imgAlt:         "Pastel drawing of a roaring bear looking to the side, created with pastel on black paper.",
                                 title:          "Bear, pastel study",
-                                languages:      ["Student Work"], //sort projectrole
-                                library:        ["Art Academy Heusden-Zolder"], //company
+                                projecttype:    ["Pastel drawing"],
+
                                 date:           "2019",
-                                projectType:    "Personal project",
-                                medium:         "Pastel drawing",
-                                materials:      "Pastel on black paper"
+                                // duration:    "",
+                                // location:    "",
+                                role:           ["Student", "Artist"],
+                                client:         "Art Academy Heusden-Zolder",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["drawing"],
+                                materials:      ["Pastel", "black paper"]
                             },
                             {
                                 id:             "Project_Content",
@@ -1031,16 +1065,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    ["Mixed media"], //sort project
                                 img:            "../src/assets/images/art/BlueHues/IMG_20260721_135431.jpg",
                                 imgAlt:         "Artwork where two artists were combined into one artwork, the artwork is made with a blue background and a drawing made with white, brown and black colors.",
                                 title:          "The fall in Blue hues",
-                                languages:      ["Student work"], //sort projectrole
-                                library:        ["Art Academy Heusden-Zolder"], //company
+                                projecttype:    ["Drawing"],
+
                                 date:           "2019",
-                                projectType:    "Personal project",
-                                medium:         "Mixed media drawing",
-                                materials:      "Conté pencils on paper with a blue hand-painted background",
+                                // duration:    "",
+                                // location:    "",
+                                role:           ["Student", "Artist"],
+                                client:         "Art Academy Heusden-Zolder",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["mixed media"],
+                                materials:      ["Conté pencils", "paper with a blue hand-painted background"],
                             },
                             {
                                 id:             "Project_Content",
@@ -1093,12 +1133,19 @@ export default {
                                 img:            "../src/assets/images/art/Boy/IMG_20260720_170816_cropped.jpg",
                                 imgAlt:         "Drawing of a boy standing at a table in the artstyle pointïsme.",
                                 title:          "Boy, pointillism study",
-                                languages:      ["Student work"], //sort projectrole
-                                library:        ["Art Academy Heusden-Zolder"], //company
+                                projecttype:    ["Drawing"],
+
                                 date:           "2019",
-                                projectType:    "Personal project",
-                                medium:         "Fineliner drawing",
-                                materials:      "Black fineliner on white paper",
+                                // duration:    "",
+                                // location:    "",
+                                role:           ["Student", "Artist"],
+                                client:         "Art Academy Heusden-Zolder",
+                                // company:     "",
+
+                                // languages:   [""],
+                                // library:     [""],
+                                medium:         ["drawing"],
+                                materials:      ["Black fineliner", "white paper"],
                             },
                             {
                                 id:             "Project_Content",
@@ -1147,13 +1194,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    "e-commerce",
                                 img:            "../src/assets/icons/crown.png",
                                 imgAlt:         "crown, logo of project Prularia",
                                 title:          "Prularia",
+                                projecttype:    ["Website"],
+
+                                date:           "november 2024",
+                                duration:       "3 weeks",
+                                // location:    "",
+                                role:           ["Student", "Full-Stack Developer"],
+                                client:         "VDAB",
+                                // company:     "",
+
                                 languages:      ["JavaScript", "PHP", "CSS"],
                                 library:        ["Bootstrap"],
-                                date:           "November 2024",
+                                // medium:      [""],
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -1204,12 +1260,22 @@ export default {
                         sections:     [
                             {
                                 id:             "Project_Top",
-                                websiteType:    "e-commerce",
                                 img:            "../src/assets/icons/pizza.svg",
                                 imgAlt:         "pizzaslice, logo of project Pizzaria",
                                 title:          "Pizzaria",
+                                projecttype:    ["Website"],
+
+                                date:           "august 2024",
+                                // duration:    "",
+                                // location:    "",
+                                role:           ["Student", "Full-Stack Developer"],
+                                client:         "VDAB",
+                                // company:     "",
+
                                 languages:      ["PHP", "CSS"],
-                                date:           "August 2024",
+                                // library:     [""],
+                                // medium:      [""],
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -1261,13 +1327,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    "game",
                                 img:            "../src/assets/icons/gem.svg",
                                 imgAlt:         "diamond, logo of project Treasure Hunt",
                                 title:          "Treasure Hunt",
+                                projecttype:    ["Game"],
+
+                                date:           "february 2025",
+                                // duration:    "",
+                                // location:    "",
+                                role:           ["Student", "Full-Stack Developer"],
+                                client:         "VDAB",
+                                // company:     "",
+
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
-                                date:           "February 2025"
+                                // medium:      [""],
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -1316,12 +1391,22 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    "e-commerce",
                                 img:            "../src/assets/icons/hands-holding-child.svg",
                                 imgAlt:         "hands holding a child, logo of project Peekaboo",
                                 title:          "Peekaboo",
+                                projecttype:    ["Website"],
+
+                                date:           "September 2024",
+                                // duration:    "",
+                                // location:    "",
+                                role:           ["Student", "Full-Stack Developer"],
+                                // client:      "",
+                                // company:     "",
+
                                 languages:      ["JavaScript", "CSS", "HTML"],
-                                date:           "September 2024"
+                                // library:     [""],
+                                // medium:      [""],
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
@@ -1368,21 +1453,30 @@ export default {
                         sections:       [
                             {
                                 id:             "Project_Top",
-                                websiteType:    "showcase",
                                 img:            "../src/assets/icons/cubes-stacked.svg",
                                 imgAlt:         "boxes stacked on top of each other, logo of project tamagotchi",
                                 title:          "tamagotchi",
+                                projecttype:    ["Website"],
+
+                                date:           "February 2025",
+                                // duration:    "",
+                                // location:    "",
+                                role:           ["Student", "Full-Stack Developer"],
+                                client:         "three.js Journey",
+                                // company:     "",
+
                                 languages:      ["JavaScript", "HTML", "CSS"],
                                 library:        ["THREE.js"],
-                                date:           "Februari 2025"
+                                // medium:      [""],
+                                // materials:   "",
                             },
                             {
                                 id:             "Project_Content",
                                 
-                                text_01:   "For this project, I participated in the February Three.js Challenge, organized by Three.js Journey. The Tamagotchi theme inspired me to combine a blood-drinking vampire with an insulin measurement device that features an interactive Tamagotchi-like function. This project gave me the opportunity to experiment with Three.js and Blender.",
-                                text_02:     "I had many creative ideas and wanted to challenge myself in both 3D modeling and interactive rendering, but time quickly became my biggest constraint. I had plans to add Tamagotchi-style animations, which would have made the interaction even more fun, but due to the limited time, I was unable to implement them.",
-                                text_03:       "To bring my ideas to life, I used Blender to design the insulin measurement device, as well as the icons and the vampire character. I experimented with various shapes and materials in Blender to give the project a unique and creative look. Despite the time pressure, I learned a lot from every step of the process. \n\nAdditionally, I wanted to create a website where the 3D renders and models would be integrated. I chose a layout from Frontend Practice to refresh my HTML and CSS skills. While this was beneficial for my front-end development, it also meant I had less time to focus on the 3D renders and modeling, which were the core elements of the project.",
-                                text_04:         "The project didn’t turn out exactly as I had originally envisioned, as time constraints limited the animations. However, I managed to complete some key elements. \n\n I created three Three.js renders: \n\n <ul class='list--list-style-type-shown'><li>The first render allows users to rotate and zoom in on the 3D view of the insulin measurement device..</li> <li>The second render shows the vampire in a detailed 3D environment, but without effects or animations.</li> <li>The third render lets users change the color of the device’s cover, offering a fun customization option.</li></ul>\n\nAdditionally, I created two Blender images featuring the vampire and the bat characters, both with hair particles, marking my first attempt at using this effect in Blender.\n\n Overall, the Three.js Challenge was a valuable learning experience. Although I couldn’t implement all the features I originally planned, I’m proud of the progress I made. This project helped me advance my skills, and I look forward to continuing my journey with the Three.js Journey course to expand my knowledge and learn more advanced techniques.",
+                                text_01:        "For this project, I participated in the February Three.js Challenge, organized by Three.js Journey. The Tamagotchi theme inspired me to combine a blood-drinking vampire with an insulin measurement device that features an interactive Tamagotchi-like function. This project gave me the opportunity to experiment with Three.js and Blender.",
+                                text_02:        "I had many creative ideas and wanted to challenge myself in both 3D modeling and interactive rendering, but time quickly became my biggest constraint. I had plans to add Tamagotchi-style animations, which would have made the interaction even more fun, but due to the limited time, I was unable to implement them.",
+                                text_03:        "To bring my ideas to life, I used Blender to design the insulin measurement device, as well as the icons and the vampire character. I experimented with various shapes and materials in Blender to give the project a unique and creative look. Despite the time pressure, I learned a lot from every step of the process. \n\nAdditionally, I wanted to create a website where the 3D renders and models would be integrated. I chose a layout from Frontend Practice to refresh my HTML and CSS skills. While this was beneficial for my front-end development, it also meant I had less time to focus on the 3D renders and modeling, which were the core elements of the project.",
+                                text_04:        "The project didn’t turn out exactly as I had originally envisioned, as time constraints limited the animations. However, I managed to complete some key elements. \n\n I created three Three.js renders: \n\n <ul class='list--list-style-type-shown'><li>The first render allows users to rotate and zoom in on the 3D view of the insulin measurement device..</li> <li>The second render shows the vampire in a detailed 3D environment, but without effects or animations.</li> <li>The third render lets users change the color of the device’s cover, offering a fun customization option.</li></ul>\n\nAdditionally, I created two Blender images featuring the vampire and the bat characters, both with hair particles, marking my first attempt at using this effect in Blender.\n\n Overall, the Three.js Challenge was a valuable learning experience. Although I couldn’t implement all the features I originally planned, I’m proud of the progress I made. This project helped me advance my skills, and I look forward to continuing my journey with the Three.js Journey course to expand my knowledge and learn more advanced techniques.",
                                 text_title_01:  "introduction",
                                 text_title_02:  "challenges",
                                 text_title_03:  "approach",
