@@ -142,7 +142,7 @@ export default class Resources {
             const section = listOfSections[i];
             const elemSectionId = document.getElementById(section.id);
             if (!elemSectionId) {
-                console.log('No children found for element with id: ' + section.id);
+                // console.log('No children found for element with id: ' + section.id);
             };
             const firstChildSection = elemSectionId.children[0];
 

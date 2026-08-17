@@ -7,7 +7,6 @@ import Resources from "./Utils/Resources.js";
 class Script {
     constructor() {
         this.modal = new Modal();
-
         this.location = window.location;
         this.loadPage();
 
@@ -19,15 +18,20 @@ class Script {
     loadPage() {
         this.getPage();
         this.getHash();
+        if (this.page == "project" && this.hash) {
+            new Transitions();
+            this.page = "projects";
+        };
         this.resources = new Resources(this.page, this.hash);
         this.resources.setInnerHTML();
-        if (this.page == "projects" && this.hash) new Transitions();
     }
     getPage() {
         this.location.href.includes("about") ?
         this.page = "about" :
-        this.location.href.includes("project") ?
+        this.location.href.includes("projects") ?
         this.page = "projects" :
+        this.location.href.includes("project") ?
+        this.page = "project" :
         this.location.href.includes("contact") ?
         this.page = "contact" :
         this.page = "home";

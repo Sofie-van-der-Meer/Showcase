@@ -301,7 +301,6 @@ img {
     }
     .card-content {
         margin: 1rem max(1.3rem, 7%);
-        height: calc(100% - 12rem - 2rem);
     }
     .card-description {
         flex-grow: 1;
@@ -339,6 +338,9 @@ img {
     .card-content {
         padding-block: min(2rem, 3vh);
     }
+}
+#Projects_List .card-content {
+    height: calc(100% - 12rem - 2rem);
 }
 .about-card .card {
     background-color: var(--color-secundary-background);

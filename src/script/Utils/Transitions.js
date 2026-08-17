@@ -6,33 +6,20 @@ export default class Transitions {
         this.deltaY = 0;
         this.carousel_width = 0;
 
-        let lastImg = this.carousel.lastChild;
-        waitForImgToLoad(lastImg).then(()=>{
-            checkCarouselWidth(this.sect, this.carousel, this.carousel_width, this.deltaY);
-        })
+        carouselScroll(this.sect, this.carousel, this.deltaY);
 
         this.sect.addEventListener("pointerenter", (event) => {
             animatePointer(this.pointer);
         })
 
-        function waitForImgToLoad(img) {
-            return new Promise(resolve=>{img.onload = resolve})
-        }
-
-        function checkCarouselWidth(s, c, w, y) {
-            let sect_width = s.clientWidth;
-            let carousel_width = c.scrollWidth;
-            let lastImg_width = c.lastChild.scrollWidth;
-            
-            w = (carousel_width - lastImg_width + (lastImg_width - sect_width));
-
+        function carouselScroll(s, c, y) {
             if (s && c) {
                 c.addEventListener('wheel', (event) => {
 
                     y -= event.deltaY;
 
                     if (y >= 0) y = 0;
-                    if (y <= -w) y = -w;
+                    // if (y <= -w) y = -w;
                     else {
                         c.style.transform = `translateX(${y}px)`;
                         event.preventDefault();
